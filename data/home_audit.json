@@ -1,0 +1,158 @@
+{
+  "url": "https://peterairs.com/",
+  "title": "Peter Air Systems - Air Handling Units &amp; Cleanroom Solutions",
+  "metaDescription": "Peter Air Systems offers high-quality air handling units and cleanroom solutions for pharmaceuticals,healthcare and more.Energy-efficient,and trusted worldwide.",
+  "canonical": "https://peterairs.com/",
+  "h1": [
+    "Welcome To Peter Air Systems"
+  ],
+  "h2": [
+    "Comprehensive Cleanroom Turnkey Solution with Integrated Air Handling, HVAC, and Specialized Equipment",
+    "Why Choose Peter Air Systems?",
+    "What People Think About Us",
+    "Our Blog: Stay Informed",
+    "Peter Air Systems :PARTNERS",
+    "Useful links",
+    "Address",
+    "Contact Info"
+  ],
+  "schemas": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Peter Air",
+      "url": "https://peterairs.com",
+      "alternateName": "Innovative Air Handling Units & Cleanroom Solutions | Peter Air Systems",
+      "description": "Peter Air System",
+      "logo": "https://peterairs.com/wp-content/uploads/2024/12/PETER-AIR-LOGO.png",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+91-8484 836 337"
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "src": "https://peterairs.com/wp-content/uploads/2024/12/PETER-AIR-LOGO.png",
+      "alt": "PETER AIR"
+    },
+    {
+      "src": "https://peterairs.com/wp-content/uploads/2024/12/PETER-AIR-LOGO.png",
+      "alt": "PETER AIR"
+    },
+    {
+      "src": "https://peterairs.com/wp-content/uploads/2026/03/ahu_banner.png",
+      "alt": ""
+    },
+    {
+      "src": "https://peterairs.com/wp-content/uploads/2024/12/7-1.png",
+      "alt": ""
+    },
+    {
+      "src": "https://peterairs.com/wp-content/uploads/2026/03/AHU.jpeg",
+      "alt": "Air Handling Units (AHUs)"
+    },
+    {
+      "src": "https://peterairs.com/wp-content/uploads/2025/01/Air-Showers.jpg",
+      "alt": "Air Showers"
+    },
+    {
+      "src": "https://peterairs.com/wp-content/uploads/2025/01/Bio-Safety-Cabinets.jpg",
+      "alt": "Bio-Safety Cabinets"
+    },
+    {
+      "src": "https://peterairs.com/wp-content/uploads/2025/01/hepa-fite.jpg",
+      "alt": "HEPA Filter Box"
+    },
+    {
+      "src": "https://peterairs.com/wp-content/uploads/2025/01/Static-Pass-Box.jpg",
+      "alt": "Static Pass Box"
+    },
+    {
+      "src": "https://peterairs.com/wp-content/uploads/2024/12/Pharmaceuticals-300x169.jpg",
+      "alt": "Pharmaceuticals"
+    },
+    {
+      "src": "https://peterairs.com/wp-content/uploads/2024/12/Biotechnology-300x169.jpg",
+      "alt": "Biotechnology"
+    },
+    {
+      "src": "https://peterairs.com/wp-content/uploads/2024/12/Healthcare-300x200.jpg",
+      "alt": "Healthcare"
+    },
+    {
+      "src": "https://peterairs.com/wp-content/uploads/2024/12/Chemicals-300x200.jpg",
+      "alt": "Chemicals"
+    },
+    {
+      "src": "https://peterairs.com/wp-content/uploads/2024/12/Electronics-300x168.jpg",
+      "alt": "Electronics"
+    },
+    {
+      "src": "https://peterairs.com/wp-content/uploads/2026/03/OT-300x198.jpg",
+      "alt": "Modular OT Design Guide: Everything You Need to Know Before Installation"
+    },
+    {
+      "src": "https://peterairs.com/wp-content/uploads/2025/01/Static-Pass-Box-300x200.jpg",
+      "alt": "Static Pass Box vs Dynamic Pass Box: Which One is Right for Your Cleanroom?"
+    },
+    {
+      "src": "https://peterairs.com/wp-content/uploads/2025/12/Air-Shower-300x278.jpg",
+      "alt": "Air Shower Manufacturer in India: Complete Buying Guide for Cleanroom Industries"
+    },
+    {
+      "src": "https://peterairs.com/wp-content/uploads/2022/07/MODULAR-CLEAN-ROOM-VALIDATION-MAINTENANCE-300x198.jpg",
+      "alt": "How Cleanroom Furniture Supports Contamination Control and Workplace Efficiency"
+    },
+    {
+      "src": "https://peterairs.com/wp-content/uploads/2022/07/MODULAR-CLEAN-ROOM-VALIDATION-MAINTENANCE-300x198.jpg",
+      "alt": "Modular Clean Room vs Conventional Clean Room: Which One Is Better?"
+    },
+    {
+      "src": "https://peterairs.com/wp-content/uploads/2022/07/Hepa-Filter-300x278.jpg",
+      "alt": "HEPA Filter Manufacturers: How HEPA Filtration Protects Critical Environments"
+    },
+    {
+      "src": "https://peterairs.com/wp-content/uploads/2026/03/2.png",
+      "alt": "2"
+    },
+    {
+      "src": "https://peterairs.com/wp-content/uploads/2026/03/1.png",
+      "alt": "client logo"
+    },
+    {
+      "src": "https://peterairs.com/wp-content/uploads/2022/07/13.jpg",
+      "alt": "Peter Air Systems"
+    },
+    {
+      "src": "https://peterairs.com/wp-content/uploads/2022/07/8.jpg",
+      "alt": "Peter Air Systems"
+    },
+    {
+      "src": "https://peterairs.com/wp-content/uploads/2022/07/9.jpg",
+      "alt": "Peter Air Systems"
+    },
+    {
+      "src": "https://peterairs.com/wp-content/uploads/2022/07/10.jpg",
+      "alt": "Peter Air Systems"
+    },
+    {
+      "src": "https://peterairs.com/wp-content/uploads/2022/07/11.jpg",
+      "alt": "Peter Air Systems"
+    },
+    {
+      "src": "https://peterairs.com/wp-content/uploads/2022/07/14.jpg",
+      "alt": "Peter Air Systems"
+    },
+    {
+      "src": "https://peterairs.com/wp-content/uploads/2022/07/12.jpg",
+      "alt": "Peter Air Systems"
+    },
+    {
+      "src": "https://peterairs.com/wp-content/uploads/2022/07/3.jpg",
+      "alt": "Peter Air Systems"
+    }
+  ]
+}
