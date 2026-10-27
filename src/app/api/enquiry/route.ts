@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { saveEnquiryRecord, getEnquiriesList } from "@/lib/db";
+import { sendEnquiryNotifications } from "@/lib/email";
 import fs from "fs";
 import path from "path";
 
@@ -88,6 +89,25 @@ export async function POST(request: Request) {
     console.log(
       `[ENQUIRY RECEIVED] ID: ${enquiry.id} from ${enquiry.name} (${enquiry.companyName}) for ${enquiry.productOrService}`
     );
+
+    // 3. Dispatch 3-Way Email Notifications (Customer, Sales Team, Admin Backup)
+    try {
+      await sendEnquiryNotifications({
+        id: enquiry.id,
+        name,
+        companyName,
+        email,
+        phone,
+        productOrService,
+        requirement,
+        quantity,
+        city,
+        message,
+        createdAt: enquiry.createdAt,
+      });
+    } catch (emailErr) {
+      console.error("[Enquiry Email Dispatch Error]", emailErr);
+    }
 
     return NextResponse.json({
       success: true,
