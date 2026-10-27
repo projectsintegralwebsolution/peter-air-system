@@ -69,8 +69,8 @@ export const LocalBusinessSchema: React.FC = () => {
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 19.3919,
-      "longitude": 72.8397
+      "latitude": 19.4084874,
+      "longitude": 72.8585635
     },
     "openingHoursSpecification": [
       {
@@ -80,7 +80,7 @@ export const LocalBusinessSchema: React.FC = () => {
         "closes": "18:30"
       }
     ],
-    "hasMap": "https://maps.google.com/?q=Peter+Air+Systems+Vasai+East"
+    "hasMap": "https://www.google.com/maps/place/Peter+Air+Systems+%7C+Manufacturer+of+Air+Handling+Units,+Modular+Clean+Room+Doors,+Panels,+Modular+OT,+HVAC+%26+Air+Filters/@19.4084874,72.8585635,17z/"
   };
 
   return (

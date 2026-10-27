@@ -776,7 +776,7 @@ export default async function GenericPage({ params }: PageProps) {
                       {siteConfig.contact.address}
                     </p>
                     <a
-                      href="https://www.google.com/maps/search/Unit+No.+-+01,+02,+03+and+06,+Agarwal+Industrial+Estate,+Golani,+Vasai+East,+Palghar+%E2%80%93+401208,+Mumbai,+Maharashtra,+India./@19.3956624,72.8448979,13.47z"
+                      href="https://www.google.com/maps/place/Peter+Air+Systems+%7C+Manufacturer+of+Air+Handling+Units,+Modular+Clean+Room+Doors,+Panels,+Modular+OT,+HVAC+%26+Air+Filters/@19.4084874,72.8585635,17z/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-700 hover:text-brand-900 hover:underline transition-colors"
@@ -867,11 +867,11 @@ export default async function GenericPage({ params }: PageProps) {
             <div className="relative w-full rounded-2xl overflow-hidden border border-slate-200 shadow-md bg-slate-100 h-[360px] sm:h-[420px] lg:h-[480px]">
               <iframe
                 title="Google Map showing Peter Air Systems factory location at Agarwal Industrial Estate, Vasai East, Mumbai"
-                src="https://maps.google.com/maps?q=19.3956624,72.8448979&z=16&hl=en&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.09068433366!2d72.8585635!3d19.408487400000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a9700c1bdf97%3A0x8169aea17667c19a!2sPeter%20Air%20Systems%20%7C%20Manufacturer%20of%20Air%20Handling%20Units%2C%20Modular%20Clean%20Room%20Doors%2C%20Panels%2C%20Modular%20OT%2C%20HVAC%20%26%20Air%20Filters!5e0!3m2!1sen!2sin!4v1793089783276!5m2!1sen!2sin"
                 className="w-full h-full border-0"
                 loading="lazy"
                 allowFullScreen
-                referrerPolicy="no-referrer-when-downgrade"
+                referrerPolicy="strict-origin-when-cross-origin"
                 aria-label="Google Map showing Peter Air Systems factory location"
               />
             </div>
