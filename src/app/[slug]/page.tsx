@@ -28,7 +28,7 @@ import { siteConfig } from "@/data/siteConfig";
 import { products } from "@/data/products";
 import { categories } from "@/data/categories";
 import { services } from "@/data/services";
-import { getProductBySlug, getProductCategoryBySlug, getAllProducts } from "@/lib/db";
+import { getProductBySlug, getProductCategoryBySlug, getAllProducts, getAllServices } from "@/lib/db";
 import { decodeHtmlEntities } from "@/lib/textUtils";
 
 // All static slugs
@@ -601,6 +601,12 @@ export default async function GenericPage({ params }: PageProps) {
 
   // 4. Services Page
   if (slug === "services") {
+    let serviceList = services;
+    try {
+      const dbServices = await getAllServices();
+      if (dbServices && dbServices.length > 0) serviceList = dbServices as any;
+    } catch (e) {}
+
     return (
       <div className="w-full bg-white">
         <BreadcrumbSchema
@@ -627,7 +633,7 @@ export default async function GenericPage({ params }: PageProps) {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {services.map((s) => (
+            {serviceList.map((s) => (
               <div key={s.slug} className="bg-slate-50 border border-slate-200 rounded-2xl p-8 space-y-4">
                 <h3 className="text-xl font-bold text-slate-900">{s.name}</h3>
                 <p className="text-slate-600 text-sm leading-relaxed">{s.description}</p>

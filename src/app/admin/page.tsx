@@ -126,6 +126,10 @@ export default function AdminCMSPage() {
   // Product Categories State
   // ----------------------------------------------------
   const [prodCategories, setProdCategories] = useState<any[]>([]);
+  const [editingCategory, setEditingCategory] = useState<any | null>(null);
+  const [categorySaving, setCategorySaving] = useState(false);
+  const [industrySaving, setIndustrySaving] = useState(false);
+  const [serviceSaving, setServiceSaving] = useState(false);
   const [newProdCatName, setNewProdCatName] = useState("");
   const [newProdCatSlug, setNewProdCatSlug] = useState("");
   const [newProdCatDesc, setNewProdCatDesc] = useState("");
@@ -460,6 +464,157 @@ export default function AdminCMSPage() {
     if (activeTab === "content") loadContent();
     if (activeTab === "redirects") loadRedirects();
   }, [activeTab, currentUser, blogPage, productPage, enquiryPage, blogFilterStatus, enquiryStatusFilter]);
+
+  // ----------------------------------------------------
+  // Product Categories Handlers
+  // ----------------------------------------------------
+  const handleSaveCategory = async () => {
+    if (!editingCategory?.name?.trim() || !editingCategory?.slug?.trim()) {
+      showToast("Category name and slug are required", "error");
+      return;
+    }
+    setCategorySaving(true);
+    try {
+      const url = editingCategory.id ? `/api/admin/product-categories/${editingCategory.id}/` : "/api/admin/product-categories/";
+      const method = editingCategory.id ? "PUT" : "POST";
+      const res = await fetch(url, {
+        method,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(editingCategory),
+      });
+      const data = await res.json();
+      if (data.success) {
+        showToast(editingCategory.id ? "Category updated successfully!" : "Category created successfully!");
+        setEditingCategory(null);
+        loadProductCategories();
+      } else {
+        showToast(data.error || "Failed to save category", "error");
+      }
+    } catch {
+      showToast("Network error saving category", "error");
+    } finally {
+      setCategorySaving(false);
+    }
+  };
+
+  const handleDeleteCategory = async (id: string, name: string) => {
+    if (!window.confirm(`Are you sure you want to delete category "${name}"?`)) return;
+    try {
+      const res = await fetch(`/api/admin/product-categories/${id}/`, { method: "DELETE" });
+      const data = await res.json();
+      if (data.success) {
+        showToast("Category deleted successfully");
+        loadProductCategories();
+      } else {
+        showToast(data.error || "Failed to delete category", "error");
+      }
+    } catch {
+      showToast("Error deleting category", "error");
+    }
+  };
+
+  // ----------------------------------------------------
+  // Industries Handlers
+  // ----------------------------------------------------
+  const handleSaveIndustry = async () => {
+    if (!editingIndustry?.name?.trim() || !editingIndustry?.slug?.trim()) {
+      showToast("Industry name and slug are required", "error");
+      return;
+    }
+    setIndustrySaving(true);
+    try {
+      const url = editingIndustry.id ? `/api/admin/industries/${editingIndustry.id}/` : "/api/admin/industries/";
+      const method = editingIndustry.id ? "PUT" : "POST";
+      const res = await fetch(url, {
+        method,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...editingIndustry,
+          challenges: typeof editingIndustry.challenges === "string" ? editingIndustry.challenges.split("\n").filter(Boolean) : editingIndustry.challenges,
+          solutions: typeof editingIndustry.solutions === "string" ? editingIndustry.solutions.split("\n").filter(Boolean) : editingIndustry.solutions,
+        }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        showToast(editingIndustry.id ? "Industry updated successfully!" : "Industry created successfully!");
+        setEditingIndustry(null);
+        loadIndustries();
+      } else {
+        showToast(data.error || "Failed to save industry", "error");
+      }
+    } catch {
+      showToast("Network error saving industry", "error");
+    } finally {
+      setIndustrySaving(false);
+    }
+  };
+
+  const handleDeleteIndustry = async (id: string, name: string) => {
+    if (!window.confirm(`Are you sure you want to delete industry sector "${name}"?`)) return;
+    try {
+      const res = await fetch(`/api/admin/industries/${id}/`, { method: "DELETE" });
+      const data = await res.json();
+      if (data.success) {
+        showToast("Industry sector deleted successfully");
+        loadIndustries();
+      } else {
+        showToast(data.error || "Failed to delete industry", "error");
+      }
+    } catch {
+      showToast("Error deleting industry", "error");
+    }
+  };
+
+  // ----------------------------------------------------
+  // Services Handlers
+  // ----------------------------------------------------
+  const handleSaveService = async () => {
+    if (!editingService?.name?.trim() || !editingService?.slug?.trim()) {
+      showToast("Service name and slug are required", "error");
+      return;
+    }
+    setServiceSaving(true);
+    try {
+      const url = editingService.id ? `/api/admin/services/${editingService.id}/` : "/api/admin/services/";
+      const method = editingService.id ? "PUT" : "POST";
+      const res = await fetch(url, {
+        method,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...editingService,
+          deliverables: typeof editingService.deliverables === "string" ? editingService.deliverables.split("\n").filter(Boolean) : editingService.deliverables,
+        }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        showToast(editingService.id ? "Service updated successfully!" : "Service created successfully!");
+        setEditingService(null);
+        loadServices();
+      } else {
+        showToast(data.error || "Failed to save service", "error");
+      }
+    } catch {
+      showToast("Network error saving service", "error");
+    } finally {
+      setServiceSaving(false);
+    }
+  };
+
+  const handleDeleteService = async (id: string, name: string) => {
+    if (!window.confirm(`Are you sure you want to delete service "${name}"?`)) return;
+    try {
+      const res = await fetch(`/api/admin/services/${id}/`, { method: "DELETE" });
+      const data = await res.json();
+      if (data.success) {
+        showToast("Service deleted successfully");
+        loadServices();
+      } else {
+        showToast(data.error || "Failed to delete service", "error");
+      }
+    } catch {
+      showToast("Error deleting service", "error");
+    }
+  };
 
   // Product Save
   const handleSaveProduct = async () => {
