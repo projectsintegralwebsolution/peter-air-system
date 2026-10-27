@@ -1,0 +1,331 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-primary: #094863;
+  --brand-navy: #063B5C;
+  --brand-accent: #1d82b2;
+  --brand-dark: #062e40;
+  --brand-red: #D93636;
+  --brand-red-hover: #b91c1c;
+  --brand-red-subtle: rgba(217, 54, 54, 0.08);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-dm-sans), 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  color: #0f172a;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  font-family: var(--font-dm-sans), 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
+  font-weight: 400;
+}
+
+button, input, select, textarea, optgroup {
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+}
+
+/* Base Headings: Manrope with balanced letter-spacing and hierarchy */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-manrope), 'Manrope', sans-serif;
+  color: inherit;
+  text-wrap: balance;
+}
+
+/* Ensure headings and high-contrast text on dark surfaces */
+.text-white h1, .text-white h2, .text-white h3, .text-white h4, .text-white h5, .text-white h6,
+[class*="bg-brand-950"] h1, [class*="bg-brand-950"] h2, [class*="bg-brand-950"] h3, [class*="bg-brand-950"] h4, [class*="bg-brand-950"] h5, [class*="bg-brand-950"] h6,
+[class*="bg-brand-900"] h1, [class*="bg-brand-900"] h2, [class*="bg-brand-900"] h3, [class*="bg-brand-900"] h4, [class*="bg-brand-900"] h5, [class*="bg-brand-900"] h6,
+[class*="bg-slate-900"] h1, [class*="bg-slate-900"] h2, [class*="bg-slate-900"] h3, [class*="bg-slate-900"] h4, [class*="bg-slate-900"] h5, [class*="bg-slate-900"] h6,
+[class*="bg-slate-950"] h1, [class*="bg-slate-950"] h2, [class*="bg-slate-950"] h3, [class*="bg-slate-950"] h4, [class*="bg-slate-950"] h5, [class*="bg-slate-950"] h6 {
+  color: #ffffff;
+}
+
+/* Ensure headings inside white cards/containers retain their dark color even inside dark sections */
+.bg-white h1, .bg-white h2, .bg-white h3, .bg-white h4, .bg-white h5, .bg-white h6,
+[class*="bg-white"] h1, [class*="bg-white"] h2, [class*="bg-white"] h3, [class*="bg-white"] h4, [class*="bg-white"] h5, [class*="bg-white"] h6 {
+  color: inherit;
+}
+
+h1 {
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+}
+
+h2 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+h3 {
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.3;
+}
+
+h4, h5, h6 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.35;
+}
+
+/* Paragraphs & Technical Content */
+p {
+  line-height: 1.68;
+}
+
+/* Tabular numerals for engineering specifications and data tables */
+.tabular-nums, table, .cleanroom-table, [data-tabular="true"] {
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #094863;
+}
+
+/* Cleanroom table styles */
+.cleanroom-table,
+.product-table-wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.875rem;
+}
+
+.cleanroom-table th,
+.cleanroom-table td,
+.product-table-wrapper table th,
+.product-table-wrapper table td {
+  border: 1px solid #cbd5e1;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.cleanroom-table th,
+.product-table-wrapper table th {
+  background-color: #063B5C !important;
+  color: #ffffff !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.775rem;
+  letter-spacing: 0.05em;
+}
+
+.cleanroom-table tr:nth-child(even),
+.product-table-wrapper table tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+.cleanroom-table tr:hover,
+.product-table-wrapper table tr:hover {
+  background-color: #f1f5f9;
+}
+
+/* Technical grid styling */
+.tech-grid {
+  background-size: 24px 24px;
+  background-image: linear-gradient(to right, rgba(9, 72, 99, 0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(9, 72, 99, 0.05) 1px, transparent 1px);
+}
+
+/* Ensure all Lucide and SVG icons maintain rigid dimension integrity */
+svg.lucide,
+[class*="lucide-"] {
+  flex-shrink: 0;
+}
+
+/* WordPress inline emoji & contact icons styling fix */
+.prose img.emoji,
+img.emoji,
+.prose :where(img.emoji) {
+  display: inline-block !important;
+  width: 22px !important;
+  height: 22px !important;
+  min-width: 22px !important;
+  min-height: 22px !important;
+  max-width: 24px !important;
+  max-height: 24px !important;
+  margin: 0 6px 0 0 !important;
+  vertical-align: -0.2em !important;
+  flex-shrink: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+}
+
+/* Blog Article Typography & Heading Hierarchy */
+.blog-article-content {
+  font-size: 1.0625rem; /* ~17px on desktop */
+  line-height: 1.72;
+  color: #334155; /* dark slate/navy text */
+  word-break: break-word;
+}
+
+@media (max-width: 640px) {
+  .blog-article-content {
+    font-size: 1rem; /* 16px on mobile */
+    line-height: 1.68;
+  }
+}
+
+.blog-article-content h1 {
+  font-size: clamp(2rem, 3.5vw, 2.625rem); /* 32px to 42px */
+  font-weight: 700;
+  color: #094863;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  margin-top: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.blog-article-content h2 {
+  font-size: clamp(1.5rem, 2.5vw, 1.875rem); /* 24px to 30px */
+  font-weight: 700;
+  color: #094863;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  margin-top: 2.25rem;
+  margin-bottom: 0.875rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #f1f5f9;
+  scroll-margin-top: 6.5rem;
+}
+
+.blog-article-content h2:first-of-type {
+  margin-top: 1rem;
+  padding-top: 0;
+  border-top: none;
+}
+
+.blog-article-content h3 {
+  font-size: clamp(1.25rem, 2vw, 1.45rem); /* 20px to 23px */
+  font-weight: 700;
+  color: #094863;
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  scroll-margin-top: 6.5rem;
+}
+
+.blog-article-content h4 {
+  font-size: 1.15rem; /* 18.5px */
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.4;
+  margin-top: 1.35rem;
+  margin-bottom: 0.5rem;
+  scroll-margin-top: 6.5rem;
+}
+
+.blog-article-content p {
+  margin-top: 0;
+  margin-bottom: 1.15rem;
+  line-height: 1.72;
+  color: #334155;
+}
+
+.blog-article-content ul,
+.blog-article-content ol {
+  margin-top: 0.5rem;
+  margin-bottom: 1.25rem;
+  padding-left: 1.75rem;
+}
+
+.blog-article-content ul {
+  list-style-type: disc;
+}
+
+.blog-article-content ol {
+  list-style-type: decimal;
+}
+
+.blog-article-content li {
+  margin-bottom: 0.4rem;
+  line-height: 1.7;
+  color: #334155;
+}
+
+.blog-article-content a {
+  color: #094863;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.15s ease;
+}
+
+.blog-article-content a:hover {
+  color: #062e40;
+}
+
+.blog-article-content strong,
+.blog-article-content b {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.blog-article-content img:not(.emoji) {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  margin: 1.75rem auto;
+  display: block;
+}
+
+/* Styled contact paragraph inside article body */
+.blog-article-content p:has(img.emoji) {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  padding: 1.25rem 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 2.2;
+  font-size: 0.95rem;
+  color: #1e293b;
+}
+
+.blog-article-content p:has(img.emoji) a {
+  color: #094863;
+  font-weight: 600;
+}
+
+/* Headings: Headroom for sticky header navigation */
+.blog-article-content h2,
+.blog-article-content h3,
+.blog-article-content h4,
+.prose h2,
+.prose h3,
+.prose h4 {
+  scroll-margin-top: 6.5rem;
+}
+
