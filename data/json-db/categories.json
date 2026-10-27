@@ -1,0 +1,58 @@
+[
+  {
+    "id": "clmvqd1flobtuuf16",
+    "name": "Cleanroom Furniture",
+    "slug": "cleanroom-furniture",
+    "description": "Industrial cleanroom and HVAC technical articles in Cleanroom Furniture",
+    "createdAt": "2026-10-27T07:24:44.988Z",
+    "updatedAt": "2026-10-27T07:24:44.988Z"
+  },
+  {
+    "id": "clmvqd1flowreh7qj",
+    "name": "HVAC Systems",
+    "slug": "hvac-systems",
+    "description": "Industrial cleanroom and HVAC technical articles in HVAC Systems",
+    "createdAt": "2026-10-27T07:24:44.988Z",
+    "updatedAt": "2026-10-27T07:24:44.988Z"
+  },
+  {
+    "id": "clmvqd1flor2bjugi",
+    "name": "Industry Solutions",
+    "slug": "industry-solutions",
+    "description": "Industrial cleanroom and HVAC technical articles in Industry Solutions",
+    "createdAt": "2026-10-27T07:24:44.988Z",
+    "updatedAt": "2026-10-27T07:24:44.988Z"
+  },
+  {
+    "id": "clmvqd1flo0eo4wba",
+    "name": "Contamination Control",
+    "slug": "contamination-control",
+    "description": "Industrial cleanroom and HVAC technical articles in Contamination Control",
+    "createdAt": "2026-10-27T07:24:44.988Z",
+    "updatedAt": "2026-10-27T07:24:44.988Z"
+  },
+  {
+    "id": "clmvqd1flotq3g2qu",
+    "name": "Cleanroom Components",
+    "slug": "cleanroom-components",
+    "description": "Industrial cleanroom and HVAC technical articles in Cleanroom Components",
+    "createdAt": "2026-10-27T07:24:44.988Z",
+    "updatedAt": "2026-10-27T07:24:44.988Z"
+  },
+  {
+    "id": "clmvqd1flph8ws38u",
+    "name": "Blog",
+    "slug": "blog",
+    "description": "Industrial cleanroom and HVAC technical articles in Blog",
+    "createdAt": "2026-10-27T07:24:44.989Z",
+    "updatedAt": "2026-10-27T07:24:44.989Z"
+  },
+  {
+    "id": "clmvqd1flqt1ly2e3",
+    "name": "Uncategorized",
+    "slug": "uncategorized",
+    "description": "Industrial cleanroom and HVAC technical articles in Uncategorized",
+    "createdAt": "2026-10-27T07:24:44.990Z",
+    "updatedAt": "2026-10-27T07:24:44.990Z"
+  }
+]

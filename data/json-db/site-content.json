@@ -1,0 +1,74 @@
+[
+  {
+    "id": "clmvqd1fmpj61snik",
+    "key": "company.name",
+    "section": "company",
+    "label": "Company Legal Name",
+    "value": "Peter Air Systems",
+    "updatedAt": "2026-10-27T07:24:45.025Z"
+  },
+  {
+    "id": "clmvqd1fmpcsfn479",
+    "key": "company.tagline",
+    "section": "company",
+    "label": "Brand Tagline",
+    "value": "Leading Manufacturers of HVAC & Cleanroom Equipment",
+    "updatedAt": "2026-10-27T07:24:45.025Z"
+  },
+  {
+    "id": "clmvqd1fmpbs6ny07",
+    "key": "contact.phone.primary",
+    "section": "contact",
+    "label": "Primary Sales Helpline",
+    "value": "+91 97148 77717",
+    "updatedAt": "2026-10-27T07:24:45.025Z"
+  },
+  {
+    "id": "clmvqd1fmpntuxokl",
+    "key": "contact.phone.secondary",
+    "section": "contact",
+    "label": "Technical Support",
+    "value": "+91 94273 00811",
+    "updatedAt": "2026-10-27T07:24:45.025Z"
+  },
+  {
+    "id": "clmvqd1fmpel5i5j1",
+    "key": "contact.whatsapp",
+    "section": "contact",
+    "label": "WhatsApp Direct",
+    "value": "+91 97148 77717",
+    "updatedAt": "2026-10-27T07:24:45.025Z"
+  },
+  {
+    "id": "clmvqd1fmps31a2ej",
+    "key": "contact.email.sales",
+    "section": "contact",
+    "label": "Sales & Inquiries Email",
+    "value": "sales@peterairs.com",
+    "updatedAt": "2026-10-27T07:24:45.025Z"
+  },
+  {
+    "id": "clmvqd1fmp9u6vwst",
+    "key": "contact.email.direct",
+    "section": "contact",
+    "label": "Direct Engineering Email",
+    "value": "peterairsystem@gmail.com",
+    "updatedAt": "2026-10-27T07:24:45.025Z"
+  },
+  {
+    "id": "clmvqd1fmpgf10ik8",
+    "key": "contact.address",
+    "section": "contact",
+    "label": "Factory & Works Address",
+    "value": "Plot No. 58, 59, 60, Shyamal Industrial Park, B/h. Shivam Hotel, Bakrol-Bujrang, Ta. Daskroi, Dist. Ahmedabad - 382433, Gujarat, India",
+    "updatedAt": "2026-10-27T07:24:45.025Z"
+  },
+  {
+    "id": "clmvqd1fmppmpg938",
+    "key": "contact.workingHours",
+    "section": "contact",
+    "label": "Working Hours",
+    "value": "Monday to Saturday: 9:00 AM - 7:00 PM IST",
+    "updatedAt": "2026-10-27T07:24:45.025Z"
+  }
+]
