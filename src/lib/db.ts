@@ -870,6 +870,12 @@ export interface GetBlogsOptions {
   includeDrafts?: boolean;
 }
 
+function formatDateString(val: any): string {
+  if (!val) return new Date().toISOString();
+  if (val instanceof Date) return val.toISOString();
+  return String(val);
+}
+
 export async function getPublishedBlogs(options: GetBlogsOptions = {}) {
   await initDatabase();
 
@@ -926,7 +932,7 @@ export async function getPublishedBlogs(options: GetBlogsOptions = {}) {
     featuredImage: p.featuredImage,
     imageAlt: p.imageAlt || p.title,
     categories: [p.category],
-    date: p.publishedAt ? p.publishedAt.toISOString() : p.createdAt.toISOString(),
+    date: formatDateString(p.publishedAt || p.createdAt),
     author: p.author,
     isDraft: p.isDraft,
   }));
@@ -969,7 +975,7 @@ export async function getBlogPostBySlug(slug: string, allowDraft = false) {
       featuredImage: post.featuredImage,
       imageAlt: post.imageAlt || post.title,
       categories: [post.category],
-      date: post.publishedAt ? post.publishedAt.toISOString() : post.createdAt.toISOString(),
+      date: formatDateString(post.publishedAt || post.createdAt),
       author: post.author,
       seoTitle: post.seoTitle || `${post.title} | Peter Air Systems`,
       metaDescription: post.metaDescription || post.excerpt,
@@ -1020,7 +1026,7 @@ export async function getLatestPublishedBlogs(limit = 3) {
     excerpt: p.excerpt,
     featuredImage: p.featuredImage,
     categories: [p.category],
-    date: p.publishedAt ? p.publishedAt.toISOString() : p.createdAt.toISOString(),
+    date: formatDateString(p.publishedAt || p.createdAt),
   }));
 }
 
