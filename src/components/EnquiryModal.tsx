@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import Image from "next/image";
 import {
   X,
@@ -24,6 +25,12 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
   productName = "",
   sourceContext = "Modal",
 }) => {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
@@ -42,18 +49,18 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
     };
   }, [isOpen, onClose]);
 
-  if (!isOpen) return null;
+  if (!isOpen || !mounted) return null;
 
-  return (
+  return createPortal(
     <div
       role="dialog"
       aria-modal="true"
       aria-labelledby="enquiry-modal-title"
-      className="fixed inset-0 z-50 overflow-y-auto bg-slate-900/70 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4 md:p-6 animate-fade-in"
+      className="fixed inset-0 z-[99999] overflow-y-auto bg-slate-900/80 backdrop-blur-md flex items-center justify-center p-3 sm:p-4 md:p-6 animate-fade-in"
       onClick={onClose}
     >
       <div
-        className="relative bg-white rounded-2xl md:rounded-3xl shadow-2xl max-w-5xl w-full border border-slate-200 overflow-hidden flex flex-col md:flex-row my-auto max-h-[96vh] md:max-h-[92vh]"
+        className="relative bg-white rounded-2xl md:rounded-3xl shadow-2xl max-w-5xl w-full border border-slate-200 overflow-hidden flex flex-col md:flex-row my-auto max-h-[96vh] md:max-h-[92vh] z-[100000]"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Floating Close Button */}
@@ -179,6 +186,7 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
           />
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 };

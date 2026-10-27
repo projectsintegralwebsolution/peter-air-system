@@ -1,3 +1,22 @@
+
+function getValidBlogImage(src?: string): string {
+  if (!src) return '/images/clean-healthcare.jpg';
+  if (src.startsWith('/images/')) return src;
+  if (src.includes('wp-content/uploads')) {
+    const fn = src.split('/').pop()?.split('?')[0]?.replace(/-\d+x\d+(\.[a-zA-Z]+)$/, '$1');
+    if (fn) {
+      if (fn === 'Air-handling-unit.jpg' || fn === 'Air-handling-unit--1024x683.jpg') return '/images/Air-handling-unit-.jpg';
+      if (fn.toLowerCase() === 'pre-filter.jpg') return '/images/pre-filter.jpg';
+      if (fn.includes('Static-Pass-Box')) return '/images/Static-Pass-Box.jpg';
+      if (fn.includes('Air-Showers')) return '/images/Air-Showers.jpg';
+      if (fn.includes('AHU')) return '/images/AHU.jpeg';
+      if (fn.includes('Chemical-Reactor')) return '/images/Chemical-Reactor.jpg';
+      if (fn.includes('GMP-Pharmaceutical-Panel')) return '/images/GMP-Pharmaceutical-Panel-PUF-Panel.jpg';
+      return '/images/' + fn;
+    }
+  }
+  return src;
+}
 import React from "react";
 import { notFound, redirect } from "next/navigation";
 import type { Metadata } from "next";
@@ -206,7 +225,8 @@ export default async function BlogPostDetail({ params, searchParams }: BlogPostP
   const cleanContent = removeDuplicateFeaturedImage(post.content, post.featuredImage);
 
   // Add IDs to headings for anchor targets while strictly preserving 100% of all content and images
-  const contentWithHeadingIds = attachHeadingIds(cleanContent);
+  const inlineReplaced = cleanContent.replace(/https?:\/\/(?:www\.)?peterairs\.com\/wp-content\/uploads\/\d{4}\/\d{2}\/([^"'\s>]+)/g, (m, fn) => getValidBlogImage(fn));
+  const contentWithHeadingIds = attachHeadingIds(inlineReplaced);
 
   return (
     <div className="w-full bg-white">
@@ -267,7 +287,7 @@ export default async function BlogPostDetail({ params, searchParams }: BlogPostP
             {/* Featured Hero Image: Proportionate 16:9 full-width display */}
             <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden shadow-md border border-slate-200 bg-slate-100">
               <Image
-                src={post.featuredImage}
+                src={getValidBlogImage(post.featuredImage)}
                 alt={post.title}
                 fill
                 priority

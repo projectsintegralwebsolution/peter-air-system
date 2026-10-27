@@ -35,6 +35,25 @@ interface BlogListingPageProps {
   };
 }
 
+function getValidBlogImage(src?: string): string {
+  if (!src) return "/images/clean-healthcare.jpg";
+  if (src.startsWith("/images/")) return src;
+  if (src.includes("wp-content/uploads")) {
+    const fn = src.split("/").pop()?.split("?")[0]?.replace(/-\d+x\d+(\.[a-zA-Z]+)$/, "$1");
+    if (fn) {
+      if (fn === "Air-handling-unit.jpg" || fn === "Air-handling-unit--1024x683.jpg") return "/images/Air-handling-unit-.jpg";
+      if (fn.toLowerCase() === "pre-filter.jpg") return "/images/pre-filter.jpg";
+      if (fn.includes("Static-Pass-Box")) return "/images/Static-Pass-Box.jpg";
+      if (fn.includes("Air-Showers")) return "/images/Air-Showers.jpg";
+      if (fn.includes("AHU")) return "/images/AHU.jpeg";
+      if (fn.includes("Chemical-Reactor")) return "/images/Chemical-Reactor.jpg";
+      if (fn.includes("GMP-Pharmaceutical-Panel")) return "/images/GMP-Pharmaceutical-Panel-PUF-Panel.jpg";
+      return `/images/${fn}`;
+    }
+  }
+  return src;
+}
+
 export default async function BlogListingPage({ searchParams }: BlogListingPageProps) {
   const query = searchParams?.q?.trim().toLowerCase() || "";
   const selectedCat = searchParams?.category?.trim() || "";
@@ -218,7 +237,7 @@ export default async function BlogListingPage({ searchParams }: BlogListingPageP
             <div className="bg-gradient-to-br from-brand-950 to-brand-900 rounded-3xl overflow-hidden shadow-xl border border-brand-800 grid grid-cols-1 lg:grid-cols-12 text-white group">
               <div className="relative h-64 sm:h-80 lg:h-auto lg:col-span-7 bg-slate-900 overflow-hidden">
                 <Image
-                  src={featuredPost.featuredImage}
+                  src={getValidBlogImage(featuredPost.featuredImage)}
                   alt={featuredPost.title}
                   fill
                   priority
@@ -287,7 +306,7 @@ export default async function BlogListingPage({ searchParams }: BlogListingPageP
                   {/* Thumbnail */}
                   <div className="relative aspect-[16/10] w-full bg-slate-100 overflow-hidden">
                     <Image
-                      src={post.featuredImage}
+                      src={getValidBlogImage(post.featuredImage)}
                       alt={post.title}
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px"
