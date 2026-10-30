@@ -99,6 +99,22 @@ export default function RootLayout({
   return (
     <html lang="en" className={`scroll-smooth ${manrope.variable} ${dmSans.variable}`}>
       <head>
+        {/* Google tag (gtag.js) */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-QTM50KMF6K"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-QTM50KMF6K');
+            `,
+          }}
+        />
         <OrganizationSchema />
         <LocalBusinessSchema />
         <WebSiteSchema />
