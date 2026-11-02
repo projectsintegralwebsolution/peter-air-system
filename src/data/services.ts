@@ -1,0 +1,50 @@
+export const services = [
+  {
+    "slug": "cleanroom-turnkey-execution",
+    "name": "Turnkey Cleanroom EPC Execution",
+    "description": "Complete concept-to-commissioning execution for Class 100 to Class 100,000 cleanrooms including civil architectural paneling, HVAC systems, electricals, BMS, and validation.",
+    "icon": "ShieldCheck",
+    "deliverables": [
+      "Cleanroom concept layout & heat load calculation",
+      "Modular wall, ceiling, and coving installation",
+      "Ductwork fabrication and thermal insulation",
+      "Integrated electrical lighting and interlocking doors"
+    ]
+  },
+  {
+    "slug": "pharma-hvac-validation",
+    "name": "Pharma HVAC Design & Validation",
+    "description": "Full regulatory validation conforming to Schedule M, USFDA, and WHO-GMP guidelines. We assist with DQ, IQ, OQ, and PQ validation protocols and on-site testing.",
+    "icon": "FileCheck",
+    "deliverables": [
+      "Design Qualification (DQ) review and airflow schematics",
+      "Installation Qualification (IQ) & Operational Qualification (OQ)",
+      "Performance Qualification (PQ) support",
+      "Complete FAT and SAT documentation dossiers"
+    ]
+  },
+  {
+    "slug": "ahu-energy-optimization",
+    "name": "AHU Optimization & Energy Audits",
+    "description": "Retrofitting and optimizing existing air handling units to dramatically cut electrical consumption while enhancing air quality, VFD modulation, and heat recovery.",
+    "icon": "Gauge",
+    "deliverables": [
+      "Static pressure and CFM flow diagnostics",
+      "VFD variable frequency drive integration",
+      "Enthalpy heat recovery wheel retrofits",
+      "Blower balancing and vibration isolation"
+    ]
+  },
+  {
+    "slug": "cleanroom-airflow-balancing",
+    "name": "Airflow Balancing & Filter Integrity Testing",
+    "description": "DOP/PAO aerosol challenge testing for HEPA filters, particle count validation, room pressurization balancing, and air velocity profile verification.",
+    "icon": "Wind",
+    "deliverables": [
+      "DOP / PAO HEPA filter leak detection scanning",
+      "Air changes per hour (ACPH) calculation and balancing",
+      "Room differential pressure cascade commissioning",
+      "Non-viable particle count testing across ISO classes"
+    ]
+  }
+];
