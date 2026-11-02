@@ -1,0 +1,355 @@
+{
+  "air-handling-unit-ahu": {
+    "id": 1251,
+    "title": "Air Handling Unit",
+    "tableCount": 1,
+    "imageCount": 2,
+    "images": [
+      "https://peterairs.com/wp-content/uploads/2026/03/AHU1.jpg",
+      "https://peterairs.com/wp-content/uploads/2026/03/AHU2.jpg"
+    ],
+    "textLength": 14539,
+    "sampleText": "Home Air Handling Unit Our Product HVAC Related Product Air Handling Unit Air Washer Unit Air Shower Dehumidifier Unit HEPA Terminal Box Supply/Return Air Grille Supply Return Air Diffuser Return Air Riser Volume Control Damper (V.C.D) Clean room equipment Dispensing Booth Bio Safety Cabinets Static"
+  },
+  "air-washer-unit": {
+    "id": 520,
+    "title": "Air Washer Unit",
+    "tableCount": 4,
+    "imageCount": 1,
+    "images": [
+      "https://peterairs.com/wp-content/uploads/2022/07/Air-Washer-Unit.jpg"
+    ],
+    "textLength": 24681,
+    "sampleText": "Home Air Washer Unit Our Product HVAC Related Product Air Handling Unit Air Washer Unit Air Shower Dehumidifier Unit HEPA Terminal Box Supply/Return Air Grille Supply Return Air Diffuser Return Air Riser Volume Control Damper (V.C.D) Clean room equipment Dispensing Booth Bio Safety Cabinets Static P"
+  },
+  "dehumidifier-unit": {
+    "id": 536,
+    "title": "Dehumidifier Unit",
+    "tableCount": 0,
+    "imageCount": 1,
+    "images": [
+      "https://peterairs.com/wp-content/uploads/2022/07/Dehumidifier-Unit.jpg"
+    ],
+    "textLength": 11222,
+    "sampleText": "Home Dehumidifier Unit Our Product HVAC Related Product Air Handling Unit Air Washer Unit Air Shower Dehumidifier Unit HEPA Terminal Box Supply/Return Air Grille Supply Return Air Diffuser Return Air Riser Volume Control Damper (V.C.D) Clean room equipment Dispensing Booth Bio Safety Cabinets Static"
+  },
+  "air-shower": {
+    "id": 689,
+    "title": "Air Shower",
+    "tableCount": 1,
+    "imageCount": 1,
+    "images": [
+      "https://peterairs.com/wp-content/uploads/2022/07/Air-Shower.jpg"
+    ],
+    "textLength": 23092,
+    "sampleText": "Home Air Shower Our Product HVAC Related Product Air Handling Unit Air Washer Unit Air Shower Dehumidifier Unit HEPA Terminal Box Supply/Return Air Grille Supply Return Air Diffuser Return Air Riser Volume Control Damper (V.C.D) Clean room equipment Dispensing Booth Bio Safety Cabinets Static Pass B"
+  },
+  "static-pass-box": {
+    "id": 642,
+    "title": "Static Pass Box",
+    "tableCount": 5,
+    "imageCount": 1,
+    "images": [
+      "https://peterairs.com/wp-content/uploads/2022/07/Static-Pass-Box.jpg"
+    ],
+    "textLength": 19613,
+    "sampleText": "Home Static Pass Box Our Product HVAC Related Product Air Handling Unit Air Washer Unit Air Shower Dehumidifier Unit HEPA Terminal Box Supply/Return Air Grille Supply Return Air Diffuser Return Air Riser Volume Control Damper (V.C.D) Clean room equipment Dispensing Booth Bio Safety Cabinets Static P"
+  },
+  "dynamic-pass-box": {
+    "id": 649,
+    "title": "Dynamic Pass Box",
+    "tableCount": 5,
+    "imageCount": 2,
+    "images": [
+      "https://peterairs.com/wp-content/uploads/2022/07/Dynamic-Pass-Box-300x278.jpg",
+      "https://peterairs.com/wp-content/uploads/2026/03/Pass-Box-300x278.jpg"
+    ],
+    "textLength": 29376,
+    "sampleText": "Home Dynamic Pass Box Our Product HVAC Related Product Air Handling Unit Air Washer Unit Air Shower Dehumidifier Unit HEPA Terminal Box Supply/Return Air Grille Supply Return Air Diffuser Return Air Riser Volume Control Damper (V.C.D) Clean room equipment Dispensing Booth Bio Safety Cabinets Static "
+  },
+  "bio-safety-cabinets": {
+    "id": 622,
+    "title": "Bio Safety Cabinets",
+    "tableCount": 8,
+    "imageCount": 1,
+    "images": [
+      "https://peterairs.com/wp-content/uploads/2022/07/Bio-Safety-cabinets.jpg"
+    ],
+    "textLength": 37589,
+    "sampleText": "Home Bio Safety Cabinets Our Product HVAC Related Product Air Handling Unit Air Washer Unit Air Shower Dehumidifier Unit HEPA Terminal Box Supply/Return Air Grille Supply Return Air Diffuser Return Air Riser Volume Control Damper (V.C.D) Clean room equipment Dispensing Booth Bio Safety Cabinets Stat"
+  },
+  "laminar-work-stations": {
+    "id": 679,
+    "title": "Laminar Work Stations",
+    "tableCount": 1,
+    "imageCount": 1,
+    "images": [
+      "https://peterairs.com/wp-content/uploads/2022/07/Laminar-Work-Stations.jpg"
+    ],
+    "textLength": 11476,
+    "sampleText": "Home Laminar Work Stations Our Product HVAC Related Product Air Handling Unit Air Washer Unit Air Shower Dehumidifier Unit HEPA Terminal Box Supply/Return Air Grille Supply Return Air Diffuser Return Air Riser Volume Control Damper (V.C.D) Clean room equipment Dispensing Booth Bio Safety Cabinets St"
+  },
+  "dispensing-booth": {
+    "id": 609,
+    "title": "Dispensing Booth",
+    "tableCount": 1,
+    "imageCount": 1,
+    "images": [
+      "https://peterairs.com/wp-content/uploads/2022/07/Dispensing-Booth.jpg"
+    ],
+    "textLength": 10717,
+    "sampleText": "Home Dispensing Booth Our Product HVAC Related Product Air Handling Unit Air Washer Unit Air Shower Dehumidifier Unit HEPA Terminal Box Supply/Return Air Grille Supply Return Air Diffuser Return Air Riser Volume Control Damper (V.C.D) Clean room equipment Dispensing Booth Bio Safety Cabinets Static "
+  },
+  "garment-cabinet": {
+    "id": 664,
+    "title": "Garment Cabinet",
+    "tableCount": 1,
+    "imageCount": 1,
+    "images": [
+      "https://peterairs.com/wp-content/uploads/2022/07/Garment-Cabinet.jpg"
+    ],
+    "textLength": 11681,
+    "sampleText": "Home Garment Cabinet Our Product HVAC Related Product Air Handling Unit Air Washer Unit Air Shower Dehumidifier Unit HEPA Terminal Box Supply/Return Air Grille Supply Return Air Diffuser Return Air Riser Volume Control Damper (V.C.D) Clean room equipment Dispensing Booth Bio Safety Cabinets Static P"
+  },
+  "reverse-laminar-flow-unit": {
+    "id": 706,
+    "title": "Reverse Laminar Flow Unit",
+    "tableCount": 1,
+    "imageCount": 1,
+    "images": [
+      "https://peterairs.com/wp-content/uploads/2022/07/Reverse-Laminar-Flow-Unit.jpg"
+    ],
+    "textLength": 12135,
+    "sampleText": "Home Reverse Laminar Flow Unit Our Product HVAC Related Product Air Handling Unit Air Washer Unit Air Shower Dehumidifier Unit HEPA Terminal Box Supply/Return Air Grille Supply Return Air Diffuser Return Air Riser Volume Control Damper (V.C.D) Clean room equipment Dispensing Booth Bio Safety Cabinet"
+  },
+  "ceiling-suspended-laminar": {
+    "id": 699,
+    "title": "Ceiling Suspended Laminar",
+    "tableCount": 1,
+    "imageCount": 1,
+    "images": [
+      "https://peterairs.com/wp-content/uploads/2022/07/Ceiling-Suspended-Laminar.jpg"
+    ],
+    "textLength": 8762,
+    "sampleText": "Home Ceiling-Suspended Laminar Our Product HVAC Related Product Air Handling Unit Air Washer Unit Air Shower Dehumidifier Unit HEPA Terminal Box Supply/Return Air Grille Supply Return Air Diffuser Return Air Riser Volume Control Damper (V.C.D) Clean room equipment Dispensing Booth Bio Safety Cabinet"
+  },
+  "modular-clean-room-doors": {
+    "id": 4376,
+    "title": "Modular Clean Room Doors",
+    "tableCount": 0,
+    "imageCount": 4,
+    "images": [
+      "https://peterairs.com/wp-content/uploads/2026/03/Cleanroom-door1.jpg",
+      "https://peterairs.com/wp-content/uploads/2026/03/Cleanroom-door2.jpg",
+      "https://peterairs.com/wp-content/uploads/2026/03/Cleanroom-door3.jpg",
+      "https://peterairs.com/wp-content/uploads/2022/07/MODULAR-CLEAN-ROOM-DOORS.jpg"
+    ],
+    "textLength": 12094,
+    "sampleText": "Home Modular Clean Room Doors Our Product HVAC Related Product Air Handling Unit Air Washer Unit Air Shower Dehumidifier Unit HEPA Terminal Box Supply/Return Air Grille Supply Return Air Diffuser Return Air Riser Volume Control Damper (V.C.D) Clean room equipment Dispensing Booth Bio Safety Cabinets"
+  },
+  "modular-ot": {
+    "id": 4211,
+    "title": "Modular OT",
+    "tableCount": 0,
+    "imageCount": 3,
+    "images": [
+      "https://peterairs.com/wp-content/uploads/2026/03/OT.jpg",
+      "https://peterairs.com/wp-content/uploads/2026/03/OT1.jpg",
+      "https://peterairs.com/wp-content/uploads/2022/07/MODULAR-CLEAN-ROOM-VALIDATION-MAINTENANCE.jpg"
+    ],
+    "textLength": 11803,
+    "sampleText": "Home Modular OT Our Product HVAC Related Product Air Handling Unit Air Washer Unit Air Shower Dehumidifier Unit HEPA Terminal Box Supply/Return Air Grille Supply Return Air Diffuser Return Air Riser Volume Control Damper (V.C.D) Clean room equipment Dispensing Booth Bio Safety Cabinets Static Pass B"
+  },
+  "enhance-air-quality-with-pre-filters": {
+    "id": 717,
+    "title": "Pre Filters",
+    "tableCount": 2,
+    "imageCount": 1,
+    "images": [
+      "https://peterairs.com/wp-content/uploads/2022/07/Pre-Filter.jpg"
+    ],
+    "textLength": 11443,
+    "sampleText": "Home Pre Filters Our Product HVAC Related Product Air Handling Unit Air Washer Unit Air Shower Dehumidifier Unit HEPA Terminal Box Supply/Return Air Grille Supply Return Air Diffuser Return Air Riser Volume Control Damper (V.C.D) Clean room equipment Dispensing Booth Bio Safety Cabinets Static Pass "
+  },
+  "fine-filter": {
+    "id": 726,
+    "title": "Fine Filter",
+    "tableCount": 2,
+    "imageCount": 1,
+    "images": [
+      "https://peterairs.com/wp-content/uploads/2022/07/Fine-Filter.jpg"
+    ],
+    "textLength": 14279,
+    "sampleText": "Home Fine Filter Our Product HVAC Related Product Air Handling Unit Air Washer Unit Air Shower Dehumidifier Unit HEPA Terminal Box Supply/Return Air Grille Supply Return Air Diffuser Return Air Riser Volume Control Damper (V.C.D) Clean room equipment Dispensing Booth Bio Safety Cabinets Static Pass "
+  },
+  "hepa-filter": {
+    "id": 738,
+    "title": "HEPA Filter",
+    "tableCount": 2,
+    "imageCount": 1,
+    "images": [
+      "https://peterairs.com/wp-content/uploads/2022/07/Hepa-Filter.jpg"
+    ],
+    "textLength": 11485,
+    "sampleText": "Home Hepa Filter Our Product HVAC Related Product Air Handling Unit Air Washer Unit Air Shower Dehumidifier Unit HEPA Terminal Box Supply/Return Air Grille Supply Return Air Diffuser Return Air Riser Volume Control Damper (V.C.D) Clean room equipment Dispensing Booth Bio Safety Cabinets Static Pass "
+  },
+  "mini-pleat-hepa-filter": {
+    "id": 749,
+    "title": "Mini Pleat HEPA Filter",
+    "tableCount": 2,
+    "imageCount": 1,
+    "images": [
+      "https://peterairs.com/wp-content/uploads/2022/07/Mini-Pleat-Hepa-Filter.jpg"
+    ],
+    "textLength": 7928,
+    "sampleText": "Home Mini Pleat HEPA Filter Our Product HVAC Related Product Air Handling Unit Air Washer Unit Air Shower Dehumidifier Unit HEPA Terminal Box Supply/Return Air Grille Supply Return Air Diffuser Return Air Riser Volume Control Damper (V.C.D) Clean room equipment Dispensing Booth Bio Safety Cabinets S"
+  },
+  "hepa-terminal-box": {
+    "id": 541,
+    "title": "HEPA Terminal Box",
+    "tableCount": 0,
+    "imageCount": 1,
+    "images": [
+      "https://peterairs.com/wp-content/uploads/2022/07/hepa-terminal-box.jpg"
+    ],
+    "textLength": 9119,
+    "sampleText": "Home HEPA Terminal Box Our Product HVAC Related Product Air Handling Unit Air Washer Unit Air Shower Dehumidifier Unit HEPA Terminal Box Supply/Return Air Grille Supply Return Air Diffuser Return Air Riser Volume Control Damper (V.C.D) Clean room equipment Dispensing Booth Bio Safety Cabinets Static"
+  },
+  "supply-return-air-grille": {
+    "id": 581,
+    "title": "Supply/Return Air Grille",
+    "tableCount": 2,
+    "imageCount": 1,
+    "images": [
+      "https://peterairs.com/wp-content/uploads/2022/07/Supply-Return-Air-Grille.jpg"
+    ],
+    "textLength": 15670,
+    "sampleText": "Home Supply / Return Air Grille Our Product HVAC Related Product Air Handling Unit Air Washer Unit Air Shower Dehumidifier Unit HEPA Terminal Box Supply/Return Air Grille Supply Return Air Diffuser Return Air Riser Volume Control Damper (V.C.D) Clean room equipment Dispensing Booth Bio Safety Cabine"
+  },
+  "supply-return-air-diffuser": {
+    "id": 569,
+    "title": "Supply Return Air Diffuser",
+    "tableCount": 3,
+    "imageCount": 1,
+    "images": [
+      "https://peterairs.com/wp-content/uploads/2022/07/supply-return-air-diffuser.jpg"
+    ],
+    "textLength": 22923,
+    "sampleText": "Home Supply Return Air Diffuser Our Product HVAC Related Product Air Handling Unit Air Washer Unit Air Shower Dehumidifier Unit HEPA Terminal Box Supply/Return Air Grille Supply Return Air Diffuser Return Air Riser Volume Control Damper (V.C.D) Clean room equipment Dispensing Booth Bio Safety Cabine"
+  },
+  "volume-control-damper-v-c-d": {
+    "id": 587,
+    "title": "Volume Control Damper (V.C.D)",
+    "tableCount": 3,
+    "imageCount": 1,
+    "images": [
+      "https://peterairs.com/wp-content/uploads/2022/07/Volume-Control-Damper.jpg"
+    ],
+    "textLength": 18546,
+    "sampleText": "Home Volume Control Damper Our Product HVAC Related Product Air Handling Unit Air Washer Unit Air Shower Dehumidifier Unit HEPA Terminal Box Supply/Return Air Grille Supply Return Air Diffuser Return Air Riser Volume Control Damper (V.C.D) Clean room equipment Dispensing Booth Bio Safety Cabinets St"
+  },
+  "return-air-riser": {
+    "id": 554,
+    "title": "Return Air Riser",
+    "tableCount": 2,
+    "imageCount": 1,
+    "images": [
+      "https://peterairs.com/wp-content/uploads/2022/07/return-air-riser.jpg"
+    ],
+    "textLength": 25049,
+    "sampleText": "Home Return Air Riser Our Product HVAC Related Product Air Handling Unit Air Washer Unit Air Shower Dehumidifier Unit HEPA Terminal Box Supply/Return Air Grille Supply Return Air Diffuser Return Air Riser Volume Control Damper (V.C.D) Clean room equipment Dispensing Booth Bio Safety Cabinets Static "
+  },
+  "cleanroom-turnkey-solution": {
+    "id": 418,
+    "title": "Cleanroom Turnkey Solution",
+    "tableCount": 0,
+    "imageCount": 5,
+    "images": [
+      "https://peterairs.com/wp-content/uploads/2022/07/MODULAR-CLEAN-ROOM-PANELS.jpg",
+      "https://peterairs.com/wp-content/uploads/2022/07/MODULAR-CLEAN-ROOM-PANELS.jpg",
+      "https://peterairs.com/wp-content/uploads/2022/07/MODULAR-CLEAN-ROOM-HVAC-DUCTING.jpg",
+      "https://peterairs.com/wp-content/uploads/2022/07/MODULAR-CLEAN-ROOM-EPOXY-FLOORING-PAINTING.jpg",
+      "https://peterairs.com/wp-content/uploads/2022/07/MODULAR-CLEAN-ROOM-VALIDATION-MAINTENANCE.jpg"
+    ],
+    "textLength": 9448,
+    "sampleText": "Home Cleanroom Turnkey Solution Our Product HVAC Related Product Air Handling Unit Air Washer Unit Air Shower Dehumidifier Unit HEPA Terminal Box Supply/Return Air Grille Supply Return Air Diffuser Return Air Riser Volume Control Damper (V.C.D) Clean room equipment Dispensing Booth Bio Safety Cabine"
+  },
+  "modular-cleanroom-solution": {
+    "id": 4319,
+    "title": "Modular Cleanroom",
+    "tableCount": 0,
+    "imageCount": 1,
+    "images": [
+      "https://peterairs.com/wp-content/uploads/2022/07/MODULAR-CLEAN-ROOM-EPOXY-FLOORING-PAINTING.jpg"
+    ],
+    "textLength": 11034,
+    "sampleText": "Home Modular Cleanroom Our Product HVAC Related Product Air Handling Unit Air Washer Unit Air Shower Dehumidifier Unit HEPA Terminal Box Supply/Return Air Grille Supply Return Air Diffuser Return Air Riser Volume Control Damper (V.C.D) Clean room equipment Dispensing Booth Bio Safety Cabinets Static"
+  },
+  "air-filters": {
+    "id": 1773,
+    "title": "Air Filters",
+    "tableCount": 4,
+    "imageCount": 4,
+    "images": [
+      "https://peterairs.com/wp-content/uploads/2022/07/Pre-Filter.jpg",
+      "https://peterairs.com/wp-content/uploads/2022/07/Fine-Filter.jpg",
+      "https://peterairs.com/wp-content/uploads/2022/07/Hepa-Filter.jpg",
+      "https://peterairs.com/wp-content/uploads/2022/07/Mini-Pleat-Hepa-Filter.jpg"
+    ],
+    "textLength": 24291,
+    "sampleText": "Home Air Filters Air Filters Enhance Breathing Comfort with Our Air Purifier/HVAC Filters Introduction: Breathe Easier with Our Range of Air cleaner/ HVAC Filters&#8221; emphasizes our commitment to enhancing indoor air quality at Peter Air. We provide a variety of filters designed to capture dust, "
+  },
+  "hvac-products": {
+    "id": 1704,
+    "title": "HVAC Related Product",
+    "tableCount": 0,
+    "imageCount": 9,
+    "images": [
+      "https://peterairs.com/wp-content/uploads/2022/07/air-handling-unit.jpg",
+      "https://peterairs.com/wp-content/uploads/2022/07/Air-Shower.jpg",
+      "https://peterairs.com/wp-content/uploads/2022/07/Air-Washer-Unit.jpg",
+      "https://peterairs.com/wp-content/uploads/2022/07/hepa-terminal-box.jpg",
+      "https://peterairs.com/wp-content/uploads/2022/07/return-air-riser.jpg",
+      "https://peterairs.com/wp-content/uploads/2022/07/supply-return-air-diffuser.jpg",
+      "https://peterairs.com/wp-content/uploads/2022/07/Volume-Control-Damper.jpg",
+      "https://peterairs.com/wp-content/uploads/2022/07/Supply-Return-Air-Grille.jpg",
+      "https://peterairs.com/wp-content/uploads/2022/07/Dehumidifier-Unit.jpg"
+    ],
+    "textLength": 5095,
+    "sampleText": "Home HVAC Products/Air Handling Unit/Air Shower/Air Washer Unit/HEPA Box Discover our wide selection of HVAC products designed to improve indoor comfort and air quality. From high-quality air filters to efficient ventilation solutions, we provide everything you need for optimal HVAC performance. Our"
+  },
+  "clean-room-equipment": {
+    "id": 1741,
+    "title": "Clean Room Equipment",
+    "tableCount": 0,
+    "imageCount": 8,
+    "images": [
+      "https://peterairs.com/wp-content/uploads/2022/07/Dispensing-Booth.jpg",
+      "https://peterairs.com/wp-content/uploads/2022/07/Bio-Safety-cabinets.jpg",
+      "https://peterairs.com/wp-content/uploads/2022/07/Static-Pass-Box.jpg",
+      "https://peterairs.com/wp-content/uploads/2022/07/Dynamic-Pass-Box.jpg",
+      "https://peterairs.com/wp-content/uploads/2022/07/Garment-Cabinet.jpg",
+      "https://peterairs.com/wp-content/uploads/2022/07/Laminar-Work-Stations.jpg",
+      "https://peterairs.com/wp-content/uploads/2022/07/Ceiling-Suspended-Laminar.jpg",
+      "https://peterairs.com/wp-content/uploads/2022/07/Reverse-Laminar-Flow-Unit.jpg"
+    ],
+    "textLength": 7051,
+    "sampleText": "Home Clean room Equipment Cleanroom Equipment At Peter Air Systems, we offer a wide selection of Cleanroom Equipment to maintain high hygiene and safety standards. Our products include Dispensing Booths , Bio Safety Cabinets , Static and Dynamic Pass Boxes , and Garment Cabinets . Each is engineered"
+  },
+  "other-products-laboratory-equipment": {
+    "id": 765,
+    "title": "Other Products",
+    "tableCount": 0,
+    "imageCount": 6,
+    "images": [
+      "https://peterairs.com/wp-content/uploads/2022/07/Bod-Incubator.jpg",
+      "https://peterairs.com/wp-content/uploads/2022/07/Stability-Chamber.jpg",
+      "https://peterairs.com/wp-content/uploads/2022/07/Humidity-Chamber.jpg",
+      "https://peterairs.com/wp-content/uploads/2022/07/Hot-Air-Oven.jpg",
+      "https://peterairs.com/wp-content/uploads/2022/07/Fume-Hood.jpg",
+      "https://peterairs.com/wp-content/uploads/2022/07/Mobile-LAF-Unit.jpg"
+    ],
+    "textLength": 12302,
+    "sampleText": "Home Other Products / Laboratory Equipment Our Product HVAC Related Product Air Handling Unit Air Washer Unit Air Shower Dehumidifier Unit HEPA Terminal Box Supply/Return Air Grille Supply Return Air Diffuser Return Air Riser Volume Control Damper (V.C.D) Clean room equipment Dispensing Booth Bio Sa"
+  }
+}
