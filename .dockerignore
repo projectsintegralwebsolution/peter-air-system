@@ -1,0 +1,16 @@
+node_modules
+.next
+.git
+.gitignore
+.env
+.env.*
+!.env.example
+README.md
+data/raw_*.json
+data/processed_*.json
+*.bak
+*.backup
+scripts
+*.log
+.DS_Store
+Thumbs.db

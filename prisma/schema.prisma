@@ -1,0 +1,229 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id           String    @id @default(cuid())
+  email        String    @unique
+  name         String    @default("Administrator")
+  passwordHash String
+  role         String    @default("admin")
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  lastLoginAt  DateTime?
+}
+
+model Blog {
+  id              String    @id @default(cuid())
+  title           String
+  slug            String    @unique
+  excerpt         String
+  content         String
+  featuredImage   String    @default("/images/AHU.jpeg")
+  imageAlt        String?
+  author          String    @default("Peter Air Systems Engineering Team")
+  category        String    @default("Cleanroom Components")
+  tags            String    @default("Cleanroom, HVAC, Engineering")
+  isDraft         Boolean   @default(false)
+  publishedAt     DateTime? @default(now())
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  seoTitle        String?
+  metaDescription String?
+  canonicalUrl    String?
+  ogImage         String?
+  views           Int       @default(0)
+  isBase          Boolean   @default(false)
+
+  @@index([slug])
+  @@index([category])
+  @@index([isDraft])
+}
+
+model Category {
+  id          String   @id @default(cuid())
+  name        String   @unique
+  slug        String   @unique
+  description String?
+  createdAt   DateTime @default(now())
+}
+
+model Tag {
+  id        String   @id @default(cuid())
+  name      String   @unique
+  slug      String   @unique
+  createdAt DateTime @default(now())
+}
+
+model Redirect {
+  id              String   @id @default(cuid())
+  sourcePath      String   @unique
+  destinationPath String
+  statusCode      Int      @default(301)
+  createdAt       DateTime @default(now())
+}
+
+model MediaAsset {
+  id        String   @id @default(cuid())
+  filename  String
+  url       String
+  mimeType  String
+  size      Int
+  altText   String?
+  createdAt DateTime @default(now())
+}
+
+model SiteContent {
+  id        String   @id @default(cuid())
+  key       String   @unique
+  section   String   @default("general")
+  label     String
+  value     String
+  updatedAt DateTime @updatedAt
+}
+
+// ----------------------------------------------------
+// Complete Website Extensions
+// ----------------------------------------------------
+
+model HeroSlide {
+  id                 String   @id @default(cuid())
+  slideNumber        String   @default("01")
+  badge              String
+  heading            String
+  highlightWord      String
+  supportingText     String
+  primaryBtnText     String   @default("Explore Systems")
+  primaryBtnLink     String   @default("/air-handling-unit-ahu/")
+  secondaryBtnText   String   @default("Request Technical Quote")
+  secondaryBtnAction String   @default("modal") // "modal" or "link"
+  secondaryBtnLink   String?
+  image              String   @default("/images/hero-banner-1.png")
+  technicalSpecs     String   @default("[]") // JSON string of spec badges
+  order              Int      @default(0)
+  isActive           Boolean  @default(true)
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+
+  @@index([order])
+  @@index([isActive])
+}
+
+model Product {
+  id              String   @id @default(cuid())
+  slug            String   @unique
+  title           String
+  categorySlug    String
+  categoryName    String
+  seoTitle        String?
+  metaDescription String?
+  canonical       String?
+  h1              String?
+  image           String   @default("/images/AHU.jpeg")
+  bannerImage     String?  @default("/images/ahu_banner.png")
+  overview        String   @default("")
+  fullContent     String   @default("")
+  faq             String   @default("[]") // JSON string of FAQs
+  features        String   @default("[]") // JSON string of key features
+  applications    String   @default("[]") // JSON string of applications
+  specifications  String   @default("[]") // JSON string of technical parameters
+  displayOrder    Int      @default(0)
+  isPublished     Boolean  @default(true)
+  isFeatured      Boolean  @default(false)
+  views           Int      @default(0)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@index([slug])
+  @@index([categorySlug])
+  @@index([isPublished])
+  @@index([isFeatured])
+}
+
+model ProductCategory {
+  id               String   @id @default(cuid())
+  slug             String   @unique
+  name             String
+  shortDescription String   @default("")
+  bannerImage      String?  @default("/images/ahu_banner.png")
+  featuredImage    String?  @default("/images/AHU.jpeg")
+  productSlugs     String   @default("[]") // JSON string array
+  displayOrder     Int      @default(0)
+  isActive         Boolean  @default(true)
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  @@index([slug])
+}
+
+model Industry {
+  id           String   @id @default(cuid())
+  slug         String   @unique
+  name         String
+  tagline      String   @default("")
+  image        String   @default("/images/Pharmaceuticals.jpg")
+  description  String   @default("")
+  challenges   String   @default("[]") // JSON string array
+  solutions    String   @default("[]") // JSON string array
+  products     String   @default("[]") // JSON string array of product slugs
+  displayOrder Int      @default(0)
+  isActive     Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([slug])
+}
+
+model Service {
+  id           String   @id @default(cuid())
+  slug         String   @unique
+  name         String
+  description  String   @default("")
+  icon         String   @default("ShieldCheck")
+  deliverables String   @default("[]") // JSON string array
+  displayOrder Int      @default(0)
+  isActive     Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([slug])
+}
+
+model Enquiry {
+  id               String   @id @default(cuid())
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+  name             String
+  companyName      String   @default("")
+  email            String
+  phone            String
+  productOrService String   @default("General Cleanroom / HVAC Inquiry")
+  requirement      String   @default("")
+  quantity         String   @default("1 Unit / Project")
+  city             String   @default("")
+  message          String   @default("")
+  status           String   @default("new") // "new" | "contacted" | "resolved" | "cancelled"
+  notes            String?
+
+  @@index([status])
+  @@index([createdAt])
+}
+
+model PageContent {
+  id          String   @id @default(cuid())
+  pageSlug    String   // e.g. "home", "about", "contact", "certifications", "services"
+  sectionKey  String   // e.g. "hero", "history", "mission", "values"
+  title       String?
+  subtitle    String?
+  content     String?
+  image       String?
+  metadata    String?  @default("{}") // JSON string for arbitrary structured fields
+  updatedAt   DateTime @updatedAt
+
+  @@unique([pageSlug, sectionKey])
+}
