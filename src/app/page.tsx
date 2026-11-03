@@ -23,8 +23,9 @@ import {
 } from "lucide-react";
 import { HeroSlider } from "@/components/HeroSlider";
 import { ProductCard } from "@/components/ProductCard";
-import { CategoryCard } from "@/components/CategoryCard";
+import { ProductCategorySection } from "@/components/ProductCategorySection";
 import { EnquiryForm } from "@/components/EnquiryForm";
+import { LatestApplicationsGallery } from "@/components/LatestApplicationsGallery";
 import { siteConfig } from "@/data/siteConfig";
 import { categories } from "@/data/categories";
 import { products } from "@/data/products";
@@ -202,24 +203,7 @@ export default async function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {categories.map((cat) => {
-              const primaryProd = products.find((prod) => cat.productSlugs.includes(prod.slug));
-              const primaryApp = primaryProd?.applications?.[0];
-              return (
-                <CategoryCard
-                  key={cat.id}
-                  id={cat.id}
-                  slug={cat.slug}
-                  name={cat.name}
-                  shortDescription={cat.shortDescription}
-                  featuredImage={cat.featuredImage}
-                  productCount={cat.productSlugs.length}
-                  primaryApplication={primaryApp}
-                />
-              );
-            })}
-          </div>
+          <ProductCategorySection categories={categories} products={allProds} />
         </div>
       </section>
 
@@ -465,6 +449,9 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* OUR LATEST APPLICATIONS SHOWCASE */}
+      <LatestApplicationsGallery />
 
       {/* 9. WHY CHOOSE PETER AIR SYSTEMS */}
       <section className="py-20 bg-white">

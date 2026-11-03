@@ -7,3 +7,21 @@ build/
 .env.*
 !.env.example
 *.log
+
+# Environment and local database
+.env
+.env.*
+!.env.example
+prisma/dev.db
+
+# Build files
+.next/
+node_modules/
+tsconfig.tsbuildinfo
+
+# Temporary files
+scratch/
+
+# Extracted PDF data
+scripts/pdf_dump.json
+scripts/pdf_full_text.txt

@@ -28,6 +28,7 @@ interface EnquiryFormProps {
   initialProduct?: string;
   sourceContext?: string;
   isModal?: boolean;
+  grid2x2?: boolean;
   onSuccess?: () => void;
 }
 
@@ -35,8 +36,10 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
   initialProduct = "",
   sourceContext = "General",
   isModal = false,
+  grid2x2 = false,
   onSuccess,
 }) => {
+  const is2x2 = grid2x2 || sourceContext?.toLowerCase().includes("product page");
   const [countryCode, setCountryCode] = useState("+91");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [formData, setFormData] = useState({
@@ -420,14 +423,12 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
       </div>
 
       {/* Row 7: Bottom Trust / Feature Bar */}
-      <div className="pt-3.5 border-t border-slate-100 grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 text-slate-600">
+      <div className={`pt-3.5 border-t border-slate-100 ${is2x2 ? "grid grid-cols-2 gap-x-4 gap-y-3.5 sm:gap-x-5 sm:gap-y-4" : "grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3"} text-slate-600`}>
         <div className="flex items-start gap-2 min-w-0">
           <Shield className="w-4 h-4 text-[#063B5C] shrink-0 mt-0.5" />
           <div className="min-w-0 flex-1">
-            <h5 className="font-bold text-[11px] !text-[#0B3550] leading-tight break-words" style={{ color: '#0B3550' }}>
-              <span className="block">NDA &amp;</span>
-              <span className="block">Industrial</span>
-              <span className="block">Privacy</span>
+            <h5 className="font-bold text-[11px] sm:text-xs !text-[#0B3550] leading-snug break-words" style={{ color: '#0B3550' }}>
+              NDA &amp; Industrial Privacy
             </h5>
             <p className="text-[10px] text-slate-500 leading-snug mt-1 break-words">
               We never disclose design drawings or client specifications.
@@ -438,11 +439,8 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
         <div className="flex items-start gap-2 min-w-0">
           <Award className="w-4 h-4 text-[#063B5C] shrink-0 mt-0.5" />
           <div className="min-w-0 flex-1">
-            <h5 className="font-bold text-[11px] !text-[#0B3550] leading-tight break-words" style={{ color: '#0B3550' }}>
-              <span className="block">ISO</span>
-              <span className="block">9001:2015</span>
-              <span className="block">&amp; CE</span>
-              <span className="block">Certified</span>
+            <h5 className="font-bold text-[11px] sm:text-xs !text-[#0B3550] leading-snug break-words" style={{ color: '#0B3550' }}>
+              ISO 9001:2015 &amp; CE Certified
             </h5>
             <p className="text-[10px] text-slate-500 leading-snug mt-1 break-words">
               Quality you can trust.
@@ -453,10 +451,8 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
         <div className="flex items-start gap-2 min-w-0">
           <Wrench className="w-4 h-4 text-[#063B5C] shrink-0 mt-0.5" />
           <div className="min-w-0 flex-1">
-            <h5 className="font-bold text-[11px] !text-[#0B3550] leading-tight break-words" style={{ color: '#0B3550' }}>
-              <span className="block">Custom</span>
-              <span className="block">AHU</span>
-              <span className="block">Capacities</span>
+            <h5 className="font-bold text-[11px] sm:text-xs !text-[#0B3550] leading-snug break-words" style={{ color: '#0B3550' }}>
+              Custom AHU Capacities
             </h5>
             <p className="text-[10px] text-slate-500 leading-snug mt-1 break-words">
               Up to 60,000 CFM. Built for your needs.
@@ -469,13 +465,10 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
           <div className="min-w-0 flex-1">
             <Link
               href="/about-us-peter-air-systems/"
-              className="font-bold text-[11px] !text-[#0B3550] hover:text-brand-700 leading-tight inline-flex items-center gap-1 transition-colors group/link break-words"
+              className="font-bold text-[11px] sm:text-xs !text-[#0B3550] hover:text-brand-700 leading-snug inline-flex items-center gap-1 transition-colors group/link break-words"
               style={{ color: '#0B3550' }}
             >
-              <span>
-                <span className="block">Download</span>
-                <span className="block">Brochure</span>
-              </span>
+              <span>Download Brochure</span>
               <ArrowRight className="w-3.5 h-3.5 shrink-0 group-hover/link:translate-x-0.5 transition-transform" />
             </Link>
             <p className="text-[10px] text-slate-500 leading-snug mt-1 break-words">

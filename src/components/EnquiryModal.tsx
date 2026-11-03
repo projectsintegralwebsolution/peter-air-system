@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState, useRef } from "react";
+import { createPortal } from "react-dom";
 import Image from "next/image";
 import {
   X,
@@ -24,32 +25,54 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
   productName = "",
   sourceContext = "Modal",
 }) => {
+  const [mounted, setMounted] = useState(false);
+  const onCloseRef = useRef(onClose);
+
   useEffect(() => {
+    onCloseRef.current = onClose;
+  }, [onClose]);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (!isOpen) return;
+
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onClose();
+      if (e.key === "Escape") {
+        onCloseRef.current?.();
+      }
     };
 
-    if (isOpen) {
-      document.body.style.overflow = "hidden";
-      window.addEventListener("keydown", handleKeyDown);
-    } else {
-      document.body.style.overflow = "unset";
+    // Prevent layout shift on Windows browsers by measuring scrollbar width
+    const scrollbarWidth =
+      window.innerWidth - document.documentElement.clientWidth;
+    const originalOverflow = document.body.style.overflow;
+    const originalPaddingRight = document.body.style.paddingRight;
+
+    document.body.style.overflow = "hidden";
+    if (scrollbarWidth > 0) {
+      document.body.style.paddingRight = `${scrollbarWidth}px`;
     }
 
+    window.addEventListener("keydown", handleKeyDown);
+
     return () => {
-      document.body.style.overflow = "unset";
+      document.body.style.overflow = originalOverflow || "";
+      document.body.style.paddingRight = originalPaddingRight || "";
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [isOpen, onClose]);
+  }, [isOpen]);
 
-  if (!isOpen) return null;
+  if (!isOpen || !mounted) return null;
 
-  return (
+  const modalContent = (
     <div
       role="dialog"
       aria-modal="true"
       aria-labelledby="enquiry-modal-title"
-      className="fixed inset-0 z-50 overflow-y-auto bg-slate-900/70 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4 md:p-6 animate-fade-in"
+      className="fixed inset-0 z-[9999] overflow-y-auto bg-slate-900/70 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4 md:p-6 animate-fade-in"
       onClick={onClose}
     >
       <div
@@ -79,8 +102,8 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
                 <Image
                   src="/images/PETER-AIR-LOGO.png"
                   alt="Peter Air Systems Logo"
-                  width={60}
-                  height={70}
+                  width={622}
+                  height={885}
                   className="h-8 w-auto object-contain"
                 />
               </div>
@@ -168,6 +191,7 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
         {/* Right Side: Form Content */}
         <div className="flex-1 min-w-0 p-4 sm:p-5 lg:p-6 pb-6 sm:pb-8 lg:pb-8 overflow-y-auto max-h-[96vh] md:max-h-[92vh]">
           <EnquiryForm
+            key={productName || "modal-form"}
             initialProduct={productName}
             sourceContext={sourceContext}
             isModal={true}
@@ -181,4 +205,6 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
       </div>
     </div>
   );
+
+  return createPortal(modalContent, document.body);
 };

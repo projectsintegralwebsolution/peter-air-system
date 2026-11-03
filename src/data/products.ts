@@ -2457,5 +2457,1641 @@ export const products = [
       "Pre-Coated Galvanized Iron (GI) Outer Skin / Powder-Coated Finish",
       "High-Density CFC/HFC Free Polyurethane Foam (PUF) Insulation (40 kg/m³)"
     ]
+  },
+  {
+    "id": 5101,
+    "slug": "glass-magnesium-rock-wool-handmade-panel",
+    "categorySlug": "cleanroom-turnkey-solution",
+    "categoryName": "Cleanroom Solutions & Turnkey Systems",
+    "title": "Glass Magnesium Rock Wool Handmade Panel",
+    "seoTitle": "Glass Magnesium Rock Wool Handmade Panel Manufacturer | Peter Air Systems",
+    "metaDescription": "High-density Glass Magnesium Rock Wool Handmade Cleanroom Panel with Class A1 fire rating, dual 5mm glass magnesium substrate, and 100-120 kg/m³ basalt core for pharma cleanrooms.",
+    "canonical": "https://peterairs.com/glass-magnesium-rock-wool-handmade-panel/",
+    "h1": "Glass Magnesium Rock Wool Handmade Cleanroom Panel",
+    "image": "/images/cleanroom/handmade-glass-magnesium-rockwool.jpg",
+    "bannerImage": "/images/hero-banner-4.png",
+    "diagramImage": "/images/cleanroom/cleanroom-installation-nodes-cad.jpg",
+    "overview": "The Glass Magnesium Rock Wool Handmade Panel (Type 50 / Double Glass Magnesium Rock Wool) is engineered as a heavy-duty, high-integrity partition and ceiling envelope system for pharmaceutical GMP Class A/B facilities, high-containment biosafety suites, and sterile hospital surgical departments. The panel is constructed with a multi-tier composite structure comprising high-tensile pre-painted galvanized steel outer facings (0.5 mm to 0.8 mm thickness), dual 5.0 mm non-combustible glass magnesium substrate boards, and an inner high-density basalt rock wool strip core (100–120 kg/m³). Each composite element is precision-bonded under uniform multi-platen hydraulic pressing using dual-component polyurethane adhesive, encapsulated within a cold-rolled galvanized steel perimeter keel channel (0.6–1.0 mm thickness).\n\nThis double-layer glass magnesium reinforcement imparts exceptional flexural modulus, superior impact resistance, and absolute surface flatness, preventing micro-denting during equipment transit and trolley impact. With non-combustible Class A1 fire certification and up to 1.5–2 hours of structural fire endurance, this handmade panel guarantees complete smoke containment and thermal insulation. The panel integrates seamlessly with \"中\"-shaped aluminum keel splines, ensuring an airtight, flush-jointed planar envelope capable of withstanding repetitive chemical sanitization, gaseous vaporized hydrogen peroxide (VHP) cycles, and positive/negative pressure differentials up to 100 Pa.",
+    "construction": "The structural integrity of the Glass Magnesium Rock Wool Handmade Panel relies on its symmetrical five-layer laminated architecture. The exterior skin consists of prime pre-painted galvanized steel sheet with a primer and topcoat baked at high temperatures to ensure zero off-gassing and high chemical resilience. Immediately laminated beneath each steel facing is a 5.0 mm inorganic glass magnesium substrate plate formulated with high-purity magnesium oxide and magnesium sulfate cross-linked with alkali-resistant fiberglass mesh. This dual-sided glass magnesium layer acts as a rigid armor plate that dissipates concentrated mechanical point loads and prevents facing denting.\n\nThe internal cavity is densely packed with vertically sliced basalt rock wool fibers arranged perpendicular to the facing sheets, creating high compressive strength and preventing internal shear slippage. The outer boundary is reinforced by continuous 0.8 mm cold-formed galvanized steel channel keels, which provide positive mechanical interlock and precise dimensional stability under thermal variations. All layers are bonded under continuous platen pressing with eco-friendly dual-component polyurethane adhesive, forming an integrated structural panel immune to delamination.",
+    "layers": [
+      {
+        "name": "Top Facing Sheet",
+        "spec": "0.50–0.80 mm Pre-painted Galvanized Steel / SUS 304 Stainless Steel"
+      },
+      {
+        "name": "Upper Armored Substrate",
+        "spec": "5.0 mm Class A1 Non-combustible Glass Magnesium Board"
+      },
+      {
+        "name": "Central Core Insulation",
+        "spec": "100–120 kg/m³ Vertically Oriented Basalt Rock Wool Slices"
+      },
+      {
+        "name": "Internal Structural Frame",
+        "spec": "0.60–1.0 mm Cold-Rolled Galvanized Steel Perimeter Keel Channel"
+      },
+      {
+        "name": "Lower Armored Substrate",
+        "spec": "5.0 mm Class A1 Non-combustible Glass Magnesium Board"
+      },
+      {
+        "name": "Bottom Facing Sheet",
+        "spec": "0.50–0.80 mm Pre-painted Galvanized Steel / SUS 304 Stainless Steel"
+      }
+    ],
+    "installation": "Installation of the Glass Magnesium Rock Wool Handmade Panel begins with anchoring the JH014B 50 mm aluminum U-channel track to the finished floor using 5 mm masonry anchors spaced at 300 mm centers. The wall panels are inserted sequentially into the floor track and coupled edge-to-edge using the JH 258 extruded aluminum \"中\"-shaped keel connector. For walkable ceiling applications, panels are suspended from the building structure using M8 zinc-plated threaded rods attached to JH022 or JH164 100T-shaped heavy-duty aluminum hanging beams spaced at 1200 mm intervals. All internal 90° wall-to-floor and wall-to-ceiling corners are finished with JH009 clip-in aluminum base tracks and JH001A concave coving profiles. Finally, all joints and fastener interfaces are sealed with non-staining, anti-mold neutral cure silicone sealant, establishing a hermetic, gap-free cleanroom envelope.",
+    "installationPoints": [
+      "Floor Track Placement: Secure JH014B U-channel to subfloor using chemical expansion anchors @ 300 mm pitch.",
+      "Panel Erection: Vertically slot panels into base track, verifying laser plumbness across both room axes.",
+      "Keel Spline Coupling: Insert JH 258 '中'-shaped aluminum keel into side grooves to mechanically lock adjacent panels flush.",
+      "Walkable Ceiling Suspension: Hang JH022/JH164 100T beams with M8 adjustable turnbuckle rods @ 1200 mm grid spans.",
+      "Hygienic Corner Coving: Snap JH001A inner arc coving into JH009 base tracks along all wall/ceiling and wall/floor junctions.",
+      "Hermetic Perimeter Caulking: Inject medical-grade neutral silicone sealant along all micro-joints (2 mm nominal seam)."
+    ],
+    "variations": "Peter Air Systems supplies the Glass Magnesium Rock Wool Handmade Panel in standardized 1180 mm and 980 mm widths, with project-tailored custom widths from 300 mm to 1180 mm. Panel thickness is standard at 50 mm, with heavy-duty 75 mm and 100 mm variants available for high-span dividing walls requiring heightened thermal or acoustic ratings. Facing steel options include high-durability polyester (HDP), fluorocarbon (PVDF) for aggressive chemical suites, electrostatic dissipative (ESD) coatings (10^6–10^9 Ω) for electronics, and SUS 304 / SUS 316L hairline stainless steel for wet washdown areas. Factory customizations include pre-machined cutouts for flush observation windows, interlock door frame reinforcements, pre-buried electrical conduits, and return air riser grille openings.",
+    "variationList": [
+      "Thickness Options: 50 mm (standard partition/ceiling), 75 mm (enhanced fire/acoustic), 100 mm (high-span dividing wall)",
+      "Standard Widths: 1180 mm, 980 mm (custom fractional widths 300–1180 mm fabricated to architectural drawings)",
+      "Facing Metallic Finishes: White-Gray (RAL 9002), Snow White (RAL 9003/9010), Light Blue, Hairline SUS 304, Mirror SUS 316L",
+      "Coating Chemistries: Cleanroom PE, High-Durability Polyester (HDP), PVDF Fluorocarbon, Anti-static ESD, Antibacterial Nano-Silver",
+      "Factory Embeds: Pre-buried 20/25mm electrical conduit tubes, reinforced switch box cutouts, window rebates, door lintel keels"
+    ],
+    "gallery": [
+      {
+        "src": "/images/cleanroom/handmade-glass-magnesium-rockwool.jpg",
+        "title": "Handmade Glass Magnesium Rockwool Panel Sample"
+      },
+      {
+        "src": "/images/cleanroom/cleanroom-installation-nodes-cad.jpg",
+        "title": "Architectural Joint & Suspension Installation Node CAD"
+      },
+      {
+        "src": "/images/cleanroom/double-glazed-cleanroom-windows.jpg",
+        "title": "Flush Window & Profile Integration Interface"
+      }
+    ],
+    "features": [
+      "Dual Glass Magnesium Armor Substrate: Incorporates two 5.0 mm glass magnesium reinforcing boards directly behind the steel facings. This prevents panel denting from carts and equipment, providing 400% higher impact resistance than standard rock wool sandwich panels.",
+      "Class A1 Structural Fire Endurance: Delivers certified 1.5 to 2-hour non-combustible fire separation under international standards. During fire exposure, the basalt fibers and inorganic magnesium matrix emit zero toxic fumes, smoke, or molten droplets.",
+      "Vertical Grain Rock Wool Core Structure: Rock wool fibers are sliced and rotated 90 degrees vertically to stand perpendicular to the steel skins. This orientation elevates compressive strength to ≥ 0.15 MPa and prevents core sagging over long vertical wall runs.",
+      "High Load-Bearing Walkable Ceiling Capability: The rigid composite matrix provides an exceptionally high flexural modulus, making it ideal for walkable cleanroom ceilings. Maintenance personnel can safely traverse ceiling plenums without causing panel deflection or joint separation.",
+      "Airtight Concealed '中'-Keel Jointing: Utilizes an internal extruded aluminum spline connector (JH 258) that interlocks panel edges flush without exterior exposed fasteners. The resulting micro-gap is filled with medical-grade neutral silicone, creating an airtight, easily cleanable seal.",
+      "Extreme Surface Planarity & Flatness: Continuous hydraulic multi-platen pressing during curing eliminates ripples, oil canning, and surface waves. This smooth planar finish prevents dust particle adhesion and facilitates laminar airflow distribution.",
+      "Chemical & Disinfectant Resistance: The factory-applied coil coating (PVDF, HDP, or Antibacterial PE) resists routine wiping with alcohol, hypochlorite, quaternary ammonium, and vaporized hydrogen peroxide (VHP).",
+      "Acoustic Attenuation & Noise Damping: With an acoustic transmission loss of Rw ≥ 34 dB, the panel significantly deadens high-frequency machinery noise, AHU vibration, and duct airflow reverberation.",
+      "Zero Formaldehyde & Non-Outgassing Formulation: Formulated without chlor-alkali moisture sweating or formaldehyde adhesives. Complies fully with cleanroom airborne molecular contamination (AMC) control standards.",
+      "Integrated Pre-Buried Conduit Capability: Factory-installed electrical conduit channels and reinforced switch back-boxes can be embedded into the core during assembly, eliminating site cutting and airborne dust contamination."
+    ],
+    "materials": [
+      "Facing Skins: High-tensile pre-painted galvanized steel (PPGI) / SUS 304 stainless steel coils from Baosteel / POSCO (0.50–0.80 mm).",
+      "Armored Substrates: High-purity dual 5.0 mm magnesium oxysulfide inorganic board reinforced with alkali-resistant fiberglass netting.",
+      "Core Insulation: Premium hydrophobic basalt rock wool cut into vertical strips with density 100–120 kg/m³ and fiber diameter 4–7 μm.",
+      "Perimeter Frame: Precision roll-formed 0.60–1.0 mm hot-dip galvanized steel channel keels bonded along all four panel edges.",
+      "Lamination Adhesive: Dual-component solvent-free polyurethane structural adhesive delivering shear strength ≥ 1.2 MPa."
+    ],
+    "applications": [
+      "Pharmaceutical Sterile Fill-Finish Facilities: Class A/B cleanroom partition walls and walk-on ceilings where non-combustible Class A1 fire rating and smooth flush surfaces are mandatory.",
+      "Biosafety Laboratories (BSL-3 & BSL-4): High-containment pathogen suites requiring airtight envelopes capable of sustaining repeated gaseous formaldehyde and VHP decontamination.",
+      "Hospital Laminar Operating Theatres (OT): Surgical department wall and ceiling systems requiring dent-proof surfaces, acoustic isolation, and antimicrobial hygiene.",
+      "Semiconductor & Microelectronics Fabs: Precision cleanrooms (ISO Class 1 to Class 5) where extreme flatness, non-outgassing finishes, and high structural rigidity are required.",
+      "EV Battery Cathode & Dry Rooms: Ultra-low dew point production areas (-40°C to -60°C) requiring moisture-impervious composite walls with zero hygroscopic core absorption.",
+      "Biotechnology & Vaccine Production Plants: Sterile processing suites requiring fire-rated boundary separations and walk-on plenum access for MEP servicing.",
+      "Radiopharmaceutical & Oncology Laboratories: Cleanrooms requiring high structural density and resistance to frequent chemical scrub-downs and decontamination protocols."
+    ],
+    "tables": [
+      "<table class=\"w-full text-left text-xs sm:text-sm border-collapse border border-slate-200\">\n        <thead>\n          <tr class=\"bg-slate-100 text-slate-800 font-bold\">\n            <th class=\"p-3 border border-slate-200 w-1/3\">Parameter / Specification</th>\n            <th class=\"p-3 border border-slate-200\">Engineering Standard & Values</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Product Model</td><td class=\"p-3 border border-slate-200\">Type 50 Double Glass Magnesium Rock Wool Handmade Cleanroom Panel</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Core Material Composition</td><td class=\"p-3 border border-slate-200\">Hydrophobic Basalt Rock Wool Strips (vertical fiber) + Dual 5.0 mm Glass Magnesium Substrates</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Facing Material & Thickness</td><td class=\"p-3 border border-slate-200\">0.50 mm (standard) / 0.40, 0.45, 0.60, 0.70, 0.80 mm Pre-painted Galvanized Steel or SUS 304</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Standard Panel Thickness</td><td class=\"p-3 border border-slate-200\">50 mm (standard partition & ceiling); 75 mm, 100 mm (structural high-span walls)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Standard Effective Width</td><td class=\"p-3 border border-slate-200\">1180 mm / 980 mm (custom modular widths from 300 mm to 1180 mm)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Panel Length</td><td class=\"p-3 border border-slate-200\">Tailored to project architectural elevations: 2000 mm – 6000 mm (max 8000 mm)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Core Material Density</td><td class=\"p-3 border border-slate-200\">Basalt Rock Wool: 100–120 kg/m³; Glass Magnesium Substrate Board: 950–1100 kg/m³</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Surface Coil Finish</td><td class=\"p-3 border border-slate-200\">Cleanroom PE, HDP, PVDF Fluorocarbon, Anti-Static ESD (10^6 - 10^9 Ω), Antibacterial Silver-Ion</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Structural Frame</td><td class=\"p-3 border border-slate-200\">Internal 0.60–1.0 mm cold-rolled galvanized steel channel keels enclosing all four edges</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Joint Configuration</td><td class=\"p-3 border border-slate-200\">Flush concealed interlocking perimeter groove with 2.0 mm flush-caulked hygienic seam</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Connection System</td><td class=\"p-3 border border-slate-200\">JH 258 \"中\"-shaped aluminum keel spline or concealed male/female tongue-and-groove</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Fire Performance Classification</td><td class=\"p-3 border border-slate-200\">Class A1 Non-combustible (GB 8624-2012 / ISO 1182); 1.5 to 2.0 Hours Fire Resistance Limit</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Thermal Conductivity</td><td class=\"p-3 border border-slate-200\">λ = 0.040 ~ 0.045 W/(m·K) (GB/T 10294)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Acoustic Sound Transmission Loss</td><td class=\"p-3 border border-slate-200\">Rw ≥ 34 dB to 38 dB (ISO 717-1 / ASTM E90)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Ceiling Walkable Load Rating</td><td class=\"p-3 border border-slate-200\">Point load ≥ 150 kg; Uniform live load ≥ 2.5 kN/m² @ 1200 mm suspension centers</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Available Design Variations</td><td class=\"p-3 border border-slate-200\">Double glass magnesium rockwool, single glass magnesium, walkable ceiling grade, SUS 304 skins</td></tr>\n        </tbody>\n      </table>"
+    ],
+    "faqs": [
+      {
+        "question": "Why is double glass magnesium added to rock wool handmade panels?",
+        "answer": "The 5.0 mm glass magnesium boards beneath both steel facings provide high compressive strength and puncture resistance. While pure rock wool panels can dent easily upon trolley impact, the glass magnesium armor plate absorbs mechanical shocks and preserves perfect wall flatness."
+      },
+      {
+        "question": "What fire rating does this panel achieve?",
+        "answer": "The panel is certified Class A1 non-combustible under GB 8624 and ISO 1182 standards. It provides up to 1.5 to 2.0 hours of structural fire resistance, preventing fire propagation and emitting zero toxic smoke or flaming particles."
+      },
+      {
+        "question": "Can personnel walk on ceilings built with this panel?",
+        "answer": "Yes. Due to the high flexural rigidity of the dual glass magnesium substrate combined with the internal steel keels, the 50 mm and 75 mm panels are fully rated for walkable ceiling spans when supported by JH022/JH164 hanging T-beams at 1200 mm centers."
+      },
+      {
+        "question": "How are electrical conduits and service pipes routed through the panel?",
+        "answer": "Factory-embedded PVC or galvanized steel conduits (20 mm or 25 mm diameter) can be pre-installed in the core during panel manufacturing. This eliminates messy on-site wall cutting, preserves structural fire integrity, and prevents cleanroom particle contamination."
+      },
+      {
+        "question": "How does the '中'-shaped aluminum keel connection work?",
+        "answer": "The JH 258 '中' keel is an extruded aluminum spline inserted into the precision perimeter grooves of adjacent handmade panels. It mechanically locks the panels into alignment without visible surface fasteners, leaving a uniform 2 mm joint gap ready for hygienic silicone flush-sealing."
+      },
+      {
+        "question": "Is this panel susceptible to moisture absorption or delamination?",
+        "answer": "No. We utilize hydrophobic basalt rock wool (moisture absorption < 1.0%) and high-grade halogen-free glass magnesium substrates bonded with moisture-curing dual-component polyurethane adhesive, ensuring zero delamination even under 95% relative humidity."
+      },
+      {
+        "question": "What facing colors and coatings are available?",
+        "answer": "Standard colors include Off-White (RAL 9002), Snow White (RAL 9003/9010), and Sky Blue. Specialized coil coatings include anti-static ESD coatings for electronics, antibacterial silver-ion coatings for healthcare, and SUS 304/316 stainless steel for chemical washdown areas."
+      },
+      {
+        "question": "What is the maximum single-piece height available?",
+        "answer": "Panels are manufactured to custom architectural room heights up to 6000 mm in a continuous single piece (with transport capability up to 8000 mm), eliminating horizontal wall joints that create dust traps."
+      }
+    ]
+  },
+  {
+    "id": 5102,
+    "slug": "hollow-core-glass-magnesium-handmade-panel",
+    "categorySlug": "cleanroom-turnkey-solution",
+    "categoryName": "Cleanroom Solutions & Turnkey Systems",
+    "title": "Hollow Core Glass Magnesium Handmade Panel",
+    "seoTitle": "Hollow Core Glass Magnesium Handmade Cleanroom Panel | Peter Air Systems",
+    "metaDescription": "Structural Hollow Core Glass Magnesium Handmade Panel featuring Class A1 fireproof cellular honeycomb grid core, high flexural strength, and zero sagging for walkable ceilings.",
+    "canonical": "https://peterairs.com/hollow-core-glass-magnesium-handmade-panel/",
+    "h1": "Hollow Core Glass Magnesium Handmade Cleanroom Panel",
+    "image": "/images/cleanroom/handmade-hollow-core-glass-magnesium.jpg",
+    "bannerImage": "/images/hero-banner-4.png",
+    "diagramImage": "/images/cleanroom/cleanroom-installation-nodes-cad.jpg",
+    "overview": "The Hollow Core Glass Magnesium Handmade Panel (Type 50 / Glass Magnesium Grid Panel) is engineered specifically for cleanroom facilities demanding an ultra-rigid, non-combustible envelope with an exceptional strength-to-weight ratio. The core is constructed from high-strength inorganic glass magnesium ribs formed into an interconnected geometric cellular matrix (grid core), precision-bonded between heavy-gauge pre-painted galvanized steel facings (0.5 mm to 0.8 mm thickness). Encapsulating the assembly is a continuous cold-formed galvanized perimeter keel (0.8 mm to 1.0 mm thickness) that provides structural perimeter locking and prevents edge crushing during handling.\n\nBecause the glass magnesium grid structure distributes point loads evenly across adjacent cells, the panel exhibits extreme flexural rigidity and resists horizontal sagging over extended spans. This makes it an industry-preferred solution for heavy walkable cleanroom ceiling systems, high-clearance pharmaceutical return air walls, and semiconductor fab partitioning. The inorganic glass magnesium grid is completely moisture-proof, zero-outgassing, and certified Class A1 non-combustible. It guarantees dimensional stability in high-humidity cleanrooms where organic or fibrous cores might risk sag, biological growth, or moisture absorption.\n\nFurthermore, all manufacturing stages are conducted under strict ISO 9001:2015 quality control protocols, ensuring batch-to-batch consistency and rigorous compliance with international cleanroom envelope standards (including ISO 14644-4, WHO TRS 986, and US FDA cGMP). By maintaining precision mechanical tolerances and providing customized sizing, Peter Air Systems ensures optimal airflow aerodynamics, minimal maintenance downtime, and long-term contamination containment across critical pharmaceutical, healthcare, and industrial manufacturing environments.",
+    "construction": "The Hollow Core Glass Magnesium Handmade Panel is built upon an architectural grid matrix configuration. The upper and lower surface layers comprise high-grade color-coated galvanized steel sheets treated with chemical anti-corrosion passivation and a cured thermosetting polyester or PVDF coating. The central substrate consists of high-density glass magnesium structural strips arrayed in a regular perpendicular grid lattice. Each grid strip is formulated with high-purity caustic calcined magnesite, magnesium sulfate brine, alkali-resistant continuous glass fiber roving, and mineral modifiers, delivering tensile and compressive moduli matching solid masonry.\n\nThe outer edges are bound by a 0.8 mm cold-rolled galvanized steel channel frame featuring perimeter connection rebates. All contact surfaces between the glass magnesium cellular grid, the steel facings, and the perimeter keels are fused using automated robotic application of solvent-free dual-component polyurethane structural resin under hydraulic multi-platen clamping. The resulting hollow cellular channels allow effortless routing of field wiring, sensors, and sampling tubing without compromising panel integrity.",
+    "layers": [
+      {
+        "name": "Top Facing Sheet",
+        "spec": "0.50–0.80 mm Pre-painted Galvanized Steel / SUS 304 Stainless Steel"
+      },
+      {
+        "name": "Cellular Grid Substrate",
+        "spec": "Engineered Inorganic Glass Magnesium Interlocking Rib Matrix"
+      },
+      {
+        "name": "Internal Conduit Cavities",
+        "spec": "Hollow Cellular Grid Channels for Wiring and In-Wall Services"
+      },
+      {
+        "name": "Structural Perimeter Frame",
+        "spec": "0.80–1.0 mm Cold-Rolled Galvanized Steel Channel Keel"
+      },
+      {
+        "name": "Bottom Facing Sheet",
+        "spec": "0.50–0.80 mm Pre-painted Galvanized Steel / SUS 304 Stainless Steel"
+      }
+    ],
+    "installation": "Installation of the Hollow Core Glass Magnesium Handmade Panel is executed via standard cleanroom modular erection methods. Base alignment is established using JH014B 50 mm aluminum U-channels anchored to the floor at 300 mm spacing. Panels are inserted vertically into the U-channel and locked together edge-to-edge using the JH 258 extruded aluminum \"中\"-shaped keel inserted into the perimeter channel slots. For suspended walkable ceilings, panels span between JH022 or JH164 100T-shaped heavy-duty aluminum hanging beams suspended from structural slabs via M8 zinc-plated threaded rods at 1200 mm intervals. Blind pop-rivets anchor panel ends to the lower flange of the T-beams. All internal 90° junctions receive JH009 base tracks and JH001A concave coving, and joints are sealed with medical-grade neutral silicone.",
+    "installationPoints": [
+      "Floor Runner Fixing: Fasten JH014B slot aluminum to floor slab using M6 metal anchors @ 300 mm pitch.",
+      "Plumb Alignment: Stand panels into base runner, plumbing with optical lasers before fixing adjacent sections.",
+      "Concealed Keel Splining: Slide JH 258 '中'-shaped aluminum keels into side grooves to mechanically lock joints coplanar.",
+      "Walkable Ceiling Grid: Fasten panels to lower lips of JH022/JH164 100T suspension beams using 4.8 mm pull rivets.",
+      "Conduit Integration: Route field instrumentation wiring through hollow internal grid cells prior to final capping.",
+      "Hygienic Coving & Seal: Snap JH001A inner arc coving into place and finish panel seams with anti-fungal silicone."
+    ],
+    "variations": "Available standard widths are 1180 mm and 980 mm, with tailor-made modular widths from 300 mm to 1180 mm fabricated to fit cleanroom column layouts and architectural door/window module schedules. Panel thicknesses are standard at 50 mm, with heavy-duty 75 mm and 100 mm options available for extended ceiling spans or extra-tall industrial partition walls. Surface finishes include cleanroom white (RAL 9002/9010), high-durability polyester (HDP), PVDF fluorocarbon for chemical resistance, electrostatic dissipative (ESD) finishes, and SUS 304 hairline stainless steel. Internal cells can also be supplied with partial rock wool acoustic inserts upon request. Furthermore, custom color matching according to international RAL and Pantone shade charts is available for specialized facility branding, alongside optional factory-integrated provisions for interlock wiring channels, differential pressure sensor ports, and flush return air riser cutouts tailored to cleanroom architectural drawings.",
+    "variationList": [
+      "Thickness Configurations: 50 mm (standard ceiling & wall), 75 mm (heavy-duty ceiling span), 100 mm (tall dividing partitions)",
+      "Standard Module Widths: 1180 mm, 980 mm (custom non-standard cuts available down to 300 mm)",
+      "Facing Finishes: RAL 9002 Off-White, RAL 9003 Pure White, RAL 5015 Sky Blue, SUS 304 Brushed Stainless Steel",
+      "Coating Types: Standard Cleanroom PE, HDP, PVDF, Antistatic ESD (10^6 - 10^9 Ω), Antibacterial Silver-Ion",
+      "Core Options: 100% Hollow Grid Channels, or Hybrid Grid with Selective Acoustic Rock Wool Inserts"
+    ],
+    "gallery": [
+      {
+        "src": "/images/cleanroom/handmade-hollow-core-glass-magnesium.jpg",
+        "title": "Hollow Core Glass Magnesium Panel Structure"
+      },
+      {
+        "src": "/images/cleanroom/cleanroom-installation-nodes-cad.jpg",
+        "title": "Ceiling T-Bar & Wall Base Joint CAD Assembly"
+      },
+      {
+        "src": "/images/cleanroom/cleanroom-aluminium-profiles-assembly.jpg",
+        "title": "JH Series Extruded Aluminium Profile Integration"
+      }
+    ],
+    "features": [
+      "Extreme Flexural Rigidity: The cellular glass magnesium grid core acts like an internal I-beam truss, delivering superior bending modulus and zero horizontal sag across large unsupported ceiling spans.",
+      "Superior Strength-to-Weight Ratio: Eliminates the excessive weight of solid mineral cores while maintaining point-load bearing capacity ≥ 150 kg, drastically reducing structural load on ceiling suspension anchors.",
+      "Class A1 Non-Combustible Fire Safety: Formulated entirely from inorganic magnesium salts and mineral glass fiber mesh, achieving certified Class A1 non-combustible status with zero smoke release or toxic VOCs.",
+      "100% Moisture Proof & Non-Halogen Sweating: Utilizes an advanced magnesium sulfate formula that produces 0% halogen return (无返卤), eliminating the hygroscopic dampness, sweating, and rust common in substandard glass magnesium boards.",
+      "Effortless In-Wall Conduit Routing: The hollow vertical and horizontal cellular channels allow technicians to easily pull sensor wiring, electrical conduits, and monitoring tubing without coring holes in the panel face.",
+      "Walkable Maintenance Plenum Certified: Fully certified as a walkable cleanroom ceiling platform, permitting HVAC technicians, filter replacement staff, and electrical personnel to walk directly on ceiling panels.",
+      "High Chemical & VHP Resistance: Resists frequent washdowns with aggressive sanitizers, chlorine solutions, alcohols, and concentrated vaporized hydrogen peroxide (VHP) cycles.",
+      "Precision Concealed Spline Joint: Edge profile features precision recesses that lock onto the JH 258 extruded aluminum keel, creating perfectly flush, ledge-free wall and ceiling planes.",
+      "High Acoustic Sound Damping: The cellular resonance chamber within the hollow grid disrupts sound wave propagation, providing substantial airborne noise reduction for noisy production zones.",
+      "Zero Organic Substrates: 100% free of wood pulp, cellulose, or paper components, preventing fungal growth, mold spores, and bacterial proliferation in sterile pharmaceutical environments."
+    ],
+    "materials": [
+      "Facing Steel: Hot-dip galvanized steel coil (0.50–0.80 mm) with baked resin coating or SUS 304 stainless steel.",
+      "Cellular Grid Substrate: High-purity magnesium oxysulfide structural rib matrix reinforced with continuous woven E-glass mesh.",
+      "Perimeter Keel: Cold-formed 0.80–1.0 mm galvanized steel channel with precision CNC cut locking rebates.",
+      "Bonding Agent: Dual-component polyurethane structural adhesive, heat-cured under continuous hydraulic pressure.",
+      "Spline Connector: Architectural 6063-T5 extruded aluminum alloy '中' spline (JH 258)."
+    ],
+    "applications": [
+      "Walkable Cleanroom Ceiling Systems: Ideal suspended walkable ceiling platform for pharmaceutical plants, allowing maintenance access to HEPA fan filter units and ducting.",
+      "Semiconductor Microelectronics Fabs: Cleanroom dividing walls where non-outgassing, rigid, and vibration-damped partitions are essential (ISO Class 1 to Class 5).",
+      "Pharmaceutical Return Air Walls: Used to form hollow return air risers and false wall shafts for laminar airflow recirculation without adding separate sheet metal ducting.",
+      "Hospital Operating Theatres: Surgical suite walls requiring high resistance to trolley impacts, non-combustibility, and absolute surface flatness.",
+      "Biotechnology Cleanrooms: Sterile vaccine suites and fermentation rooms requiring moisture-impervious walling capable of daily chemical washing.",
+      "Automated Battery Dry Rooms: Lithium-ion battery manufacturing cleanrooms requiring high-rigidity walls under low dew-point humidity conditions.",
+      "Optical & Photovoltaic Cleanrooms: Large-span cleanroom enclosures demanding high structural flatness and zero particulate outgassing."
+    ],
+    "tables": [
+      "<table class=\"w-full text-left text-xs sm:text-sm border-collapse border border-slate-200\">\n        <thead>\n          <tr class=\"bg-slate-100 text-slate-800 font-bold\">\n            <th class=\"p-3 border border-slate-200 w-1/3\">Parameter / Specification</th>\n            <th class=\"p-3 border border-slate-200\">Engineering Standard & Values</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Product Model</td><td class=\"p-3 border border-slate-200\">Type 50 Hollow Core Glass Magnesium Handmade Cleanroom Panel</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Core Material Composition</td><td class=\"p-3 border border-slate-200\">Inorganic Glass Magnesium Cellular Honeycomb Grid Matrix (Hollow Channels)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Facing Material & Thickness</td><td class=\"p-3 border border-slate-200\">0.50 mm (standard) / 0.40, 0.45, 0.60, 0.80 mm Pre-painted Galvanized Steel or SUS 304</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Standard Panel Thickness</td><td class=\"p-3 border border-slate-200\">50 mm (standard partition & ceiling); 75 mm, 100 mm (extra-long span)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Standard Effective Width</td><td class=\"p-3 border border-slate-200\">1180 mm / 980 mm (custom architectural widths 300 mm to 1180 mm)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Panel Length</td><td class=\"p-3 border border-slate-200\">Custom tailored to architectural drawings: 2000 mm – 6000 mm (max 8000 mm)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Core Grid Material Density</td><td class=\"p-3 border border-slate-200\">Glass Magnesium Ribs: 1050–1200 kg/m³; Overall Composite Weight: ~15.5 kg/m²</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Surface Coil Finish</td><td class=\"p-3 border border-slate-200\">Cleanroom PE, HDP, PVDF Fluorocarbon, Anti-Static ESD (10^6 - 10^9 Ω), Antibacterial</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Structural Perimeter Keel</td><td class=\"p-3 border border-slate-200\">0.80–1.0 mm cold-formed galvanized steel channel keels enclosing four edges</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Joint Configuration</td><td class=\"p-3 border border-slate-200\">Concealed internal interlocking spline groove with 2.0 mm caulked flush joint</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Connection System</td><td class=\"p-3 border border-slate-200\">JH 258 \"中\"-shaped extruded aluminum keel spline</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Fire Performance Classification</td><td class=\"p-3 border border-slate-200\">Class A1 Non-combustible (GB 8624-2012 / ISO 1182); Fire endurance ≥ 1.0 Hour</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Thermal Conductivity</td><td class=\"p-3 border border-slate-200\">λ = 0.060 ~ 0.075 W/(m·K)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Acoustic Sound Reduction</td><td class=\"p-3 border border-slate-200\">Rw ≥ 30 dB to 34 dB (ISO 717-1)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Walkable Ceiling Load Rating</td><td class=\"p-3 border border-slate-200\">Concentrated point load ≥ 150 kg; Uniform live load ≥ 2.5 kN/m² @ 1200 mm span</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Available Design Variations</td><td class=\"p-3 border border-slate-200\">Standard hollow grid, acoustic rockwool-infilled grid, SUS 304 skins, walkable roof panel</td></tr>\n        </tbody>\n      </table>"
+    ],
+    "faqs": [
+      {
+        "question": "Why is the hollow core glass magnesium panel preferred for cleanroom ceilings?",
+        "answer": "Its cellular rib matrix behaves like an internal truss network, offering superior bending stiffness with lower weight than solid panels. It supports maintenance personnel walking on the ceiling plenum with zero deflection or sagging."
+      },
+      {
+        "question": "Does the hollow core make the panel weaker against impacts?",
+        "answer": "No. The glass magnesium grid ribs are spaced densely at regular intervals and bonded firmly to the steel facing sheets. Point loads are immediately transferred across the contiguous cell network, preventing surface denting."
+      },
+      {
+        "question": "Can cables and sensor lines be run inside the hollow core?",
+        "answer": "Yes. The continuous hollow cells within the core provide natural pathways for wiring, low-voltage control lines, and gas sampling pipes, allowing clean in-wall service routing without surface conduits."
+      },
+      {
+        "question": "Does this panel absorb moisture in high-humidity cleanrooms?",
+        "answer": "No. We formulate the glass magnesium using non-hygroscopic magnesium sulfate chemistry that does not absorb atmospheric moisture or sweat halogen salts, ensuring long-term structural stability."
+      },
+      {
+        "question": "What is the fire rating of this panel?",
+        "answer": "The Hollow Core Glass Magnesium Handmade Panel is certified Class A1 non-combustible under GB 8624 and ISO 1182 standards. It produces zero flaming droplets, smoke, or toxic gases during fire exposure."
+      },
+      {
+        "question": "How are ceiling panels suspended from the roof structure?",
+        "answer": "Ceiling panels are supported on the lower flanges of JH022 or JH164 100T-shaped heavy-duty aluminum hanging beams, which are suspended from concrete slabs or steel roof trusses via M8 threaded rods with adjustable turnbuckles."
+      },
+      {
+        "question": "Can observation windows be integrated into these panels?",
+        "answer": "Yes. Factory cutouts with reinforced perimeter keels can be prepared for flush double-glazed cleanroom windows, ensuring a coplanar, ledge-free installation on both room sides."
+      },
+      {
+        "question": "What is the maximum span between ceiling suspension hangers?",
+        "answer": "The recommended maximum suspension span for walkable loads is 1200 mm between 100T aluminum hanging beams. For non-walkable spans, support spacing up to 1500 mm is acceptable."
+      }
+    ]
+  },
+  {
+    "id": 5103,
+    "slug": "magnesium-sulfate-handmade-panel",
+    "categorySlug": "cleanroom-turnkey-solution",
+    "categoryName": "Cleanroom Solutions & Turnkey Systems",
+    "title": "Magnesium Sulfate Handmade Panel",
+    "seoTitle": "Magnesium Sulfate Handmade Cleanroom Panel Manufacturer | Peter Air Systems",
+    "metaDescription": "Patented non-halogen Magnesium Sulfate Handmade Panel with 0% halogen return, zero moisture weeping, Class A1 fire rating, and high structural stability for cleanrooms.",
+    "canonical": "https://peterairs.com/magnesium-sulfate-handmade-panel/",
+    "h1": "Magnesium Sulfate Handmade Cleanroom Panel",
+    "image": "/images/cleanroom/handmade-magnesium-sulphate.jpg",
+    "bannerImage": "/images/hero-banner-4.png",
+    "diagramImage": "/images/cleanroom/cleanroom-installation-nodes-cad.jpg",
+    "overview": "The Magnesium Sulfate Handmade Panel (Type 50 / Patented Magnesium Oxysulfide Cleanroom Panel) represents a major technological leap in inorganic composite cleanroom wall and ceiling construction. Traditional magnesium oxychloride boards historically suffered from 'halogen return' (deliquescent sweating of magnesium chloride salts and surface dampness in humid environments), causing severe steel corrosion and panel failure. This panel completely resolves that challenge by utilizing an exclusive patented magnesium oxysulfide (magnesium sulfate) formulation. Caustic calcined magnesite is reacted with high-purity magnesium sulfate solution and specialized polymer modifiers, forming a dense, non-hygroscopic 5·1·7 phase crystalline matrix with 0% halogen release.\n\nThe resulting solid or micro-cellular core board (density 220–280 kg/m³) is laminated between heavy-duty pre-painted galvanized steel or stainless steel skins (0.5 mm to 0.8 mm thickness) using solvent-free polyurethane adhesives under continuous hydraulic platen pressing. Cold-formed 0.8 mm galvanized perimeter steel keels encapsulate all four edges. Certified Class A1 non-combustible with exceptional mechanical flexural strength, the Magnesium Sulfate Handmade Panel is completely stable across 20% to 95% relative humidity ranges. It provides an ultra-flat, dent-resistant, and chemically inert envelope for high-end biopharmaceutical suites, microelectronics cleanrooms, and medical device manufacturing.",
+    "construction": "The panel construction features a high-density monolithic core of patented magnesium oxysulfide inorganic binder matrix. High-activity light-burned magnesium oxide powder is precisely combined with a saturated magnesium sulfate aqueous solution, mineral micro-fillers, and alkali-resistant fiberglass continuous strand mesh to establish high tensile and shear resistance. This formulation eliminates all chloride ions (Cl-), preventing galvanic corrosion of the facing steel sheets.\n\nThe core slab is cured under temperature-controlled conditions to complete crystalline phase hydration before being precision-planed to exact 50 mm thickness tolerances. Top and bottom facings of 0.5–0.8 mm pre-painted galvanized steel are coated with cleanroom thermoset resins and laminated to the core using high-performance dual-component polyurethane adhesive. Structural 0.8 mm cold-formed galvanized steel channel keels enclose the perimeter edges with precision-milled grooves for spline insertion, forming an impervious, impact-resistant composite element.\n\nAdditionally, all internal perimeter keels and structural channel ribs undergo automated anti-corrosion passivation before bonding. The high-pressure hydraulic curing process ensures zero void formation or air entrapment between the core matrix and metal facings, eliminating risks of internal delamination under fluctuating environmental room temperatures and recurring positive or negative pressure cycling in high-containment cleanroom zones.",
+    "layers": [
+      {
+        "name": "Top Facing Sheet",
+        "spec": "0.50–0.80 mm Pre-painted Galvanized Steel / SUS 304 Stainless Steel"
+      },
+      {
+        "name": "Adhesive Layer",
+        "spec": "Solvent-free Dual-Component Polyurethane Structural Adhesive"
+      },
+      {
+        "name": "Patented Inorganic Core",
+        "spec": "220–280 kg/m³ Non-Chloride Magnesium Sulfate (Oxysulfide) Board"
+      },
+      {
+        "name": "Structural Frame",
+        "spec": "0.80–1.0 mm Cold-Rolled Galvanized Steel Perimeter Keel Channel"
+      },
+      {
+        "name": "Adhesive Layer",
+        "spec": "Solvent-free Dual-Component Polyurethane Structural Adhesive"
+      },
+      {
+        "name": "Bottom Facing Sheet",
+        "spec": "0.50–0.80 mm Pre-painted Galvanized Steel / SUS 304 Stainless Steel"
+      }
+    ],
+    "installation": "Installation of the Magnesium Sulfate Handmade Panel utilizes the standardized Peter Air cleanroom profile integration suite. Continuous JH014B 50 mm aluminum U-channels are anchored to the floor slab at 300 mm intervals. Wall panels are erected vertically into the channel and interlocked along their vertical edges using JH 258 extruded aluminum '中'-keel splines, which sit within the recessed edge channel of each panel. Walkable ceilings are suspended using M8 threaded rods linked to JH022 or JH164 100T-shaped aluminum hanging beams at 1200 mm centers. Internal 90° corners are finished with JH009 base clips and JH001A concave coving profiles. All joints are caulked with neutral cure silicone, forming an airtight, sterile boundary.",
+    "installationPoints": [
+      "Base Channel Anchoring: Level and fasten JH014B U-channel to epoxy/terrazzo floors with masonry anchors @ 300 mm.",
+      "Panel Positioning: Seat panels into bottom runner track, checking alignment and vertical plumbness.",
+      "Concealed Keel Locking: Insert JH 258 '中'-shaped aluminum keels into edge grooves to mechanically bind panels flush.",
+      "Ceiling Suspension: Suspend JH022/JH164 100T beams with M8 threaded rods @ 1200 mm centers for walkable roofs.",
+      "Hygienic Coving System: Install JH009 track and snap-in JH001A concave coving at all interior 90° wall and ceiling joints.",
+      "Airtight Seam Sealing: Inject cleanroom-grade neutral silicone along all joint lines (nominal 2 mm gap)."
+    ],
+    "variations": "Supplied in standard effective widths of 1180 mm and 980 mm, with custom fabricated module widths from 300 mm to 1180 mm to accommodate site column grids and equipment layouts. Available thicknesses include standard 50 mm (for partitions and ceilings), 75 mm, and 100 mm (for high-span exterior walls or heavy fire partitions). Surface finishes comprise White-Gray (RAL 9002), Pure White (RAL 9003/9010), Light Blue, Anti-static ESD coatings, and SUS 304 / 316L stainless steel. Factory modifications include pre-buried conduit chases, observation window cutouts, and door frame reinforcement. Furthermore, custom color matching according to international RAL and Pantone shade charts is available for specialized facility branding, alongside optional factory-integrated provisions for interlock wiring channels, differential pressure sensor ports, and flush return air riser cutouts tailored to cleanroom architectural drawings.",
+    "variationList": [
+      "Panel Thicknesses: 50 mm (standard partition/ceiling), 75 mm (enhanced fire barrier), 100 mm (high structural walling)",
+      "Standard Module Widths: 1180 mm, 980 mm (custom non-standard cuts available down to 300 mm)",
+      "Facing Finishes: RAL 9002 Off-White, RAL 9003 Pure White, RAL 5015 Light Blue, SUS 304 / 316L Stainless Steel",
+      "Surface Coatings: Cleanroom PE, HDP, PVDF Fluorocarbon, Antistatic ESD (10^6 - 10^9 Ω), Antibacterial Silver-Ion",
+      "Factory Custom Options: Pre-drilled electrical boxes, pre-embedded conduit pipes, reinforced window/door cutouts"
+    ],
+    "gallery": [
+      {
+        "src": "/images/cleanroom/handmade-magnesium-sulphate.jpg",
+        "title": "Magnesium Sulfate Handmade Cleanroom Panel"
+      },
+      {
+        "src": "/images/cleanroom/cleanroom-installation-nodes-cad.jpg",
+        "title": "Cleanroom Installation Detail Nodes CAD Schematic"
+      },
+      {
+        "src": "/images/cleanroom/cleanroom-profile-specs-table-1.jpg",
+        "title": "Extruded Aluminium Profiles Dimension Matrix"
+      }
+    ],
+    "features": [
+      "Patented Non-Halogen Matrix Formula: Formulated with pure magnesium sulfate brine instead of magnesium chloride, achieving 0% halogen return (无返卤) and eliminating hygroscopic sweating and moisture weeping.",
+      "Zero Steel Plate Corrosion: Because the core is 100% free of aggressive chloride ions, it completely eliminates internal rusting, bubbling, or delamination of the color-coated steel facing sheets.",
+      "Certified Class A1 Non-Combustible: Classified as Class A1 non-combustible under national fire standards. The inorganic core will not burn, support flame spread, or emit toxic gases at high temperatures.",
+      "High Core Density & Compressive Strength: With a density of 220–280 kg/m³, the solid oxysulfide core provides extreme compressive and flexural strength, resisting trolley impacts and equipment collisions.",
+      "Stable Across 20%–95% Relative Humidity: Retains perfect dimensional geometry without warping, expanding, or softening under cycling humidity levels, making it ideal for both dry rooms and washdown areas.",
+      "Walkable Ceiling Plenum Capability: The monolithic structural core easily supports maintenance live loads exceeding 2.5 kN/m² when installed on 1200 mm suspension grids.",
+      "Flush Concealed Keel Interlock: Utilizes the JH 258 extruded aluminum '中'-keel to lock panels coplanar with a clean 2 mm micro-joint ready for hygienic silicone caulking.",
+      "Zero Formaldehyde & Clean Air Safe: Manufactured without formaldehyde, asbestos, or organic solvents. Meets the most stringent ISO 14644-1 airborne molecular contamination (AMC) limits.",
+      "Resistant to Routine Chemical Sanitization: Compatible with continuous vaporized hydrogen peroxide (VHP) decontamination, alcohol wiping, and chlorine-based biocides without yellowing or degradation.",
+      "Integrated In-Wall Services Capability: Factory-embedded conduit channels allow electrical switches, intercoms, and monitoring cables to be routed cleanly inside the wall."
+    ],
+    "materials": [
+      "Facing Skins: Pre-painted galvanized steel (0.50–0.80 mm) from Baosteel / POSCO with anti-corrosion primer and baked topcoat.",
+      "Core Substrate: Patented magnesium oxysulfide inorganic board (220–280 kg/m³) reinforced with alkali-resistant glass fibers.",
+      "Structural Perimeter: Cold-rolled 0.80–1.0 mm galvanized steel perimeter channel keels on all four edges.",
+      "Lamination Adhesive: Solvent-free dual-component polyurethane structural resin with tensile shear strength ≥ 1.2 MPa.",
+      "Connecting Keel: Precision extruded 6063-T5 architectural aluminum '中' spline (JH 258)."
+    ],
+    "applications": [
+      "Biopharmaceutical Sterile Processing: A/B cleanroom suites requiring non-combustible, moisture-impervious partitions that withstand repeated VHP decontamination.",
+      "Hospital Operating Theatres (OT): High-wear surgical suites requiring dent-resistant, flat walling that resists alcohol and iodine disinfectants.",
+      "Semiconductor & Electronics Cleanrooms: Controlled environments where non-outgassing, fire-rated, and rigid walls are necessary (ISO Class 1 to Class 6).",
+      "Lithium-ion Battery Dry Rooms: Specialized dry cleanrooms operating at dew points from -40°C to -60°C where moisture-releasing cores are prohibited.",
+      "Medical Device Assembly Suites: Sterile packaging and assembly cleanrooms requiring impact-resistant and dust-free partition systems.",
+      "Vaccine Production Facilities: Critical containment areas demanding certified Class A1 fire separation and smooth, flush surfaces.",
+      "Food & Beverage Packaging Cleanrooms: Hygienic processing areas subjected to high-humidity washdowns and chemical sanitizers."
+    ],
+    "tables": [
+      "<table class=\"w-full text-left text-xs sm:text-sm border-collapse border border-slate-200\">\n        <thead>\n          <tr class=\"bg-slate-100 text-slate-800 font-bold\">\n            <th class=\"p-3 border border-slate-200 w-1/3\">Parameter / Specification</th>\n            <th class=\"p-3 border border-slate-200\">Engineering Standard & Values</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Product Model</td><td class=\"p-3 border border-slate-200\">Type 50 Magnesium Sulfate (Oxysulfide) Handmade Cleanroom Panel</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Core Material Composition</td><td class=\"p-3 border border-slate-200\">Patented Non-Halogen Magnesium Oxysulfide (Magnesium Sulfate) Inorganic Board</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Facing Material & Thickness</td><td class=\"p-3 border border-slate-200\">0.50 mm (standard) / 0.40, 0.45, 0.60, 0.80 mm Pre-painted Galvanized Steel or SUS 304</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Standard Panel Thickness</td><td class=\"p-3 border border-slate-200\">50 mm (standard partition & ceiling); 75 mm, 100 mm (high-span dividing walls)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Standard Effective Width</td><td class=\"p-3 border border-slate-200\">1180 mm / 980 mm (custom fractional widths 300 mm to 1180 mm)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Panel Length</td><td class=\"p-3 border border-slate-200\">Tailored to project architectural elevations: 2000 mm – 6000 mm (max 8000 mm)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Core Material Density</td><td class=\"p-3 border border-slate-200\">220 ~ 280 kg/m³; Overall Composite Panel Weight: ~17.5 kg/m²</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Halogen Return (Sweating)</td><td class=\"p-3 border border-slate-200\">0% Halogen Release (No deliquescence, no damp sweating across 20%–95% RH)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Surface Coil Finish</td><td class=\"p-3 border border-slate-200\">Cleanroom PE, HDP, PVDF Fluorocarbon, Anti-Static ESD (10^6 - 10^9 Ω), Antibacterial</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Structural Perimeter Keel</td><td class=\"p-3 border border-slate-200\">0.80–1.0 mm cold-rolled galvanized steel channel keels enclosing four edges</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Joint Configuration</td><td class=\"p-3 border border-slate-200\">Concealed internal interlocking spline groove with 2.0 mm flush caulked seam</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Connection System</td><td class=\"p-3 border border-slate-200\">JH 258 \"中\"-shaped extruded aluminum keel spline</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Fire Performance Classification</td><td class=\"p-3 border border-slate-200\">Class A1 Non-combustible (GB 8624-2012 / ISO 1182); Fire endurance ≥ 1.0–1.5 Hours</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Thermal Conductivity</td><td class=\"p-3 border border-slate-200\">λ = 0.055 ~ 0.065 W/(m·K)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Acoustic Sound Reduction</td><td class=\"p-3 border border-slate-200\">Rw ≥ 32 dB to 36 dB (ISO 717-1)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Walkable Ceiling Live Load</td><td class=\"p-3 border border-slate-200\">Point load ≥ 150 kg; Uniform live load ≥ 2.5 kN/m² @ 1200 mm suspension centers</td></tr>\n        </tbody>\n      </table>"
+    ],
+    "faqs": [
+      {
+        "question": "What is halogen return and why is magnesium sulfate superior?",
+        "answer": "Older magnesium oxychloride panels used chloride salts that absorb moisture from the air, causing deliquescence ('sweating' salty water) and severe rusting of steel facings. Magnesium sulfate completely replaces chloride with sulfate, creating a non-hygroscopic core with 0% halogen return that will never sweat or rust."
+      },
+      {
+        "question": "Is this panel fireproof?",
+        "answer": "Yes. The Magnesium Sulfate Handmade Panel is certified Class A1 non-combustible under GB 8624 and ISO 1182. It withstands intense flame exposure for 1.0 to 1.5 hours without burning, melting, or emitting toxic fumes."
+      },
+      {
+        "question": "Can this panel be used in low-humidity dry rooms?",
+        "answer": "Yes. Unlike gypsum or wood-based panels that crack in ultra-low humidity, the magnesium oxysulfide matrix maintains perfect dimensional stability in dry rooms operating down to -60°C dew point."
+      },
+      {
+        "question": "How does this panel compare to rock wool handmade panels?",
+        "answer": "Magnesium sulfate panels have a higher core density (220–280 kg/m³ vs 100–120 kg/m³ for rock wool), giving them superior puncture resistance and flexural modulus. Rock wool panels offer slightly higher thermal insulation, while magnesium sulfate provides greater surface hardness."
+      },
+      {
+        "question": "Can personnel walk on ceilings made from these panels?",
+        "answer": "Yes. When suspended at 1200 mm spans using JH022/JH164 100T aluminum beams, the 50 mm panel easily supports maintenance live loads of 2.5 kN/m² and concentrated point loads of 150 kg."
+      },
+      {
+        "question": "How are the panels connected during installation?",
+        "answer": "Panels are joined using the JH 258 '中'-shaped extruded aluminum keel spline, which slots into the perimeter steel frame of adjacent panels. This conceals all fasteners and creates a flush 2 mm joint ready for silicone caulking."
+      },
+      {
+        "question": "Are factory-cut openings for windows and doors supported?",
+        "answer": "Yes. Openings for double-glazed flush cleanroom windows, door frames, and pass boxes are pre-machined at our factory with internal perimeter keels to maintain structural rigidity."
+      },
+      {
+        "question": "What facing finishes are recommended for pharmaceutical suites?",
+        "answer": "We recommend 0.50 mm or 0.60 mm pre-painted galvanized steel with high-durability polyester (HDP) or PVDF fluorocarbon coatings in White-Gray (RAL 9002), which resist continuous chemical washdowns."
+      }
+    ]
+  },
+  {
+    "id": 5104,
+    "slug": "medical-purification-panel",
+    "categorySlug": "cleanroom-turnkey-solution",
+    "categoryName": "Cleanroom Solutions & Turnkey Systems",
+    "title": "Medical Purification Panel",
+    "seoTitle": "Medical Purification Cleanroom Panel Manufacturer | Peter Air Systems",
+    "metaDescription": "Antibacterial Medical Purification Panel with 4-6mm medical resin compact facing, high scratch resistance, and immunity to iodine, alcohol, and chlorine disinfectants for OT suites.",
+    "canonical": "https://peterairs.com/medical-purification-panel/",
+    "h1": "Medical Purification Cleanroom Panel",
+    "image": "/images/cleanroom/handmade-medical-purification.jpg",
+    "bannerImage": "/images/hero-banner-4.png",
+    "diagramImage": "/images/cleanroom/cleanroom-installation-nodes-cad.jpg",
+    "overview": "The Medical Purification Panel (Type 50 / Antibacterial Medical Resin Cleanroom Panel) is engineered specifically for high-sterility healthcare environments, including laminar airflow operating theatres (OT), surgical preparation rooms, intensive care units (ICU), central sterile services departments (CSSD), and pharmaceutical compounding laboratories. The panel is surfaced with a 4.0 mm to 6.0 mm medical-grade thermoset solid phenolic resin compact sheet (high-pressure laminate) or high-durability fluorocarbon-coated steel, laminated over a high-density non-combustible basalt rock wool or aluminum honeycomb core. Cold-formed 0.8 mm to 1.0 mm galvanized steel perimeter channel keels seal the edges.\n\nThis medical compact facing provides an ultra-hard, non-porous surface that is completely impervious to chemical staining from concentrated povidone-iodine, surgical spirits, hydrogen peroxide, chlorine biocides, and enzymatic cleaning agents. Unlike standard painted metal sheets that scratch or dent when struck by surgical carts, medical gas pendants, or mobile gurneys, the high-pressure resin skin delivers exceptional impact resistance (Shore D hardness ≥ 85). Certified Class A1/A fire-resistant and incorporating active silver-ion antimicrobial technology that eradicates 99.9% of bacteria (such as MRSA and E. coli), the Medical Purification Panel creates an impenetrable, aseptic barrier engineered to maintain surgical sterility for decades.",
+    "construction": "The Medical Purification Panel is constructed using an advanced composite sandwich architecture. The primary front facing consists of an ultra-dense, homogeneous 4.0 mm – 6.0 mm high-pressure thermosetting melamine resin compact board. The board is manufactured under simultaneous high temperature (≥ 150°C) and extreme hydraulic pressure (≥ 9 MPa), fusing phenolic-impregnated kraft core papers with decorative surface foils and an invisible transparent electron-beam-cured (EBC) protective overlay. The backing sheet is a 0.5 mm pre-painted galvanized steel sheet with an epoxy primer.\n\nThe central core is composed of vertically sliced high-density basalt rock wool strips (100–120 kg/m³) or structural aluminum honeycomb, providing thermal insulation and Class A fire safety. The perimeter of the panel is framed with 0.8 mm cold-formed galvanized steel channel keels, precision-slotted to accept the JH 258 extruded aluminum '中'-keel spline. Structural fusion of the resin facing, the core, the perimeter frame, and the back sheet is achieved through robotic roller application of solvent-free dual-component polyurethane adhesive cured under continuous hydraulic platen pressing.",
+    "layers": [
+      {
+        "name": "Medical Surface Facing",
+        "spec": "4.0–6.0 mm Solid Phenolic Resin Melamine Compact Board / PVDF Coated Steel"
+      },
+      {
+        "name": "Adhesive Bond Line",
+        "spec": "High-Strength Solvent-Free Dual-Component Polyurethane Adhesive"
+      },
+      {
+        "name": "Structural Thermal Core",
+        "spec": "100–120 kg/m³ Basalt Rock Wool Strips or Grade 3003 Aluminum Honeycomb"
+      },
+      {
+        "name": "Perimeter Structural Frame",
+        "spec": "0.80–1.0 mm Cold-Rolled Galvanized Steel Channel Keel"
+      },
+      {
+        "name": "Backing Sheet",
+        "spec": "0.50 mm Pre-painted Galvanized Steel Sheet with Anti-Corrosion Primer"
+      }
+    ],
+    "installation": "Installation of the Medical Purification Panel follows hospital cleanroom standards to ensure airtight, flush envelope construction. The JH014B 50 mm aluminum U-channel is fastened to the finished floor using countersunk masonry anchors at 300 mm intervals. Panels are seated vertically into the floor track and aligned laser-straight. Adjacent panels are coupled using the JH 258 '中'-shaped extruded aluminum keel inserted into the perimeter edge grooves, creating a continuous mechanical interlock. Walkable ceilings are suspended using JH022/JH164 100T-shaped aluminum hanging beams supported by M8 threaded rods at 1200 mm centers. Internal 90° corners are finished with JH009 clip tracks and JH001A concave coving profiles. Finally, all joints are caulked flush with medical-grade antimicrobial silicone, eliminating any recesses where biological contaminants could harbor.",
+    "installationPoints": [
+      "Base Track Alignment: Anchor JH014B slot aluminum to the floor slab with stainless fasteners @ 300 mm spacing.",
+      "Plumb Wall Placement: Lift and seat panels into the base channel, ensuring laser alignment across wall runs.",
+      "Concealed Keel Coupling: Insert JH 258 '中'-shaped extruded aluminum keels into side grooves to lock panels flush.",
+      "Ceiling Suspension Integration: Suspend ceiling panels using JH022/JH164 100T hanging beams on M8 threaded rods.",
+      "Hygienic Coving Profiles: Clip JH001A inner arc coving into JH009 base tracks along all 90° wall and ceiling junctures.",
+      "Hospital-Grade Flush Caulking: Caulk all seams with certified anti-fungal, non-shrinking medical silicone sealant."
+    ],
+    "variations": "Peter Air Systems supplies the Medical Purification Panel in standard dimensions of 1220 mm × 2440 mm, 1220 mm × 3000 mm, and custom modular widths from 300 mm to 1220 mm to match hospital wall elevations. Total thickness is standard at 50 mm, with 75 mm and 100 mm options available for high-acoustic surgical partitions. Surface colors include Mint Green, Hospital Sky Blue, Surgical Teal, White-Gray, and Pure White. Core selections include standard high-density basalt rock wool (Class A1) or aerospace-grade aluminum honeycomb. Factory customizations include pre-cut openings for medical gas terminal boxes, surgeon control panels, and flush observation windows. Furthermore, custom color matching according to international RAL and Pantone shade charts is available for specialized facility branding, alongside optional factory-integrated provisions for interlock wiring channels, differential pressure sensor ports, and flush return air riser cutouts tailored to cleanroom architectural drawings.",
+    "variationList": [
+      "Thickness Options: 50 mm (standard hospital partition), 75 mm (acoustic theatre divider), 100 mm (lead-lined X-ray barrier)",
+      "Standard Sheet Sizes: 1220 × 2440 mm, 1220 × 3000 mm (custom room-height fabrications up to 4000 mm)",
+      "Surface Colors: Surgical Mint Green, Soft Hospital Blue, Medical Teal, Pure White, Pastel Ivory",
+      "Core Infill Choices: 100–120 kg/m³ Basalt Rock Wool (Class A1), Class A Aluminum Honeycomb, or Lead-foil X-ray Infill",
+      "Factory Embeds: Pre-cut surgeon control panel frames, surgical gas outlet boxes, flush viewing window rebates"
+    ],
+    "gallery": [
+      {
+        "src": "/images/cleanroom/handmade-medical-purification.jpg",
+        "title": "Medical Purification Solid Resin Panel"
+      },
+      {
+        "src": "/images/cleanroom/cleanroom-installation-nodes-cad.jpg",
+        "title": "Operating Theatre Wall-to-Ceiling CAD Interface"
+      },
+      {
+        "src": "/images/cleanroom/double-glazed-cleanroom-windows.jpg",
+        "title": "Flush Cleanroom Observation Window Integration"
+      }
+    ],
+    "features": [
+      "Chemical & Disinfectant Immunity: Surface is completely impervious to repeated contact with concentrated povidone-iodine, chlorhexidine, surgical alcohol, bleach, and aggressive enzymatic cleaners without staining or softening.",
+      "Extreme Scratch & Impact Resistance: The solid phenolic resin compact facing (Shore D hardness ≥ 85) prevents denting, cracking, and surface gouging from high-impact collisions with surgical gurneys and mobile equipment.",
+      "Active Silver-Ion Antibacterial Technology: Factory-infused with active nano-silver antimicrobial additives that disrupt bacterial cell walls, achieving >99.9% reduction against MRSA, E. coli, and Klebsiella pneumoniae within 24 hours.",
+      "Certified Class A1 / A Fire Performance: Non-combustible core combined with flame-retardant surface resin delivers Class A1/A fire safety, preventing flame spread and releasing zero toxic smoke or flaming particles.",
+      "Ultra-Smooth Non-Porous Hygiene: Non-porous surface (water absorption < 0.1%) eliminates microscopic crevices, ensuring complete removal of blood, bio-burden, and airborne viruses during routine wipe-downs.",
+      "Vaporized Hydrogen Peroxide (VHP) Certified: Fully validated for recurring VHP and gaseous formaldehyde automated bio-decontamination cycles without discoloration, micro-blistering, or surface chalking.",
+      "High Acoustic Sound Insulation: With an acoustic transmission loss rating of Rw ≥ 36 dB, the panel blocks equipment noise from adjacent scrub rooms, autoclaves, and air conditioning systems.",
+      "Ledge-Free Flush Window & Door Integration: Integrates seamlessly with coplanar double-glazed observation windows and flush hermetic doors, ensuring uninterrupted laminar airflow paths.",
+      "Lead-Lined Radiation Shielding Option: Can be factory-laminated with an internal 1.0 mm to 3.0 mm lead sheet (Pb) core for hybrid operating theatres, catheterization labs, and X-ray imaging suites.",
+      "Zero Formaldehyde & Non-Outgassing: Manufactured in compliance with ISO 14644-8 airborne molecular contamination (AMC) guidelines, releasing zero VOCs or offensive odors into sterile patient areas."
+    ],
+    "materials": [
+      "Facing Surface: 4.0–6.0 mm medical-grade high-pressure solid phenolic resin melamine compact laminate or PVDF coated steel.",
+      "Core Infill: High-density hydrophobic basalt rock wool (100–120 kg/m³) or Grade 3003 hexagonal aluminum honeycomb.",
+      "Backing Sheet: 0.50 mm pre-painted hot-dip galvanized steel sheet with anti-corrosion epoxy back-coat.",
+      "Structural Frame: Cold-rolled 0.80–1.0 mm galvanized steel perimeter channel keels on all four edges.",
+      "Lamination Adhesive: Solvent-free dual-component polyurethane structural resin with tensile shear strength ≥ 1.2 MPa."
+    ],
+    "applications": [
+      "Hospital Operating Theatres (OT): Wall and ceiling systems for Class 100 laminar flow surgical suites requiring stain-proof, impact-resistant, and antibacterial surfaces.",
+      "Intensive Care Units (ICU) & CCU: Isolation and critical patient rooms demanding frequent hospital-grade sanitization and acoustic quietness.",
+      "Central Sterile Supply Departments (CSSD): Decontamination and sterilization packaging suites exposed to high humidity and chemical disinfectants.",
+      "Pharmaceutical Compounding Pharmacies: Sterile compounding cleanrooms complying with USP <797> and USP <800> hazardous drug handling standards.",
+      "Pathology & Microbiology Laboratories: Biosafety level 2 and 3 laboratories handling infectious specimens requiring chemical and stain immunity.",
+      "Hybrid Angiography & Imaging Suites: Operating rooms equipped with fluoroscopy equipment, utilizing lead-shielded panel configurations.",
+      "Burn Treatment Units: Sterile isolation rooms requiring continuous positive pressure and zero-particle shedding surfaces."
+    ],
+    "tables": [
+      "<table class=\"w-full text-left text-xs sm:text-sm border-collapse border border-slate-200\">\n        <thead>\n          <tr class=\"bg-slate-100 text-slate-800 font-bold\">\n            <th class=\"p-3 border border-slate-200 w-1/3\">Parameter / Specification</th>\n            <th class=\"p-3 border border-slate-200\">Engineering Standard & Values</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Product Model</td><td class=\"p-3 border border-slate-200\">Type 50 Medical Purification Cleanroom Panel (Medical Compact Face)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Core Material Composition</td><td class=\"p-3 border border-slate-200\">Hydrophobic Basalt Rock Wool (100–120 kg/m³) or Class A Aluminum Honeycomb</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Facing Material & Thickness</td><td class=\"p-3 border border-slate-200\">4.0 mm – 6.0 mm Solid Phenolic Resin Melamine Compact Sheet (Front) / 0.5 mm Steel (Back)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Standard Panel Thickness</td><td class=\"p-3 border border-slate-200\">50 mm (standard OT wall); 75 mm, 100 mm (acoustic or radiation shielded)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Standard Effective Width</td><td class=\"p-3 border border-slate-200\">1220 mm (custom modular widths from 300 mm to 1220 mm fabricated to size)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Panel Length / Height</td><td class=\"p-3 border border-slate-200\">2440 mm, 3000 mm standard (custom single-piece heights up to 4000 mm)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Surface Hardness & Scratch</td><td class=\"p-3 border border-slate-200\">Shore D Hardness ≥ 85; Scratch resistance ≥ 4.0 N (EN 438-2 / ISO 4586)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Chemical & Stain Resistance</td><td class=\"p-3 border border-slate-200\">Resists povidone-iodine, surgical alcohol, bleach, VHP (No staining after 24 hr contact)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Antibacterial Performance</td><td class=\"p-3 border border-slate-200\">Active Silver-ion technology: >99.9% reduction of MRSA & E. coli (JIS Z 2801 / ISO 22196)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Structural Perimeter Keel</td><td class=\"p-3 border border-slate-200\">0.80–1.0 mm cold-rolled galvanized steel channel keels enclosing four edges</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Joint Configuration</td><td class=\"p-3 border border-slate-200\">Flush concealed interlocking spline groove with 2.0 mm flush caulked hygienic seam</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Connection System</td><td class=\"p-3 border border-slate-200\">JH 258 \"中\"-shaped extruded aluminum keel spline</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Fire Performance Classification</td><td class=\"p-3 border border-slate-200\">Class A1 Core / Class A Surface (GB 8624-2012 / ASTM E84 Class A)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Thermal Conductivity</td><td class=\"p-3 border border-slate-200\">λ = 0.040 ~ 0.048 W/(m·K)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Acoustic Sound Transmission Loss</td><td class=\"p-3 border border-slate-200\">Rw ≥ 36 dB to 40 dB (ISO 717-1)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Available Design Variations</td><td class=\"p-3 border border-slate-200\">Rock wool core, aluminum honeycomb core, lead-lined radiation shielding (1-3mm Pb)</td></tr>\n        </tbody>\n      </table>"
+    ],
+    "faqs": [
+      {
+        "question": "Why is a solid resin compact face used instead of color-coated steel for medical rooms?",
+        "answer": "Operating theatres and trauma suites experience heavy traffic with mobile surgical carts, IV poles, and equipment that frequently dent or scratch painted steel. Solid phenolic resin compact board is through-colored, extremely hard (Shore D ≥ 85), and resists gouging and severe mechanical impacts."
+      },
+      {
+        "question": "Does iodine or surgical scrub stain this panel?",
+        "answer": "No. The electron-beam-cured melamine surface is completely non-porous and chemical-inert. Povidone-iodine, chlorhexidine, blood, and enzymatic cleaners can be wiped off completely with standard alcohol wipes without leaving any yellow or brown stains."
+      },
+      {
+        "question": "How does the antibacterial feature work?",
+        "answer": "Active nano-silver ions are homogenously compounded into the surface resin during manufacturing. The silver ions continuously bind to bacterial cell membranes and inhibit reproduction, achieving a 99.9% reduction in common pathogens like MRSA and E. coli within 24 hours."
+      },
+      {
+        "question": "Can lead sheet shielding be integrated for X-ray rooms?",
+        "answer": "Yes. For hybrid operating suites, cardiac cath labs, and orthopedic OT rooms with fluoroscopy C-arms, we can factory-laminate a 1.0 mm to 3.0 mm pure lead sheet (Pb) directly behind the front compact facing."
+      },
+      {
+        "question": "What is the fire performance of the Medical Purification Panel?",
+        "answer": "The panel achieves a Class A1 non-combustible core rating and a Class A flame spread surface rating. In fire testing, it generates minimal smoke and will not contribute to flame propagation."
+      },
+      {
+        "question": "Can surgeon control panels and medical gas boxes be mounted flush?",
+        "answer": "Yes. Precise CNC cutouts and internal structural perimeter reinforcements are prepared at our factory based on your equipment submittals, allowing touchscreen control panels and gas outlets to mount perfectly flush."
+      },
+      {
+        "question": "What colors are most popular for operating rooms?",
+        "answer": "Mint Green, Surgical Teal, and Soft Hospital Blue are the standard choices because they reduce eye strain for surgeons under high-intensity operating lights. Pure white and warm ivory are also available for preparation and scrub rooms."
+      },
+      {
+        "question": "How are the joints sealed between panels in operating rooms?",
+        "answer": "Panels are joined with concealed JH 258 aluminum keels, leaving a uniform 2 mm seam. This seam is primed and sealed flush with certified medical-grade neutral silicone that resists microbial colonization and chemical degradation."
+      }
+    ]
+  },
+  {
+    "id": 5105,
+    "slug": "combination-purification-panel",
+    "categorySlug": "cleanroom-turnkey-solution",
+    "categoryName": "Cleanroom Solutions & Turnkey Systems",
+    "title": "Machine-made / Handmade Combination Purification Panel",
+    "seoTitle": "Combination Machine-Made & Handmade Cleanroom Panel | Peter Air Systems",
+    "metaDescription": "Patented enterprise mouth combination panel integrating continuous machine-rolled tongue-and-groove jointing with high-strength handmade internal perimeter keels.",
+    "canonical": "https://peterairs.com/combination-purification-panel/",
+    "h1": "Machine-made / Handmade Combination Purification Panel",
+    "image": "/images/cleanroom/combination-purification-panel.jpg",
+    "bannerImage": "/images/hero-banner-4.png",
+    "diagramImage": "/images/cleanroom/cleanroom-installation-nodes-cad.jpg",
+    "overview": "The Machine-Made / Handmade Combination Purification Panel (Patented Enterprise Mouth Combination Cleanroom Panel) is an innovative hybrid enclosure solution engineered to combine the structural rigidity and precision craftsmanship of handmade panels with the rapid installation and seamless tongue-and-groove aesthetics of machine-rolled panels. In standard handmade cleanroom installations, external aluminum splines or visible batten joints add installation labor and create microscopic ledges. Conversely, conventional machine-made panels lack perimeter reinforcement keels, making them vulnerable to edge deformation under high structural loads.\n\nThis combination panel resolves both limitations by incorporating heavy-duty 0.8 mm cold-formed galvanized steel channel keels around the internal perimeter of the core, while precision roll-forming the outer pre-painted steel facings into a continuous interlocking male-and-female tongue-and-groove edge (enterprise mouth). The core can be configured with Class A1 basalt rock wool, magnesium oxysulfide, or hollow glass magnesium. The resulting assembly provides an ultra-flat, high-strength cleanroom partition wall that snaps together without visible fasteners, reducing on-site installation labor costs by up to 35% while retaining full structural integrity and Class A1 fire resistance.\n\nFurthermore, all manufacturing stages are conducted under strict ISO 9001:2015 quality control protocols, ensuring batch-to-batch consistency and rigorous compliance with international cleanroom envelope standards (including ISO 14644-4, WHO TRS 986, and US FDA cGMP). By maintaining precision mechanical tolerances and providing customized sizing, Peter Air Systems ensures optimal airflow aerodynamics, minimal maintenance downtime, and long-term contamination containment across critical pharmaceutical, healthcare, and industrial manufacturing environments.",
+    "construction": "The Combination Purification Panel features a hybrid manufacturing methodology. The exterior facings consist of 0.5 mm to 0.8 mm high-grade pre-painted galvanized steel or stainless steel coil that is fed through continuous high-precision roll-forming stations to create male and female interlocking edge profiles with an integrated capillary sealant groove. Internally, a perimeter framework of 0.8 mm cold-rolled galvanized steel channel keels is assembled around the core substrate, providing high mechanical bearing capacity along all four edges.\n\nThe internal core—typically composed of vertical-fiber basalt rock wool strips (100–120 kg/m³), solid magnesium oxysulfide, or glass magnesium grid—is bonded between the steel facings and the perimeter keels using robotic high-pressure application of solvent-free dual-component polyurethane adhesive. The assembly is cured under a continuous heated multi-platen hydraulic press, ensuring complete mechanical bond strength (shear strength ≥ 1.2 MPa). The completed panel features an airtight interlocking seam that creates a monolithic, flush wall surface with an invisible joint line.\n\nAdditionally, all internal perimeter keels and structural channel ribs undergo automated anti-corrosion passivation before bonding. The high-pressure hydraulic curing process ensures zero void formation or air entrapment between the core matrix and metal facings, eliminating risks of internal delamination under fluctuating environmental room temperatures and recurring positive or negative pressure cycling in high-containment cleanroom zones.",
+    "layers": [
+      {
+        "name": "Top Facing Sheet",
+        "spec": "0.50–0.80 mm Roll-Formed Male/Female Tongue-and-Groove Galvanized Steel"
+      },
+      {
+        "name": "Structural Perimeter Keel",
+        "spec": "0.80–1.0 mm Cold-Rolled Galvanized Steel Channel Keel on All Edges"
+      },
+      {
+        "name": "Core Insulation Infill",
+        "spec": "100–120 kg/m³ Basalt Rock Wool / Magnesium Oxysulfide / Glass Magnesium"
+      },
+      {
+        "name": "Adhesive Bond Line",
+        "spec": "High-Strength Solvent-Free Dual-Component Polyurethane Adhesive"
+      },
+      {
+        "name": "Bottom Facing Sheet",
+        "spec": "0.50–0.80 mm Roll-Formed Male/Female Tongue-and-Groove Galvanized Steel"
+      }
+    ],
+    "installation": "Installation of the Combination Purification Panel is substantially faster than traditional handmade panels. Floor tracks (JH014B 50 mm slot aluminum) are fixed to the subfloor with expansion anchors at 300 mm spacing. The first combination panel is set plumb and anchored. Subsequent panels are simply slid into the base track and pressed horizontally, allowing the precision roll-formed male tongue to engage deeply into the female groove of the preceding panel. The internal steel keels automatically align the panels flush without requiring separate aluminum '中' splines. For suspended ceilings, panels connect to overhead structural steel via concealed ceiling clip brackets or JH022/JH164 100T hanging beams. Once erected, the hairline tongue-and-groove seam is sealed with cleanroom neutral silicone.",
+    "installationPoints": [
+      "Floor Runner Fixing: Anchor JH014B U-channel to finished floor using 5 mm masonry anchors @ 300 mm pitch.",
+      "Initial Panel Setting: Position the starter panel plumb and level, securing the bottom edge into the runner track.",
+      "Snap-Fit Interlocking: Slide subsequent panels horizontally so the male tongue securely engages the female groove.",
+      "Concealed Fastening: Drive self-drilling screws through the concealed internal keel flange into top and bottom tracks.",
+      "Ceiling Suspension: Support suspended ceiling runs using concealed hanging clips or JH022 100T beams @ 1200 mm intervals.",
+      "Hygienic Flush Sealing: Apply neutral cure anti-fungal silicone into the hairline joint (nominal 1.5 mm seam)."
+    ],
+    "variations": "Supplied in standard modular widths from 300 mm to 1162 mm, tailored to architectural column layouts. Standard thicknesses include 50 mm, 75 mm, and 100 mm. Core material variations include Basalt Rock Wool (Class A1), Patented Magnesium Oxysulfide, Hollow Core Glass Magnesium, and Aluminum Honeycomb. Facing options comprise Cleanroom White-Gray (RAL 9002), Pure White (RAL 9003/9010), Light Blue, Anti-static ESD coatings, and SUS 304 / 316L stainless steel. Factory modifications include pre-buried electrical conduits, pre-punched interlock rebates, and reinforced viewing window cutouts. Furthermore, custom color matching according to international RAL and Pantone shade charts is available for specialized facility branding, alongside optional factory-integrated provisions for interlock wiring channels, differential pressure sensor ports, and flush return air riser cutouts tailored to cleanroom architectural drawings.",
+    "variationList": [
+      "Thickness Configurations: 50 mm (standard partitions & ceilings), 75 mm (enhanced acoustic/fire), 100 mm (tall dividing walls)",
+      "Standard Module Widths: 980 mm, 1150 mm, 1162 mm (custom widths from 300 mm to 1162 mm)",
+      "Core Infill Options: Basalt Rock Wool (100–120 kg/m³), Magnesium Oxysulfide, Glass Magnesium, Aluminum Honeycomb",
+      "Facing Finishes: RAL 9002 Off-White, RAL 9003 Pure White, RAL 5015 Light Blue, SUS 304 Stainless Steel",
+      "Surface Coatings: Cleanroom PE, High-Durability Polyester (HDP), PVDF Fluorocarbon, Antistatic ESD (10^6 - 10^9 Ω)"
+    ],
+    "gallery": [
+      {
+        "src": "/images/cleanroom/combination-purification-panel.jpg",
+        "title": "Combination Machine-Made / Handmade Panel Profile"
+      },
+      {
+        "src": "/images/cleanroom/cleanroom-installation-nodes-cad.jpg",
+        "title": "Tongue & Groove Interlock Assembly CAD Node"
+      },
+      {
+        "src": "/images/cleanroom/cleanroom-profile-specs-table-2.jpg",
+        "title": "Cleanroom Extruded Aluminium Accessory Details"
+      }
+    ],
+    "features": [
+      "Patented Hybrid Edge Engineering: Combines the rapid snap-together installation of machine-made tongue-and-groove joints with the superior load-bearing capacity of handmade internal perimeter steel keels.",
+      "Up to 35% Faster On-Site Erection: Eliminates the separate handling and insertion of external aluminum splines, dramatically speeding up cleanroom installation schedules and lowering contractor labor overhead.",
+      "Monolithic Flush Surface Alignment: Precision roll-formed enterprise mouth profile ensures panels interlock with zero step differential, creating an ultra-smooth, aerodynamically clean wall plane.",
+      "Class A1 Fire Resistance Rating: Available with vertical-fiber basalt rock wool or magnesium oxysulfide cores, providing certified non-combustibility and up to 1.5 hours of fire separation.",
+      "High Load-Bearing Structural Keels: Internal 0.8 mm cold-formed galvanized perimeter keels prevent edge crushing and allow panels to span up to 6000 mm vertically without buckling or bowing.",
+      "Airtight Tongue-and-Groove Barrier: Precision-matched male and female profiles incorporate an internal capillary break, ensuring zero air leakage under cleanroom pressure differentials up to 100 Pa.",
+      "Chemical & Disinfectant Resistance: Finished with premium baked coil coatings (PVDF, HDP, or ESD) that withstand aggressive cleaning agents, alcohols, and vaporized hydrogen peroxide (VHP).",
+      "Acoustic Noise Reduction: With sound transmission loss Rw ≥ 32 dB to 36 dB, the panel insulates cleanroom working areas from loud air handling units, fans, and mechanical plant rooms.",
+      "Pre-Buried Service Integration: Factory-embedded conduit channels and electrical switch back-boxes can be integrated into the core, eliminating messy on-site cutting and particle contamination.",
+      "Zero Formaldehyde & Clean Air Safe: Manufactured using solvent-free polyurethane adhesives and inorganic mineral cores, releasing zero airborne molecular contaminants into sterile spaces."
+    ],
+    "materials": [
+      "Facing Skins: High-tensile pre-painted galvanized steel (PPGI) / SUS 304 stainless steel coils from Baosteel / POSCO (0.50–0.80 mm).",
+      "Perimeter Frame: 0.80–1.0 mm cold-rolled galvanized steel channel keels forming an internal perimeter box structure.",
+      "Core Infill: Hydrophobic basalt rock wool strips (100–120 kg/m³) or patented magnesium oxysulfide board.",
+      "Lamination Adhesive: Dual-component polyurethane structural resin applied robotically with shear strength ≥ 1.2 MPa.",
+      "Edge Profiling: Continuous roll-formed precision male and female tongue-and-groove joint profile."
+    ],
+    "applications": [
+      "Pharmaceutical Manufacturing Plants: Secondary packaging and processing areas requiring fast-track cleanroom construction with smooth, easily sanitized surfaces.",
+      "Semiconductor & Electronics Cleanrooms: Large-scale microelectronics assembly suites requiring rapid modular erection and non-outgassing partitions.",
+      "Medical Device Manufacturing: Cleanroom packaging suites requiring high-strength partition walls that resist trolley impacts.",
+      "Food & Beverage Packaging Facilities: Hygienic food packaging lines requiring non-porous, airtight walls that withstand regular high-pressure foam washdowns.",
+      "Biotechnology Pilot Plants: Modular research and development facilities requiring reconfigurable cleanroom wall panels with high fire resistance.",
+      "Cosmetics & Personal Care Cleanrooms: Clean production suites demanding cost-effective, high-planarity walling with minimal silicone seams.",
+      "Hospital Supply & Sterile Corridors: High-traffic healthcare corridors requiring robust, impact-resistant wall systems with fast installation times."
+    ],
+    "tables": [
+      "<table class=\"w-full text-left text-xs sm:text-sm border-collapse border border-slate-200\">\n        <thead>\n          <tr class=\"bg-slate-100 text-slate-800 font-bold\">\n            <th class=\"p-3 border border-slate-200 w-1/3\">Parameter / Specification</th>\n            <th class=\"p-3 border border-slate-200\">Engineering Standard & Values</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Product Model</td><td class=\"p-3 border border-slate-200\">Machine-Made / Handmade Combination Purification Cleanroom Panel</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Core Material Composition</td><td class=\"p-3 border border-slate-200\">Basalt Rock Wool (100–120 kg/m³) or Patented Magnesium Oxysulfide Board</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Facing Material & Thickness</td><td class=\"p-3 border border-slate-200\">0.50 mm (standard) / 0.40, 0.45, 0.60, 0.80 mm Pre-painted Galvanized Steel or SUS 304</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Standard Panel Thickness</td><td class=\"p-3 border border-slate-200\">50 mm (standard partition & ceiling); 75 mm, 100 mm (high-span partition walls)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Standard Effective Width</td><td class=\"p-3 border border-slate-200\">1150 mm / 1162 mm / 980 mm (custom modular widths from 300 mm to 1162 mm)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Panel Length / Height</td><td class=\"p-3 border border-slate-200\">Custom cut to project elevations: 2000 mm – 6000 mm (max 8000 mm)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Structural Perimeter Keel</td><td class=\"p-3 border border-slate-200\">0.80–1.0 mm cold-formed galvanized steel channel keels enclosing four core edges</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Joint Configuration</td><td class=\"p-3 border border-slate-200\">Continuous roll-formed interlocking tongue-and-groove (\"enterprise mouth\" 企口) joint</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Connection System</td><td class=\"p-3 border border-slate-200\">Direct interlocking tongue-and-groove snap fit; no visible aluminum connecting splines</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Fire Performance Classification</td><td class=\"p-3 border border-slate-200\">Class A1 Non-combustible (GB 8624-2012 / ISO 1182); Fire resistance ≥ 1.0–1.5 Hours</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Thermal Conductivity</td><td class=\"p-3 border border-slate-200\">λ = 0.040 ~ 0.048 W/(m·K) (GB/T 10294)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Acoustic Sound Reduction</td><td class=\"p-3 border border-slate-200\">Rw ≥ 32 dB to 36 dB (ISO 717-1)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Surface Coil Finish</td><td class=\"p-3 border border-slate-200\">Cleanroom PE, HDP, PVDF Fluorocarbon, Anti-Static ESD (10^6 - 10^9 Ω), Antibacterial</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Installation Speed Advantage</td><td class=\"p-3 border border-slate-200\">Up to 35% reduction in installation labor hours compared to traditional handmade panels</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Available Design Variations</td><td class=\"p-3 border border-slate-200\">Rock wool infill, magnesium oxysulfide infill, aluminum honeycomb infill, SUS 304 skins</td></tr>\n        </tbody>\n      </table>"
+    ],
+    "faqs": [
+      {
+        "question": "How does the combination panel differ from a regular handmade panel?",
+        "answer": "Regular handmade panels require a separate aluminum '中' spline inserted into the joint between every panel. The combination panel precision roll-forms the steel facing into a male/female tongue-and-groove joint, while retaining the heavy-duty internal steel keels of handmade panels. This eliminates external connecting splines and speeds up installation."
+      },
+      {
+        "question": "Does the tongue-and-groove joint sacrifice structural strength?",
+        "answer": "No. Because 0.8 mm cold-formed galvanized perimeter keels are bonded internally around the entire core, the panel retains the high compressive strength, shear resistance, and impact toughness of a handmade panel."
+      },
+      {
+        "question": "Why does this panel save up to 35% in installation labor?",
+        "answer": "Installers do not need to cut, align, and slide separate aluminum splines between panels. The panels simply slide into the floor runner and snap together horizontally like building blocks, cutting erection time by more than a third."
+      },
+      {
+        "question": "What fire rating does this panel achieve?",
+        "answer": "When configured with our standard basalt rock wool or magnesium oxysulfide core, the combination panel is certified Class A1 non-combustible under GB 8624 and ISO 1182, providing 1.0 to 1.5 hours of fire endurance."
+      },
+      {
+        "question": "Is silicone caulking still required along the joints?",
+        "answer": "Yes. While the tongue-and-groove joint fits tightly with an internal capillary break, pharmaceutical cleanroom regulations require a sterile surface seal. A thin, flush bead of neutral cure silicone is applied into the 1.5 mm joint to eliminate any micro-recesses."
+      },
+      {
+        "question": "Can these panels be used for cleanroom ceilings?",
+        "answer": "Yes. The combination panel is fully rated for ceiling applications. For walkable ceilings, panels are supported by 100T hanging beams or concealed ceiling clips at 1200 mm intervals."
+      },
+      {
+        "question": "What core materials are available for this panel?",
+        "answer": "We offer basalt rock wool (100–120 kg/m³) for fire and thermal performance, patented magnesium oxysulfide for moisture-stable high-density walls, and aluminum honeycomb for lightweight non-combustible installations."
+      },
+      {
+        "question": "Can electrical conduits be pre-installed inside the panel?",
+        "answer": "Yes. Electrical conduit conduits (20 mm or 25 mm) and switch back-boxes can be embedded into the core during factory assembly, eliminating dust-generating on-site cutting."
+      }
+    ]
+  },
+  {
+    "id": 5106,
+    "slug": "ffu-manual-blind-board",
+    "categorySlug": "cleanroom-turnkey-solution",
+    "categoryName": "Cleanroom Solutions & Turnkey Systems",
+    "title": "FFU Manual Blind Board",
+    "seoTitle": "FFU Manual Blind Board Cleanroom Ceiling Blanking Panel | Peter Air Systems",
+    "metaDescription": "Precision Cleanroom FFU Manual Blind Board (1175x1175mm / 575x575mm) for modular ceiling grid blanking, laminar flow sealing, and uniform plenum pressure containment.",
+    "canonical": "https://peterairs.com/ffu-manual-blind-board/",
+    "h1": "Cleanroom FFU Manual Blind Board",
+    "image": "/images/cleanroom/ffu-manual-blind-board.jpg",
+    "bannerImage": "/images/hero-banner-4.png",
+    "diagramImage": "/images/cleanroom/ffu-ceiling-grid-installation.jpg",
+    "overview": "The Cleanroom FFU Manual Blind Board (Type 50 / FFU Ceiling Blanking Panel) is an ultra-precision architectural component engineered for semiconductor, microelectronics, pharmaceutical, and high-containment cleanroom ceiling systems. In modern cleanrooms utilizing suspended T-bar grid layouts (standard 1200 mm × 1200 mm or 600 mm × 600 mm modules), not every grid aperture is occupied by an active Fan Filter Unit (FFU) or HEPA terminal box. Areas reserved for future air handling capacity, lighting panels, or static ceiling blanking require dedicated, flush-fitting blanking panels.\n\nThe FFU Manual Blind Board is precision-fabricated to exact dimensions of 1175 mm × 1175 mm (for 1200 mm grids) or 575 mm × 575 mm (for 600 mm grids), with an engineered nominal thickness of 12 mm or 13 mm (also available in 50 mm full sandwich thickness). The board consists of a high-density non-combustible core (calcium silicate, high-purity glass magnesium, or aluminum honeycomb) clad with pre-painted galvanized steel (PPGI) or SUS 304 / 316L hairline stainless steel, enclosed by an extruded perimeter seal channel. The blind board drops seamlessly into the ceiling grid T-bars, forming an airtight, uniform ceiling plane that maintains plenum pressurization and eliminates air leakage.",
+    "construction": "The FFU Manual Blind Board is constructed to match the aerodynamic and visual profile of active cleanroom FFUs. The exposed lower cleanroom facing is made from 0.5 mm to 0.8 mm high-tensile galvanized steel sheet coated with high-reflectance, non-glare cleanroom polyester or SUS 304 hairline stainless steel. The central core substrate comprises a high-density, non-dusting inorganic core board—such as fire-resistant calcium silicate board, moisture-impervious glass magnesium, or structural aluminum honeycomb—ensuring zero particulate shed and Class A1 non-combustibility.\n\nThe perimeter edges are encased in precision-machined stepped aluminum extrusion profiles or hemmed steel folds designed to seat perfectly over the silicone gel or closed-cell neoprene gasket lip of the ceiling T-grid beam. All core and facing layers are fused using high-tack, heat-resistant dual-component polyurethane adhesive under hydraulic press lamination. The resulting blanking panel has high planarity (diagonal tolerance within ±0.5 mm), preventing edge curling or vibration rattling caused by plenum airflow turbulence.\n\nAdditionally, all internal perimeter keels and structural channel ribs undergo automated anti-corrosion passivation before bonding. The high-pressure hydraulic curing process ensures zero void formation or air entrapment between the core matrix and metal facings, eliminating risks of internal delamination under fluctuating environmental room temperatures and recurring positive or negative pressure cycling in high-containment cleanroom zones.",
+    "layers": [
+      {
+        "name": "Cleanroom Exposed Facing",
+        "spec": "0.50–0.80 mm Pre-painted Galvanized Steel (RAL 9002/9003) or SUS 304 Hairline Stainless Steel"
+      },
+      {
+        "name": "Structural Bonding Layer",
+        "spec": "Solvent-free Dual-Component Polyurethane Adhesive Line"
+      },
+      {
+        "name": "Inorganic Core Substrate",
+        "spec": "12 mm / 13 mm High-Density Non-Combustible Calcium Silicate / Glass Magnesium Board"
+      },
+      {
+        "name": "Upper Plenum Facing",
+        "spec": "0.50 mm Pre-painted Galvanized Steel / Protective Backing Sheet"
+      },
+      {
+        "name": "Perimeter Sealing Profile",
+        "spec": "Precision Stepped Edge Profile for Gasket / Gel-Seal T-Grid Seating"
+      }
+    ],
+    "installation": "Installation of the FFU Manual Blind Board is executed from either the cleanroom interior or the ceiling plenum space. In standard heavy-duty ceiling T-grid systems (such as extruded aluminum 55T or 100T suspension systems), continuous closed-cell EPDM/silicone gasketing or fluid knife-edge gel channels are prepared on the grid support flanges. The FFU Blind Board is positioned over the open grid aperture and lowered onto the gasketed flange. Clamping hold-down clips are engaged from the plenum side to compress the gasket uniformly, ensuring zero air leakage between the positive-pressure ceiling plenum and the negative/positive room space. If an FFU unit is added to the cleanroom in the future, the blind board can be unclamped and removed in minutes without modifying the structural grid.",
+    "installationPoints": [
+      "Grid Flange Inspection: Ensure the ceiling T-bar grid opening is clean and square (1200x1200mm or 600x600mm module).",
+      "Gasket Preparation: Verify that continuous closed-cell EPDM gasket or silicone fluid seal is intact along the grid shelf.",
+      "Panel Drop-In: Carefully lower the FFU Blind Board into the grid aperture, ensuring even perimeter seating.",
+      "Hold-Down Clamping: Engage plenum-side hold-down clips to apply uniform downward pressure onto the sealing gasket.",
+      "Laminar Flush Check: Verify that the underside of the blind board is coplanar with adjacent active FFU units and LED troffers.",
+      "Airtight Integrity Test: Conduct positive pressure smoke testing or PAO leak detection across the grid interface."
+    ],
+    "variations": "Standard module sizes are 1175 mm × 1175 mm (for 1200 × 1200 mm grid) and 575 mm × 575 mm (for 600 × 600 mm grid), with customized rectangular sizes (e.g., 575 mm × 1175 mm) available upon request. Thickness is standard at 12 mm or 13 mm for drop-in T-bar grids, and 50 mm for full walk-on sandwich panel ceiling systems. Facing options include Anti-Static ESD White (RAL 9002/9003), Sky Blue, and SUS 304 / SUS 316L hairline stainless steel for harsh chemical or moisture-rich suites. Core options include high-density glass magnesium, calcium silicate, or ultra-lightweight aluminum honeycomb. Furthermore, custom color matching according to international RAL and Pantone shade charts is available for specialized facility branding, alongside optional factory-integrated provisions for interlock wiring channels, differential pressure sensor ports, and flush return air riser cutouts tailored to cleanroom architectural drawings.",
+    "variationList": [
+      "Standard Module Dimensions: 1175 × 1175 mm (1200 mm grid), 575 × 575 mm (600 mm grid), 575 × 1175 mm (600 × 1200 mm grid)",
+      "Thickness Configurations: 12 mm / 13 mm (drop-in T-bar ceiling grid), 50 mm (full sandwich walkable ceiling panel)",
+      "Facing Materials: Pre-painted Galvanized Steel (PPGI), SUS 304 Brushed Stainless Steel, SUS 316L Mirror/Matte Stainless Steel",
+      "Coating Chemistries: Non-glare Cleanroom PE, PVDF Fluorocarbon, Anti-static ESD (10^6 - 10^9 Ω) for electronics",
+      "Core Infill Substrates: Non-combustible Calcium Silicate, High-Purity Glass Magnesium, Aerospace Aluminum Honeycomb"
+    ],
+    "gallery": [
+      {
+        "src": "/images/cleanroom/ffu-manual-blind-board.jpg",
+        "title": "Cleanroom FFU Manual Blind Board Blanking Panel"
+      },
+      {
+        "src": "/images/cleanroom/ffu-ceiling-grid-installation.jpg",
+        "title": "T-Bar Ceiling Grid Module Installation View"
+      },
+      {
+        "src": "/images/cleanroom/cleanroom-installation-nodes-cad.jpg",
+        "title": "Ceiling Grid Suspension & Gasket Detail CAD"
+      }
+    ],
+    "features": [
+      "Precision Modular Sizing: Manufactured with tight CNC dimensional tolerances (±0.5 mm) to fit standard 1200 × 1200 mm and 600 × 600 mm cleanroom ceiling grids without binding or gap formation.",
+      "Airtight Plenum Pressure Containment: Creates an airtight mechanical seal against grid gaskets, preventing bypass leakage between pressurized ceiling plenums and controlled cleanroom suites.",
+      "Non-Combustible Class A1 Safety: Core materials (calcium silicate or glass magnesium) are certified non-combustible under national fire codes, emitting zero smoke or toxic gases.",
+      "Zero Particulate Shedding & Outgassing: Fully encapsulated edges and factory-baked coil coatings ensure zero particle emissions, complying with ISO Class 1 to Class 8 air cleanliness standards.",
+      "Anti-Static ESD Protection Available: Optional electrostatic dissipative (ESD) surface coating (resistivity 10^6 to 10^9 Ω) discharges static charges and prevents airborne particle attraction in semiconductor fabs.",
+      "Seamless Aesthetic Alignment: Matches the color, reflectance, and profile of adjacent Fan Filter Units, LED cleanroom lights, and return air grilles, creating a uniform ceiling architectural finish.",
+      "Future-Proof Reconfiguration: Allows cleanroom operators to easily upgrade blanked apertures to active FFUs or laminar HEPA units within minutes as manufacturing demands scale up.",
+      "High Vibration & Turbulence Stability: Engineered core density prevents panel flutter, rattling, or lifting caused by high plenum air velocity and pressure differentials up to 250 Pa.",
+      "Chemical & Disinfectant Resistance: Finished with chemical-resistant coatings that withstand regular aerosolized hydrogen peroxide (VHP), chlorine wiping, and alcohol sanitization.",
+      "Lightweight Ergonomic Handling: Designed for easy installation and maintenance access by single technicians without specialized lifting rigs."
+    ],
+    "materials": [
+      "Facing Surface: 0.50–0.80 mm hot-dip galvanized steel coil with baked cleanroom polyester coating or SUS 304 stainless steel.",
+      "Internal Core: High-density inorganic calcium silicate board (900–1100 kg/m³) or moisture-proof glass magnesium board.",
+      "Perimeter Edge: Precision hemmed steel lip or extruded aluminum protective frame engineered for gasket seating.",
+      "Bonding Agent: Heat-cured dual-component polyurethane structural adhesive delivering shear strength ≥ 1.2 MPa.",
+      "Gasket Compatibility: Engineered for closed-cell EPDM, silicone sponge, or knife-edge fluid gel seal channels."
+    ],
+    "applications": [
+      "Semiconductor & Microelectronics Fabs: Cleanroom ceiling grids (ISO Class 1 to Class 5) where non-active grid modules require static blanking with ESD protection.",
+      "Pharmaceutical Sterile Manufacturing: Class A/B cleanroom ceiling grids where future FFU expansion positions require airtight, non-shedding blanking panels.",
+      "Photovoltaic & Lithium-ion Battery Cleanrooms: Ceiling envelope containment in dry rooms requiring vibration-proof, non-hygroscopic blanking panels.",
+      "Biotechnology & Vaccine Production Suites: Controlled air plenums requiring non-combustible Class A1 fire-rated ceiling closures.",
+      "Hospital Operating Theatres: Peripheral ceiling areas surrounding laminar airflow canopies, providing uniform lighting and blanking interfaces.",
+      "Precision Optics & Laser Assembly Labs: Dust-free ceiling layouts requiring high surface flatness and non-glare white finishes.",
+      "Nanotechnology Research Cleanrooms: High-specification modular ceiling grids requiring zero outgassing and vibration-stable blanking."
+    ],
+    "tables": [
+      "<table class=\"w-full text-left text-xs sm:text-sm border-collapse border border-slate-200\">\n        <thead>\n          <tr class=\"bg-slate-100 text-slate-800 font-bold\">\n            <th class=\"p-3 border border-slate-200 w-1/3\">Parameter / Specification</th>\n            <th class=\"p-3 border border-slate-200\">Engineering Standard & Values</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Product Model</td><td class=\"p-3 border border-slate-200\">Cleanroom FFU Manual Blind Board (Ceiling Blanking Panel)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Core Material Composition</td><td class=\"p-3 border border-slate-200\">High-Density Inorganic Calcium Silicate / Glass Magnesium Board / Aluminum Honeycomb</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Facing Material & Thickness</td><td class=\"p-3 border border-slate-200\">0.50 mm (standard) / 0.60, 0.80 mm Pre-painted Galvanized Steel or SUS 304 / 316L</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Standard Module Dimensions</td><td class=\"p-3 border border-slate-200\">1175 mm × 1175 mm (for 1200 grid); 575 mm × 575 mm (for 600 grid); 575 mm × 1175 mm</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Standard Panel Thickness</td><td class=\"p-3 border border-slate-200\">12 mm, 13 mm (T-bar grid drop-in); 50 mm (walkable sandwich ceiling panel)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Dimensional Tolerances</td><td class=\"p-3 border border-slate-200\">Length/Width: ±0.5 mm; Diagonal difference: ≤ 0.8 mm; Thickness: ±0.3 mm</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Core Density</td><td class=\"p-3 border border-slate-200\">Calcium Silicate: 950–1100 kg/m³; Glass Magnesium: 1050–1200 kg/m³</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Surface Coil Finish</td><td class=\"p-3 border border-slate-200\">Non-glare Cleanroom PE, HDP, PVDF Fluorocarbon, Anti-Static ESD (10^6 - 10^9 Ω)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Perimeter Edge Detail</td><td class=\"p-3 border border-slate-200\">Precision hemmed steel edge or stepped aluminum framing engineered for gasket sealing</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Grid Compatibility</td><td class=\"p-3 border border-slate-200\">Standard 55T, 100T extruded aluminum T-bar grids with EPDM gasket or fluid gel seal</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Fire Performance Classification</td><td class=\"p-3 border border-slate-200\">Class A1 Non-combustible (GB 8624-2012 / ISO 1182); Zero flame spread</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Thermal Conductivity</td><td class=\"p-3 border border-slate-200\">λ = 0.065 ~ 0.085 W/(m·K)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Plenum Pressure Rating</td><td class=\"p-3 border border-slate-200\">Withstands positive and negative plenum pressure differentials up to 500 Pa</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Standard Colors</td><td class=\"p-3 border border-slate-200\">White-Gray (RAL 9002), Pure White (RAL 9003/9010), Brushed SUS 304 Stainless Steel</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Available Design Variations</td><td class=\"p-3 border border-slate-200\">12mm T-bar drop-in, 50mm walkable sandwich, ESD anti-static, SUS 304 stainless steel</td></tr>\n        </tbody>\n      </table>"
+    ],
+    "faqs": [
+      {
+        "question": "What is the purpose of an FFU manual blind board in a cleanroom ceiling?",
+        "answer": "In a modular cleanroom ceiling grid, not all grid openings require active Fan Filter Units (FFUs). The FFU Manual Blind Board fills unused grid positions, sealing the plenum airtight and maintaining uniform air pressure while providing a matching visual finish."
+      },
+      {
+        "question": "Why are the dimensions 1175x1175mm instead of 1200x1200mm?",
+        "answer": "Cleanroom ceiling grids operate on a 1200 mm center-to-center module. Accounting for the width of the T-bar suspension beam flanges (typically 25 mm per side), the clear inside opening requires an 1175 mm panel to sit neatly on the supporting gasket lip."
+      },
+      {
+        "question": "How does the panel prevent air leakage from the plenum?",
+        "answer": "The perimeter edge of the blind board rests on a continuous closed-cell EPDM or silicone gasket laid along the T-bar flange. Plenum-side hold-down clips apply uniform downward compression, ensuring an airtight seal against pressure differentials up to 500 Pa."
+      },
+      {
+        "question": "Can these blind boards be replaced with active FFUs later?",
+        "answer": "Yes. That is a primary design advantage. If the facility expands production and requires higher air change rates or tighter ISO classification, the blind board can be lifted out and an active FFU dropped directly into the same grid opening."
+      },
+      {
+        "question": "What is the fire rating of the FFU blind board?",
+        "answer": "Our FFU blind boards use non-combustible inorganic cores (calcium silicate or glass magnesium) and steel skins, achieving certified Class A1 non-combustible fire ratings under GB 8624 and ISO 1182."
+      },
+      {
+        "question": "Are anti-static ESD versions available for semiconductor cleanrooms?",
+        "answer": "Yes. For electronics, wafer fabs, and photonics facilities, we supply FFU blind boards with an ESD conductive coating providing surface resistivity between 10^6 and 10^9 ohms to prevent electrostatic charge accumulation."
+      },
+      {
+        "question": "Can personnel walk on these blind boards?",
+        "answer": "The standard 12 mm/13 mm drop-in blind board is designed for non-walkable T-bar ceiling grids. For walkable ceiling plenums, we supply a heavy-duty 50 mm sandwich blind board rated for live maintenance loads exceeding 150 kg."
+      },
+      {
+        "question": "What facing materials are recommended for pharmaceutical applications?",
+        "answer": "We recommend 0.60 mm pre-painted galvanized steel in RAL 9002 (White-Gray) or SUS 304 hairline stainless steel with PVDF or antibacterial coatings that withstand frequent wiping and vaporized hydrogen peroxide (VHP) cycles."
+      }
+    ]
+  },
+  {
+    "id": 5107,
+    "slug": "glass-magnesium-rock-wool-corrugated-panel",
+    "categorySlug": "cleanroom-turnkey-solution",
+    "categoryName": "Cleanroom Solutions & Turnkey Systems",
+    "title": "Glass Magnesium Rock Wool Corrugated Panel – Variant 1",
+    "seoTitle": "Glass Magnesium Rock Wool Corrugated Panel (Variant 1) | Peter Air Systems",
+    "metaDescription": "Continuous machine-made 1150 Type Hollow Core Glass Magnesium Grid with Basalt Rockwool Infill Corrugated Cleanroom Panel for high-speed pharmaceutical partition walls.",
+    "canonical": "https://peterairs.com/glass-magnesium-rock-wool-corrugated-panel/",
+    "h1": "Glass Magnesium Rock Wool Corrugated Panel – Variant 1",
+    "image": "/images/cleanroom/corrugated-glass-magnesium-rockwool.jpg",
+    "bannerImage": "/images/hero-banner-4.png",
+    "diagramImage": "/images/cleanroom/cleanroom-installation-nodes-cad.jpg",
+    "overview": "The Glass Magnesium Rock Wool Corrugated Panel – Variant 1 (1150 Type Hollow Core Glass Magnesium Grid with Basalt Rock Wool Core) is a continuous automated roll-formed cleanroom envelope system engineered for large-scale pharmaceutical, electronics, and industrial facilities requiring fast project turnaround and Class A1 fire resistance. The panel features an effective modular width of 1150 mm and is produced on fully automated continuous composite laminating lines. \n\nVariant 1 incorporates an advanced hybrid core structure: an inorganic glass magnesium cellular grid matrix into which high-density hydrophobic basalt rock wool insulation strips (60–120 kg/m³) are precision-inserted. This grid-infilled core is sandwiched between high-tensile pre-painted galvanized steel facings (0.5 mm to 0.8 mm thickness) with precision roll-formed male-and-female corrugated interlocking tongue-and-groove edge profiles. The hollow grid ribs provide longitudinal flexural stiffness and crush resistance, while the basalt rock wool infill provides exceptional thermal insulation and acoustic sound absorption. This variant delivers superior mechanical strength compared to plain rock wool panels while remaining significantly lighter than solid inorganic boards, making it ideal for rapid cleanroom partition wall installations up to 11.8 meters in height.\n\nFurthermore, all manufacturing stages are conducted under strict ISO 9001:2015 quality control protocols, ensuring batch-to-batch consistency and rigorous compliance with international cleanroom envelope standards (including ISO 14644-4, WHO TRS 986, and US FDA cGMP). By maintaining precision mechanical tolerances and providing customized sizing, Peter Air Systems ensures optimal airflow aerodynamics, minimal maintenance downtime, and long-term contamination containment across critical pharmaceutical, healthcare, and industrial manufacturing environments.",
+    "construction": "Variant 1 is manufactured via a continuous high-speed composite laminating process. Exterior facings of prime pre-painted galvanized steel (0.5–0.8 mm) from top-tier mills (Baosteel/POSCO) are roll-formed into 1150 mm effective width panels with precision male and female tongue-and-groove interlocking edges. The core assembly begins with an engineered inorganic glass magnesium cellular grid lattice that establishes vertical and transverse structural ribbing. High-density basalt rock wool fibers (60–120 kg/m³) with hydrophobic water-repellent treatment are inserted into each grid chamber.\n\nContinuous automated multi-nozzle spray systems apply dual-component polyurethane adhesive across all interfaces between the steel facings, the glass magnesium ribs, and the basalt rock wool. The continuous sandwich is fed through a heated double-belt caterpillar laminator under controlled temperature and pressure to ensure complete curing without void formation. The resulting panel features an airtight interlocking joint with an internal capillary seal groove that blocks air infiltration under positive cleanroom pressures.\n\nAdditionally, all internal perimeter keels and structural channel ribs undergo automated anti-corrosion passivation before bonding. The high-pressure hydraulic curing process ensures zero void formation or air entrapment between the core matrix and metal facings, eliminating risks of internal delamination under fluctuating environmental room temperatures and recurring positive or negative pressure cycling in high-containment cleanroom zones.",
+    "layers": [
+      {
+        "name": "Top Facing Sheet",
+        "spec": "0.50–0.80 mm Roll-Formed 1150 mm Male/Female Tongue-and-Groove Galvanized Steel"
+      },
+      {
+        "name": "Adhesive Bond Line",
+        "spec": "Automated Dual-Component Polyurethane Structural Adhesive"
+      },
+      {
+        "name": "Hybrid Core: Glass Mag Grid",
+        "spec": "Engineered Inorganic Glass Magnesium Cellular Rib Matrix"
+      },
+      {
+        "name": "Hybrid Core: Rock Wool Infill",
+        "spec": "60–120 kg/m³ Hydrophobic Basalt Rock Wool Insulation Fibers"
+      },
+      {
+        "name": "Adhesive Bond Line",
+        "spec": "Automated Dual-Component Polyurethane Structural Adhesive"
+      },
+      {
+        "name": "Bottom Facing Sheet",
+        "spec": "0.50–0.80 mm Roll-Formed 1150 mm Male/Female Tongue-and-Groove Galvanized Steel"
+      }
+    ],
+    "installation": "Installation of Variant 1 proceeds rapidly due to the standardized 1150 mm modular width and self-aligning tongue-and-groove jointing. Floor runners (JH014B 50 mm slot aluminum) are anchored to the floor slab with masonry fasteners at 300 mm spacing. Panels are lifted vertically into the track and slid horizontally so the male tongue profile engages into the female groove of the adjacent panel. The precision roll-formed joint automatically aligns the face sheets coplanar without external splines. For suspended ceilings, panels are supported by continuous structural hanging beams or concealed ceiling clips. All interior 90° corners are clad with JH009 base tracks and JH001A concave coving, and joints are sealed with neutral cure cleanroom silicone.",
+    "installationPoints": [
+      "Floor Runner Fixing: Anchor JH014B U-channel to subfloor using chemical expansion anchors @ 300 mm pitch.",
+      "Panel Hoisting & Seating: Seat panel vertically into the base runner, verifying vertical laser plumbness.",
+      "Tongue-and-Groove Interlock: Press panel laterally so the male tongue firmly seats into the female receiving groove.",
+      "Top Track Anchoring: Secure panel top into overhead U-channel or hanging ceiling beam with self-tapping fasteners.",
+      "Hygienic Corner Coving: Install JH009 base clips and snap-in JH001A concave coving along all room corners.",
+      "Airtight Seam Sealing: Inject cleanroom-grade neutral silicone along the hairline interlocking joint."
+    ],
+    "variations": "Supplied in the standard 1150 mm effective width, with continuous custom fabrication lengths up to 11.8 meters (limited only by transport container dimensions). Panel thickness options include 50 mm (standard cleanroom partitions), 75 mm, 100 mm, and 150 mm (heavy-duty cold store or exterior envelope walls). Steel coil finishes include Cleanroom White-Gray (RAL 9002), Pure White (RAL 9003/9010), Light Blue, Anti-Static ESD coatings (10^6–10^9 Ω), and SUS 304 stainless steel. Rock wool density can be selected from 60 kg/m³ to 120 kg/m³ based on project thermal and acoustic specifications. Furthermore, custom color matching according to international RAL and Pantone shade charts is available for specialized facility branding, alongside optional factory-integrated provisions for interlock wiring channels, differential pressure sensor ports, and flush return air riser cutouts tailored to cleanroom architectural drawings.",
+    "variationList": [
+      "Thickness Configurations: 50 mm (standard partitions), 75 mm (enhanced thermal/fire), 100 mm (tall dividing walls), 150 mm (heavy-duty exterior)",
+      "Standard Effective Width: 1150 mm (uniform modular cleanroom planning grid)",
+      "Continuous Custom Lengths: Tailored up to 11,800 mm (11.8 m) for zero-horizontal-joint cleanroom construction",
+      "Facing Finishes: RAL 9002 Off-White, RAL 9003 Pure White, RAL 5015 Sky Blue, SUS 304 Stainless Steel",
+      "Coating Chemistries: Cleanroom PE, High-Durability Polyester (HDP), PVDF Fluorocarbon, Antistatic ESD"
+    ],
+    "gallery": [
+      {
+        "src": "/images/cleanroom/corrugated-glass-magnesium-rockwool.jpg",
+        "title": "Glass Magnesium Rock Wool Corrugated Panel (Variant 1)"
+      },
+      {
+        "src": "/images/cleanroom/corrugated-hollow-glass-magnesium.jpg",
+        "title": "Glass Magnesium Grid Matrix Core Construction"
+      },
+      {
+        "src": "/images/cleanroom/cleanroom-installation-nodes-cad.jpg",
+        "title": "1150 Tongue & Groove Wall Joint CAD Assembly"
+      }
+    ],
+    "features": [
+      "Continuous Machine-Made Production: Fabricated on automated continuous roll-forming lines, ensuring uniform quality, high bonding consistency, and rapid production capacity for massive cleanroom projects.",
+      "Standardized 1150 mm Modular Width: The 1150 mm effective coverage width aligns with architectural modular grids, minimizing waste and streamlining layout coordination with MEP services.",
+      "Hybrid Grid + Rock Wool Core: Combines the flexural stiffness of glass magnesium ribbing with the superior thermal and acoustic performance of basalt rock wool, delivering balanced structural properties.",
+      "Class A1 Fire Resistance Rating: Fully non-combustible construction certified Class A1 under GB 8624 and ISO 1182, providing 1.0 to 1.5 hours of fire resistance limit without emitting toxic gases.",
+      "Rapid Tongue-and-Groove Erection: Precision roll-formed enterprise mouth interlocking edges allow panels to snap together rapidly, drastically reducing installation labor and project timelines.",
+      "Long-Span Single-Piece Fabrication: Available in continuous lengths up to 11.8 meters, eliminating horizontal joint lines in tall industrial cleanrooms and pharmaceutical warehouses.",
+      "Airtight Internal Capillary Break: The interlocking profile features an engineered internal cavity that disrupts moisture capillary action and blocks air bypass under room pressure differentials.",
+      "Chemical & Sanitizer Resistant Finish: Factory-applied coil coatings (PVDF or HDP) resist routine wipe-downs with isopropyl alcohol, chlorine biocides, and automated VHP cycles.",
+      "High Acoustic Attenuation: With an acoustic sound reduction index of Rw ≥ 32 dB, the rock wool core absorbs airflow rumble and machinery reverberation.",
+      "Zero Formaldehyde Formulation: Manufactured using solvent-free polyurethane binders, meeting strict ISO 14644-8 airborne molecular contamination (AMC) cleanliness standards."
+    ],
+    "materials": [
+      "Facing Skins: High-tensile pre-painted galvanized steel (0.50–0.80 mm) from Baosteel / POSCO with anti-corrosion primer.",
+      "Internal Ribs: Inorganic glass magnesium cellular grid strips formulated with magnesium sulfate non-halogen chemistry.",
+      "Thermal Infill: Hydrophobic basalt rock wool fibers (60–120 kg/m³) treated with water-repellent silicones.",
+      "Lamination Adhesive: Solvent-free dual-component polyurethane adhesive applied via continuous high-pressure spray.",
+      "Joint Profiling: Precision roll-formed continuous 1150 mm male-and-female tongue-and-groove joint."
+    ],
+    "applications": [
+      "Pharmaceutical Production Warehouses: Large-area clean partitions and packaging halls requiring fast-track modular installation and Class A1 fire safety.",
+      "Semiconductor & Electronics Mega-Fabs: Tall dividing walls (up to 11.8 m continuous height) for microelectronics manufacturing suites.",
+      "Food & Beverage Processing Facilities: Hygienic partition walls requiring smooth, washable surfaces that resist moisture and fungal growth.",
+      "Automotive Battery Dry Rooms: Lithium-ion battery manufacturing dry rooms requiring non-combustible and rigid walling.",
+      "Biotechnology Pilot Plants: Modular R&D facilities requiring flexible, reconfigurable wall systems with high thermal insulation.",
+      "Solar Cell & Photovoltaic Cleanrooms: Large industrial clean spaces demanding cost-effective, high-planarity modular wall panels.",
+      "Chemical & Precision Machining Suites: Clean areas requiring durable, chemical-resistant wall finishes with rapid installation times."
+    ],
+    "tables": [
+      "<table class=\"w-full text-left text-xs sm:text-sm border-collapse border border-slate-200\">\n        <thead>\n          <tr class=\"bg-slate-100 text-slate-800 font-bold\">\n            <th class=\"p-3 border border-slate-200 w-1/3\">Parameter / Specification</th>\n            <th class=\"p-3 border border-slate-200\">Engineering Standard & Values</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Product Model</td><td class=\"p-3 border border-slate-200\">1150 Type Glass Magnesium Rock Wool Corrugated Panel (Variant 1: Grid Infill)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Core Material Composition</td><td class=\"p-3 border border-slate-200\">Inorganic Glass Magnesium Cellular Grid Matrix Infilled with Basalt Rock Wool</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Facing Material & Thickness</td><td class=\"p-3 border border-slate-200\">0.50 mm (standard) / 0.40, 0.45, 0.60, 0.80 mm Pre-painted Galvanized Steel or SUS 304</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Standard Panel Thickness</td><td class=\"p-3 border border-slate-200\">50 mm (standard partitions); 75 mm, 100 mm, 150 mm (heavy-duty structural walls)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Standard Effective Width</td><td class=\"p-3 border border-slate-200\">1150 mm (uniform continuous machine-rolled modular planning width)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Continuous Panel Length</td><td class=\"p-3 border border-slate-200\">Continuous custom fabrication up to 11,800 mm (11.8 m container transport limit)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Core Density</td><td class=\"p-3 border border-slate-200\">Basalt Rock Wool Infill: 60–120 kg/m³; Glass Magnesium Grid: 1050–1200 kg/m³</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Joint Configuration</td><td class=\"p-3 border border-slate-200\">Continuous roll-formed interlocking male/female tongue-and-groove (\"enterprise mouth\" 企口)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Connection System</td><td class=\"p-3 border border-slate-200\">Direct interlocking tongue-and-groove joint with internal capillary seal break; no splines</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Fire Performance Classification</td><td class=\"p-3 border border-slate-200\">Class A1 Non-combustible (GB 8624-2012 / ISO 1182); Fire resistance ≥ 1.0–1.5 Hours</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Thermal Conductivity</td><td class=\"p-3 border border-slate-200\">λ = 0.042 ~ 0.050 W/(m·K) (GB/T 10294)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Acoustic Sound Reduction</td><td class=\"p-3 border border-slate-200\">Rw ≥ 32 dB to 36 dB (ISO 717-1)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Surface Coil Finish</td><td class=\"p-3 border border-slate-200\">Cleanroom PE, HDP, PVDF Fluorocarbon, Anti-Static ESD (10^6 - 10^9 Ω), Antibacterial</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Production Method</td><td class=\"p-3 border border-slate-200\">Continuous automated double-belt caterpillar composite production line</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Available Design Variations</td><td class=\"p-3 border border-slate-200\">Grid infilled rockwool (Variant 1), dual glass mag slab (Variant 2), SUS 304 skins</td></tr>\n        </tbody>\n      </table>"
+    ],
+    "faqs": [
+      {
+        "question": "What is Variant 1 of the Glass Magnesium Rock Wool Corrugated Panel?",
+        "answer": "Variant 1 utilizes an inorganic glass magnesium cellular grid structure infilled with basalt rock wool insulation fibers. This hybrid core provides higher flexural stiffness than plain rock wool panels while keeping weight lower than solid mineral slabs."
+      },
+      {
+        "question": "Why is this called an 1150 Type panel?",
+        "answer": "The continuous roll-formed profile provides an effective coverage width of exactly 1150 mm when interlocked. This standardized dimension facilitates rapid architectural planning and modular coordination across large cleanroom facilities."
+      },
+      {
+        "question": "Can these panels be manufactured in continuous single lengths?",
+        "answer": "Yes. Because these panels are produced on automated continuous laminating lines, we can custom-cut lengths up to 11.8 meters (11,800 mm), allowing two-story or high-bay cleanrooms to be built with zero horizontal seams."
+      },
+      {
+        "question": "What fire rating does Variant 1 achieve?",
+        "answer": "Variant 1 is certified Class A1 non-combustible under GB 8624 and ISO 1182. It provides 1.0 to 1.5 hours of fire endurance, emitting zero toxic smoke or flaming particles."
+      },
+      {
+        "question": "How do these panels connect together?",
+        "answer": "They connect via precision roll-formed male and female tongue-and-groove edges (enterprise mouth profile). The panels snap tightly together without requiring separate aluminum splines, speeding up installation."
+      },
+      {
+        "question": "Are these panels suitable for pharmaceutical cleanrooms?",
+        "answer": "Yes. The smooth, non-porous color-coated steel surfaces resist standard sanitizing agents, alcohols, and vaporized hydrogen peroxide (VHP) decontamination protocols."
+      },
+      {
+        "question": "How does Variant 1 compare to pure rock wool corrugated panels?",
+        "answer": "Pure rock wool corrugated panels rely solely on the rock wool fibers for core strength and can be more susceptible to localized crushing. Variant 1 adds a glass magnesium cellular grid that significantly enhances compression strength and impact resistance."
+      },
+      {
+        "question": "What floor and ceiling channels are used for installation?",
+        "answer": "The panels install into standard JH014B 50 mm aluminum U-channels at the floor and ceiling, with JH001A concave coving snapped into JH009 base clips to eliminate 90-degree dust-collecting corners."
+      }
+    ]
+  },
+  {
+    "id": 5112,
+    "slug": "glass-magnesium-rock-wool-corrugated-panel-variant-2",
+    "categorySlug": "cleanroom-turnkey-solution",
+    "categoryName": "Cleanroom Solutions & Turnkey Systems",
+    "title": "Glass Magnesium Rock Wool Corrugated Panel – Variant 2",
+    "seoTitle": "Glass Magnesium Rock Wool Corrugated Panel (Variant 2) | Peter Air Systems",
+    "metaDescription": "Double-Skin Glass Magnesium Sheet Substrate Sandwich with Basalt Rockwool Core, 1150 mm continuous roll-formed corrugated tongue-and-groove profile with Class A1 fire rating.",
+    "canonical": "https://peterairs.com/glass-magnesium-rock-wool-corrugated-panel-variant-2/",
+    "h1": "Glass Magnesium Rock Wool Corrugated Panel – Variant 2",
+    "image": "/images/cleanroom/corrugated-glass-magnesium-rockwool.jpg",
+    "bannerImage": "/images/hero-banner-4.png",
+    "diagramImage": "/images/cleanroom/cleanroom-installation-nodes-cad.jpg",
+    "overview": "The Glass Magnesium Rock Wool Corrugated Panel – Variant 2 (1150 Type Double-Layer Glass Magnesium Sheet Substrate with Basalt Rock Wool Core) is an ultra-heavy-duty machine-made continuous sandwich panel engineered for high-risk pharmaceutical, biotechnology, and semiconductor cleanrooms where maximum surface impact resistance and structural fire barrier integrity are paramount. Unlike Variant 1 (which utilizes an infilled cellular grid), Variant 2 incorporates solid continuous 5.0 mm glass magnesium substrate boards laminated directly behind both pre-painted steel facings, encasing a central high-density basalt rock wool slab (100–120 kg/m³).\n\nProduced on continuous automated composite production lines with a standard 1150 mm modular effective width, Variant 2 features roll-formed interlocking male-and-female tongue-and-groove edges. The dual solid glass magnesium substrate layers provide an armor-like shield that dissipates intense physical impacts from transport trolleys and mobile processing vessels, preventing facing denting and maintaining pristine cleanroom aesthetics. Certified Class A1 non-combustible with an extended 1.5 to 2.0-hour fire barrier rating and sound transmission loss Rw ≥ 35 dB, Variant 2 delivers the highest structural durability among continuous roll-formed cleanroom panels.\n\nFurthermore, all manufacturing stages are conducted under strict ISO 9001:2015 quality control protocols, ensuring batch-to-batch consistency and rigorous compliance with international cleanroom envelope standards (including ISO 14644-4, WHO TRS 986, and US FDA cGMP). By maintaining precision mechanical tolerances and providing customized sizing, Peter Air Systems ensures optimal airflow aerodynamics, minimal maintenance downtime, and long-term contamination containment across critical pharmaceutical, healthcare, and industrial manufacturing environments.",
+    "construction": "Variant 2 features a symmetrical seven-layer continuous composite laminated architecture. The exterior surfaces consist of high-tensile 0.5 mm to 0.8 mm pre-painted galvanized steel coils coated with cleanroom-certified baked polyester, PVDF fluorocarbon, or antibacterial coatings. Immediately behind each steel facing, a continuous 5.0 mm non-combustible magnesium oxysulfide board is laminated, creating dual structural armor plates reinforced with alkali-resistant glass fiber mesh.\n\nThe central core is a continuous slab of high-density basalt rock wool with vertically oriented fibers (100–120 kg/m³), treated with hydrophobic additives for moisture resistance. Automated high-pressure nozzles distribute dual-component solvent-free polyurethane structural adhesive across all interfacial layers. The multi-layer sandwich is cured continuously in a heated double-caterpillar laminator under uniform pressure. The edges are precision roll-formed into matching male and female tongue-and-groove profiles that interlock seamlessly without visible fasteners.\n\nAdditionally, all internal perimeter keels and structural channel ribs undergo automated anti-corrosion passivation before bonding. The high-pressure hydraulic curing process ensures zero void formation or air entrapment between the core matrix and metal facings, eliminating risks of internal delamination under fluctuating environmental room temperatures and recurring positive or negative pressure cycling in high-containment cleanroom zones.",
+    "layers": [
+      {
+        "name": "Top Facing Sheet",
+        "spec": "0.50–0.80 mm Roll-Formed 1150 mm Tongue-and-Groove Galvanized Steel"
+      },
+      {
+        "name": "Upper Armored Board",
+        "spec": "5.0 mm Class A1 Non-combustible Solid Glass Magnesium Substrate"
+      },
+      {
+        "name": "Adhesive Bond Line",
+        "spec": "High-Strength Dual-Component Polyurethane Adhesive"
+      },
+      {
+        "name": "Central Thermal Core",
+        "spec": "100–120 kg/m³ High-Density Basalt Rock Wool Slab"
+      },
+      {
+        "name": "Adhesive Bond Line",
+        "spec": "High-Strength Dual-Component Polyurethane Adhesive"
+      },
+      {
+        "name": "Lower Armored Board",
+        "spec": "5.0 mm Class A1 Non-combustible Solid Glass Magnesium Substrate"
+      },
+      {
+        "name": "Bottom Facing Sheet",
+        "spec": "0.50–0.80 mm Roll-Formed 1150 mm Tongue-and-Groove Galvanized Steel"
+      }
+    ],
+    "installation": "Installation of Variant 2 utilizes the standardized 1150 mm tongue-and-groove erection methodology. The base track (JH014B 50 mm aluminum U-channel) is anchored to the floor slab with heavy-duty anchors at 300 mm spacing. Panels are erected vertically and slotted into the floor track. Adjacent panels are coupled by pressing the male tongue into the female groove until fully seated. The dual internal glass magnesium boards ensure perfect face alignment across joints. Suspended ceiling installations utilize continuous hanging beams or concealed ceiling brackets. All internal 90° corners are finished with JH009 base clips and JH001A concave coving, and joints are sealed flush with medical-grade neutral silicone.",
+    "installationPoints": [
+      "Floor Runner Fixing: Anchor JH014B U-channel to finished floor using 5 mm masonry anchors @ 300 mm pitch.",
+      "Vertical Panel Setting: Lift panel into bottom track, verifying laser plumbness across both orthogonal axes.",
+      "Tongue-and-Groove Engagement: Push panel horizontally until the male tongue is fully seated in the female groove.",
+      "Head Track Connection: Secure panel top into overhead U-channel or structural ceiling hanging beam.",
+      "Hygienic Corner Coving: Install JH009 clip track and snap-in JH001A concave coving at all interior 90° corners.",
+      "Medical Silicone Sealing: Apply neutral cure anti-mold silicone along the hairline joint (nominal 1.5 mm seam)."
+    ],
+    "variations": "Supplied in the standard 1150 mm effective width, with continuous fabrication lengths up to 11.8 meters. Standard thickness is 50 mm, with heavy-duty 75 mm and 100 mm options available for high-acoustic dividing walls or extended fire separations. Steel coil finishes include Cleanroom White-Gray (RAL 9002), Pure White (RAL 9003/9010), Light Blue, Anti-Static ESD coatings (10^6–10^9 Ω), and SUS 304 / SUS 316L stainless steel. Central rock wool density can be specified up to 120 kg/m³ for demanding acoustic applications. Furthermore, custom color matching according to international RAL and Pantone shade charts is available for specialized facility branding, alongside optional factory-integrated provisions for interlock wiring channels, differential pressure sensor ports, and flush return air riser cutouts tailored to cleanroom architectural drawings.",
+    "variationList": [
+      "Thickness Configurations: 50 mm (standard partitions), 75 mm (enhanced fire/acoustic), 100 mm (structural high-span walls)",
+      "Standard Effective Width: 1150 mm (standard modular cleanroom planning grid)",
+      "Continuous Custom Lengths: Tailored up to 11,800 mm (11.8 m) for zero-horizontal-joint cleanroom construction",
+      "Facing Finishes: RAL 9002 Off-White, RAL 9003 Pure White, RAL 5015 Sky Blue, SUS 304 / 316L Stainless Steel",
+      "Coating Chemistries: Cleanroom PE, High-Durability Polyester (HDP), PVDF Fluorocarbon, Antistatic ESD"
+    ],
+    "gallery": [
+      {
+        "src": "/images/cleanroom/corrugated-glass-magnesium-rockwool.jpg",
+        "title": "Double-Skin Glass Magnesium Rock Wool Panel (Variant 2)"
+      },
+      {
+        "src": "/images/cleanroom/corrugated-double-gypsum.jpg",
+        "title": "Dual Substrate Laminated Core Cross-Section"
+      },
+      {
+        "src": "/images/cleanroom/cleanroom-installation-nodes-cad.jpg",
+        "title": "Continuous Wall & Ceiling Node Detail CAD"
+      }
+    ],
+    "features": [
+      "Dual Solid Glass Magnesium Armor: Incorporates two 5.0 mm solid glass magnesium boards directly behind both steel skins, providing exceptional impact resistance against carts, mobile vessels, and equipment.",
+      "Enhanced 1.5–2.0 Hour Fire Resistance: The combination of solid inorganic glass magnesium sheets and high-density basalt rock wool achieves certified Class A1 non-combustibility and extended fire separation limits.",
+      "Continuous Automated Lamination: Produced on continuous high-speed double-caterpillar laminating lines, guaranteeing uniform adhesive distribution and high bonding strength without manual voids.",
+      "Standardized 1150 mm Modular Width: Matches industrial cleanroom modular grid standards, allowing rapid architectural coordination and minimal on-site field cutting.",
+      "Long-Span Single-Piece Fabrication: Continuous roll-forming enables panels up to 11.8 meters in single lengths, eliminating dust-trapping horizontal seams in high-bay cleanrooms.",
+      "High Acoustic Sound Transmission Loss: Dual dense substrates sandwiching basalt rock wool provide superior sound damping (Rw ≥ 35 dB), blocking mechanical equipment and compressor noise.",
+      "Airtight Roll-Formed Joint: Precision interlocking male-and-female tongue-and-groove joint profile ensures airtight envelope integrity under cleanroom pressure differentials up to 120 Pa.",
+      "VHP & Chemical Sanitizer Immunity: Factory-applied coil coatings resist regular wipe-downs with harsh disinfectants, chlorine biocides, alcohols, and automated VHP decontamination cycles.",
+      "Zero Formaldehyde & Non-Outgassing: Manufactured using solvent-free polyurethane binders, meeting strict ISO 14644-8 airborne molecular contamination (AMC) cleanliness standards.",
+      "High Surface Planarity: The rigid dual glass magnesium sub-plates eliminate surface ripples and oil canning, providing a smooth finish for laminar airflow distribution."
+    ],
+    "materials": [
+      "Facing Skins: High-tensile pre-painted galvanized steel (0.50–0.80 mm) from Baosteel / POSCO with anti-corrosion primer.",
+      "Armor Substrates: Dual 5.0 mm non-combustible magnesium oxysulfide boards reinforced with alkali-resistant fiberglass netting.",
+      "Central Thermal Core: Hydrophobic basalt rock wool slab (100–120 kg/m³) with vertical fiber orientation.",
+      "Lamination Adhesive: Dual-component polyurethane structural resin applied robotically with high shear strength.",
+      "Joint Profiling: Precision roll-formed continuous 1150 mm male-and-female interlocking tongue-and-groove joint."
+    ],
+    "applications": [
+      "Pharmaceutical Sterile Suites: High-traffic Class A/B cleanrooms where walls must withstand trolley impacts and provide 2-hour Class A1 fire separation.",
+      "Biotechnology Pilot Plants: Research and production facilities requiring heavy-duty partition walls with high chemical and VHP resistance.",
+      "High-Bay Semiconductor Cleanrooms: Tall partition walls (up to 11.8 m continuous height) for microelectronics manufacturing suites.",
+      "Hospital Cleanroom Departments: Central sterile services (CSSD), operating theatres, and pharmacy cleanrooms requiring dent-resistant surfaces.",
+      "Lithium-ion Battery Dry Rooms: Battery production suites requiring fireproof, rigid, and moisture-stable wall panels under low dew-point conditions.",
+      "Chemical & Hazardous Processing Suites: Cleanrooms requiring non-combustible, sound-insulating partitions for equipment containment.",
+      "Precision Optics & Metrology Labs: Vibration-stable, high-flatness cleanroom enclosures demanding superior acoustic damping."
+    ],
+    "tables": [
+      "<table class=\"w-full text-left text-xs sm:text-sm border-collapse border border-slate-200\">\n        <thead>\n          <tr class=\"bg-slate-100 text-slate-800 font-bold\">\n            <th class=\"p-3 border border-slate-200 w-1/3\">Parameter / Specification</th>\n            <th class=\"p-3 border border-slate-200\">Engineering Standard & Values</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Product Model</td><td class=\"p-3 border border-slate-200\">1150 Type Glass Magnesium Rock Wool Corrugated Panel (Variant 2: Dual Solid Substrate)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Core Material Composition</td><td class=\"p-3 border border-slate-200\">Dual 5.0 mm Solid Glass Magnesium Boards + High-Density Basalt Rock Wool Slab</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Facing Material & Thickness</td><td class=\"p-3 border border-slate-200\">0.50 mm (standard) / 0.40, 0.45, 0.60, 0.80 mm Pre-painted Galvanized Steel or SUS 304</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Standard Panel Thickness</td><td class=\"p-3 border border-slate-200\">50 mm (standard partitions); 75 mm, 100 mm (high-span structural partitions)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Standard Effective Width</td><td class=\"p-3 border border-slate-200\">1150 mm (uniform continuous machine-rolled modular planning width)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Continuous Panel Length</td><td class=\"p-3 border border-slate-200\">Continuous custom fabrication up to 11,800 mm (11.8 m container transport limit)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Core Material Density</td><td class=\"p-3 border border-slate-200\">Basalt Rock Wool: 100–120 kg/m³; Glass Magnesium Substrates: 950–1100 kg/m³</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Joint Configuration</td><td class=\"p-3 border border-slate-200\">Continuous roll-formed interlocking male/female tongue-and-groove (\"enterprise mouth\" 企口)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Connection System</td><td class=\"p-3 border border-slate-200\">Direct interlocking tongue-and-groove joint with internal capillary seal break; no splines</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Fire Performance Classification</td><td class=\"p-3 border border-slate-200\">Class A1 Non-combustible (GB 8624-2012 / ISO 1182); Fire resistance ≥ 1.5–2.0 Hours</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Thermal Conductivity</td><td class=\"p-3 border border-slate-200\">λ = 0.040 ~ 0.046 W/(m·K) (GB/T 10294)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Acoustic Sound Reduction</td><td class=\"p-3 border border-slate-200\">Rw ≥ 35 dB to 38 dB (ISO 717-1)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Surface Coil Finish</td><td class=\"p-3 border border-slate-200\">Cleanroom PE, HDP, PVDF Fluorocarbon, Anti-Static ESD (10^6 - 10^9 Ω), Antibacterial</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Impact Resistance Rating</td><td class=\"p-3 border border-slate-200\">Withstands high-velocity trolley impacts without facing indentation (armored backing)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Available Design Variations</td><td class=\"p-3 border border-slate-200\">Dual solid glass mag substrate (Variant 2), grid infilled (Variant 1), SUS 304 skins</td></tr>\n        </tbody>\n      </table>"
+    ],
+    "faqs": [
+      {
+        "question": "How does Variant 2 differ from Variant 1 of the corrugated panel?",
+        "answer": "Variant 2 features two solid 5.0 mm glass magnesium boards laminated directly behind both steel facing sheets, encasing a solid basalt rock wool core. Variant 1 uses an infilled cellular grid. Variant 2 provides greater impact resistance, higher fire endurance (1.5–2.0 hrs), and increased acoustic insulation."
+      },
+      {
+        "question": "What makes Variant 2 so resistant to impacts?",
+        "answer": "The solid 5.0 mm glass magnesium boards act as continuous armor backing directly behind the thin steel sheets. When struck by carts or equipment, the impact energy is dissipated across the rigid board rather than denting the steel."
+      },
+      {
+        "question": "What fire rating does Variant 2 provide?",
+        "answer": "Variant 2 achieves certified Class A1 non-combustible ratings under GB 8624 and ISO 1182 standards. Due to the double solid mineral boards and rock wool core, it provides up to 1.5 to 2.0 hours of structural fire resistance."
+      },
+      {
+        "question": "Can Variant 2 panels be supplied in long single lengths?",
+        "answer": "Yes. Produced on continuous automated laminating lines, Variant 2 panels can be custom-cut to project heights up to 11.8 meters, eliminating horizontal seams in tall manufacturing halls."
+      },
+      {
+        "question": "How do Variant 2 panels interlock during installation?",
+        "answer": "The panel edges feature continuous roll-formed male and female tongue-and-groove profiles that snap tightly together, creating an airtight joint without separate aluminum splines."
+      },
+      {
+        "question": "Is Variant 2 suitable for high-humidity cleanrooms?",
+        "answer": "Yes. The glass magnesium boards utilize non-halogen magnesium sulfate chemistry that will not sweat or absorb moisture, and the basalt rock wool is treated with hydrophobic additives."
+      },
+      {
+        "question": "What facing materials and colors are available?",
+        "answer": "Standard options include 0.50 mm or 0.60 mm pre-painted galvanized steel in White-Gray (RAL 9002) and Pure White (RAL 9003/9010), as well as anti-static ESD coatings and SUS 304 stainless steel."
+      },
+      {
+        "question": "Can flush cleanroom windows and doors be integrated into Variant 2 panels?",
+        "answer": "Yes. Openings for double-glazed flush observation windows and cleanroom door frames are easily cut and framed with standard cleanroom aluminum profiles."
+      }
+    ]
+  },
+  {
+    "id": 5108,
+    "slug": "magnesium-oxysulfide-corrugated-panel",
+    "categorySlug": "cleanroom-turnkey-solution",
+    "categoryName": "Cleanroom Solutions & Turnkey Systems",
+    "title": "Magnesium Oxysulfide Corrugated Panel",
+    "seoTitle": "Magnesium Oxysulfide Corrugated Cleanroom Panel | Peter Air Systems",
+    "metaDescription": "Continuous machine-made 1150 Type Magnesium Oxysulfide Corrugated Panel with non-chloride formula, 0% halogen sweating, Class A1 fire resistance, and high structural modulus.",
+    "canonical": "https://peterairs.com/magnesium-oxysulfide-corrugated-panel/",
+    "h1": "Magnesium Oxysulfide Corrugated Cleanroom Panel",
+    "image": "/images/cleanroom/corrugated-magnesium-oxysulfide.jpg",
+    "bannerImage": "/images/hero-banner-4.png",
+    "diagramImage": "/images/cleanroom/cleanroom-installation-nodes-cad.jpg",
+    "overview": "The Magnesium Oxysulfide Corrugated Panel (1150 Type Magnesium Sulfate Cleanroom Sandwich Panel) is an advanced continuous roll-formed enclosure system developed using patented non-chloride inorganic chemistry. Standard magnesium oxychloride building boards are prone to 'halogen return'—a chemical flaw where magnesium chloride salts absorb atmospheric moisture and weep onto panel surfaces, causing corrosion of steel skins and delamination. This panel completely overcomes that challenge by utilizing an advanced magnesium oxysulfide formula (magnesium oxide cross-linked with magnesium sulfate solution and specialized polymers), achieving 0% halogen return and zero moisture weeping across 20% to 95% relative humidity.\n\nEngineered with a standardized 1150 mm effective width on high-speed automated laminating lines, the panel features precision roll-formed male-and-female interlocking tongue-and-groove edges. The high-density monolithic oxysulfide core (220–280 kg/m³) is laminated between 0.5 mm to 0.8 mm pre-painted galvanized steel or stainless steel skins using dual-component polyurethane adhesives under continuous pressure. Certified Class A1 non-combustible with exceptional flexural modulus, high impact strength, and low thermal conductivity, this corrugated panel provides an ultra-flat, sterile, and durable envelope for large biopharmaceutical facilities, battery dry rooms, and food processing plants.\n\nFurthermore, all manufacturing stages are conducted under strict ISO 9001:2015 quality control protocols, ensuring batch-to-batch consistency and rigorous compliance with international cleanroom envelope standards (including ISO 14644-4, WHO TRS 986, and US FDA cGMP). By maintaining precision mechanical tolerances and providing customized sizing, Peter Air Systems ensures optimal airflow aerodynamics, minimal maintenance downtime, and long-term contamination containment across critical pharmaceutical, healthcare, and industrial manufacturing environments.",
+    "construction": "The panel is produced via continuous automated laminating lines. Pre-painted galvanized steel coils (0.50–0.80 mm) are fed into high-precision roll-forming machines to shape the 1150 mm panel width and male/female tongue-and-groove joint profile with an integrated sealant pocket. The central core consists of a solid, pre-cured inorganic magnesium oxysulfide board formulated with high-grade caustic calcined magnesite, industrial magnesium sulfate heptahydrate, alkali-resistant fiberglass roving, and mineral rheology modifiers.\n\nAutomated multi-head spray systems apply solvent-free dual-component polyurethane structural adhesive to both faces of the oxysulfide core board. The composite sandwich enters a continuous heated caterpillar press that cures the adhesive under uniform hydraulic pressure. The finished panel features a high surface hardness, tight dimensional tolerances, and an interlocking joint profile that forms an airtight seam without separate connecting splines.\n\nAdditionally, all internal perimeter keels and structural channel ribs undergo automated anti-corrosion passivation before bonding. The high-pressure hydraulic curing process ensures zero void formation or air entrapment between the core matrix and metal facings, eliminating risks of internal delamination under fluctuating environmental room temperatures and recurring positive or negative pressure cycling in high-containment cleanroom zones.",
+    "layers": [
+      {
+        "name": "Top Facing Sheet",
+        "spec": "0.50–0.80 mm Roll-Formed 1150 mm Tongue-and-Groove Galvanized Steel"
+      },
+      {
+        "name": "Adhesive Bond Line",
+        "spec": "Automated Dual-Component Polyurethane Structural Adhesive"
+      },
+      {
+        "name": "Patented Non-Halogen Core",
+        "spec": "220–280 kg/m³ Solid Inorganic Magnesium Oxysulfide Core Board"
+      },
+      {
+        "name": "Adhesive Bond Line",
+        "spec": "Automated Dual-Component Polyurethane Structural Adhesive"
+      },
+      {
+        "name": "Bottom Facing Sheet",
+        "spec": "0.50–0.80 mm Roll-Formed 1150 mm Tongue-and-Groove Galvanized Steel"
+      }
+    ],
+    "installation": "Installation of the Magnesium Oxysulfide Corrugated Panel is straightforward and fast due to its 1150 mm modular tongue-and-groove jointing. Base alignment is established using JH014B 50 mm aluminum U-channels fastened to the floor at 300 mm intervals. Panels are seated vertically into the base runner and slid horizontally so the male tongue profile interlocks into the female groove of the preceding panel. The self-aligning joint ensures panels stay coplanar without exposed screws or external splines. For suspended ceilings, panels connect to overhead structural hanging beams. All internal 90° corners receive JH009 base tracks and JH001A concave coving, and the joints are sealed with neutral cure silicone.",
+    "installationPoints": [
+      "Floor Runner Fixing: Anchor JH014B U-channel to finished floor using 5 mm masonry anchors @ 300 mm pitch.",
+      "Vertical Panel Setting: Lift panel into bottom track, verifying laser plumbness across both orthogonal axes.",
+      "Tongue-and-Groove Engagement: Push panel horizontally until the male tongue is fully seated in the female groove.",
+      "Head Track Connection: Secure panel top into overhead U-channel or structural ceiling hanging beam.",
+      "Hygienic Corner Coving: Install JH009 clip track and snap-in JH001A concave coving at all interior 90° corners.",
+      "Medical Silicone Sealing: Apply neutral cure anti-mold silicone along the hairline joint (nominal 1.5 mm seam)."
+    ],
+    "variations": "Supplied in the standard 1150 mm effective width, with continuous fabrication lengths up to 11.8 meters to fit tall cleanroom elevations. Standard panel thickness is 50 mm, with heavy-duty 75 mm and 100 mm options available for high structural partitions requiring heightened fire separation. Steel coil finishes include Cleanroom White-Gray (RAL 9002), Pure White (RAL 9003/9010), Light Blue, Anti-Static ESD coatings (10^6–10^9 Ω), and SUS 304 / SUS 316L stainless steel. Core density can be specified from 220 kg/m³ to 280 kg/m³ based on load-bearing requirements. Furthermore, custom color matching according to international RAL and Pantone shade charts is available for specialized facility branding, alongside optional factory-integrated provisions for interlock wiring channels, differential pressure sensor ports, and flush return air riser cutouts tailored to cleanroom architectural drawings.",
+    "variationList": [
+      "Thickness Configurations: 50 mm (standard partitions), 75 mm (enhanced fire/thermal), 100 mm (tall dividing walls)",
+      "Standard Effective Width: 1150 mm (uniform modular cleanroom planning grid)",
+      "Continuous Custom Lengths: Tailored up to 11,800 mm (11.8 m) for zero-horizontal-joint cleanroom construction",
+      "Facing Finishes: RAL 9002 Off-White, RAL 9003 Pure White, RAL 5015 Sky Blue, SUS 304 / 316L Stainless Steel",
+      "Coating Chemistries: Cleanroom PE, High-Durability Polyester (HDP), PVDF Fluorocarbon, Antistatic ESD"
+    ],
+    "gallery": [
+      {
+        "src": "/images/cleanroom/corrugated-magnesium-oxysulfide.jpg",
+        "title": "Magnesium Oxysulfide Corrugated Panel Cross-Section"
+      },
+      {
+        "src": "/images/cleanroom/cleanroom-installation-nodes-cad.jpg",
+        "title": "Continuous Tongue & Groove Joint CAD Assembly"
+      },
+      {
+        "src": "/images/cleanroom/cleanroom-profile-specs-table-1.jpg",
+        "title": "Cleanroom Aluminium Profile Dimension Table"
+      }
+    ],
+    "features": [
+      "Patented Non-Chloride Oxysulfide Formulation: Formulated using high-purity magnesium sulfate brine, achieving 0% halogen return (无返卤) and eliminating hygroscopic sweating and moisture weeping in high humidity.",
+      "Zero Galvanic Steel Corrosion: Because the core is completely free of aggressive chloride ions, it prevents internal rusting, blistering, and delamination of the color-coated steel facings.",
+      "High Core Density & Rigidity: Solid oxysulfide core density of 220–280 kg/m³ delivers high compressive strength and surface impact resistance, preventing panel denting from equipment collisions.",
+      "Certified Class A1 Non-Combustible: Fully non-combustible under national fire codes, providing 1.0 to 1.5 hours of fire separation with zero smoke generation or flaming droplets.",
+      "Automated Continuous Roll-Forming: Manufactured on continuous automated lines with a standard 1150 mm modular width, providing consistent product quality and rapid installation.",
+      "Continuous Lengths Up to 11.8 Meters: Single-piece panels can be produced up to 11.8 meters long, eliminating horizontal joint lines in tall warehouse and cleanroom installations.",
+      "Stable Across 20% to 95% RH: Retains high dimensional stability and flexural strength without warping, swelling, or softening across extreme cleanroom humidity ranges.",
+      "Airtight Tongue-and-Groove Interlock: Precision male-and-female edges snap together tightly, maintaining positive cleanroom pressure with an internal capillary seal break.",
+      "VHP & Chemical Sanitizer Immunity: Factory coil coatings (PVDF, HDP, or ESD) resist frequent wipe-downs with harsh disinfectants, chlorine biocides, alcohols, and vaporized hydrogen peroxide (VHP).",
+      "Zero Formaldehyde & Non-Outgassing: Manufactured without formaldehyde, asbestos, or organic solvents, complying with ISO 14644-8 airborne molecular contamination (AMC) cleanliness standards."
+    ],
+    "materials": [
+      "Facing Skins: High-tensile pre-painted galvanized steel (0.50–0.80 mm) from Baosteel / POSCO with anti-corrosion primer.",
+      "Core Substrate: Patented magnesium oxysulfide inorganic board (220–280 kg/m³) reinforced with alkali-resistant glass fibers.",
+      "Lamination Adhesive: Solvent-free dual-component polyurethane structural resin applied continuously with high shear strength.",
+      "Joint Profiling: Precision roll-formed continuous 1150 mm male-and-female interlocking tongue-and-groove joint.",
+      "Facing Coating: Cleanroom thermoset polyester (PE), HDP, PVDF, or anti-static ESD (10^6–10^9 Ω) baked coil finish."
+    ],
+    "applications": [
+      "Pharmaceutical Manufacturing Plants: Cleanroom partition walls for processing suites, corridors, and packaging halls requiring non-combustible, moisture-stable walling.",
+      "Lithium-ion Battery Dry Rooms: Specialized production areas operating at low dew points (-40°C to -60°C) where moisture-releasing cores are prohibited.",
+      "Biotechnology & Vaccine Production Suites: Containment areas requiring high-density, impact-resistant walls capable of repeated VHP decontamination.",
+      "Food & Beverage Packaging Cleanrooms: Hygienic processing areas subjected to daily high-humidity washdowns and chemical sanitizers.",
+      "Semiconductor & Microelectronics Fabs: Cleanroom dividing walls where non-outgassing, fire-rated, and rigid partitions are essential.",
+      "Hospital CSSD & Sterile Supply Suites: High-traffic healthcare areas requiring robust, moisture-impervious wall systems with fast installation.",
+      "Cosmetics & Medical Device Cleanrooms: Controlled environments requiring cost-effective, high-planarity modular walling with minimal silicone seams."
+    ],
+    "tables": [
+      "<table class=\"w-full text-left text-xs sm:text-sm border-collapse border border-slate-200\">\n        <thead>\n          <tr class=\"bg-slate-100 text-slate-800 font-bold\">\n            <th class=\"p-3 border border-slate-200 w-1/3\">Parameter / Specification</th>\n            <th class=\"p-3 border border-slate-200\">Engineering Standard & Values</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Product Model</td><td class=\"p-3 border border-slate-200\">1150 Type Magnesium Oxysulfide Corrugated Cleanroom Panel</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Core Material Composition</td><td class=\"p-3 border border-slate-200\">Patented Non-Halogen Magnesium Oxysulfide (Magnesium Sulfate) Inorganic Board</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Facing Material & Thickness</td><td class=\"p-3 border border-slate-200\">0.50 mm (standard) / 0.40, 0.45, 0.60, 0.80 mm Pre-painted Galvanized Steel or SUS 304</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Standard Panel Thickness</td><td class=\"p-3 border border-slate-200\">50 mm (standard partitions); 75 mm, 100 mm (structural high-span walls)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Standard Effective Width</td><td class=\"p-3 border border-slate-200\">1150 mm (uniform continuous machine-rolled modular planning width)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Continuous Panel Length</td><td class=\"p-3 border border-slate-200\">Continuous custom fabrication up to 11,800 mm (11.8 m container transport limit)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Core Material Density</td><td class=\"p-3 border border-slate-200\">220 ~ 280 kg/m³; Overall Composite Panel Weight: ~16.8 kg/m²</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Halogen Return (Sweating)</td><td class=\"p-3 border border-slate-200\">0% Halogen Release (No deliquescence, no damp sweating across 20%–95% RH)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Joint Configuration</td><td class=\"p-3 border border-slate-200\">Continuous roll-formed interlocking male/female tongue-and-groove (\"enterprise mouth\" 企口)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Connection System</td><td class=\"p-3 border border-slate-200\">Direct interlocking tongue-and-groove joint with internal capillary seal break; no splines</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Fire Performance Classification</td><td class=\"p-3 border border-slate-200\">Class A1 Non-combustible (GB 8624-2012 / ISO 1182); Fire resistance ≥ 1.0–1.5 Hours</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Thermal Conductivity</td><td class=\"p-3 border border-slate-200\">λ = 0.055 ~ 0.065 W/(m·K) (GB/T 10294)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Acoustic Sound Reduction</td><td class=\"p-3 border border-slate-200\">Rw ≥ 32 dB to 36 dB (ISO 717-1)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Surface Coil Finish</td><td class=\"p-3 border border-slate-200\">Cleanroom PE, HDP, PVDF Fluorocarbon, Anti-Static ESD (10^6 - 10^9 Ω), Antibacterial</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Production Method</td><td class=\"p-3 border border-slate-200\">Continuous automated double-belt caterpillar composite production line</td></tr>\n        </tbody>\n      </table>"
+    ],
+    "faqs": [
+      {
+        "question": "Why is the magnesium oxysulfide formula important for cleanroom panels?",
+        "answer": "Older magnesium oxychloride boards contained free chloride ions that absorb ambient moisture and weep brine onto the steel skins, causing rusting and delamination. Our patented magnesium oxysulfide uses sulfate chemistry with 0% halogen return, ensuring zero moisture sweating and zero corrosion."
+      },
+      {
+        "question": "What is the effective width of this corrugated panel?",
+        "answer": "The panel has a standard effective coverage width of 1150 mm when interlocked. This allows cleanroom layouts to be planned on standard modular dimensions with minimal off-cuts."
+      },
+      {
+        "question": "Can these panels be used in low-dew-point battery dry rooms?",
+        "answer": "Yes. In battery dry rooms operating at -40°C to -60°C dew point, moisture-releasing materials like gypsum or damp mineral cores are strictly prohibited. The magnesium oxysulfide core is completely stable and will not release moisture."
+      },
+      {
+        "question": "What fire rating does this panel provide?",
+        "answer": "The panel is certified Class A1 non-combustible under GB 8624 and ISO 1182. It provides 1.0 to 1.5 hours of fire endurance without emitting toxic smoke or flaming droplets."
+      },
+      {
+        "question": "How do these panels connect during installation?",
+        "answer": "Panels connect via continuous roll-formed male and female tongue-and-groove edges (enterprise mouth profile). They slide into the floor runner and snap together without requiring separate aluminum splines."
+      },
+      {
+        "question": "What is the maximum length available for single-piece panels?",
+        "answer": "Panels can be manufactured in continuous single lengths up to 11.8 meters (11,800 mm), allowing tall industrial cleanrooms and warehouses to be built without horizontal joint lines."
+      },
+      {
+        "question": "How does this panel compare to rock wool corrugated panels?",
+        "answer": "Magnesium oxysulfide panels have a higher core density (220–280 kg/m³ vs 60–120 kg/m³ for rock wool), providing greater surface hardness and puncture resistance. Rock wool panels offer slightly higher thermal insulation."
+      },
+      {
+        "question": "What facing materials and colors are available?",
+        "answer": "Standard options include 0.50 mm or 0.60 mm pre-painted galvanized steel in White-Gray (RAL 9002) and Pure White (RAL 9003/9010), as well as anti-static ESD coatings and SUS 304 stainless steel."
+      }
+    ]
+  },
+  {
+    "id": 5109,
+    "slug": "rock-wool-enterprise-mouth-panel",
+    "categorySlug": "cleanroom-turnkey-solution",
+    "categoryName": "Cleanroom Solutions & Turnkey Systems",
+    "title": "Rock Wool Enterprise Mouth Panel",
+    "seoTitle": "Rock Wool Enterprise Mouth Cleanroom Panel Manufacturer | Peter Air Systems",
+    "metaDescription": "Continuous machine-made 1150 Type Basalt Rock Wool Enterprise Mouth (企口) Panel featuring precision male-female tongue and groove jointing, 60-120 kg/m³ density, and Class A1 fire rating.",
+    "canonical": "https://peterairs.com/rock-wool-enterprise-mouth-panel/",
+    "h1": "Rock Wool Enterprise Mouth Cleanroom Panel",
+    "image": "/images/cleanroom/corrugated-rockwool.jpg",
+    "bannerImage": "/images/hero-banner-4.png",
+    "diagramImage": "/images/cleanroom/cleanroom-installation-nodes-cad.jpg",
+    "overview": "The Rock Wool Enterprise Mouth Panel (1150 Type Tongue-and-Groove Basalt Rock Wool Cleanroom Panel) is an automated, continuous roll-formed enclosure system engineered for pharmaceutical processing suites, electronic cleanrooms, food processing plants, and industrial logistics facilities requiring rapid installation and non-combustible Class A1 fire protection. The term 'Enterprise Mouth' (企口 / Qikou) refers to the precision roll-formed male-and-female tongue-and-groove joint profile integrated along the longitudinal edges of both steel facing sheets, which allows adjacent panels to interlock tightly without requiring separate aluminum splines or visible fasteners.\n\nManufactured on high-speed automated continuous composite lines with a standardized modular effective width of 1150 mm, the panel is core-filled with premium hydrophobic basalt rock wool (density 60 kg/m³ to 120 kg/m³). The rock wool fibers are sliced into uniform strips and oriented vertically (perpendicular to the steel skins), maximizing compressive resistance and preventing core delamination. Sandwiched between 0.5 mm to 0.8 mm pre-painted galvanized steel facings bonded with dual-component polyurethane adhesive, this panel delivers superior thermal insulation (λ = 0.038–0.042 W/(m·K)), certified Class A1 fire resistance, and acoustic attenuation Rw ≥ 32 dB, making it an efficient and cost-effective wall and ceiling solution for large cleanroom facilities.",
+    "construction": "The panel is fabricated on a continuous double-caterpillar laminating production line. Coil-fed pre-painted galvanized steel sheets (0.50–0.80 mm) from Baosteel/POSCO pass through precision roll-forming dies that form the 1150 mm effective width and matching male and female tongue-and-groove profiles with an internal capillary seal groove. The core consists of natural basalt rock wool slabs sliced into strips and rotated 90 degrees so that the fibers run vertically between the top and bottom sheets, multiplying compressive strength.\n\nAutomated spray nozzles apply solvent-free dual-component polyurethane structural adhesive across both steel facings and the rock wool core. The composite enters a heated, continuous caterpillar laminator that cures the adhesive under constant hydraulic pressure. The resulting continuous sandwich is cut to exact architectural elevations using automated flying saws. The interlocking tongue-and-groove edge profile ensures a flush planar joint with an internal capillary break that prevents air infiltration under cleanroom pressure differentials.\n\nAdditionally, all internal perimeter keels and structural channel ribs undergo automated anti-corrosion passivation before bonding. The high-pressure hydraulic curing process ensures zero void formation or air entrapment between the core matrix and metal facings, eliminating risks of internal delamination under fluctuating environmental room temperatures and recurring positive or negative pressure cycling in high-containment cleanroom zones.",
+    "layers": [
+      {
+        "name": "Top Facing Sheet",
+        "spec": "0.50–0.80 mm Roll-Formed 1150 mm Male/Female Tongue-and-Groove Galvanized Steel"
+      },
+      {
+        "name": "Adhesive Bond Line",
+        "spec": "Continuous Automated Dual-Component Polyurethane Structural Adhesive"
+      },
+      {
+        "name": "Thermal Insulation Core",
+        "spec": "60–120 kg/m³ Vertically Oriented Hydrophobic Basalt Rock Wool Strips"
+      },
+      {
+        "name": "Adhesive Bond Line",
+        "spec": "Continuous Automated Dual-Component Polyurethane Structural Adhesive"
+      },
+      {
+        "name": "Bottom Facing Sheet",
+        "spec": "0.50–0.80 mm Roll-Formed 1150 mm Male/Female Tongue-and-Groove Galvanized Steel"
+      }
+    ],
+    "installation": "Installation of the Rock Wool Enterprise Mouth Panel is fast and straightforward due to its continuous 1150 mm modular tongue-and-groove jointing. Floor runners (JH014B 50 mm aluminum U-channels) are anchored to the subfloor with chemical anchors at 300 mm spacing. Panels are erected vertically and seated into the floor runner. The male tongue of each new panel is slid into the female groove of the preceding panel, snapping together tightly without external splines. For ceilings, panels are supported by structural hanging beams or concealed ceiling clips. All internal 90° corners are finished with JH009 base clips and JH001A concave coving, and joints are sealed with neutral cure silicone.",
+    "installationPoints": [
+      "Floor Runner Fixing: Anchor JH014B U-channel to subfloor using chemical expansion anchors @ 300 mm pitch.",
+      "Vertical Panel Setting: Lift panel into bottom track, verifying laser plumbness across both orthogonal axes.",
+      "Tongue-and-Groove Engagement: Push panel horizontally until the male tongue is fully seated in the female groove.",
+      "Head Track Connection: Secure panel top into overhead U-channel or structural ceiling hanging beam.",
+      "Hygienic Corner Coving: Install JH009 clip track and snap-in JH001A concave coving at all interior 90° corners.",
+      "Medical Silicone Sealing: Apply neutral cure anti-mold silicone along the hairline joint (nominal 1.5 mm seam)."
+    ],
+    "variations": "Supplied in the standard 1150 mm effective width, with continuous fabrication lengths up to 11.8 meters to fit tall cleanroom elevations. Standard panel thickness is 50 mm, with heavy-duty 75 mm, 100 mm, and 150 mm options available for high thermal insulation walls or extended fire barriers. Steel coil finishes include Cleanroom White-Gray (RAL 9002), Pure White (RAL 9003/9010), Light Blue, Anti-Static ESD coatings (10^6–10^9 Ω), and SUS 304 stainless steel. Rock wool core density can be specified from 60 kg/m³ to 120 kg/m³ based on project structural and thermal requirements. Furthermore, custom color matching according to international RAL and Pantone shade charts is available for specialized facility branding, alongside optional factory-integrated provisions for interlock wiring channels, differential pressure sensor ports, and flush return air riser cutouts tailored to cleanroom architectural drawings.",
+    "variationList": [
+      "Thickness Configurations: 50 mm (standard partitions), 75 mm (enhanced fire/thermal), 100 mm (tall dividing walls), 150 mm (heavy-duty exterior)",
+      "Standard Effective Width: 1150 mm (uniform modular cleanroom planning grid)",
+      "Continuous Custom Lengths: Tailored up to 11,800 mm (11.8 m) for zero-horizontal-joint cleanroom construction",
+      "Facing Finishes: RAL 9002 Off-White, RAL 9003 Pure White, RAL 5015 Sky Blue, SUS 304 Stainless Steel",
+      "Coating Chemistries: Cleanroom PE, High-Durability Polyester (HDP), PVDF Fluorocarbon, Antistatic ESD"
+    ],
+    "gallery": [
+      {
+        "src": "/images/cleanroom/corrugated-rockwool.jpg",
+        "title": "Rock Wool Enterprise Mouth Panel Cross-Section"
+      },
+      {
+        "src": "/images/cleanroom/cleanroom-installation-nodes-cad.jpg",
+        "title": "Enterprise Mouth Joint CAD Assembly"
+      },
+      {
+        "src": "/images/cleanroom/cleanroom-profile-specs-table-2.jpg",
+        "title": "Extruded Aluminium Profile Matrix"
+      }
+    ],
+    "features": [
+      "Precision Enterprise Mouth Interlock: Continuous roll-formed male and female edges snap together tightly without visible screws or separate splines, creating a flush, hygienic wall plane.",
+      "Class A1 Non-Combustible Fire Safety: Pure basalt rock wool core is certified Class A1 non-combustible under GB 8624 and ISO 1182, providing 1.0 to 2.0 hours of fire endurance with zero smoke generation.",
+      "Superior Thermal Insulation: Low thermal conductivity (λ = 0.038–0.042 W/(m·K)) minimizes heat transfer, reducing HVAC refrigeration loads and energy consumption in temperature-controlled suites.",
+      "Vertical Fiber Orientation: Slicing and rotating rock wool fibers 90 degrees vertically multiplies compressive strength and shear modulus, preventing core sagging over tall vertical spans.",
+      "Automated High-Speed Continuous Production: Manufactured on double-belt continuous laminating lines, ensuring consistent density, high adhesive bond strength, and fast delivery for large projects.",
+      "Single-Piece Lengths Up to 11.8 Meters: Continuous fabrication allows single-piece wall panels up to 11.8 meters tall, eliminating dust-collecting horizontal joints in high-bay cleanrooms.",
+      "Acoustic Sound Damping: High-density porous basalt rock wool fibers absorb sound energy (Rw ≥ 32 dB), reducing noise transmission from fans, pumps, and machinery.",
+      "Hydrophobic Water-Repellent Treatment: Rock wool fibers are treated with silicone water-repellency additives (water absorption < 1.0%), preventing moisture retention during humidity fluctuations.",
+      "Chemical & Disinfectant Resistance: Factory-applied coil coatings (PVDF, HDP, or cleanroom PE) resist routine wipe-downs with isopropyl alcohol, chlorine biocides, and automated VHP cycles.",
+      "Zero Formaldehyde & Non-Outgassing: Manufactured using solvent-free polyurethane binders, meeting strict ISO 14644-8 airborne molecular contamination (AMC) cleanliness standards."
+    ],
+    "materials": [
+      "Facing Skins: High-tensile pre-painted galvanized steel (0.50–0.80 mm) from Baosteel / POSCO with anti-corrosion primer.",
+      "Core Infill: Hydrophobic natural basalt rock wool strips (60–120 kg/m³) with vertically oriented fibers.",
+      "Lamination Adhesive: Solvent-free dual-component polyurethane structural resin applied continuously with high shear strength.",
+      "Joint Profiling: Precision roll-formed continuous 1150 mm male-and-female interlocking tongue-and-groove joint.",
+      "Surface Finish: Cleanroom thermoset polyester (PE), HDP, PVDF, or anti-static ESD (10^6–10^9 Ω) baked coil finish."
+    ],
+    "applications": [
+      "Pharmaceutical Manufacturing Plants: Secondary packaging suites, formulation halls, and warehouse dividing walls requiring Class A1 fire safety and thermal insulation.",
+      "Electronic & Semiconductor Cleanrooms: Large-scale cleanroom partitions (ISO Class 5 to Class 8) requiring rapid modular installation and non-outgassing surfaces.",
+      "Food & Beverage Processing Facilities: Partition walls requiring non-porous, washable surfaces that resist moisture, steam, and biological growth.",
+      "Industrial Logistics & Cold Cleanrooms: Controlled-temperature storage and packaging rooms requiring low thermal conductivity and non-combustible walling.",
+      "Biotechnology Pilot Plants: Modular research and manufacturing facilities requiring fire-rated boundary separations and reconfigurable walling.",
+      "Hospital Clean Supply & Utility Corridors: Healthcare service corridors requiring robust, impact-resistant wall systems with fast installation times.",
+      "Cosmetics & Consumer Healthcare Plants: Clean production suites demanding cost-effective, high-planarity modular walling with minimal silicone seams."
+    ],
+    "tables": [
+      "<table class=\"w-full text-left text-xs sm:text-sm border-collapse border border-slate-200\">\n        <thead>\n          <tr class=\"bg-slate-100 text-slate-800 font-bold\">\n            <th class=\"p-3 border border-slate-200 w-1/3\">Parameter / Specification</th>\n            <th class=\"p-3 border border-slate-200\">Engineering Standard & Values</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Product Model</td><td class=\"p-3 border border-slate-200\">1150 Type Rock Wool Enterprise Mouth (企口) Cleanroom Panel</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Core Material Composition</td><td class=\"p-3 border border-slate-200\">Hydrophobic Basalt Rock Wool Strips (Vertically Oriented Fibers)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Facing Material & Thickness</td><td class=\"p-3 border border-slate-200\">0.50 mm (standard) / 0.40, 0.45, 0.60, 0.80 mm Pre-painted Galvanized Steel or SUS 304</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Standard Panel Thickness</td><td class=\"p-3 border border-slate-200\">50 mm (standard partitions); 75 mm, 100 mm, 150 mm (heavy-duty thermal/fire walls)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Standard Effective Width</td><td class=\"p-3 border border-slate-200\">1150 mm (uniform continuous machine-rolled modular planning width)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Continuous Panel Length</td><td class=\"p-3 border border-slate-200\">Continuous custom fabrication up to 11,800 mm (11.8 m container transport limit)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Rock Wool Core Density</td><td class=\"p-3 border border-slate-200\">60 kg/m³ to 120 kg/m³ (standard 100 kg/m³ for cleanroom walls)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Joint Configuration</td><td class=\"p-3 border border-slate-200\">Continuous roll-formed interlocking male/female tongue-and-groove (\"enterprise mouth\" 企口)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Connection System</td><td class=\"p-3 border border-slate-200\">Direct interlocking tongue-and-groove joint with internal capillary seal break; no splines</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Fire Performance Classification</td><td class=\"p-3 border border-slate-200\">Class A1 Non-combustible (GB 8624-2012 / ISO 1182); Fire resistance ≥ 1.0–2.0 Hours</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Thermal Conductivity</td><td class=\"p-3 border border-slate-200\">λ = 0.038 ~ 0.042 W/(m·K) (GB/T 10294)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Acoustic Sound Reduction</td><td class=\"p-3 border border-slate-200\">Rw ≥ 32 dB to 38 dB (ISO 717-1)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Hydrophobic Rate</td><td class=\"p-3 border border-slate-200\">≥ 98% (Water absorption < 1.0% by volume)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Surface Coil Finish</td><td class=\"p-3 border border-slate-200\">Cleanroom PE, HDP, PVDF Fluorocarbon, Anti-Static ESD (10^6 - 10^9 Ω), Antibacterial</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Production Method</td><td class=\"p-3 border border-slate-200\">Continuous automated double-belt caterpillar composite production line</td></tr>\n        </tbody>\n      </table>"
+    ],
+    "faqs": [
+      {
+        "question": "What does 'Enterprise Mouth' (企口) mean?",
+        "answer": "'Enterprise Mouth' (企口 / Qikou) is the engineering term for a precision roll-formed male and female tongue-and-groove joint. Both steel facing sheets are roll-formed into interlocking edges that slide together directly, eliminating the need for separate aluminum connecting splines."
+      },
+      {
+        "question": "Why are the rock wool fibers oriented vertically?",
+        "answer": "Standard rock wool batts have horizontal fibers that can delaminate or sag under their own weight. In our panels, rock wool slabs are sliced and rotated 90 degrees so the fibers run vertically between the steel skins, increasing compressive strength and preventing internal shear failure."
+      },
+      {
+        "question": "What is the fire resistance of this panel?",
+        "answer": "The basalt rock wool core is 100% inorganic and certified Class A1 non-combustible under GB 8624 and ISO 1182. Depending on panel thickness (50 mm to 100 mm), it provides 1.0 to 2.0 hours of fire endurance."
+      },
+      {
+        "question": "What is the effective coverage width?",
+        "answer": "The panel has a standard effective coverage width of exactly 1150 mm when interlocked. This standardized dimension facilitates rapid architectural planning and modular coordination across large cleanroom facilities."
+      },
+      {
+        "question": "Can these panels be used for external cleanroom envelope walls?",
+        "answer": "Yes. In 100 mm or 150 mm thicknesses with PVDF fluorocarbon exterior coil coating, these panels are widely used as exterior envelope and boundary walls for pharmaceutical and electronics factory buildings."
+      },
+      {
+        "question": "How does the tongue-and-groove joint maintain airtightness?",
+        "answer": "The roll-formed edges include an internal capillary break and a recessed pocket where cleanroom sealant is applied during assembly. Once caulked with neutral silicone, the joint maintains airtight integrity under cleanroom positive pressures."
+      },
+      {
+        "question": "What facing materials and colors are available?",
+        "answer": "Standard options include 0.50 mm or 0.60 mm pre-painted galvanized steel in White-Gray (RAL 9002) and Pure White (RAL 9003/9010), as well as anti-static ESD coatings and SUS 304 stainless steel."
+      },
+      {
+        "question": "What floor and ceiling channels are used for installation?",
+        "answer": "The panels install into standard JH014B 50 mm aluminum U-channels at the floor and ceiling, with JH001A concave coving snapped into JH009 base clips to eliminate 90-degree dust-collecting corners."
+      }
+    ]
+  },
+  {
+    "id": 5110,
+    "slug": "purified-aluminium-profile-accessories",
+    "categorySlug": "cleanroom-turnkey-solution",
+    "categoryName": "Cleanroom Solutions & Turnkey Systems",
+    "title": "Purified Aluminium Profile Accessories",
+    "seoTitle": "Cleanroom Aluminium Profile Accessories Manufacturer India | Peter Air Systems",
+    "metaDescription": "Complete 6063-T5 architectural aluminium profile system for cleanrooms: JH001A inner arc coving, JH009 base track, JH014B U-channel, JH 258 keel connector, JH022/JH164 ceiling beams.",
+    "canonical": "https://peterairs.com/purified-aluminium-profile-accessories/",
+    "h1": "Cleanroom Purified Aluminium Profile Accessories",
+    "image": "/images/cleanroom/cleanroom-aluminium-profiles-assembly.jpg",
+    "bannerImage": "/images/hero-banner-4.png",
+    "diagramImage": "/images/cleanroom/cleanroom-profile-specs-table-1.jpg",
+    "overview": "The Cleanroom Purified Aluminium Profile Accessories Suite is a comprehensive architectural extrusion system engineered to complete airtight, coved, and hygienic envelope assemblies for pharmaceutical GMP facilities, hospital operating suites, and precision microelectronics cleanrooms. Extruded from high-purity 6063-T5 architectural aluminum alloy (wall thickness 0.95 mm to 2.0 mm), the profile system provides structural mounting channels, panel splines, coving transitions, window frames, door jambs, and heavy-duty ceiling hanging beams.\n\nThe profile series includes critical components: JH001A concave inner arc coving with matching JH009 two-piece clip track (eliminating 90° dust-trapping corners at wall-to-floor and wall-to-ceiling intersections); JH011B convex outer corner arcs; JH014B 50 mm U-channel floor and ceiling runners; JH 258 '中'-shaped concealed keel connectors; JH010/JH025/JH025A flush window outer frames and beading strips; JH006D/JH039 door jamb and leaf framing; and JH022/JH164 100T-shaped heavy-duty ceiling hanging beams. Available in anodized natural matte, electrophoresis pearl white, and antimicrobial powder-coated finishes, these profiles ensure smooth transitions and complete cleanroom compliance.\n\nFurthermore, all manufacturing stages are conducted under strict ISO 9001:2015 quality control protocols, ensuring batch-to-batch consistency and rigorous compliance with international cleanroom envelope standards (including ISO 14644-4, WHO TRS 986, and US FDA cGMP). By maintaining precision mechanical tolerances and providing customized sizing, Peter Air Systems ensures optimal airflow aerodynamics, minimal maintenance downtime, and long-term contamination containment across critical pharmaceutical, healthcare, and industrial manufacturing environments.",
+    "construction": "All profiles are hot-extruded from virgin 6063-T5 architectural aluminum alloy billets through high-precision CNC tool steel dies, followed by controlled artificial aging to achieve a Webster hardness ≥ 12 HW and ultimate tensile strength ≥ 160 MPa. The extrusions feature uniform wall thicknesses optimized for structural rigidity under live and dead cleanroom loads: 0.95–1.0 mm for decorative coving and clip tracks, 1.10–1.20 mm for floor runners and window frames, and 1.70–2.0 mm for heavy-duty ceiling hanging beams.\n\nSurface treatment options include sulfuric acid anodizing (film thickness AA10 / ≥ 10 μm) delivering superior wear resistance; electrophoresis white coating providing a mirror-smooth finish; or thermosetting electrostatic polyester powder coating (film thickness ≥ 60 μm) color-matched to cleanroom panels (RAL 9002/9010). Profiles are manufactured with snap-lock engagement tabs, silicone caulking grooves, and alignment guides that allow rapid, repeatable on-site assembly with zero visible fixings.\n\nAdditionally, all internal perimeter keels and structural channel ribs undergo automated anti-corrosion passivation before bonding. The high-pressure hydraulic curing process ensures zero void formation or air entrapment between the core matrix and metal facings, eliminating risks of internal delamination under fluctuating environmental room temperatures and recurring positive or negative pressure cycling in high-containment cleanroom zones.",
+    "layers": [
+      {
+        "name": "Aluminium Base Alloy",
+        "spec": "High-Purity Extruded Architectural 6063-T5 Aluminum Alloy (Webster Hardness ≥ 12 HW)"
+      },
+      {
+        "name": "Surface Treatment",
+        "spec": "Anodized Matte (AA10 ≥ 10 μm) / Electrophoresis White / Electrostatic Powder Coating (≥ 60 μm)"
+      },
+      {
+        "name": "Fastening Interfaces",
+        "spec": "Concealed Snap-In Clip Tracks, Precision Spline Grooves, and Counter-sunk Screw Recesses"
+      },
+      {
+        "name": "Sealant Reservoirs",
+        "spec": "Integrated Sealant Cavities for Flush Medical-Grade Silicone Caulking"
+      }
+    ],
+    "installation": "Installation of the Purified Aluminium Profile system begins by establishing laser-guided floor and ceiling layouts. JH014B 50 mm U-channels are anchored to the floor slab using 5 mm masonry anchors spaced at 300 mm intervals. Wall panels are erected into the runners and connected edge-to-edge using the JH 258 '中'-shaped keel spline. Suspended ceilings are framed using JH022 or JH164 100T-shaped hanging beams suspended from structural slabs via M8 threaded rods at 1200 mm centers. Once walls and ceilings are in place, JH009 base tracks are fastened along all internal 90° junctures, and JH001A concave coving profiles are snapped securely into place. Finally, all profile-to-panel joints are sealed with neutral cure cleanroom silicone.",
+    "installationPoints": [
+      "Floor Track Anchoring: Secure JH014B U-channel to subfloor using chemical expansion anchors @ 300 mm pitch.",
+      "Concealed Keel Splining: Insert JH 258 '中'-shaped aluminum keels into side grooves to mechanically lock adjacent panels flush.",
+      "Walkable Ceiling Grid: Suspend JH022/JH164 100T beams with M8 threaded rods @ 1200 mm centers for walkable roofs.",
+      "Base Track Fastening: Screw JH009 base clip tracks along all internal 90° wall-to-floor and wall-to-ceiling junctions.",
+      "Snap-In Coving: Press JH001A concave coving into the JH009 base track until the continuous dual locking lips engage.",
+      "Silicone Caulking: Inject cleanroom-grade neutral silicone along all profile-to-panel joints to create hermetic seals."
+    ],
+    "variations": "Profiles are supplied in standard architectural lengths of 3000 mm, 5800 mm, and 6000 mm (custom lengths available on project orders). Surface finishes include Matte Anodized Natural, Electrophoresis Pearl White, and Electrostatic Powder Coated RAL 9002 (White-Gray) or RAL 9003 (Pure White). The profile catalog covers the complete suite of cleanroom structural and finishing components: coving systems (JH001A, JH009), convex corners (JH011B), floor tracks (JH014B), coupling splines (JH024, JH 258), window framing (JH010, JH025, JH025A), door frames (JH006D, JH039), and ceiling hanging beams (JH022, JH164). Furthermore, custom color matching according to international RAL and Pantone shade charts is available for specialized facility branding, alongside optional factory-integrated provisions for interlock wiring channels, differential pressure sensor ports, and flush return air riser cutouts tailored to cleanroom architectural drawings.",
+    "variationList": [
+      "Standard Profile Lengths: 3000 mm, 5800 mm, 6000 mm (cut to custom lengths upon request)",
+      "Surface Finishes: Anodized Matte Silver (AA10), Electrophoresis High-Gloss White, Electrostatic Powder Coated RAL 9002/9010",
+      "Wall Coving Suite: JH001A Concave Arc, JH009 Base Track, JH011B Convex Corner Arc, 2-piece and 1-piece coving options",
+      "Window & Door Suite: JH010 Fixed Window Frame, JH025 Beading, JH006D Door Jamb, JH039 Door Leaf Edge Channel",
+      "Ceiling Suspension Suite: JH022 100T Hanging Beam (1.7mm wall), JH164 Reinforced Double-Groove 100T Beam (2.0mm wall)"
+    ],
+    "gallery": [
+      {
+        "src": "/images/cleanroom/cleanroom-aluminium-profiles-assembly.jpg",
+        "title": "Complete Cleanroom Aluminium Profile System Assembly"
+      },
+      {
+        "src": "/images/cleanroom/cleanroom-profile-specs-table-1.jpg",
+        "title": "Coving, Corner & Runner Profiles Dimension Matrix"
+      },
+      {
+        "src": "/images/cleanroom/cleanroom-profile-specs-table-2.jpg",
+        "title": "Window, Door & Ceiling Hanging Beams Cross-Sections"
+      },
+      {
+        "src": "/images/cleanroom/cleanroom-installation-nodes-cad.jpg",
+        "title": "Architectural Profile Interface & CAD Assembly Nodes"
+      }
+    ],
+    "features": [
+      "Virgin 6063-T5 Architectural Alloy: Hot-extruded exclusively from high-purity primary aluminum billets (Webster hardness ≥ 12 HW), providing high structural strength, impact resistance, and corrosion immunity.",
+      "Complete Cleanroom Component Suite: Covers the entire architectural ecosystem—floor tracks, concealed splines, hygienic coving, window framing, door surrounds, and heavy-duty ceiling hanging beams.",
+      "Dust-Free Hygienic Coving Transitions: The JH001A inner arc coving (radius 22.5 mm) eliminates 90-degree internal corners at floor and ceiling junctions, preventing dust particle buildup and allowing easy disinfection.",
+      "Snap-In Two-Piece Coving Design: The JH009 base track anchors permanently with concealed screws; the JH001A decorative arc snaps over it, leaving zero exposed screw heads inside the cleanroom.",
+      "Heavy-Duty Ceiling Load Bearing: The JH022 (1.7 mm wall) and JH164 (2.0 mm wall) 100T-shaped hanging beams support walkable cleanroom ceilings with live loads exceeding 2.5 kN/m².",
+      "Integrated Flush Window Framing: The JH010 outer frame with JH025 arc beading and JH025A airtight clamping strip allows double-glazed observation windows to mount coplanar with 50 mm wall panels.",
+      "Precision 50 mm Panel Channels: Floor and ceiling U-channels (JH014B) feature an exact 50.0 mm internal width with lead-in chamfers for smooth panel sliding and tight, rattle-free retention.",
+      "Concealed '中'-Keel Splines: The JH 258 extruded spline couples adjacent handmade panels without visible external battens, maintaining a completely flat, aerodynamic wall plane.",
+      "Chemical & Disinfectant Resistance: Finished with premium anodizing (≥ 10 μm) or electrostatic powder coating (≥ 60 μm) that withstands aggressive hospital disinfectants, chlorine, and repeated VHP cycles.",
+      "Full ISO 14644 & GMP Compliance: Engineered specifically to meet global regulatory requirements (WHO, US FDA, EU GMP, Schedule M) for aseptic and sterile cleanroom construction."
+    ],
+    "materials": [
+      "Extrusion Alloy: 6063-T5 architectural aluminum alloy (Si: 0.2–0.6%, Mg: 0.45–0.9%, Fe: < 0.35%, Al: Balance).",
+      "Anodized Coating: Class AA10 sulfuric acid anodic oxidation film (thickness ≥ 10 μm) with hot water chemical sealing.",
+      "Powder Coating: Thermoset polyester architectural powder coating (film thickness ≥ 60 μm) cured at 200°C.",
+      "Mechanical Properties: Tensile strength ≥ 160 MPa, Yield strength ≥ 110 MPa, Elongation ≥ 8%, Webster hardness ≥ 12 HW.",
+      "Fasteners: Compatible with 4.8 mm / 5.0 mm aluminum-steel blind rivets and stainless steel self-drilling screws."
+    ],
+    "applications": [
+      "Pharmaceutical Manufacturing Plants: Base tracks, coving, and ceiling hanging beams for Class A/B/C/D cleanrooms complying with WHO and EU GMP guidelines.",
+      "Hospital Operating Theatres (OT): Hygienic coving, flush window frames, and airtight door surrounds for infection control suites.",
+      "Semiconductor & Microelectronics Fabs: Non-outgassing, conductive or powder-coated framing profiles for ISO Class 1 to Class 6 cleanrooms.",
+      "Biotechnology & Biosafety Suites: Airtight coving and ceiling suspension profiles for BSL-3 and BSL-4 high-containment laboratories.",
+      "Food & Beverage Packaging Cleanrooms: Washable, corrosion-resistant coving and wall base channels for hygienic processing areas.",
+      "Medical Device Assembly Suites: Flush partition and ceiling framing profiles for sterile device manufacturing and packaging lines.",
+      "Lithium-ion Battery Dry Rooms: Rigid structural hanging beams and wall framing profiles for ultra-low dew point production environments."
+    ],
+    "tables": [
+      "<table class=\"w-full text-left text-xs sm:text-sm border-collapse border border-slate-200\">\n        <thead>\n          <tr class=\"bg-slate-100 text-slate-800 font-bold\">\n            <th class=\"p-3 border border-slate-200\">Model No.</th>\n            <th class=\"p-3 border border-slate-200\">Profile Name & Function</th>\n            <th class=\"p-3 border border-slate-200\">Cross-Section Dimensions</th>\n            <th class=\"p-3 border border-slate-200\">Wall Thk.</th>\n            <th class=\"p-3 border border-slate-200\">Engineering Application</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr><td class=\"p-3 border border-slate-200 font-bold bg-slate-50\">JH001A</td><td class=\"p-3 border border-slate-200\">50 Inner Arc / Concave Coving (50内圆弧)</td><td class=\"p-3 border border-slate-200\">Width: 68.5 mm, Depth: 22.5 mm, Lip: 5.9 mm</td><td class=\"p-3 border border-slate-200 font-medium\">0.95 mm</td><td class=\"p-3 border border-slate-200\">Conceals 90° wall-to-floor and wall-to-ceiling corners to eliminate dust traps</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-bold bg-slate-50\">JH009</td><td class=\"p-3 border border-slate-200\">Inner Arc Base Track (内圆弧底座)</td><td class=\"p-3 border border-slate-200\">Base: 44.5 mm, Top: 14.0 mm, Height: 15.9 mm</td><td class=\"p-3 border border-slate-200 font-medium\">1.00 mm</td><td class=\"p-3 border border-slate-200\">Screwed to wall/floor; provides continuous snap-in clip track for JH001A</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-bold bg-slate-50\">JH011B</td><td class=\"p-3 border border-slate-200\">50 Outer Arc / Convex Corner (50外圆弧)</td><td class=\"p-3 border border-slate-200\">53.6 mm × 53.6 mm rounded corner</td><td class=\"p-3 border border-slate-200 font-medium\">1.05 mm</td><td class=\"p-3 border border-slate-200\">Exterior corner cladding where two 50mm wall panels intersect</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-bold bg-slate-50\">JH014B</td><td class=\"p-3 border border-slate-200\">50 Slot Aluminum / U-Channel (50槽铝)</td><td class=\"p-3 border border-slate-200\">Outer Width: 54.0 mm, Inner Width: 50.0 mm</td><td class=\"p-3 border border-slate-200 font-medium\">1.10 mm</td><td class=\"p-3 border border-slate-200\">Floor runner track and top wall track to anchor 50mm panels</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-bold bg-slate-50\">JH024</td><td class=\"p-3 border border-slate-200\">50 H-Shaped Aluminum (50工字铝)</td><td class=\"p-3 border border-slate-200\">Width: 54.5 mm, Height: 48.9 mm, Slot: 23.85 mm</td><td class=\"p-3 border border-slate-200 font-medium\">1.10 mm</td><td class=\"p-3 border border-slate-200\">Structural vertical coupling profile for 50mm machine panels</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-bold bg-slate-50\">JH 258</td><td class=\"p-3 border border-slate-200\">\"中\"-Shaped Keel Connector (中字铝)</td><td class=\"p-3 border border-slate-200\">Width: 40.0 mm, Slot: 10.0 mm, Height: 20.0 mm</td><td class=\"p-3 border border-slate-200 font-medium\">1.00 mm</td><td class=\"p-3 border border-slate-200\">Inserted between handmade panel edges to form concealed flush joint</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-bold bg-slate-50\">JH010</td><td class=\"p-3 border border-slate-200\">50 Fixed Window Outer Frame (50固定窗框料)</td><td class=\"p-3 border border-slate-200\">Width: 54.9 mm, Height: 24.9 mm, Slot: 8.0 mm</td><td class=\"p-3 border border-slate-200 font-medium\">1.10 mm</td><td class=\"p-3 border border-slate-200\">Outer perimeter framing for double-glazed cleanroom observation windows</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-bold bg-slate-50\">JH025</td><td class=\"p-3 border border-slate-200\">Fixed Window Arc Crimping (固定窗圆弧压线)</td><td class=\"p-3 border border-slate-200\">Width: 40.0 mm, Height: 23.44 mm</td><td class=\"p-3 border border-slate-200 font-medium\">1.00 mm</td><td class=\"p-3 border border-slate-200\">Arc-shaped decorative retention bead securing the glass pane</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-bold bg-slate-50\">JH025A</td><td class=\"p-3 border border-slate-200\">Window Barometric Beading (固定窗气密压条)</td><td class=\"p-3 border border-slate-200\">Width: 25.6 mm, Height: 24.5 mm, Bevel: 47°</td><td class=\"p-3 border border-slate-200 font-medium\">1.20 mm</td><td class=\"p-3 border border-slate-200\">Chamfered airtight clamping strip for flush window sealing</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-bold bg-slate-50\">JH006D</td><td class=\"p-3 border border-slate-200\">50 Door Frame Profile (50单门框料)</td><td class=\"p-3 border border-slate-200\">Face: 60.0 mm, Depth: 46.0 mm, Inner: 50.0 mm</td><td class=\"p-3 border border-slate-200 font-medium\">1.00 mm</td><td class=\"p-3 border border-slate-200\">Integrated jamb and architrave profile for 50mm cleanroom doors</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-bold bg-slate-50\">JH039</td><td class=\"p-3 border border-slate-200\">50 Door Leaf Edge Profile (50门包边料)</td><td class=\"p-3 border border-slate-200\">56.4 mm × 51.0 mm, Panel Slot: 49.8 mm</td><td class=\"p-3 border border-slate-200 font-medium\">1.20 mm</td><td class=\"p-3 border border-slate-200\">Perimeter channel encapsulating 50mm sandwich panel door leaves</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-bold bg-slate-50\">JH022</td><td class=\"p-3 border border-slate-200\">100T Ceiling Hanging Beam (100T型吊梁)</td><td class=\"p-3 border border-slate-200\">Bottom Flange: 52.2 mm, Vertical Stem: 100.0 mm</td><td class=\"p-3 border border-slate-200 font-medium\">1.70 mm</td><td class=\"p-3 border border-slate-200\">Heavy-duty suspended ceiling T-bar supporting walkable panel spans</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-bold bg-slate-50\">JH164</td><td class=\"p-3 border border-slate-200\">100 Reinforced T-Beam (100加强T型吊梁)</td><td class=\"p-3 border border-slate-200\">Width: 48.0 mm, Height: 50.8 mm, Internal Ribs</td><td class=\"p-3 border border-slate-200 font-medium\">2.00 mm</td><td class=\"p-3 border border-slate-200\">High-load reinforced T-beam with dual fixing channels for walkable roofs</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-bold bg-slate-50\">L38x38</td><td class=\"p-3 border border-slate-200\">Angle Aluminum (38x38角铝)</td><td class=\"p-3 border border-slate-200\">38.0 mm × 38.0 mm equal leg angle</td><td class=\"p-3 border border-slate-200 font-medium\">1.20–1.30 mm</td><td class=\"p-3 border border-slate-200\">Perimeter bracing, corner reinforcing, and framing connections</td></tr>\n        </tbody>\n      </table>"
+    ],
+    "faqs": [
+      {
+        "question": "What alloy is used for Peter Air cleanroom aluminium profiles?",
+        "answer": "All profiles are extruded exclusively from high-purity architectural 6063-T5 aluminum alloy, aged to a Webster hardness of ≥ 12 HW and tensile strength ≥ 160 MPa to ensure high structural stiffness and corrosion resistance."
+      },
+      {
+        "question": "How does the two-piece coving system (JH009 + JH001A) work?",
+        "answer": "The JH009 base track is screwed directly to the floor or ceiling slab at 300 mm spacing. The JH001A concave coving profile then snaps over the track, locking into place with dual internal teeth. This conceals all fasteners, creating a smooth, uninterrupted hygienic corner."
+      },
+      {
+        "question": "What is the function of the JH 258 '中'-shaped keel connector?",
+        "answer": "The JH 258 keel is an extruded spline inserted into the side grooves of adjacent handmade cleanroom panels. It aligns and locks the panels coplanar without visible external screws, leaving a uniform 2 mm joint gap ready for hygienic silicone flush-sealing."
+      },
+      {
+        "question": "Are these profiles strong enough for walkable cleanroom ceilings?",
+        "answer": "Yes. Our JH022 (1.7 mm wall) and JH164 (2.0 mm wall) 100T-shaped aluminum hanging beams are engineered specifically for suspended walkable ceilings. Spaced at 1200 mm intervals, they easily support live maintenance loads of 2.5 kN/m²."
+      },
+      {
+        "question": "What surface finishes are available for the aluminium profiles?",
+        "answer": "We supply profiles in Anodized Matte Silver (AA10 / ≥ 10 μm film thickness), Electrophoresis Pearl White, and Electrostatic Polyester Powder Coated in RAL 9002 (White-Gray) or RAL 9003 (Pure White) to match panel skins."
+      },
+      {
+        "question": "Can these profiles be used in sterile pharmaceutical operating rooms?",
+        "answer": "Yes. The smooth coved profiles eliminate 90-degree internal corners where dust and bacteria accumulate. They comply fully with ISO 14644-4, WHO GMP, and US FDA requirements for sterile healthcare facilities."
+      },
+      {
+        "question": "What lengths are these profiles available in?",
+        "answer": "Standard inventory lengths are 3000 mm, 5800 mm, and 6000 mm. Custom cut-to-length options are available for large projects to minimize site scrap."
+      },
+      {
+        "question": "How are observation windows mounted using these profiles?",
+        "answer": "The JH010 outer frame is mounted into the panel opening, the double-glazed glass unit is seated, and the JH025/JH025A beading profile snaps in to clamp the glass airtight and flush with the 50 mm wall face on both sides."
+      }
+    ]
+  },
+  {
+    "id": 5111,
+    "slug": "double-glazed-insulating-glass-windows",
+    "categorySlug": "cleanroom-turnkey-solution",
+    "categoryName": "Cleanroom Solutions & Turnkey Systems",
+    "title": "Double-Glazed Insulating Glass Windows",
+    "seoTitle": "Double-Glazed Insulating Cleanroom Windows Manufacturer | Peter Air Systems",
+    "metaDescription": "Coplanar flush double-glazed cleanroom observation windows with 5.0mm tempered safety glass, integrated desiccant molecular sieve spacer, anti-condensation technology, and R50 arc corners.",
+    "canonical": "https://peterairs.com/double-glazed-insulating-glass-windows/",
+    "h1": "Double-Glazed Insulating Cleanroom Windows",
+    "image": "/images/cleanroom/double-glazed-cleanroom-windows.jpg",
+    "bannerImage": "/images/hero-banner-4.png",
+    "diagramImage": "/images/cleanroom/double-glazed-window-exploded.jpg",
+    "overview": "The Double-Glazed Insulating Cleanroom Window (Type 50 Flush Cleanroom Observation Window) is a specialized architectural vision panel engineered specifically for pharmaceutical GMP cleanrooms, biotechnology suites, semiconductor fabs, and hospital operating theatres. Standard commercial windows create protruding frame ledges and recessed glass sills that collect dust particles and disrupt laminar cleanroom airflow. The Peter Air Double-Glazed Window completely eliminates this contamination vector by mounting perfectly coplanar (flush) with both the inside and outside faces of 50 mm cleanroom wall panels, creating a ledge-free planar surface that can be wiped down in seconds.\n\nThe window unit consists of two panes of 5.0 mm high-clarity tempered safety glass (certified to 3C and EN 12150-1 standards) separated by an extruded clean-grade aluminum alloy spacer frame. The internal spacer frame is densely packed with active 4A molecular sieve desiccant and hermetically double-sealed with primary polyisobutylene (butyl) sealant and secondary structural polysulfide/silicone. This active desiccant technology absorbs internal moisture and guarantees a dew point ≤ -40°C, completely preventing internal condensation, fogging, or mold growth across fluctuating room temperatures and high-humidity washdowns. Available with hygienic R50 rounded arc corners or sharp 90° right angles, these windows provide crystal-clear visual supervision with Class A1 non-combustible safety.",
+    "construction": "The window assembly is built around an integrated multi-seal insulated glass architecture. The front and rear vision panels are fabricated from 5.0 mm automotive-grade float glass, thermally toughened under high-temperature quenching to achieve impact resistance five times greater than annealed glass. In the event of catastrophic breakage, the tempered safety glass fractures into small, blunt-edged granules, eliminating hazardous jagged shards. The perimeter of the glass is separated by an extruded 6063-T5 aluminum warm-edge spacer profile.\n\nThe hollow chamber of the spacer frame is filled with high-capacity 4A synthetic zeolite molecular sieve desiccant beads. The perimeter is first sealed with an automated extrusion of high-density polyisobutylene (butyl) sealant, forming an impermeable vapor barrier. A secondary structural seal of two-part polysulfide or neutral structural silicone is applied around the entire perimeter, encapsulating the outer frame (JH010) and beading strips (JH025/JH025A). For low-dew-point dry rooms (such as lithium battery suites), nitrogen gas purge ports can be incorporated into the spacer to ensure absolute dryness.",
+    "layers": [
+      {
+        "name": "Outer Cleanroom Glass",
+        "spec": "5.0 mm High-Clarity Tempered Safety Glass (3C / EN 12150-1 Certified)"
+      },
+      {
+        "name": "Primary Vapor Seal",
+        "spec": "Continuous Extruded Polyisobutylene (Butyl) Moisture Barrier"
+      },
+      {
+        "name": "Desiccant Spacer Frame",
+        "spec": "Extruded Aluminum Alloy Spacer Filled with 4A Synthetic Zeolite Molecular Sieve"
+      },
+      {
+        "name": "Dry Air / Nitrogen Cavity",
+        "spec": "Hermetically Sealed Dehydrated Air Cavity (Dew Point ≤ -40°C)"
+      },
+      {
+        "name": "Secondary Structural Seal",
+        "spec": "Dual-Component Structural Polysulfide / High-Modulus Silicone Sealant"
+      },
+      {
+        "name": "Inner Cleanroom Glass",
+        "spec": "5.0 mm High-Clarity Tempered Safety Glass (3C / EN 12150-1 Certified)"
+      },
+      {
+        "name": "Flush Mounting Frame",
+        "spec": "Extruded 6063-T5 Aluminium Outer Frame (JH010) with Retaining Beading (JH025)"
+      }
+    ],
+    "installation": "Installation of the Double-Glazed Insulating Cleanroom Window is integrated seamlessly during wall panel erection or retrofitted into pre-cut panel apertures. A precision rectangular cutout is prepared in the 50 mm sandwich wall panel, and internal perimeter keels (such as L38x38 angle aluminum) are installed to reinforce the aperture edges. The JH010 aluminum window outer frame is secured into the opening. The pre-assembled, factory-sealed double-glazed unit is seated into the frame against continuous closed-cell EPDM gaskets. The JH025 arc retention beading and JH025A barometric beading strips are snapped into place to clamp the glass firmly and flush with the wall face on both sides. A bead of neutral cure cleanroom silicone is applied around the glass-to-panel perimeter, completing a flush, ledge-free sanitary seal.",
+    "installationPoints": [
+      "Aperture Preparation: Cut precision window opening in 50 mm panel; reinforce edges with internal steel/aluminum keels.",
+      "Frame Installation: Fasten JH010 extruded aluminum outer frame into the aperture, verifying squareness and diagonal tolerances.",
+      "Gasket Setting: Apply continuous clean-grade EPDM or silicone sealing gasket along the frame glass-receiving lip.",
+      "Glass Unit Placement: Seat the factory-sealed double-glazed insulating glass unit squarely into the frame.",
+      "Beading Strip Clamping: Snap JH025/JH025A retaining beading strips into position to clamp both glass panes flush with wall skins.",
+      "Sanitary Perimeter Caulking: Inject medical-grade neutral silicone along the perimeter seam between glass, frame, and wall."
+    ],
+    "variations": "Peter Air Systems supplies Double-Glazed Cleanroom Windows in standard architectural sizes: 1180 mm × 1000 mm (full panel width), 1150 mm × 1000 mm (for 1150 machine panels), 800 mm × 1000 mm, 600 mm × 800 mm, and door-leaf sizes (250 mm × 650 mm, 450 mm × 650 mm, 400 mm × 600 mm). Total window depth is standard at 50 mm (matching 50 mm wall panels), with 75 mm and 100 mm depths available. Corner options include hygienic R50 rounded arc corners or clean 90° right-angle corners. Specialized glass variations include Laser-Safety Protective Glass, Radiation-Shielding Lead Glass, Smart Switchable PDLC Privacy Glass, and Nitrogen-Purged Dry Room Windows.",
+    "variationList": [
+      "Standard Wall Window Sizes: 1180 × 1000 mm, 1150 × 1000 mm, 800 × 1000 mm, 600 × 800 mm (custom sizes fabricated)",
+      "Standard Door Vision Sizes: 250 × 650 mm, 450 × 650 mm, 400 × 600 mm (coplanar with 50 mm door leaves)",
+      "Corner Configurations: R50 Circular Arc Rounded Corners (hygienic pharma grade) or 90° Sharp Right Angles",
+      "Wall Depth Matching: 50 mm (standard coplanar flush), 75 mm, 100 mm (thick partition wall compatibility)",
+      "Specialized Glass Technologies: Laser safety tinted glass, Smart switchable privacy PDLC glass, Lead radiation glass"
+    ],
+    "gallery": [
+      {
+        "src": "/images/cleanroom/double-glazed-cleanroom-windows.jpg",
+        "title": "Double-Glazed Flush Cleanroom Observation Window"
+      },
+      {
+        "src": "/images/cleanroom/double-glazed-window-exploded.jpg",
+        "title": "Exploded Engineering Diagram: Frame, Desiccant & Glass"
+      },
+      {
+        "src": "/images/cleanroom/cleanroom-profile-specs-table-2.jpg",
+        "title": "JH010 & JH025 Window Frame Extrusion Specifications"
+      }
+    ],
+    "features": [
+      "Coplanar Dual-Sided Flush Mounting: Mounts perfectly flush with both the front and rear faces of 50 mm cleanroom wall panels, eliminating ledges, sills, and crevices where dust particles can settle.",
+      "Dual 5.0 mm Tempered Safety Glass: Both panes utilize 3C-certified automotive-grade thermally toughened safety glass, offering high impact resistance and fracturing into safe, blunt granules if broken.",
+      "Anti-Condensation Molecular Sieve: The internal extruded aluminum spacer is packed with active 4A synthetic zeolite desiccant that continuously absorbs moisture, guaranteeing a dew point ≤ -40°C without fogging.",
+      "Dual-Barrier Hermetic Edge Seal: Primary polyisobutylene (butyl) vapor barrier combined with a secondary polysulfide structural seal ensures zero moisture ingress and long service life.",
+      "Hygienic R50 Rounded Arc Corners Available: Available with smooth R50 circular rounded corners that match the radius of JH001A wall coving, creating a unified hygienic design throughout the cleanroom.",
+      "High Acoustic Sound Insulation: With an acoustic sound reduction rating of Rw ≥ 38 dB, the double-glazed insulating air space effectively blocks machinery and corridor noise.",
+      "Chemical & Disinfectant Resistance: High-durability tempered glass and anodized/powder-coated aluminum frames resist routine cleaning with alcohol, bleach, enzymatic cleaners, and recurring VHP cycles.",
+      "Integrated Cleanroom Door Vision Panels: Standard sizes (e.g., 250×650 mm, 450×650 mm) mount flush into Peter Air all-steel and color-steel cleanroom doors, providing safe supervision into airlocks.",
+      "Optional Nitrogen Gas Purge Port: For battery dry rooms and low-humidity electronics facilities, units can be factory-purged with dry nitrogen gas to prevent condensation at -60°C dew points.",
+      "Zero Particle Shedding: Hermetically sealed assembly with non-shedding aluminum spacers and tempered glass produces zero airborne particles, complying with ISO Class 1 to Class 8 standards."
+    ],
+    "materials": [
+      "Glazing Panes: Dual 5.0 mm high-clarity float glass, thermally tempered to 3C / EN 12150-1 safety standards.",
+      "Spacer Frame: Extruded architectural 6063-T5 aluminum alloy hollow spacer filled with 4A molecular sieve desiccant.",
+      "Primary Seal: High-density polyisobutylene (butyl) moisture-impervious vapor barrier adhesive.",
+      "Secondary Seal: Dual-component structural polysulfide or neutral structural silicone sealant.",
+      "Mounting Frame: Precision extruded 6063-T5 aluminum outer frame (JH010) with retention beading (JH025/JH025A)."
+    ],
+    "applications": [
+      "Pharmaceutical Manufacturing Suites: Cleanroom viewing windows between corridors and sterile Class A/B/C processing suites for visual supervision without entering aseptic zones.",
+      "Hospital Operating Theatres (OT): Observation windows between surgical suites, scrub areas, and nurse stations, providing acoustic isolation and ledge-free hygiene.",
+      "Biotechnology & Containment Laboratories: Biosafety suites (BSL-2, BSL-3) requiring hermetically sealed, VHP-resistant vision panels with high acoustic damping.",
+      "Semiconductor & Photovoltaic Cleanrooms: Process monitoring windows for wafer fabs and photolithography suites requiring dust-free, non-outgassing vision glass.",
+      "Lithium-ion Battery Dry Rooms: Nitrogen-purged observation panels for dry rooms operating under ultra-low dew points down to -60°C.",
+      "Cleanroom Airlocks & Pass-Through Corridors: Integrated flush vision panels installed in cleanroom doors and transfer airlocks to prevent personnel collisions.",
+      "Food & Beverage Packaging Suites: Viewing windows along packaging and filling lines that withstand daily chemical sanitization and high-pressure washdowns."
+    ],
+    "tables": [
+      "<table class=\"w-full text-left text-xs sm:text-sm border-collapse border border-slate-200\">\n        <thead>\n          <tr class=\"bg-slate-100 text-slate-800 font-bold\">\n            <th class=\"p-3 border border-slate-200 w-1/3\">Parameter / Specification</th>\n            <th class=\"p-3 border border-slate-200\">Engineering Standard & Values</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Product Model</td><td class=\"p-3 border border-slate-200\">Double-Glazed Insulating Cleanroom Observation Window (Flush Coplanar Type)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Glass Specification</td><td class=\"p-3 border border-slate-200\">Dual 5.0 mm Thermally Tempered Safety Glass (3C Certified / EN 12150-1)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Total Window Thickness</td><td class=\"p-3 border border-slate-200\">50 mm (coplanar flush with 50 mm wall panels); 75 mm, 100 mm available</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Standard Wall Window Sizes</td><td class=\"p-3 border border-slate-200\">1180 × 1000 mm, 1150 × 1000 mm, 800 × 1000 mm, 600 × 800 mm (custom sizes fabricated)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Standard Door Vision Sizes</td><td class=\"p-3 border border-slate-200\">250 mm × 650 mm, 450 mm × 650 mm, 400 mm × 600 mm (flush mounted in door leaf)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Corner Geometry Options</td><td class=\"p-3 border border-slate-200\">Hygienic R50 Circular Rounded Arc Corners or Sharp 90° Right-Angle Corners</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Anti-Condensation Technology</td><td class=\"p-3 border border-slate-200\">Extruded aluminum spacer packed with active 4A synthetic zeolite molecular sieve desiccant</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Internal Cavity Dew Point</td><td class=\"p-3 border border-slate-200\">Dew point ≤ -40°C (Guaranteed condensation-free down to -40°C ambient)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Hermetic Dual Seal System</td><td class=\"p-3 border border-slate-200\">Primary: Extruded polyisobutylene (butyl); Secondary: Structural polysulfide/silicone</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Mounting Frame System</td><td class=\"p-3 border border-slate-200\">JH010 Extruded 6063-T5 aluminum frame with JH025/JH025A arc retaining beading</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Acoustic Sound Insulation</td><td class=\"p-3 border border-slate-200\">Rw ≥ 38 dB (ISO 717-1 / ASTM E90)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Thermal Transmittance (U-Value)</td><td class=\"p-3 border border-slate-200\">U ≤ 2.6 W/(m²·K) (EN 673)</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Chemical & Sanitizer Resistance</td><td class=\"p-3 border border-slate-200\">Impervious to alcohol, hydrogen peroxide (VHP), chlorine biocides, and enzymatic cleaners</td></tr>\n          <tr><td class=\"p-3 border border-slate-200 font-medium bg-slate-50\">Available Design Variations</td><td class=\"p-3 border border-slate-200\">R50 arc corners, 90° square, laser-safety tinted glass, PDLC smart privacy glass, lead glass</td></tr>\n        </tbody>\n      </table>"
+    ],
+    "faqs": [
+      {
+        "question": "Why are flush cleanroom windows superior to standard commercial windows?",
+        "answer": "Standard windows have frames and sills that protrude 20–50 mm from the wall, creating ledges where airborne particles settle and disrupting laminar airflow. Peter Air double-glazed windows mount completely flush on both wall faces, eliminating all ledges and allowing effortless wipe-down cleaning."
+      },
+      {
+        "question": "How do these windows prevent internal fogging and condensation?",
+        "answer": "The perimeter aluminum spacer is filled with active 4A molecular sieve desiccant beads that absorb internal moisture. Double-sealed with primary butyl and secondary structural polysulfide, the internal cavity maintains a dew point ≤ -40°C, preventing condensation even during cold cleanroom washdowns."
+      },
+      {
+        "question": "Why are R50 rounded corners recommended for pharmaceutical suites?",
+        "answer": "R50 circular rounded corners match the radius of standard cleanroom coving profiles. They eliminate 90-degree internal corner points where dust particles or cleaning residue could accumulate, maximizing hygiene compliance under EU GMP and US FDA standards."
+      },
+      {
+        "question": "What type of glass is used?",
+        "answer": "Both inside and outside panes are 5.0 mm automotive-grade thermally toughened safety glass certified to 3C and EN 12150-1 standards. They offer five times the impact resistance of standard glass and fracture into harmless granules if damaged."
+      },
+      {
+        "question": "Can these windows be integrated into cleanroom doors?",
+        "answer": "Yes. Standard sizes such as 250×650 mm, 450×650 mm, and 400×600 mm are manufactured to mount flush into Peter Air all-steel cleanroom doors and sandwich panel doors, providing safe vision panels into airlocks and corridors."
+      },
+      {
+        "question": "Can switchable privacy glass (PDLC smart glass) be incorporated?",
+        "answer": "Yes. We offer smart switchable liquid crystal PDLC glass that turns from frosted opaque to crystal-clear transparent at the flick of a wall switch, perfect for patient observation rooms, ICUs, and confidential pharmaceutical compounding suites."
+      },
+      {
+        "question": "Are these windows compatible with vaporized hydrogen peroxide (VHP) decontamination?",
+        "answer": "Yes. Tempered glass and anodized/powder-coated aluminum frames are completely non-porous and chemically inert. They withstand repeated VHP decontamination and alcohol wiping without clouding or surface degradation."
+      },
+      {
+        "question": "How are the windows sealed into the wall panels?",
+        "answer": "The window frame snaps tightly into the pre-cut panel aperture using JH010 frame and JH025 beading profiles. The perimeter joint between the glass, frame, and wall panel is then sealed with certified medical-grade neutral silicone."
+      }
+    ]
   }
 ];

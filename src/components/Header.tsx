@@ -155,8 +155,8 @@ export const Header: React.FC = () => {
               <Image
                 src="/images/PETER-AIR-LOGO.png"
                 alt="Peter Air Systems - Precision HVAC & Cleanroom Solutions"
-                width={70}
-                height={80}
+                width={622}
+                height={885}
                 priority
                 className={`w-auto object-contain transition-all duration-200 group-hover:scale-105 ${
                   isScrolled ? "h-11 sm:h-13" : "h-14 sm:h-16"
@@ -214,7 +214,7 @@ export const Header: React.FC = () => {
               {/* Redesigned & Optimized Products Mega Menu */}
               {megaMenuOpen && (
                 <div className="absolute left-0 right-0 top-full pt-1.5 px-4 sm:px-6 lg:px-8 z-50 flex justify-center pointer-events-none">
-                  <div className="w-full max-w-[1240px] pointer-events-auto">
+                  <div className="w-full max-w-[1360px] pointer-events-auto">
                     <div className="bg-white rounded-2xl shadow-2xl border border-slate-200/90 overflow-hidden animate-fade-in ring-1 ring-slate-900/5 max-h-[calc(100vh-85px)] flex flex-col">
                       {/* Scrollable Container if viewport is very short */}
                       <div className="overflow-y-auto overflow-x-hidden p-4 sm:p-5 flex flex-col gap-3.5">
@@ -264,531 +264,573 @@ export const Header: React.FC = () => {
                           </div>
                         </div>
 
-                        {/* Middle Content: 5 Product Columns + Right Sidebar */}
-                        <div className="flex flex-col lg:flex-row gap-3.5 items-stretch">
-                          {/* 5 Product Columns Grid */}
-                          <div className="flex-1 min-w-0 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2.5 xl:gap-3">
+                        {/* Middle Content: 6 Product Columns Grid */}
+                        <div className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2.5 xl:gap-3 items-stretch">
                             
-                            {/* Col 1: Air Handling & HVAC */}
-                            <div className="flex flex-col justify-between h-full bg-slate-50/40 p-2 rounded-xl border border-slate-100">
-                              <div className="flex flex-col">
-                                <Link
-                                  href="/air-handling-unit-ahu/"
-                                  onClick={() => setMegaMenuOpen(false)}
-                                  className="flex items-center justify-between p-1.5 rounded-lg bg-blue-50/80 border border-blue-100 hover:bg-blue-100/80 transition group mb-2"
-                                >
-                                  <div className="flex items-center gap-1.5 min-w-0">
-                                    <span className="w-5 h-5 rounded-md bg-blue-600 text-white flex items-center justify-center shrink-0 shadow-2xs">
-                                      <SlidersHorizontal className="w-3 h-3" />
-                                    </span>
-                                    <span className="font-heading font-bold text-[13px] tracking-tight text-slate-900 group-hover:text-blue-900 leading-tight">
-                                      Air Handling & HVAC
-                                    </span>
-                                  </div>
-                                  <ChevronRight className="w-3 h-3 text-slate-400 group-hover:text-blue-600 group-hover:translate-x-0.5 transition shrink-0" />
-                                </Link>
+                          {/* Col 1: Air Handling & HVAC */}
+                          <div className="flex flex-col justify-between h-full bg-slate-50/40 p-2 rounded-xl border border-slate-100">
+                            <div className="flex flex-col">
+                              <Link
+                                href="/air-handling-unit-ahu/"
+                                onClick={() => setMegaMenuOpen(false)}
+                                className="flex items-center justify-between p-1.5 rounded-lg bg-blue-50/80 border border-blue-100 hover:bg-blue-100/80 transition group mb-2"
+                              >
+                                <div className="flex items-center gap-1.5 min-w-0">
+                                  <span className="w-5 h-5 rounded-md bg-blue-600 text-white flex items-center justify-center shrink-0 shadow-2xs">
+                                    <SlidersHorizontal className="w-3 h-3" />
+                                  </span>
+                                  <span className="font-heading font-bold text-[13px] tracking-tight text-slate-900 group-hover:text-blue-900 leading-tight">
+                                    Air Handling & HVAC
+                                  </span>
+                                </div>
+                                <ChevronRight className="w-3 h-3 text-slate-400 group-hover:text-blue-600 group-hover:translate-x-0.5 transition shrink-0" />
+                              </Link>
 
-                                <ul className="space-y-0.5 text-[13.5px] text-slate-600 font-medium mb-2">
-                                  <li>
-                                    <Link
-                                      href="/air-handling-unit-ahu/"
-                                      onClick={() => setMegaMenuOpen(false)}
-                                      className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
-                                    >
-                                      Air Handling Unit (AHU)
-                                    </Link>
-                                  </li>
-                                  <li>
-                                    <Link
-                                      href="/air-washer-unit/"
-                                      onClick={() => setMegaMenuOpen(false)}
-                                      className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
-                                    >
-                                      Air Washer Unit
-                                    </Link>
-                                  </li>
-                                  <li>
-                                    <Link
-                                      href="/dehumidifier-unit/"
-                                      onClick={() => setMegaMenuOpen(false)}
-                                      className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
-                                    >
-                                      Dehumidifier Unit
-                                    </Link>
-                                  </li>
-                                </ul>
-
-                                <Link
-                                  href="/air-handling-unit-ahu/"
-                                  onClick={() => setMegaMenuOpen(false)}
-                                  className="inline-flex items-center gap-1 text-[12.5px] font-bold text-blue-700 bg-blue-50 hover:bg-blue-100 border border-blue-200/80 px-2 py-0.5 rounded-full mb-2.5 transition w-fit"
-                                >
-                                  <span>View AHU Systems</span>
-                                  <ArrowRight className="w-3 h-3" />
-                                </Link>
-                              </div>
-
-                              <div className="mt-auto relative h-20 rounded-lg overflow-hidden border border-slate-200/80 bg-slate-100 shadow-2xs group shrink-0">
-                                <Image
-                                  src="/images/Air-handling-unit-.jpg"
-                                  alt="Air Handling Unit"
-                                  fill
-                                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                                />
-                              </div>
-                            </div>
-
-                            {/* Col 2: Cleanroom Equipment */}
-                            <div className="flex flex-col justify-between h-full bg-slate-50/40 p-2 rounded-xl border border-slate-100">
-                              <div className="flex flex-col">
-                                <Link
-                                  href="/clean-room-equipment/"
-                                  onClick={() => setMegaMenuOpen(false)}
-                                  className="flex items-center justify-between p-1.5 rounded-lg bg-emerald-50/80 border border-emerald-100 hover:bg-emerald-100/80 transition group mb-2"
-                                >
-                                  <div className="flex items-center gap-1.5 min-w-0">
-                                    <span className="w-5 h-5 rounded-md bg-emerald-600 text-white flex items-center justify-center shrink-0 shadow-2xs">
-                                      <ShieldCheck className="w-3 h-3" />
-                                    </span>
-                                    <span className="font-heading font-bold text-[13px] tracking-tight text-slate-900 group-hover:text-emerald-900 leading-tight">
-                                      Cleanroom Equipment
-                                    </span>
-                                  </div>
-                                  <ChevronRight className="w-3 h-3 text-slate-400 group-hover:text-emerald-600 group-hover:translate-x-0.5 transition shrink-0" />
-                                </Link>
-
-                                <ul className="space-y-0.5 text-[13.5px] text-slate-600 font-medium mb-2">
-                                  <li>
-                                    <Link
-                                      href="/air-shower/"
-                                      onClick={() => setMegaMenuOpen(false)}
-                                      className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
-                                    >
-                                      Air Shower
-                                    </Link>
-                                  </li>
-                                  <li>
-                                    <Link
-                                      href="/static-pass-box/"
-                                      onClick={() => setMegaMenuOpen(false)}
-                                      className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
-                                    >
-                                      Static Pass Box
-                                    </Link>
-                                  </li>
-                                  <li>
-                                    <Link
-                                      href="/dynamic-pass-box/"
-                                      onClick={() => setMegaMenuOpen(false)}
-                                      className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
-                                    >
-                                      Dynamic Pass Box
-                                    </Link>
-                                  </li>
-                                  <li>
-                                    <Link
-                                      href="/bio-safety-cabinets/"
-                                      onClick={() => setMegaMenuOpen(false)}
-                                      className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
-                                    >
-                                      Bio Safety Cabinets
-                                    </Link>
-                                  </li>
-                                  <li>
-                                    <Link
-                                      href="/laminar-work-stations/"
-                                      onClick={() => setMegaMenuOpen(false)}
-                                      className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
-                                    >
-                                      Laminar Work Stations
-                                    </Link>
-                                  </li>
-                                  <li>
-                                    <Link
-                                      href="/dispensing-booth/"
-                                      onClick={() => setMegaMenuOpen(false)}
-                                      className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
-                                    >
-                                      Dispensing Booth
-                                    </Link>
-                                  </li>
-                                  <li>
-                                    <Link
-                                      href="/garment-cabinet/"
-                                      onClick={() => setMegaMenuOpen(false)}
-                                      className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
-                                    >
-                                      Garment Cabinet
-                                    </Link>
-                                  </li>
-                                  <li>
-                                    <Link
-                                      href="/reverse-laminar-flow-unit/"
-                                      onClick={() => setMegaMenuOpen(false)}
-                                      className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
-                                    >
-                                      Reverse Laminar Flow Unit
-                                    </Link>
-                                  </li>
-                                  <li>
-                                    <Link
-                                      href="/other-products-laboratory-equipment/"
-                                      onClick={() => setMegaMenuOpen(false)}
-                                      className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
-                                    >
-                                      Other Products / Lab
-                                    </Link>
-                                  </li>
-                                </ul>
-                              </div>
+                              <ul className="space-y-0.5 text-[12.5px] text-slate-600 font-medium mb-2">
+                                <li>
+                                  <Link
+                                    href="/air-handling-unit-ahu/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
+                                  >
+                                    Air Handling Unit (AHU)
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link
+                                    href="/air-washer-unit/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
+                                  >
+                                    Air Washer Unit
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link
+                                    href="/dehumidifier-unit/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
+                                  >
+                                    Dehumidifier Unit
+                                  </Link>
+                                </li>
+                              </ul>
 
                               <Link
-                                href="/clean-room-equipment/"
+                                href="/air-handling-unit-ahu/"
                                 onClick={() => setMegaMenuOpen(false)}
-                                className="inline-flex items-center gap-1 text-[12.5px] font-bold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200/80 px-2 py-0.5 rounded-full mt-auto transition w-fit"
+                                className="inline-flex items-center gap-1 text-[12px] font-bold text-blue-700 bg-blue-50 hover:bg-blue-100 border border-blue-200/80 px-2 py-0.5 rounded-full mb-2.5 transition w-fit"
                               >
-                                <span>View All Cleanroom</span>
+                                <span>View AHU Systems</span>
                                 <ArrowRight className="w-3 h-3" />
                               </Link>
                             </div>
 
-                            {/* Col 3: Air Filters */}
-                            <div className="flex flex-col justify-between h-full bg-slate-50/40 p-2 rounded-xl border border-slate-100">
-                              <div className="flex flex-col">
-                                <Link
-                                  href="/air-filters/"
-                                  onClick={() => setMegaMenuOpen(false)}
-                                  className="flex items-center justify-between p-1.5 rounded-lg bg-purple-50/80 border border-purple-100 hover:bg-purple-100/80 transition group mb-2"
-                                >
-                                  <div className="flex items-center gap-1.5 min-w-0">
-                                    <span className="w-5 h-5 rounded-md bg-purple-600 text-white flex items-center justify-center shrink-0 shadow-2xs">
-                                      <Filter className="w-3 h-3" />
-                                    </span>
-                                    <span className="font-heading font-bold text-[13px] tracking-tight text-slate-900 group-hover:text-purple-900 leading-tight">
-                                      Air Filters
-                                    </span>
-                                  </div>
-                                  <ChevronRight className="w-3 h-3 text-slate-400 group-hover:text-purple-600 group-hover:translate-x-0.5 transition shrink-0" />
-                                </Link>
-
-                                <ul className="space-y-0.5 text-[13.5px] text-slate-600 font-medium mb-2">
-                                  <li>
-                                    <Link
-                                      href="/enhance-air-quality-with-pre-filters/"
-                                      onClick={() => setMegaMenuOpen(false)}
-                                      className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
-                                    >
-                                      Pre Filters (G3/G4)
-                                    </Link>
-                                  </li>
-                                  <li>
-                                    <Link
-                                      href="/fine-filter/"
-                                      onClick={() => setMegaMenuOpen(false)}
-                                      className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
-                                    >
-                                      Fine Filter (F7/F9)
-                                    </Link>
-                                  </li>
-                                  <li>
-                                    <Link
-                                      href="/hepa-filter/"
-                                      onClick={() => setMegaMenuOpen(false)}
-                                      className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
-                                    >
-                                      HEPA Filter (H13/H14)
-                                    </Link>
-                                  </li>
-                                  <li>
-                                    <Link
-                                      href="/mini-pleat-hepa-filter/"
-                                      onClick={() => setMegaMenuOpen(false)}
-                                      className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
-                                    >
-                                      Mini Pleat HEPA Filter
-                                    </Link>
-                                  </li>
-                                </ul>
-
-                                <Link
-                                  href="/air-filters/"
-                                  onClick={() => setMegaMenuOpen(false)}
-                                  className="inline-flex items-center gap-1 text-[12.5px] font-bold text-purple-700 bg-purple-50 hover:bg-purple-100 border border-purple-200/80 px-2 py-0.5 rounded-full mb-2.5 transition w-fit"
-                                >
-                                  <span>View All Filters</span>
-                                  <ArrowRight className="w-3 h-3" />
-                                </Link>
-                              </div>
-
-                              <div className="mt-auto relative h-20 rounded-lg overflow-hidden border border-slate-200/80 bg-slate-100 shadow-2xs group shrink-0">
-                                <Image
-                                  src="/images/pre-filter.jpg"
-                                  alt="Air Filters"
-                                  fill
-                                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                                />
-                              </div>
+                            <div className="mt-auto relative h-20 rounded-lg overflow-hidden border border-slate-200/80 bg-slate-100 shadow-2xs group shrink-0">
+                              <Image
+                                src="/images/Air-handling-unit-.jpg"
+                                alt="Air Handling Unit"
+                                fill
+                                className="object-cover group-hover:scale-105 transition-transform duration-300"
+                              />
                             </div>
-
-                            {/* Col 4: HVAC Distribution */}
-                            <div className="flex flex-col justify-between h-full bg-slate-50/40 p-2 rounded-xl border border-slate-100">
-                              <div className="flex flex-col">
-                                <Link
-                                  href="/hvac-products/"
-                                  onClick={() => setMegaMenuOpen(false)}
-                                  className="flex items-center justify-between p-1.5 rounded-lg bg-amber-50/80 border border-amber-100 hover:bg-amber-100/80 transition group mb-2"
-                                >
-                                  <div className="flex items-center gap-1.5 min-w-0">
-                                    <span className="w-5 h-5 rounded-md bg-amber-600 text-white flex items-center justify-center shrink-0 shadow-2xs">
-                                      <SlidersHorizontal className="w-3 h-3" />
-                                    </span>
-                                    <span className="font-heading font-bold text-[13px] tracking-tight text-slate-900 group-hover:text-amber-900 leading-tight">
-                                      HVAC Distribution
-                                    </span>
-                                  </div>
-                                  <ChevronRight className="w-3 h-3 text-slate-400 group-hover:text-amber-600 group-hover:translate-x-0.5 transition shrink-0" />
-                                </Link>
-
-                                <ul className="space-y-0.5 text-[13.5px] text-slate-600 font-medium mb-2">
-                                  <li>
-                                    <Link
-                                      href="/hepa-terminal-box/"
-                                      onClick={() => setMegaMenuOpen(false)}
-                                      className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
-                                    >
-                                      HEPA Terminal Box
-                                    </Link>
-                                  </li>
-                                  <li>
-                                    <Link
-                                      href="/supply-return-air-grille/"
-                                      onClick={() => setMegaMenuOpen(false)}
-                                      className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
-                                    >
-                                      Supply / Return Grilles
-                                    </Link>
-                                  </li>
-                                  <li>
-                                    <Link
-                                      href="/supply-return-air-diffuser/"
-                                      onClick={() => setMegaMenuOpen(false)}
-                                      className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
-                                    >
-                                      Air Diffusers
-                                    </Link>
-                                  </li>
-                                  <li>
-                                    <Link
-                                      href="/return-air-riser/"
-                                      onClick={() => setMegaMenuOpen(false)}
-                                      className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
-                                    >
-                                      Return Air Riser
-                                    </Link>
-                                  </li>
-                                  <li>
-                                    <Link
-                                      href="/volume-control-damper-v-c-d/"
-                                      onClick={() => setMegaMenuOpen(false)}
-                                      className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
-                                    >
-                                      Volume Control Damper
-                                    </Link>
-                                  </li>
-                                </ul>
-
-                                <Link
-                                  href="/hvac-products/"
-                                  onClick={() => setMegaMenuOpen(false)}
-                                  className="inline-flex items-center gap-1 text-[12.5px] font-bold text-amber-700 bg-amber-50 hover:bg-amber-100 border border-amber-200/80 px-2 py-0.5 rounded-full mb-2.5 transition w-fit"
-                                >
-                                  <span>View Distribution</span>
-                                  <ArrowRight className="w-3 h-3" />
-                                </Link>
-                              </div>
-
-                              <div className="mt-auto relative h-20 rounded-lg overflow-hidden border border-slate-200/80 bg-slate-100 shadow-2xs group shrink-0">
-                                <Image
-                                  src="/images/supply-return-air-diffuser.jpg"
-                                  alt="HVAC Distribution"
-                                  fill
-                                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                                />
-                              </div>
-                            </div>
-
-                            {/* Col 5: Cleanroom Solutions */}
-                            <div className="flex flex-col justify-between h-full bg-slate-50/40 p-2 rounded-xl border border-slate-100">
-                              <div className="flex flex-col">
-                                <Link
-                                  href="/cleanroom-turnkey-solution/"
-                                  onClick={() => setMegaMenuOpen(false)}
-                                  className="flex items-center justify-between p-1.5 rounded-lg bg-cyan-50/80 border border-cyan-100 hover:bg-cyan-100/80 transition group mb-2"
-                                >
-                                  <div className="flex items-center gap-1.5 min-w-0">
-                                    <span className="w-5 h-5 rounded-md bg-cyan-600 text-white flex items-center justify-center shrink-0 shadow-2xs">
-                                      <Layers className="w-3 h-3" />
-                                    </span>
-                                    <span className="font-heading font-bold text-[13px] tracking-tight text-slate-900 group-hover:text-cyan-900 leading-tight">
-                                      Cleanroom Solutions
-                                    </span>
-                                  </div>
-                                  <ChevronRight className="w-3 h-3 text-slate-400 group-hover:text-cyan-600 group-hover:translate-x-0.5 transition shrink-0" />
-                                </Link>
-
-                                <ul className="space-y-0.5 text-[13.5px] text-slate-700 font-medium mb-2">
-                                  <li>
-                                    <Link
-                                      href="/modular-cleanroom-solution/"
-                                      onClick={() => setMegaMenuOpen(false)}
-                                      className="flex items-center gap-1.5 py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition group leading-tight"
-                                    >
-                                      <span className="w-3.5 h-3.5 rounded bg-cyan-100/80 text-cyan-700 flex items-center justify-center shrink-0 group-hover:bg-cyan-600 group-hover:text-white transition">
-                                        <Building2 className="w-2.5 h-2.5" />
-                                      </span>
-                                      <span>Modular Cleanroom</span>
-                                    </Link>
-                                  </li>
-                                  <li>
-                                    <Link
-                                      href="/modular-ot/"
-                                      onClick={() => setMegaMenuOpen(false)}
-                                      className="flex items-center gap-1.5 py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition group leading-tight"
-                                    >
-                                      <span className="w-3.5 h-3.5 rounded bg-cyan-100/80 text-cyan-700 flex items-center justify-center shrink-0 group-hover:bg-cyan-600 group-hover:text-white transition">
-                                        <Cross className="w-2.5 h-2.5" />
-                                      </span>
-                                      <span>Modular OT</span>
-                                    </Link>
-                                  </li>
-                                  <li>
-                                    <Link
-                                      href="/modular-clean-room-doors/"
-                                      onClick={() => setMegaMenuOpen(false)}
-                                      className="flex items-center gap-1.5 py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition group leading-tight"
-                                    >
-                                      <span className="w-3.5 h-3.5 rounded bg-cyan-100/80 text-cyan-700 flex items-center justify-center shrink-0 group-hover:bg-cyan-600 group-hover:text-white transition">
-                                        <DoorClosed className="w-2.5 h-2.5" />
-                                      </span>
-                                      <span>Clean Room Doors</span>
-                                    </Link>
-                                  </li>
-                                  <li>
-                                    <Link
-                                      href="/cleanroom-turnkey-solution/"
-                                      onClick={() => setMegaMenuOpen(false)}
-                                      className="flex items-center gap-1.5 py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition group leading-tight"
-                                    >
-                                      <span className="w-3.5 h-3.5 rounded bg-cyan-100/80 text-cyan-700 flex items-center justify-center shrink-0 group-hover:bg-cyan-600 group-hover:text-white transition">
-                                        <Shield className="w-2.5 h-2.5" />
-                                      </span>
-                                      <span>Turnkey Solutions</span>
-                                    </Link>
-                                  </li>
-                                  <li>
-                                    <Link
-                                      href="/other-products-laboratory-equipment/"
-                                      onClick={() => setMegaMenuOpen(false)}
-                                      className="flex items-center gap-1.5 py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition group leading-tight"
-                                    >
-                                      <span className="w-3.5 h-3.5 rounded bg-cyan-100/80 text-cyan-700 flex items-center justify-center shrink-0 group-hover:bg-cyan-600 group-hover:text-white transition">
-                                        <FlaskConical className="w-2.5 h-2.5" />
-                                      </span>
-                                      <span>Test Chambers</span>
-                                    </Link>
-                                  </li>
-                                </ul>
-
-                                <Link
-                                  href="/cleanroom-turnkey-solution/"
-                                  onClick={() => setMegaMenuOpen(false)}
-                                  className="inline-flex items-center gap-1 text-[12.5px] font-bold text-cyan-800 bg-cyan-50 hover:bg-cyan-100 border border-cyan-200/80 px-2 py-0.5 rounded-full mb-2.5 transition w-fit"
-                                >
-                                  <span>Explore Solutions</span>
-                                  <ArrowRight className="w-3 h-3" />
-                                </Link>
-                              </div>
-
-                              <div className="mt-auto relative h-20 rounded-lg overflow-hidden border border-slate-200/80 bg-slate-100 shadow-2xs group shrink-0">
-                                <Image
-                                  src="/images/Cleanroom-door1.jpg"
-                                  alt="Cleanroom Solutions"
-                                  fill
-                                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                                />
-                              </div>
-                            </div>
-
                           </div>
 
-                          {/* Right Sidebar Area (~250px) */}
-                          <div className="w-full lg:w-[250px] shrink-0 flex flex-col justify-between gap-2.5">
-                            {/* Top Navy Card */}
-                            <div className="relative rounded-xl bg-[#0a2f44] overflow-hidden p-4 text-white flex flex-col justify-between shadow-md border border-slate-700/50">
-                              <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay">
-                                <Image
-                                  src="/images/clean-room-equipmrnt.jpg"
-                                  alt="Cleanroom Turnkey"
-                                  fill
-                                  className="object-cover"
-                                />
-                              </div>
-                              <div className="relative z-10">
-                                <span className="inline-block px-2 py-0.5 rounded-full bg-cyan-400/20 text-cyan-300 border border-cyan-400/30 text-[10.5px] font-semibold tracking-wider uppercase mb-1.5">
-                                  CUSTOMIZED SOLUTIONS
-                                </span>
-                                <h4 className="font-heading font-bold text-[16px] text-white leading-snug mb-1.5">
-                                  Cleanroom Turnkey Projects
-                                </h4>
-                                <p className="text-[13px] text-slate-300 leading-relaxed">
-                                  Complete end-to-end design, manufacturing, supply & validation for ISO Class 5-8 cleanrooms.
-                                </p>
-                              </div>
+                          {/* Col 2: Cleanroom Equipment */}
+                          <div className="flex flex-col justify-between h-full bg-slate-50/40 p-2 rounded-xl border border-slate-100">
+                            <div className="flex flex-col">
+                              <Link
+                                href="/clean-room-equipment/"
+                                onClick={() => setMegaMenuOpen(false)}
+                                className="flex items-center justify-between p-1.5 rounded-lg bg-emerald-50/80 border border-emerald-100 hover:bg-emerald-100/80 transition group mb-2"
+                              >
+                                <div className="flex items-center gap-1.5 min-w-0">
+                                  <span className="w-5 h-5 rounded-md bg-emerald-600 text-white flex items-center justify-center shrink-0 shadow-2xs">
+                                    <ShieldCheck className="w-3 h-3" />
+                                  </span>
+                                  <span className="font-heading font-bold text-[13px] tracking-tight text-slate-900 group-hover:text-emerald-900 leading-tight">
+                                    Cleanroom Equipment
+                                  </span>
+                                </div>
+                                <ChevronRight className="w-3 h-3 text-slate-400 group-hover:text-emerald-600 group-hover:translate-x-0.5 transition shrink-0" />
+                              </Link>
 
-                              <div className="relative z-10 pt-3">
-                                <button
-                                  type="button"
-                                  onClick={() => {
-                                    setMegaMenuOpen(false);
-                                    setEnquiryModalOpen(true);
-                                  }}
-                                  className="w-full flex items-center justify-between bg-amber-400 hover:bg-amber-300 active:scale-[0.98] text-slate-950 text-[14px] font-bold py-2 px-3 rounded-lg shadow-sm transition"
-                                >
-                                  <span>Request a Quote</span>
-                                  <ArrowRight className="w-3.5 h-3.5" />
-                                </button>
-                              </div>
+                              <ul className="space-y-0.5 text-[12.5px] text-slate-600 font-medium mb-2">
+                                <li>
+                                  <Link
+                                    href="/air-shower/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
+                                  >
+                                    Air Shower
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link
+                                    href="/static-pass-box/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
+                                  >
+                                    Static Pass Box
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link
+                                    href="/dynamic-pass-box/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
+                                  >
+                                    Dynamic Pass Box
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link
+                                    href="/bio-safety-cabinets/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
+                                  >
+                                    Bio Safety Cabinets
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link
+                                    href="/laminar-work-stations/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
+                                  >
+                                    Laminar Work Stations
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link
+                                    href="/dispensing-booth/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
+                                  >
+                                    Dispensing Booth
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link
+                                    href="/garment-cabinet/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
+                                  >
+                                    Garment Cabinet
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link
+                                    href="/reverse-laminar-flow-unit/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
+                                  >
+                                    Reverse Laminar Flow Unit
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link
+                                    href="/other-products-laboratory-equipment/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
+                                  >
+                                    Other Products / Lab
+                                  </Link>
+                                </li>
+                              </ul>
                             </div>
 
-                            {/* Bottom 3 Services Features */}
-                            <div className="rounded-xl border border-slate-200/80 bg-slate-50/80 p-3 space-y-2 shadow-2xs">
-                              <div className="flex items-center gap-2.5">
-                                <div className="w-7 h-7 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center shrink-0">
-                                  <Headphones className="w-3.5 h-3.5" />
+                            <Link
+                              href="/clean-room-equipment/"
+                              onClick={() => setMegaMenuOpen(false)}
+                              className="inline-flex items-center gap-1 text-[12px] font-bold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200/80 px-2 py-0.5 rounded-full mt-auto transition w-fit"
+                            >
+                              <span>View All Equipment</span>
+                              <ArrowRight className="w-3 h-3" />
+                            </Link>
+                          </div>
+
+                          {/* Col 3: Air Filters */}
+                          <div className="flex flex-col justify-between h-full bg-slate-50/40 p-2 rounded-xl border border-slate-100">
+                            <div className="flex flex-col">
+                              <Link
+                                href="/air-filters/"
+                                onClick={() => setMegaMenuOpen(false)}
+                                className="flex items-center justify-between p-1.5 rounded-lg bg-purple-50/80 border border-purple-100 hover:bg-purple-100/80 transition group mb-2"
+                              >
+                                <div className="flex items-center gap-1.5 min-w-0">
+                                  <span className="w-5 h-5 rounded-md bg-purple-600 text-white flex items-center justify-center shrink-0 shadow-2xs">
+                                    <Filter className="w-3 h-3" />
+                                  </span>
+                                  <span className="font-heading font-bold text-[13px] tracking-tight text-slate-900 group-hover:text-purple-900 leading-tight">
+                                    Air Filters
+                                  </span>
                                 </div>
-                                <div className="min-w-0">
-                                  <p className="font-bold text-[13.5px] text-slate-900 leading-tight">Expert Support</p>
-                                  <p className="text-[12px] text-slate-500 leading-tight">Consulting & engineering assistance</p>
+                                <ChevronRight className="w-3 h-3 text-slate-400 group-hover:text-purple-600 group-hover:translate-x-0.5 transition shrink-0" />
+                              </Link>
+
+                              <ul className="space-y-0.5 text-[12.5px] text-slate-600 font-medium mb-2">
+                                <li>
+                                  <Link
+                                    href="/enhance-air-quality-with-pre-filters/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
+                                  >
+                                    Pre Filters (G3/G4)
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link
+                                    href="/fine-filter/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
+                                  >
+                                    Fine Filter (F7/F9)
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link
+                                    href="/hepa-filter/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
+                                  >
+                                    HEPA Filter (H13/H14)
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link
+                                    href="/mini-pleat-hepa-filter/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
+                                  >
+                                    Mini Pleat HEPA Filter
+                                  </Link>
+                                </li>
+                              </ul>
+
+                              <Link
+                                href="/air-filters/"
+                                onClick={() => setMegaMenuOpen(false)}
+                                className="inline-flex items-center gap-1 text-[12px] font-bold text-purple-700 bg-purple-50 hover:bg-purple-100 border border-purple-200/80 px-2 py-0.5 rounded-full mb-2.5 transition w-fit"
+                              >
+                                <span>View All Filters</span>
+                                <ArrowRight className="w-3 h-3" />
+                              </Link>
+                            </div>
+
+                            <div className="mt-auto relative h-20 rounded-lg overflow-hidden border border-slate-200/80 bg-slate-100 shadow-2xs group shrink-0">
+                              <Image
+                                src="/images/pre-filter.jpg"
+                                alt="Air Filters"
+                                fill
+                                className="object-cover group-hover:scale-105 transition-transform duration-300"
+                              />
+                            </div>
+                          </div>
+
+                          {/* Col 4: HVAC Distribution */}
+                          <div className="flex flex-col justify-between h-full bg-slate-50/40 p-2 rounded-xl border border-slate-100">
+                            <div className="flex flex-col">
+                              <Link
+                                href="/hvac-products/"
+                                onClick={() => setMegaMenuOpen(false)}
+                                className="flex items-center justify-between p-1.5 rounded-lg bg-amber-50/80 border border-amber-100 hover:bg-amber-100/80 transition group mb-2"
+                              >
+                                <div className="flex items-center gap-1.5 min-w-0">
+                                  <span className="w-5 h-5 rounded-md bg-amber-600 text-white flex items-center justify-center shrink-0 shadow-2xs">
+                                    <SlidersHorizontal className="w-3 h-3" />
+                                  </span>
+                                  <span className="font-heading font-bold text-[13px] tracking-tight text-slate-900 group-hover:text-amber-900 leading-tight">
+                                    HVAC Distribution
+                                  </span>
                                 </div>
-                              </div>
-                              <div className="flex items-center gap-2.5">
-                                <div className="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
-                                  <Clock className="w-3.5 h-3.5" />
+                                <ChevronRight className="w-3 h-3 text-slate-400 group-hover:text-amber-600 group-hover:translate-x-0.5 transition shrink-0" />
+                              </Link>
+
+                              <ul className="space-y-0.5 text-[12.5px] text-slate-600 font-medium mb-2">
+                                <li>
+                                  <Link
+                                    href="/hepa-terminal-box/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
+                                  >
+                                    HEPA Terminal Box
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link
+                                    href="/supply-return-air-grille/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
+                                  >
+                                    Supply / Return Grilles
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link
+                                    href="/supply-return-air-diffuser/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
+                                  >
+                                    Air Diffusers
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link
+                                    href="/return-air-riser/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
+                                  >
+                                    Return Air Riser
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link
+                                    href="/volume-control-damper-v-c-d/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
+                                  >
+                                    Volume Control Damper
+                                  </Link>
+                                </li>
+                              </ul>
+
+                              <Link
+                                href="/hvac-products/"
+                                onClick={() => setMegaMenuOpen(false)}
+                                className="inline-flex items-center gap-1 text-[12px] font-bold text-amber-700 bg-amber-50 hover:bg-amber-100 border border-amber-200/80 px-2 py-0.5 rounded-full mb-2.5 transition w-fit"
+                              >
+                                <span>View Distribution</span>
+                                <ArrowRight className="w-3 h-3" />
+                              </Link>
+                            </div>
+
+                            <div className="mt-auto relative h-20 rounded-lg overflow-hidden border border-slate-200/80 bg-slate-100 shadow-2xs group shrink-0">
+                              <Image
+                                src="/images/supply-return-air-diffuser.jpg"
+                                alt="HVAC Distribution"
+                                fill
+                                className="object-cover group-hover:scale-105 transition-transform duration-300"
+                              />
+                            </div>
+                          </div>
+
+                          {/* Col 5: Cleanroom Panels */}
+                          <div className="flex flex-col justify-between h-full bg-slate-50/40 p-2 rounded-xl border border-slate-100">
+                            <div className="flex flex-col">
+                              <Link
+                                href="/modular-cleanroom-solution/"
+                                onClick={() => setMegaMenuOpen(false)}
+                                className="flex items-center justify-between p-1.5 rounded-lg bg-teal-50/80 border border-teal-100 hover:bg-teal-100/80 transition group mb-2"
+                              >
+                                <div className="flex items-center gap-1.5 min-w-0">
+                                  <span className="w-5 h-5 rounded-md bg-teal-600 text-white flex items-center justify-center shrink-0 shadow-2xs">
+                                    <Layers className="w-3 h-3" />
+                                  </span>
+                                  <span className="font-heading font-bold text-[13px] tracking-tight text-slate-900 group-hover:text-teal-900 leading-tight">
+                                    Cleanroom Panels
+                                  </span>
                                 </div>
-                                <div className="min-w-0">
-                                  <p className="font-bold text-[13.5px] text-slate-900 leading-tight">Fast Turnaround</p>
-                                  <p className="text-[12px] text-slate-500 leading-tight">Timely manufacturing & delivery</p>
+                                <ChevronRight className="w-3 h-3 text-slate-400 group-hover:text-teal-600 group-hover:translate-x-0.5 transition shrink-0" />
+                              </Link>
+
+                              <ul className="space-y-0.5 text-[12px] xl:text-[12.5px] text-slate-600 font-medium mb-2">
+                                <li>
+                                  <Link
+                                    href="/glass-magnesium-rock-wool-handmade-panel/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
+                                  >
+                                    Glass Magnesium Rock Wool Handmade Panel
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link
+                                    href="/hollow-core-glass-magnesium-handmade-panel/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
+                                  >
+                                    Hollow Core Glass Magnesium Handmade Panel
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link
+                                    href="/magnesium-sulfate-handmade-panel/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
+                                  >
+                                    Magnesium Sulfate Handmade Panel
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link
+                                    href="/medical-purification-panel/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
+                                  >
+                                    Medical Purification Panel
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link
+                                    href="/combination-purification-panel/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
+                                  >
+                                    Machine-made / Handmade Combination Purification Panel
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link
+                                    href="/glass-magnesium-rock-wool-corrugated-panel/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
+                                  >
+                                    Glass Magnesium Rock Wool Corrugated Panel – Variant 1
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link
+                                    href="/glass-magnesium-rock-wool-corrugated-panel-variant-2/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
+                                  >
+                                    Glass Magnesium Rock Wool Corrugated Panel – Variant 2
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link
+                                    href="/magnesium-oxysulfide-corrugated-panel/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
+                                  >
+                                    Magnesium Oxysulfide Corrugated Panel
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link
+                                    href="/rock-wool-enterprise-mouth-panel/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
+                                  >
+                                    Rock Wool Enterprise Mouth Panel
+                                  </Link>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <Link
+                              href="/modular-cleanroom-solution/"
+                              onClick={() => setMegaMenuOpen(false)}
+                              className="inline-flex items-center gap-1 text-[12px] font-bold text-teal-700 bg-teal-50 hover:bg-teal-100 border border-teal-200/80 px-2 py-0.5 rounded-full mt-auto transition w-fit"
+                            >
+                              <span>View All Panels</span>
+                              <ArrowRight className="w-3 h-3" />
+                            </Link>
+                          </div>
+
+                          {/* Col 6: Cleanroom Solutions & Turnkey */}
+                          <div className="flex flex-col justify-between h-full bg-slate-50/40 p-2 rounded-xl border border-slate-100">
+                            <div className="flex flex-col">
+                              <Link
+                                href="/cleanroom-turnkey-solution/"
+                                onClick={() => setMegaMenuOpen(false)}
+                                className="flex items-center justify-between p-1.5 rounded-lg bg-cyan-50/80 border border-cyan-100 hover:bg-cyan-100/80 transition group mb-2"
+                              >
+                                <div className="flex items-center gap-1.5 min-w-0">
+                                  <span className="w-5 h-5 rounded-md bg-cyan-600 text-white flex items-center justify-center shrink-0 shadow-2xs">
+                                    <Building2 className="w-3 h-3" />
+                                  </span>
+                                  <span className="font-heading font-bold text-[13px] tracking-tight text-slate-900 group-hover:text-cyan-900 leading-tight">
+                                    Cleanroom Solutions
+                                  </span>
                                 </div>
-                              </div>
-                              <div className="flex items-center gap-2.5">
-                                <div className="w-7 h-7 rounded-full bg-orange-100 text-orange-700 flex items-center justify-center shrink-0">
-                                  <MapPin className="w-3.5 h-3.5" />
-                                </div>
-                                <div className="min-w-0">
-                                  <p className="font-bold text-[13.5px] text-slate-900 leading-tight">Pan India Service</p>
-                                  <p className="text-[12px] text-slate-500 leading-tight">On-site installation & validation</p>
-                                </div>
-                              </div>
+                                <ChevronRight className="w-3 h-3 text-slate-400 group-hover:text-cyan-600 group-hover:translate-x-0.5 transition shrink-0" />
+                              </Link>
+
+                              <ul className="space-y-0.5 text-[12.5px] text-slate-700 font-medium mb-2">
+                                <li>
+                                  <Link
+                                    href="/modular-cleanroom-solution/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight font-medium"
+                                  >
+                                    Modular Cleanroom Solution
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link
+                                    href="/modular-ot/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight font-medium"
+                                  >
+                                    Modular OT
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link
+                                    href="/modular-clean-room-doors/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight font-medium"
+                                  >
+                                    Modular Clean Room Doors
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link
+                                    href="/double-glazed-insulating-glass-windows/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
+                                  >
+                                    Double-Glazed Insulating Glass Windows
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link
+                                    href="/ffu-manual-blind-board/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
+                                  >
+                                    FFU Manual Blind Board
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link
+                                    href="/purified-aluminium-profile-accessories/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
+                                  >
+                                    Purified Aluminium Profile Accessories
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link
+                                    href="/cleanroom-turnkey-solution/"
+                                    onClick={() => setMegaMenuOpen(false)}
+                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight font-semibold text-brand-900"
+                                  >
+                                    Cleanroom Turnkey Solution
+                                  </Link>
+                                </li>
+                              </ul>
+
+                              <Link
+                                href="/cleanroom-turnkey-solution/"
+                                onClick={() => setMegaMenuOpen(false)}
+                                className="inline-flex items-center gap-1 text-[12px] font-bold text-cyan-800 bg-cyan-50 hover:bg-cyan-100 border border-cyan-200/80 px-2 py-0.5 rounded-full mb-2.5 transition w-fit"
+                              >
+                                <span>Explore Turnkey EPC</span>
+                                <ArrowRight className="w-3 h-3" />
+                              </Link>
+                            </div>
+
+                            <div className="mt-auto relative h-20 rounded-lg overflow-hidden border border-slate-200/80 bg-slate-100 shadow-2xs group shrink-0">
+                              <Image
+                                src="/images/Cleanroom-door1.jpg"
+                                alt="Cleanroom Solutions"
+                                fill
+                                className="object-cover group-hover:scale-105 transition-transform duration-300"
+                              />
                             </div>
                           </div>
 
@@ -833,15 +875,28 @@ export const Header: React.FC = () => {
                           </button>
                         </div>
 
-                        {/* Right Catalog Button */}
-                        <Link
-                          href="/search/"
-                          onClick={() => setMegaMenuOpen(false)}
-                          className="inline-flex items-center gap-1.5 bg-[#073650] hover:bg-[#0a4566] text-white text-[13px] font-bold px-3.5 py-1.5 rounded-lg shadow-2xs transition shrink-0"
-                        >
-                          <span>View Complete Product Catalog</span>
-                          <ArrowRight className="w-3.5 h-3.5" />
-                        </Link>
+                        {/* Right Actions: Request a Quote & Product Catalog */}
+                        <div className="flex items-center gap-2.5">
+                          <button
+                            type="button"
+                            onClick={() => {
+                              setMegaMenuOpen(false);
+                              setEnquiryModalOpen(true);
+                            }}
+                            className="inline-flex items-center gap-1.5 bg-amber-400 hover:bg-amber-300 text-slate-950 text-[13px] font-bold px-3.5 py-1.5 rounded-lg shadow-2xs transition"
+                          >
+                            <span>Request a Quote</span>
+                            <ArrowRight className="w-3.5 h-3.5" />
+                          </button>
+                          <Link
+                            href="/search/"
+                            onClick={() => setMegaMenuOpen(false)}
+                            className="inline-flex items-center gap-1.5 bg-[#073650] hover:bg-[#0a4566] text-white text-[13px] font-bold px-3.5 py-1.5 rounded-lg shadow-2xs transition shrink-0"
+                          >
+                            <span>View Product Catalog</span>
+                            <ArrowRight className="w-3.5 h-3.5" />
+                          </Link>
+                        </div>
                       </div>
 
                     </div>
@@ -921,8 +976,8 @@ export const Header: React.FC = () => {
                 <Image
                   src="/images/PETER-AIR-LOGO.png"
                   alt="Peter Air Systems Logo"
-                  width={70}
-                  height={80}
+                  width={622}
+                  height={885}
                   className="h-12 w-auto object-contain"
                 />
                 <div className="flex flex-col justify-center">
@@ -1032,17 +1087,39 @@ export const Header: React.FC = () => {
                       </div>
                     </div>
 
-                    {/* Sub-group 5: Cleanroom Solutions */}
-                    <div className="border border-brand-200/60 rounded-lg p-2.5 bg-brand-50/50">
-                      <div className="flex items-center gap-2 font-bold text-brand-900 text-xs uppercase mb-1.5">
-                        <Layers className="w-3.5 h-3.5 text-brand-700" />
-                        <span>Cleanroom Solutions</span>
+                    {/* Sub-group 5: Cleanroom Panels */}
+                    <div className="border border-teal-200/60 rounded-lg p-2.5 bg-teal-50/40">
+                      <div className="flex items-center gap-2 font-bold text-teal-950 text-xs uppercase mb-1.5">
+                        <Layers className="w-3.5 h-3.5 text-teal-700" />
+                        <span>Cleanroom Wall & Ceiling Panels</span>
                       </div>
                       <div className="space-y-1 pl-5 text-xs">
-                        <Link href="/modular-cleanroom-solution/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">Modular Cleanroom</Link>
+                        <Link href="/glass-magnesium-rock-wool-handmade-panel/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">Glass Magnesium Rock Wool Handmade Panel</Link>
+                        <Link href="/hollow-core-glass-magnesium-handmade-panel/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">Hollow Core Glass Magnesium Handmade Panel</Link>
+                        <Link href="/magnesium-sulfate-handmade-panel/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">Magnesium Sulfate Handmade Panel</Link>
+                        <Link href="/medical-purification-panel/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">Medical Purification Panel</Link>
+                        <Link href="/combination-purification-panel/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">Machine-made / Handmade Combination Purification Panel</Link>
+                        <Link href="/glass-magnesium-rock-wool-corrugated-panel/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">Glass Magnesium Rock Wool Corrugated Panel – Variant 1</Link>
+                        <Link href="/glass-magnesium-rock-wool-corrugated-panel-variant-2/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">Glass Magnesium Rock Wool Corrugated Panel – Variant 2</Link>
+                        <Link href="/magnesium-oxysulfide-corrugated-panel/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">Magnesium Oxysulfide Corrugated Panel</Link>
+                        <Link href="/rock-wool-enterprise-mouth-panel/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">Rock Wool Enterprise Mouth Panel</Link>
+                      </div>
+                    </div>
+
+                    {/* Sub-group 6: Cleanroom Solutions & Turnkey */}
+                    <div className="border border-brand-200/60 rounded-lg p-2.5 bg-brand-50/50">
+                      <div className="flex items-center gap-2 font-bold text-brand-900 text-xs uppercase mb-1.5">
+                        <Building2 className="w-3.5 h-3.5 text-brand-700" />
+                        <span>Cleanroom Solutions & Turnkey</span>
+                      </div>
+                      <div className="space-y-1 pl-5 text-xs">
+                        <Link href="/modular-cleanroom-solution/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">Modular Cleanroom Solution</Link>
                         <Link href="/modular-ot/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">Modular OT (Hospital)</Link>
                         <Link href="/modular-clean-room-doors/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">Modular Clean Room Doors</Link>
-                        <Link href="/cleanroom-turnkey-solution/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">Cleanroom Turnkey Solution</Link>
+                        <Link href="/double-glazed-insulating-glass-windows/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">Double-Glazed Insulating Glass Windows</Link>
+                        <Link href="/ffu-manual-blind-board/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">FFU Manual Blind Board</Link>
+                        <Link href="/purified-aluminium-profile-accessories/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">Purified Aluminium Profile Accessories</Link>
+                        <Link href="/cleanroom-turnkey-solution/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800 font-semibold text-brand-900">Cleanroom Turnkey Solution</Link>
                         <Link href="/other-products-laboratory-equipment/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">Laboratory Test Chambers</Link>
                       </div>
                     </div>

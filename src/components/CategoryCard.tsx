@@ -15,6 +15,7 @@ interface CategoryCardProps {
   featuredImage: string;
   productCount: number;
   primaryApplication?: string;
+  onEnquire?: () => void;
 }
 
 export const CategoryCard: React.FC<CategoryCardProps> = ({
@@ -25,6 +26,7 @@ export const CategoryCard: React.FC<CategoryCardProps> = ({
   featuredImage,
   productCount,
   primaryApplication,
+  onEnquire,
 }) => {
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -96,7 +98,13 @@ export const CategoryCard: React.FC<CategoryCardProps> = ({
           {/* Button 2: Enquire Now */}
           <button
             type="button"
-            onClick={() => setModalOpen(true)}
+            onClick={() => {
+              if (onEnquire) {
+                onEnquire();
+              } else {
+                setModalOpen(true);
+              }
+            }}
             className="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-lg text-xs font-semibold text-white bg-[#063B5C] hover:bg-[#084b75] active:scale-[0.98] transition shadow-xs"
           >
             <Mail className="w-3.5 h-3.5 text-white" />
@@ -105,13 +113,15 @@ export const CategoryCard: React.FC<CategoryCardProps> = ({
         </div>
       </div>
 
-      {/* Existing Functional Enquiry Modal */}
-      <EnquiryModal
-        isOpen={modalOpen}
-        onClose={() => setModalOpen(false)}
-        productName={name}
-        sourceContext={`Category Card: ${name}`}
-      />
+      {/* Standalone Fallback Enquiry Modal (only rendered if no external onEnquire handler is provided) */}
+      {!onEnquire && (
+        <EnquiryModal
+          isOpen={modalOpen}
+          onClose={() => setModalOpen(false)}
+          productName={name}
+          sourceContext={`Category Card: ${name}`}
+        />
+      )}
     </div>
   );
 };

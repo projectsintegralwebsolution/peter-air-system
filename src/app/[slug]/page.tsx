@@ -23,6 +23,7 @@ import {
 import { PageBanner } from "@/components/PageBanner";
 import { ProductCard } from "@/components/ProductCard";
 import { EnquiryForm } from "@/components/EnquiryForm";
+import { AhuProductDetail } from "@/components/AhuProductDetail";
 import { ProductSchema, FAQSchema, BreadcrumbSchema } from "@/components/SchemaMarkup";
 import { siteConfig } from "@/data/siteConfig";
 import { products } from "@/data/products";
@@ -149,6 +150,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function GenericPage({ params }: PageProps) {
   const { slug } = params;
 
+  if (slug === "glass-magnesium-rock-wool-corrugated-panel-variant-1") {
+    permanentRedirect("/glass-magnesium-rock-wool-corrugated-panel/");
+  }
+
   // 1. Check if product page (from database with static fallback)
   let product: any = null;
   try {
@@ -196,154 +201,281 @@ export default async function GenericPage({ params }: PageProps) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
             {/* Left Column: Product Imagery, Overview, Tables, Specs */}
             <div className="lg:col-span-8 space-y-12">
-              {/* Product Hero Box */}
-              <div className="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row gap-8 items-center">
-                <div className="relative h-72 sm:h-80 w-full md:w-80 bg-white rounded-xl border border-slate-200 p-4 flex-shrink-0 flex items-center justify-center">
-                  <Image
-                    src={product.image}
-                    alt={
-                      product.slug === "hepa-terminal-box"
-                        ? "HEPA Terminal Box for Cleanroom HVAC Systems"
-                        : product.slug === "supply-return-air-diffuser"
-                        ? "Supply Return Air Diffuser for HVAC Ventilation Systems"
-                        : product.slug === "return-air-riser"
-                        ? "Return Air Riser for HVAC Ventilation Systems"
-                        : product.slug === "bio-safety-cabinets"
-                        ? "Bio Safety Cabinet for Laboratory and Cleanroom Applications"
-                        : product.slug === "enhance-air-quality-with-pre-filters"
-                        ? "HVAC Pre Filters for Primary Air Filtration Systems"
-                        : product.slug === "modular-clean-room-doors"
-                        ? "Modular Clean Room Doors for Pharmaceutical and Cleanroom Facilities"
-                        : product.title
-                    }
-                    fill
-                    priority
-                    className="object-contain p-2"
-                  />
-                  <span className="absolute top-3 left-3 bg-[#063B5C] text-white text-[10px] font-mono tracking-wider px-2 py-0.5 rounded shadow-xs z-10 flex items-center gap-1.5">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#D93636] shrink-0" />
-                    <span>ISO & CE VERIFIED</span>
-                  </span>
-                </div>
-
-                <div className="space-y-4 flex-grow">
-                  <span className="text-xs font-mono font-bold text-brand-700 uppercase tracking-widest">
-                    TECHNICAL OVERVIEW
-                  </span>
-                  <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">
-                    {product.title}
-                  </h2>
-                  <p className="text-slate-600 text-sm leading-relaxed whitespace-pre-line">
-                    {product.overview}
-                  </p>
-                  <div className="pt-2 flex flex-wrap gap-2">
-                    <span className="bg-white border border-slate-300 text-slate-700 text-xs px-2.5 py-1 rounded font-medium">
-                      Custom Sizing Available
-                    </span>
-                    <span className="bg-white border border-slate-300 text-slate-700 text-xs px-2.5 py-1 rounded font-medium">
-                      SS 304 / SS 316
-                    </span>
-                    <span className="bg-white border border-slate-300 text-slate-700 text-xs px-2.5 py-1 rounded font-medium">
-                      GMP & Schedule M Compliant
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Key Features */}
-              {product.features && product.features.length > 0 && (
-                <div className="space-y-4">
-                  <h3 className="text-xl font-bold text-slate-900 border-b border-slate-200 pb-2">
-                    Key Engineering Features
-                  </h3>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    {product.features.map((feat, idx) => (
-                      <div key={idx} className="flex items-start gap-2.5 bg-slate-50 border border-slate-200/80 p-3 rounded-lg">
-                        <CheckCircle2 className="w-4 h-4 text-[#D93636] flex-shrink-0 mt-0.5" />
-                        <span className="text-xs sm:text-sm text-slate-700">{decodeHtmlEntities(feat)}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              {/* Technical Specifications Tables (Preserved Exact Content) */}
-              {product.tables && product.tables.length > 0 && (
-                <div className="space-y-6">
-                  <h3 className="text-xl font-bold text-slate-900 border-b border-slate-200 pb-2">
-                    Technical Specifications & Dimension Matrix
-                  </h3>
-                  <p className="text-xs text-slate-500">
-                    Standard configurations and technical parameters. Custom fabrication engineered upon request.
-                  </p>
-                  <div className="space-y-6 overflow-x-auto">
-                    {product.tables.map((tableHtml, idx) => (
-                      <div
-                        key={idx}
-                        className="overflow-x-auto rounded-xl border border-slate-200 shadow-sm product-table-wrapper"
-                        dangerouslySetInnerHTML={{ __html: decodeHtmlEntities(tableHtml) }}
+              {product.slug === "air-handling-unit-ahu" ? (
+                <AhuProductDetail product={product} />
+              ) : (
+                <>
+                  {/* Product Hero Box */}
+                  <div className="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row gap-8 items-center">
+                    <div className="relative h-72 sm:h-80 w-full md:w-80 bg-white rounded-xl border border-slate-200 p-4 flex-shrink-0 flex items-center justify-center">
+                      <Image
+                        src={product.image}
+                        alt={
+                          product.slug === "hepa-terminal-box"
+                            ? "HEPA Terminal Box for Cleanroom HVAC Systems"
+                            : product.slug === "supply-return-air-diffuser"
+                            ? "Supply Return Air Diffuser for HVAC Ventilation Systems"
+                            : product.slug === "return-air-riser"
+                            ? "Return Air Riser for HVAC Ventilation Systems"
+                            : product.slug === "bio-safety-cabinets"
+                            ? "Bio Safety Cabinet for Laboratory and Cleanroom Applications"
+                            : product.slug === "enhance-air-quality-with-pre-filters"
+                            ? "HVAC Pre Filters for Primary Air Filtration Systems"
+                            : product.slug === "modular-clean-room-doors"
+                            ? "Modular Clean Room Doors for Pharmaceutical and Cleanroom Facilities"
+                            : product.title
+                        }
+                        fill
+                        priority
+                        className="object-contain p-2"
                       />
-                    ))}
-                  </div>
-                </div>
-              )}
+                      <span className="absolute top-3 left-3 bg-[#063B5C] text-white text-[10px] font-mono tracking-wider px-2 py-0.5 rounded shadow-xs z-10 flex items-center gap-1.5">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#D93636] shrink-0" />
+                        <span>ISO & CE VERIFIED</span>
+                      </span>
+                    </div>
 
-              {/* Construction & Materials */}
-              {product.materials && product.materials.length > 0 && (
-                <div className="space-y-4">
-                  <h3 className="text-xl font-bold text-slate-900 border-b border-slate-200 pb-2">
-                    Material of Construction (MOC)
-                  </h3>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    {product.materials.map((mat: string, idx: number) => (
-                      <div key={idx} className="border border-slate-200 p-4 rounded-xl bg-slate-50">
-                        <div className="flex items-center gap-2 font-bold text-slate-900 text-xs mb-1">
-                          <ShieldCheck className="w-4 h-4 text-brand-700" />
-                          <span>Specification #{idx + 1}</span>
+                    <div className="space-y-4 flex-grow">
+                      <span className="text-xs font-mono font-bold text-brand-700 uppercase tracking-widest">
+                        TECHNICAL OVERVIEW
+                      </span>
+                      <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">
+                        {product.title}
+                      </h2>
+                      <p className="text-slate-600 text-sm leading-relaxed whitespace-pre-line">
+                        {product.overview}
+                      </p>
+                      <div className="pt-2 flex flex-wrap gap-2">
+                        <span className="bg-white border border-slate-300 text-slate-700 text-xs px-2.5 py-1 rounded font-medium">
+                          Custom Sizing Available
+                        </span>
+                        <span className="bg-white border border-slate-300 text-slate-700 text-xs px-2.5 py-1 rounded font-medium">
+                          SS 304 / SS 316
+                        </span>
+                        <span className="bg-white border border-slate-300 text-slate-700 text-xs px-2.5 py-1 rounded font-medium">
+                          GMP & Schedule M Compliant
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Key Features */}
+                  {product.features && product.features.length > 0 && (
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-bold text-slate-900 border-b border-slate-200 pb-2">
+                        Key Engineering Features
+                      </h3>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        {product.features.map((feat: string, idx: number) => (
+                          <div key={idx} className="flex items-start gap-2.5 bg-slate-50 border border-slate-200/80 p-3 rounded-lg">
+                            <CheckCircle2 className="w-4 h-4 text-[#D93636] flex-shrink-0 mt-0.5" />
+                            <span className="text-xs sm:text-sm text-slate-700">{decodeHtmlEntities(feat)}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Technical Specifications Tables (Preserved Exact Content) */}
+                  {product.tables && product.tables.length > 0 && (
+                    <div className="space-y-6">
+                      <h3 className="text-xl font-bold text-slate-900 border-b border-slate-200 pb-2">
+                        Technical Specifications & Dimension Matrix
+                      </h3>
+                      <p className="text-xs text-slate-500">
+                        Standard configurations and technical parameters. Custom fabrication engineered upon request.
+                      </p>
+                      <div className="space-y-6 overflow-x-auto">
+                        {product.tables.map((tableHtml: string, idx: number) => (
+                          <div
+                            key={idx}
+                            className="overflow-x-auto rounded-xl border border-slate-200 shadow-sm product-table-wrapper"
+                            dangerouslySetInnerHTML={{ __html: decodeHtmlEntities(tableHtml) }}
+                          />
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Construction & Materials */}
+                  {product.construction && (
+                    <div className="space-y-4">
+                      <div className="border-b border-slate-200 pb-2 flex items-center justify-between">
+                        <h3 className="text-xl font-bold text-slate-900 flex items-center gap-2">
+                          <Layers className="w-5 h-5 text-brand-700" />
+                          <span>Construction & Structural Engineering</span>
+                        </h3>
+                        <span className="text-[10px] font-mono font-bold tracking-wider uppercase bg-brand-50 text-brand-700 px-2.5 py-1 rounded-md border border-brand-200">
+                          Laminated Composite Matrix
+                        </span>
+                      </div>
+                      <p className="text-slate-600 text-sm leading-relaxed whitespace-pre-line">
+                        {product.construction}
+                      </p>
+
+                      {product.layers && product.layers.length > 0 && (
+                        <div className="space-y-2 pt-2">
+                          <h4 className="text-xs font-mono font-bold uppercase tracking-wider text-slate-500">
+                            Layer Architecture Breakdown
+                          </h4>
+                          <div className="space-y-2">
+                            {product.layers.map((layer: any, idx: number) => (
+                              <div key={idx} className="flex items-center gap-3 bg-slate-50 border border-slate-200 p-3 rounded-lg text-xs">
+                                <span className="w-6 h-6 rounded-full bg-brand-800 text-white font-mono font-bold flex items-center justify-center shrink-0 text-[11px]">
+                                  {idx + 1}
+                                </span>
+                                <div className="flex-grow flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+                                  <span className="font-bold text-slate-900">{layer.name}</span>
+                                  <span className="text-slate-600 font-mono text-[11px]">{layer.spec}</span>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
                         </div>
-                        <p className="text-xs text-slate-600">{decodeHtmlEntities(mat)}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
+                      )}
+                    </div>
+                  )}
 
-              {/* Applications & Industries */}
-              {product.applications && product.applications.length > 0 && (
-                <div className="space-y-4">
-                  <h3 className="text-xl font-bold text-slate-900 border-b border-slate-200 pb-2">
-                    Applications & Cleanroom Sectors
-                  </h3>
-                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                    {product.applications.map((app: string, idx: number) => (
-                      <div key={idx} className="bg-slate-50 border border-slate-200 p-3 rounded-lg text-xs font-medium text-slate-700">
-                        • {decodeHtmlEntities(app)}
+                  {product.materials && product.materials.length > 0 && (
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-bold text-slate-900 border-b border-slate-200 pb-2">
+                        Material of Construction (MOC)
+                      </h3>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        {product.materials.map((mat: string, idx: number) => (
+                          <div key={idx} className="border border-slate-200 p-4 rounded-xl bg-slate-50">
+                            <div className="flex items-center gap-2 font-bold text-slate-900 text-xs mb-1">
+                              <ShieldCheck className="w-4 h-4 text-brand-700" />
+                              <span>Specification #{idx + 1}</span>
+                            </div>
+                            <p className="text-xs text-slate-600">{decodeHtmlEntities(mat)}</p>
+                          </div>
+                        ))}
                       </div>
-                    ))}
-                  </div>
-                </div>
-              )}
+                    </div>
+                  )}
 
-              {/* FAQs Section */}
-              {product.faqs && product.faqs.length > 0 && (
-                <div className="space-y-4 pt-4">
-                  <h3 className="text-xl font-bold text-slate-900 border-b border-slate-200 pb-2 flex items-center gap-2">
-                    <HelpCircle className="w-5 h-5 text-brand-700" />
-                    <span>Frequently Asked Technical Questions</span>
-                  </h3>
-                  <div className="space-y-3">
-                    {product.faqs.map((faq, idx) => (
-                      <div key={idx} className="border border-slate-200 rounded-xl p-5 bg-slate-50">
-                        <h4 className="font-bold text-slate-900 text-sm mb-2">
-                          {decodeHtmlEntities(faq.question)}
-                        </h4>
-                        <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                          {decodeHtmlEntities(faq.answer)}
-                        </p>
+                  {/* Applications & Industries */}
+                  {product.applications && product.applications.length > 0 && (
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-bold text-slate-900 border-b border-slate-200 pb-2">
+                        Applications & Cleanroom Sectors
+                      </h3>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        {product.applications.map((app: string, idx: number) => (
+                          <div key={idx} className="bg-slate-50 border border-slate-200 p-3 rounded-lg text-xs font-medium text-slate-700">
+                            • {decodeHtmlEntities(app)}
+                          </div>
+                        ))}
                       </div>
-                    ))}
-                  </div>
-                </div>
+                    </div>
+                  )}
+
+                  {/* Installation & Integration */}
+                  {product.installation && (
+                    <div className="space-y-4">
+                      <div className="border-b border-slate-200 pb-2 flex items-center justify-between">
+                        <h3 className="text-xl font-bold text-slate-900 flex items-center gap-2">
+                          <Navigation className="w-5 h-5 text-brand-700" />
+                          <span>Cleanroom Installation & Interface Compatibility</span>
+                        </h3>
+                        <span className="text-[10px] font-mono font-bold tracking-wider uppercase bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md border border-slate-200">
+                          Modular Integration
+                        </span>
+                      </div>
+                      <p className="text-slate-600 text-sm leading-relaxed whitespace-pre-line">
+                        {product.installation}
+                      </p>
+
+                      {product.installationPoints && product.installationPoints.length > 0 && (
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                          {product.installationPoints.map((pt: string, idx: number) => (
+                            <div key={idx} className="bg-slate-50 border border-slate-200 p-3 rounded-lg text-xs text-slate-700 flex items-start gap-2">
+                              <CheckCircle2 className="w-4 h-4 text-brand-700 shrink-0 mt-0.5" />
+                              <span>{pt}</span>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  )}
+
+                  {/* Variations & Customisation */}
+                  {product.variations && (
+                    <div className="space-y-4">
+                      <div className="border-b border-slate-200 pb-2 flex items-center justify-between">
+                        <h3 className="text-xl font-bold text-slate-900 flex items-center gap-2">
+                          <Settings className="w-5 h-5 text-brand-700" />
+                          <span>Product Variations & Architectural Customisation</span>
+                        </h3>
+                        <span className="text-[10px] font-mono font-bold tracking-wider uppercase bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md border border-slate-200">
+                          Configurable Options
+                        </span>
+                      </div>
+                      <p className="text-slate-600 text-sm leading-relaxed whitespace-pre-line">
+                        {product.variations}
+                      </p>
+
+                      {product.variationList && product.variationList.length > 0 && (
+                        <div className="space-y-2 pt-2">
+                          {product.variationList.map((item: string, idx: number) => (
+                            <div key={idx} className="bg-slate-50 border border-slate-200 p-3 rounded-lg text-xs text-slate-700">
+                              • {item}
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  )}
+
+                  {/* Product Gallery & Diagrams */}
+                  {product.gallery && product.gallery.length > 0 && (
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-bold text-slate-900 border-b border-slate-200 pb-2">
+                        Technical Cross-Sections & System Gallery
+                      </h3>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        {product.gallery.map((item: any, idx: number) => (
+                          <div key={idx} className="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden shadow-xs group">
+                            <div className="relative h-48 w-full bg-white p-2">
+                              <Image
+                                src={item.src}
+                                alt={item.title || product.title}
+                                fill
+                                className="object-contain p-2 transition-transform duration-300 group-hover:scale-105"
+                              />
+                            </div>
+                            <div className="p-3 border-t border-slate-200 bg-white">
+                              <p className="text-xs font-bold text-slate-900 line-clamp-2">{item.title}</p>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* FAQs Section */}
+                  {product.faqs && product.faqs.length > 0 && (
+                    <div className="space-y-4 pt-4">
+                      <h3 className="text-xl font-bold text-slate-900 border-b border-slate-200 pb-2 flex items-center gap-2">
+                        <HelpCircle className="w-5 h-5 text-brand-700" />
+                        <span>Frequently Asked Technical Questions</span>
+                      </h3>
+                      <div className="space-y-3">
+                        {product.faqs.map((faq: any, idx: number) => (
+                          <div key={idx} className="border border-slate-200 rounded-xl p-5 bg-slate-50">
+                            <h4 className="font-bold text-slate-900 text-sm mb-2">
+                              {decodeHtmlEntities(faq.question)}
+                            </h4>
+                            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                              {decodeHtmlEntities(faq.answer)}
+                            </p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </>
               )}
             </div>
 
@@ -366,24 +498,8 @@ export default async function GenericPage({ params }: PageProps) {
                 <EnquiryForm
                   initialProduct={product.title}
                   sourceContext={`Product Page: ${product.title}`}
+                  grid2x2={true}
                 />
-
-                <div className="mt-6 pt-4 border-t border-slate-200 text-xs text-slate-600 space-y-2">
-                  <div className="flex items-center gap-2">
-                    <Phone className="w-3.5 h-3.5 text-brand-700" />
-                    <span>Instant Call: </span>
-                    <a href={`tel:${siteConfig.contact.phonePrimary.replace(/\s+/g, '')}`} className="font-bold text-brand-900 hover:underline">
-                      {siteConfig.contact.phonePrimary}
-                    </a>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Mail className="w-3.5 h-3.5 text-brand-700" />
-                    <span>Sales: </span>
-                    <a href={`mailto:${siteConfig.contact.emailSales}`} className="font-bold text-brand-900 hover:underline">
-                      {siteConfig.contact.emailSales}
-                    </a>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

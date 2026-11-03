@@ -71,6 +71,18 @@ export const categories = [
       "modular-cleanroom-solution",
       "modular-ot",
       "modular-clean-room-doors",
+      "glass-magnesium-rock-wool-handmade-panel",
+      "hollow-core-glass-magnesium-handmade-panel",
+      "magnesium-sulfate-handmade-panel",
+      "medical-purification-panel",
+      "combination-purification-panel",
+      "ffu-manual-blind-board",
+      "glass-magnesium-rock-wool-corrugated-panel",
+      "glass-magnesium-rock-wool-corrugated-panel-variant-2",
+      "magnesium-oxysulfide-corrugated-panel",
+      "rock-wool-enterprise-mouth-panel",
+      "purified-aluminium-profile-accessories",
+      "double-glazed-insulating-glass-windows",
       "cleanroom-turnkey-solution"
     ]
   },
