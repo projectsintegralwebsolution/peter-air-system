@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "standalone",
   reactStrictMode: true,
   trailingSlash: true, // Crucial for matching existing WordPress URLs like /static-pass-box/
   images: {
