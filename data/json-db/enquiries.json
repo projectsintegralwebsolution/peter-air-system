@@ -1,0 +1,32 @@
+[
+  {
+    "id": "cmvhq9dne0000w49d0n8m4hoy",
+    "createdAt": "2026-10-21T06:24:55.130Z",
+    "updatedAt": "2026-10-21T06:24:55.130Z",
+    "name": "Sun Pharma Lab Facility",
+    "companyName": "Sun Pharma Ltd",
+    "email": "procurement@sunpharma.example",
+    "phone": "+91 98200 12345",
+    "productOrService": "Air Handling Unit (AHU) 10000 CMH",
+    "requirement": "",
+    "quantity": "1 Unit / Project",
+    "city": "",
+    "message": "Need technical specification sheet and pricing for ISO 5 sterile cleanroom unit.",
+    "status": "new",
+    "notes": null
+  },
+  {
+    "id": "ENQ-1791278612577",
+    "createdAt": "2026-10-06T09:23:32.577Z",
+    "name": "Test Engineer QA",
+    "companyName": "QA Pharmaceutical Tech",
+    "email": "qa@example.com",
+    "phone": "+91 98765 43210",
+    "productOrService": "Static Pass Box",
+    "requirement": "Quotation & Technical Specifications",
+    "quantity": "2 Units",
+    "city": "Mumbai",
+    "message": "Automated QA verification test for RFP endpoint.",
+    "status": "New"
+  }
+]
