@@ -29,13 +29,13 @@ export const defaultSlides: SlideData[] = [
     badge: "CUSTOM HVAC & AIR HANDLING SYSTEMS",
     heading: "Precision-Engineered Air Handling Units & HVAC Systems",
     highlightWord: "Air Handling Units",
-    supportingText: "Custom double-skin thermal-break Air Handling Units (AHU), Air Washers, and Industrial Dehumidifiers engineered for pharmaceutical GMP, healthcare, and critical industrial environments.",
+    supportingText: "Custom double-skin thermal-break Air Handling Units (AHU) and Air Washers, engineered for pharmaceutical GMP, healthcare, and critical industrial environments.",
     primaryBtnText: "Explore AHU Systems",
     primaryBtnLink: "/air-handling-unit-ahu/",
     secondaryBtnText: "Request Technical Quote",
     secondaryBtnAction: "modal",
     image: "/images/hero-banner-1.png",
-    technicalSpecs: ["Thermal Break Profiles", "PUF Insulated 40 kg/m³", "Eurovent / ISO Standards", "Direct Drive / VFD Ready"],
+    technicalSpecs: ["Thermal Break Profiles", "PUF Insulated 40 kg/m³", "Eurovent / ISO Standards", "Direct Drive / VFD Ready", "EC (Electronically Commutated) Fan"],
   },
   {
     id: 2,
@@ -50,7 +50,7 @@ export const defaultSlides: SlideData[] = [
     secondaryBtnAction: "link",
     secondaryBtnLink: "/contact-peter-air-systems/",
     image: "/images/hero-banner-2.png",
-    technicalSpecs: ["SS 304 / SS 316 Construction", "99.997% HEPA Filtration", "Electromagnetic Interlocks", "UV Sterilization Cycle"],
+    technicalSpecs: ["SS 304 / SS 316 Construction", "99.997% HEPA Filtration", "Electromagnetic Interlocks", "UV Sterilization Cycle", "EC (Electronically Commutated) Fan"],
   },
   {
     id: 3,
@@ -64,7 +64,7 @@ export const defaultSlides: SlideData[] = [
     secondaryBtnText: "Download Catalog",
     secondaryBtnAction: "modal",
     image: "/images/hero-banner-3.png",
-    technicalSpecs: ["H13 & H14 Certified HEPA", "Aerodynamic Airfoil Dampers", "Airtight Flanged Joints", "Low Noise & Low Pressure Drop"],
+    technicalSpecs: ["H13 & H14 Certified HEPA", "Aerodynamic Aerofoil Dampers", "Airtight Flanged Joints", "Low Noise & Low Pressure Drop"],
   },
   {
     id: 4,

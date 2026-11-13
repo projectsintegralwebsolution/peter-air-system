@@ -18,7 +18,7 @@ const defaultSlides = [
     heading: "Precision-Engineered Air Handling Units & HVAC Systems",
     highlightWord: "Air Handling Units",
     supportingText:
-      "Custom double-skin thermal-break Air Handling Units (AHU), Air Washers, and Industrial Dehumidifiers engineered for pharmaceutical GMP, healthcare, and critical industrial environments.",
+      "Custom double-skin thermal-break Air Handling Units (AHU) and Air Washers, engineered for pharmaceutical GMP, healthcare, and critical industrial environments.",
     primaryBtnText: "Explore AHU Systems",
     primaryBtnLink: "/air-handling-unit-ahu/",
     secondaryBtnText: "Request Technical Quote",
@@ -30,6 +30,7 @@ const defaultSlides = [
       "PUF Insulated 40 kg/m³",
       "Eurovent / ISO Standards",
       "Direct Drive / VFD Ready",
+      "EC (Electronically Commutated) Fan",
     ]),
     order: 1,
     isActive: true,
@@ -52,6 +53,7 @@ const defaultSlides = [
       "99.997% HEPA Filtration",
       "Electromagnetic Interlocks",
       "UV Sterilization Cycle",
+      "EC (Electronically Commutated) Fan",
     ]),
     order: 2,
     isActive: true,
@@ -71,7 +73,7 @@ const defaultSlides = [
     image: "/images/hero-banner-3.png",
     technicalSpecs: JSON.stringify([
       "H13 & H14 Certified HEPA",
-      "Aerodynamic Airfoil Dampers",
+      "Aerodynamic Aerofoil Dampers",
       "Airtight Flanged Joints",
       "Low Noise & Low Pressure Drop",
     ]),
