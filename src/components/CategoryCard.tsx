@@ -31,7 +31,7 @@ export const CategoryCard: React.FC<CategoryCardProps> = ({
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
-    <div className="group relative bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-xs hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full hover:border-[#063B5C]/40 before:absolute before:top-0 before:left-0 before:right-0 before:h-[2px] before:bg-[#D93636] before:opacity-0 hover:before:opacity-100 before:transition-opacity z-0">
+    <div className="w-full group relative bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-xs hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full hover:border-[#063B5C]/40 before:absolute before:top-0 before:left-0 before:right-0 before:h-[2px] before:bg-[#D93636] before:opacity-0 hover:before:opacity-100 before:transition-opacity z-0">
       {/* 1. Dedicated Image Container with Badges */}
       <div className="relative h-60 sm:h-64 w-full bg-white border-b border-slate-100 overflow-hidden flex items-center justify-center p-6">
         <Image

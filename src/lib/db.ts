@@ -130,7 +130,7 @@ export async function initDatabase(): Promise<void> {
       await prisma.user.create({
         data: {
           email,
-          name: "Peter Air Administrator",
+          name: "Peter Air Systems Administrator",
           passwordHash,
           role: "admin",
         },
@@ -564,28 +564,35 @@ export async function getProductBySlug(slug: string) {
         fullContent: prod.fullContent || base.fullContent,
         features: (() => {
           try {
-            const parsed = JSON.parse(prod.features);
-            return parsed && parsed.length > 0 ? parsed : base.features || [];
+            let parsed = JSON.parse(prod.features);
+            if (typeof parsed === "string") { try { parsed = JSON.parse(parsed); } catch {} }
+            return Array.isArray(parsed) && parsed.length > 0 ? parsed : (Array.isArray(base.features) ? base.features : []);
           } catch {
-            return base.features || [];
+            return Array.isArray(base.features) ? base.features : [];
           }
         })(),
         applications: (() => {
           try {
-            const parsed = JSON.parse(prod.applications);
-            return parsed && parsed.length > 0 ? parsed : base.applications || [];
+            let parsed = JSON.parse(prod.applications);
+            if (typeof parsed === "string") { try { parsed = JSON.parse(parsed); } catch {} }
+            return Array.isArray(parsed) && parsed.length > 0 ? parsed : (Array.isArray(base.applications) ? base.applications : []);
           } catch {
-            return base.applications || [];
+            return Array.isArray(base.applications) ? base.applications : [];
           }
         })(),
-        materials: base.materials || [],
-        tables: base.tables || [],
+        materials: Array.isArray(base.materials) ? base.materials : [],
+        tables: Array.isArray(base.tables) ? base.tables : [],
+        layers: Array.isArray(base.layers) ? base.layers : [],
+        installationPoints: Array.isArray(base.installationPoints) ? base.installationPoints : [],
+        variationList: Array.isArray(base.variationList) ? base.variationList : [],
+        gallery: Array.isArray(base.gallery) ? base.gallery : [],
         faqs: (() => {
           try {
-            const parsed = JSON.parse(prod.faq);
-            return parsed && parsed.length > 0 ? parsed : base.faqs || [];
+            let parsed = JSON.parse(prod.faq);
+            if (typeof parsed === "string") { try { parsed = JSON.parse(parsed); } catch {} }
+            return Array.isArray(parsed) && parsed.length > 0 ? parsed : (Array.isArray(base.faqs) ? base.faqs : []);
           } catch {
-            return base.faqs || [];
+            return Array.isArray(base.faqs) ? base.faqs : [];
           }
         })(),
         isPublished: prod.isPublished,

@@ -203,7 +203,13 @@ export default async function HomePage() {
             </p>
           </div>
 
-          <ProductCategorySection categories={categories} products={allProds} />
+          {/* Homepage Product Categories (Laboratory & Environmental Test Chambers removed per Master Prompt) */}
+          <ProductCategorySection
+            categories={categories.filter(
+              (c) => c.id !== "laboratory-equipment" && c.slug !== "other-products-laboratory-equipment"
+            )}
+            products={allProds}
+          />
         </div>
       </section>
 
@@ -297,7 +303,7 @@ export default async function HomePage() {
               <div className="relative h-64 rounded-xl overflow-hidden shadow-lg border border-slate-700">
                 <Image
                   src="/images/Air-Showers.jpg"
-                  alt="Peter Air Cleanroom Air Shower Assembly"
+                  alt="Peter Air Systems Cleanroom Air Shower Assembly"
                   fill
                   className="object-cover"
                 />

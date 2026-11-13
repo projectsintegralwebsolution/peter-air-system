@@ -18,7 +18,7 @@ export const categories = [
     "name": "Cleanroom Equipment",
     "shortDescription": "Precision SS 304/316 engineered cleanroom containment and transfer equipment including Air Showers, Pass Boxes, Bio Safety Cabinets, Dispensing Booths, and Laminar Flow Stations.",
     "bannerImage": "/images/7-1.png",
-    "featuredImage": "/images/Air-Shower.jpg",
+    "featuredImage": "/images/cleanroom-equipment-new.jpg",
     "productSlugs": [
       "air-shower",
       "static-pass-box",
@@ -36,8 +36,8 @@ export const categories = [
     "slug": "air-filters",
     "name": "Air Filtration Systems",
     "shortDescription": "High-efficiency particulate filtration solutions from G4 Pre Filters and F7/F9 Fine Microvee Filters to H13/H14 HEPA and Ultra-Low Penetration Mini Pleat HEPA filters.",
-    "bannerImage": "/images/Hepa-Filter.jpg",
-    "featuredImage": "/images/Hepa-Filter.jpg",
+    "bannerImage": "/images/air-filtration-systems-new.jpg",
+    "featuredImage": "/images/air-filtration-systems-new.jpg",
     "productSlugs": [
       "enhance-air-quality-with-pre-filters",
       "fine-filter",
@@ -66,7 +66,7 @@ export const categories = [
     "name": "Cleanroom Solutions & Turnkey Systems",
     "shortDescription": "Full turnkey cleanroom design, modular wall & ceiling panels, airtight GMP modular doors, and state-of-the-art Modular Operation Theatres (OT) with laminar air ceiling.",
     "bannerImage": "/images/OT.jpg",
-    "featuredImage": "/images/MODULAR-CLEAN-ROOM-VALIDATION-MAINTENANCE.jpg",
+    "featuredImage": "/images/cleanroom-doors-turnkey.jpg",
     "productSlugs": [
       "modular-cleanroom-solution",
       "modular-ot",

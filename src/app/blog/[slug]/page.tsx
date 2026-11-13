@@ -258,7 +258,7 @@ export default async function BlogPostDetail({ params, searchParams }: BlogPostP
               </span>
               <span className="hidden sm:inline-flex items-center gap-1.5 text-slate-600 font-medium">
                 <User className="w-4 h-4 text-brand-700" />
-                <span>Peter Air Technical Team</span>
+                <span>Peter Air Systems Technical Team</span>
               </span>
             </div>
 

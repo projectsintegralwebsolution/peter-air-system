@@ -195,7 +195,7 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
               Dual-Door Access & Airtight Sealing Integrity
             </h4>
             <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
-              Every Peter Air AHU features modular inspection doors equipped with double hollow neoprene gaskets, heavy-duty nylon handles with safety latches, and double-glazed tempered viewing ports. Differential pressure gauge ports across each filter stage enable real-time tracking of filter saturation without interrupting operations.
+              Every Peter Air Systems AHU features modular inspection doors equipped with double hollow neoprene gaskets, heavy-duty nylon handles with safety latches, and double-glazed tempered viewing ports. Differential pressure gauge ports across each filter stage enable real-time tracking of filter saturation without interrupting operations.
             </p>
             <ul className="space-y-2 text-xs text-slate-700 pt-1">
               <li className="flex items-center gap-2">
@@ -362,7 +362,7 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
             </div>
 
             <p className="text-xs text-slate-600 leading-relaxed">
-              In cleanroom applications, standard drive belts shed rubber micro-particulates over time. Peter Air direct-drive plug fans couple the 3-phase high-efficiency motor directly to a backward-curved aerofoil impeller, completely eliminating belts, pulleys, and particulate contamination.
+              In cleanroom applications, standard drive belts shed rubber micro-particulates over time. Peter Air Systems direct-drive plug fans couple the 3-phase high-efficiency motor directly to a backward-curved aerofoil impeller, completely eliminating belts, pulleys, and particulate contamination.
             </p>
 
             <div className="bg-slate-50 rounded-xl p-3.5 space-y-2 border border-slate-200/80 text-xs">
@@ -576,7 +576,7 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
               Deep Dehumidification Desiccant AHU
             </h4>
             <p className="text-xs text-slate-600 leading-relaxed">
-              Standard cooling coils can only lower relative humidity to ~50% without freezing. Peter Air Low-Humidity AHUs integrate a rotating honeycomb silica gel desiccant wheel with thermal reactivation heating circuits.
+              Standard cooling coils can only lower relative humidity to ~50% without freezing. Peter Air Systems Low-Humidity AHUs integrate a rotating honeycomb silica gel desiccant wheel with thermal reactivation heating circuits.
             </p>
 
             <div className="space-y-1.5 text-xs text-slate-700 bg-white p-3 rounded-lg border border-slate-200">
@@ -760,7 +760,7 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
           * Note: Technical specifications above represent standard reference parameters. Actual dimensions, coil depth, fan static pressure (up to 1,400 Pa), and internal section layout are engineered to specific room dimensions, CFM calculations, and heat load requirements.
         </p>
 
-        {/* Existing General Technical Parameters Table (Preserved from Peter Air original) */}
+        {/* Existing General Technical Parameters Table (Preserved from Peter Air Systems original) */}
         <div className="mt-8 pt-6 border-t border-slate-200">
           <h4 className="text-base font-bold text-slate-900 mb-2">
             General Engineering Scope & Component Provisions
@@ -925,7 +925,7 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
             <div className="p-4 space-y-2">
               <h4 className="font-bold text-slate-900 text-sm">Effervescent & Dry Powder Suites</h4>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Extreme moisture sensitivity during tableting and blister packaging. Controlled below 20% RH using Peter Air desiccant rotor integration.
+                Extreme moisture sensitivity during tableting and blister packaging. Controlled below 20% RH using Peter Air Systems desiccant rotor integration.
               </p>
             </div>
           </div>
@@ -1008,10 +1008,10 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
           {/* FAQ 4 (Original) */}
           <div className="border border-slate-200 rounded-xl p-5 bg-slate-50">
             <h4 className="font-bold text-slate-900 text-sm mb-2">
-              What are the main internal components of a Peter Air AHU?
+              What are the main internal components of a Peter Air Systems AHU?
             </h4>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              A standard Peter Air AHU includes: (1) Air mixing & damper chamber, (2) Washable G4 pre-filter, (3) Microvee F7/F8/F9 fine pocket filter, (4) Chilled Water (CHW) or Direct Expansion (DX) cooling coil with SS drain tray, (5) Moisture droplet eliminator, (6) Electric reheat coil or hot water coil, (7) Direct-drive plug fan or belt-driven centrifugal aerofoil blower, and (8) Optional terminal HEPA filter section.
+              A standard Peter Air Systems AHU includes: (1) Air mixing & damper chamber, (2) Washable G4 pre-filter, (3) Microvee F7/F8/F9 fine pocket filter, (4) Chilled Water (CHW) or Direct Expansion (DX) cooling coil with SS drain tray, (5) Moisture droplet eliminator, (6) Electric reheat coil or hot water coil, (7) Direct-drive plug fan or belt-driven centrifugal aerofoil blower, and (8) Optional terminal HEPA filter section.
             </p>
           </div>
 
@@ -1038,20 +1038,20 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
           {/* FAQ 7 (Enhanced from PDF Reference: Low Humidity) */}
           <div className="border border-slate-200 rounded-xl p-5 bg-slate-50">
             <h4 className="font-bold text-slate-900 text-sm mb-2">
-              How does Peter Air achieve low humidity down to 10%–35% RH?
+              How does Peter Air Systems achieve low humidity down to 10%–35% RH?
             </h4>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Standard cooling coils can only dehumidify down to approximately 50%–55% RH before freezing occurs on the coil fins. For applications requiring 10%–35% RH (such as soft gelatin capsules and effervescent tablet compression) or &lt;5% RH (lithium-ion battery manufacturing), Peter Air integrates a honeycomb silica gel desiccant rotor with reactivation heating, providing deep moisture absorption.
+              Standard cooling coils can only dehumidify down to approximately 50%–55% RH before freezing occurs on the coil fins. For applications requiring 10%–35% RH (such as soft gelatin capsules and effervescent tablet compression) or &lt;5% RH (lithium-ion battery manufacturing), Peter Air Systems integrates a honeycomb silica gel desiccant rotor with reactivation heating, providing deep moisture absorption.
             </p>
           </div>
 
           {/* FAQ 8 (Custom Engineering) */}
           <div className="border border-slate-200 rounded-xl p-5 bg-slate-50">
             <h4 className="font-bold text-slate-900 text-sm mb-2">
-              Can Peter Air customize AHU dimensions to fit restricted ceiling spaces or plantrooms?
+              Can Peter Air Systems customize AHU dimensions to fit restricted ceiling spaces or plantrooms?
             </h4>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Yes. All Peter Air AHUs are custom-engineered in modular knocked-down or fully factory-assembled sections. If your site has narrow stairwells, limited freight elevator capacities, or constrained plantroom footprints, we can engineer custom aspect ratios (e.g. low-profile horizontal, vertical, or two-tier stacked configurations) and assemble the unit on site.
+              Yes. All Peter Air Systems AHUs are custom-engineered in modular knocked-down or fully factory-assembled sections. If your site has narrow stairwells, limited freight elevator capacities, or constrained plantroom footprints, we can engineer custom aspect ratios (e.g. low-profile horizontal, vertical, or two-tier stacked configurations) and assemble the unit on site.
             </p>
           </div>
         </div>

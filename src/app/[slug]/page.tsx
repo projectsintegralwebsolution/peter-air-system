@@ -111,7 +111,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description: "Turnkey Cleanroom EPC, Pharma HVAC Validation, AHU energy audits, and airflow balancing services by Peter Air Systems.",
     },
     "certifications-peter-air-systems-iso-ce-certified-solutions": {
-      title: "Certifications: ISO 9001:2015 & CE Certified Solutions | Peter Air",
+      title: "Certifications: ISO 9001:2015 & CE Certified Solutions | Peter Air Systems",
       description: "Review our quality certifications, CE compliance, ISO 9001:2015 manufacturing standards and cleanroom validation protocols.",
     },
     "contact-peter-air-systems": {
@@ -750,7 +750,7 @@ export default async function GenericPage({ params }: PageProps) {
           title="Certifications & Quality Standards"
           subtitle="ISO 9001:2015 & CE Certified Quality Management in Cleanroom & HVAC Engineering."
           breadcrumbs={[{ label: "Certifications" }]}
-          bgImage="/images/Hepa-Filter.jpg"
+          bgImage="/images/air-filtration-systems-new.jpg"
         />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">

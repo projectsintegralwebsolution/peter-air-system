@@ -31,24 +31,28 @@ export const ProductCategorySection: React.FC<ProductCategorySectionProps> = ({
 
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="flex flex-wrap justify-center -m-4">
         {categories.map((cat) => {
           const primaryProd = products.find((prod) =>
             cat.productSlugs.includes(prod.slug)
           );
           const primaryApp = primaryProd?.applications?.[0];
           return (
-            <CategoryCard
+            <div
               key={cat.id}
-              id={cat.id}
-              slug={cat.slug}
-              name={cat.name}
-              shortDescription={cat.shortDescription}
-              featuredImage={cat.featuredImage}
-              productCount={cat.productSlugs.length}
-              primaryApplication={primaryApp}
-              onEnquire={() => setSelectedCategory(cat.name)}
-            />
+              className="p-4 w-full md:w-1/2 lg:w-1/3 max-w-md md:max-w-none flex"
+            >
+              <CategoryCard
+                id={cat.id}
+                slug={cat.slug}
+                name={cat.name}
+                shortDescription={cat.shortDescription}
+                featuredImage={cat.featuredImage}
+                productCount={cat.productSlugs.length}
+                primaryApplication={primaryApp}
+                onEnquire={() => setSelectedCategory(cat.name)}
+              />
+            </div>
           );
         })}
       </div>

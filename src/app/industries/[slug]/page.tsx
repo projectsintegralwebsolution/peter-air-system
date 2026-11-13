@@ -118,7 +118,7 @@ export default async function IndustryDetailPage({ params }: IndustryPageProps) 
             </ul>
           </div>
 
-          {/* Peter Air Solutions */}
+          {/* Peter Air Systems Solutions */}
           <div className="bg-emerald-50/50 border border-emerald-200 rounded-2xl p-8 space-y-4">
             <div className="flex items-center gap-2 text-emerald-900 font-bold text-base">
               <CheckCircle2 className="w-5 h-5 text-emerald-600" />
