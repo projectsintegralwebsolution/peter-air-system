@@ -23,6 +23,7 @@ import {
   ChevronDown
 } from "lucide-react";
 import { siteConfig } from "@/data/siteConfig";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 interface EnquiryFormProps {
   initialProduct?: string;
@@ -84,7 +85,6 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
     "Return Air Riser",
     "Dehumidifier Unit",
     "Air Washer Unit",
-    "Laboratory & Environmental Test Chambers",
     "Other Engineering Requirement"
   ];
 
@@ -131,7 +131,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
         </p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
           <a
-            href={siteConfig.contact.whatsappLink}
+            href={getWhatsAppUrl(formData.productOrService || initialProduct)}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#25D366] text-white px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold hover:bg-[#20ba5a] shadow-xs transition"

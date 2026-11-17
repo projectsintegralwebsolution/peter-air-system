@@ -85,6 +85,19 @@ export default async function IndustriesIndexPage() {
             </div>
           ))}
         </div>
+
+        {/* More Industries We Serve */}
+        <div className="pt-12 border-t border-slate-200">
+          <div className="max-w-[1000px] mx-auto text-center space-y-4">
+            <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
+              More Industries We Serve
+            </h3>
+            <div className="w-10 h-0.5 bg-[#D93636] mx-auto rounded-full" />
+            <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
+              Beyond the industries featured above, Peter Air Systems also provides specialised cleanroom and HVAC solutions for Medical Devices, Medical Disposables, Plastic Injection Moulding, Automotive Components, LED and Lighting, Solar and Photovoltaic, Battery Manufacturing, Cosmetics and Personal Care, Research and Development, Printing and Photographic Film, Composite Materials, Data Storage and Hard Drives, and Dental Equipment.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

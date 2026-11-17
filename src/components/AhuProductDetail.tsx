@@ -91,7 +91,7 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
             Precision-Engineered Air Handling Units (AHU)
           </h2>
           <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
-            As a leading <strong>Air Handling Unit manufacturer in India</strong> based in Vasai East, Mumbai, Peter Air Systems designs, fabricates, and validates custom <strong>Double-Skin Thermal-Break Air Handling Units (AHU)</strong>. Our units deliver precision control over temperature, humidity, particulate cleanliness, and static air pressure for demanding pharmaceutical facilities, healthcare surgical suites, electronics cleanrooms, and commercial complexes.
+            As a leading <strong>Air Handling Unit manufacturer in India</strong> based in Vasai West, Mumbai, Peter Air Systems designs, fabricates, and validates custom <strong>Double-Skin Thermal-Break Air Handling Units (AHU)</strong>. Our units deliver precision control over temperature, humidity, particulate cleanliness, and static air pressure for demanding pharmaceutical facilities, healthcare surgical suites, electronics cleanrooms, and commercial complexes.
           </p>
 
           <div className="pt-2 flex flex-wrap gap-2">
@@ -1001,7 +1001,7 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
               Why is Peter Air Systems a trusted AHU manufacturer in India?
             </h4>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Peter Air Systems manufactures high-performance, energy-efficient, and custom-engineered AHUs from our plant in Vasai East, Mumbai. Built with certified thermal-break aluminum profiles, high-density 40 kg/m³ PUF panels, and zero-bypass filter clamping, our units meet strict cGMP, ISO 9001:2015, and CE compliance standards.
+              Peter Air Systems manufactures high-performance, energy-efficient, and custom-engineered AHUs from our plant in Vasai West, Mumbai. Built with certified thermal-break aluminum profiles, high-density 40 kg/m³ PUF panels, and zero-bypass filter clamping, our units meet strict cGMP, ISO 9001:2015, and CE compliance standards.
             </p>
           </div>
 

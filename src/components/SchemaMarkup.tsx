@@ -12,10 +12,10 @@ export const OrganizationSchema: React.FC = () => {
     "description": siteConfig.description,
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Unit No. - 01, 02, 03 and 06, Agarwal Industrial Estate, Golani, Vasai East",
-      "addressLocality": "Palghar, Mumbai",
+      "streetAddress": "106, Dattani Prism IT Park-1, Vasai West",
+      "addressLocality": "Mumbai",
       "addressRegion": "Maharashtra",
-      "postalCode": "401208",
+      "postalCode": "401202",
       "addressCountry": "IN"
     },
     "contactPoint": [

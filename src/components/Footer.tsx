@@ -55,9 +55,6 @@ export const Footer: React.FC = () => {
               <span className="bg-brand-900/60 border border-brand-800 text-slate-200 px-2.5 py-1 rounded">
                 GMP COMPLIANT
               </span>
-              <span className="bg-brand-900/60 border border-brand-800 text-slate-200 px-2.5 py-1 rounded">
-                PAN-INDIA DELIVERY
-              </span>
             </div>
           </div>
 

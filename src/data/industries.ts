@@ -123,5 +123,109 @@ export const industries = [
       "modular-cleanroom-solution",
       "dehumidifier-unit"
     ]
+  },
+  {
+    "slug": "food-beverage-packaging",
+    "name": "Food and Beverage Packaging",
+    "tagline": "Hygienic Contamination Control & Positive Pressure HVAC",
+    "image": "/images/Food-Beverage.jpg",
+    "description": "In food and beverage packaging, aseptic bottling, dairy processing, and food contact packaging, microbial airborne contamination and excess moisture present major spoilage risks. Peter Air Systems designs positive-pressure sanitary cleanrooms, washdown-resistant AHUs with condensation-free thermal break profiles, and HEPA air distribution systems strictly conforming to FSSAI, HACCP, and ISO 22000 hygiene benchmarks.",
+    "challenges": [
+      "Microbial, bacterial, and fungal spore contamination near open filling lines",
+      "High humidity and surface condensation caused by steam cleaning and bottling",
+      "Caustic chemical washdown procedures degrading standard HVAC construction",
+      "Strict compliance mandates with FSSAI, FDA, and global food safety audits"
+    ],
+    "solutions": [
+      "Custom double-skin thermal-break AHUs with antimicrobial PUF insulation and deep dehumidification",
+      "SS 304 washdown terminal HEPA filtration units with food-grade gel seals",
+      "High-velocity air showers and dynamic interlocking pass boxes for safe material transfer",
+      "Hermetic airtight cleanroom doors preventing cross-contamination between raw and sterile zones"
+    ],
+    "products": [
+      "air-handling-unit-ahu",
+      "dynamic-pass-box",
+      "air-shower",
+      "hepa-filter",
+      "modular-clean-room-doors"
+    ]
+  },
+  {
+    "slug": "aerospace-defence",
+    "name": "Aerospace and Defence",
+    "tagline": "Ultra-Low Particulate & High-Bay Precision HVAC Solutions",
+    "image": "/images/Aerospace-Defence.jpg",
+    "description": "In avionics fabrication, satellite payload integration, composite aerostructure bonding, and missile guidance assembly, microscopic particulate ingress can cause catastrophic mission failures. Peter Air Systems delivers ISO Class 4 to Class 8 high-bay modular cleanrooms, laminar airflow workstations, and precision climate control systems compliant with MIL-STD-1246D and AS9100 aerospace standards.",
+    "challenges": [
+      "High-bay vertical clearances required for aircraft components and payload integration",
+      "Electrostatic discharge (ESD) risks threatening sensitive missile and satellite avionics",
+      "Strict thermal stability (±0.5°C) to prevent expansion distortion during laser alignment",
+      "Critical molecular outgassing and Foreign Object Debris (FOD) mitigation"
+    ],
+    "solutions": [
+      "Heavy-duty modular cleanroom panel envelopes with non-conductive ESD-safe finishes",
+      "High-capacity industrial AHUs with micro-processor VAV airflow control and VFD blowers",
+      "High-velocity de-ionizing air showers designed for large component and technician access",
+      "Ultra-low vibration laminar flow hoods and ceiling-suspended laminar airflow modules"
+    ],
+    "products": [
+      "air-handling-unit-ahu",
+      "air-shower",
+      "laminar-work-stations",
+      "hepa-terminal-box",
+      "modular-cleanroom-solution"
+    ]
+  },
+  {
+    "slug": "optical-lens-manufacturing",
+    "name": "Optical and Lens Manufacturing",
+    "tagline": "Sub-Micron Particulate Control & High-Purity Coating Enclosures",
+    "image": "/images/Optical-Lens.jpg",
+    "description": "Precision lens grinding, optical prism coating, laser diode production, and medical endoscope assembly require ultra-clean environments free from micro-contaminants down to 0.1 microns. Peter Air Systems engineers ISO Class 3 to Class 6 cleanroom enclosures, laminar flow workstations, and high-efficiency ULPA filtration that eliminate coating pinholes, refractive aberrations, and static surface charging.",
+    "challenges": [
+      "Sub-micron airborne dust causing surface pinholes during thin-film vacuum deposition",
+      "Electrostatic attraction of ambient debris to polished glass and polymer lens surfaces",
+      "Temperature micro-fluctuations causing curvature distortion during laser interferometry",
+      "Chemical vapor and VOC accumulation from optical polishing solvents and adhesives"
+    ],
+    "solutions": [
+      "Vertical laminar flow clean benches equipped with 99.999% efficiency H14/U15 filtration",
+      "Precision AHUs maintaining ultra-tight temperature (±0.2°C) and relative humidity stability",
+      "Static and dynamic pass boxes with UV sterilization for contamination-free lens transfer",
+      "Flush-mounted cleanroom ceilings with aerodynamic teardrop LED lighting and sealed grid profiles"
+    ],
+    "products": [
+      "laminar-work-stations",
+      "mini-pleat-hepa-filter",
+      "hepa-terminal-box",
+      "static-pass-box",
+      "ceiling-suspended-laminar"
+    ]
+  },
+  {
+    "slug": "plastic-toys-manufacturing",
+    "name": "Plastic Toys Manufacturing",
+    "tagline": "Dust-Free Injection Moulding & Clean Assembly Ventilation",
+    "image": "/images/Plastic-Toys.jpg",
+    "description": "International toy safety directives (EN 71, ASTM F963, BIS) mandate clean, non-toxic, and contaminant-free manufacturing environments for plastic children's products. Peter Air Systems provides positive-pressure cleanroom assembly enclosures, mould-area particulate capture systems, and heavy-duty industrial ventilation that eliminate airborne plastic dust, cooling defects, and static debris during automated injection moulding.",
+    "challenges": [
+      "Severe electrostatic charging attracting airborne dust to newly ejected plastic parts",
+      "Heat dissipation, plasticizer vapors, and fumes generated by high-tonnage moulding presses",
+      "Surface contamination during automated pad printing, ultrasonic welding, and packaging",
+      "Stringent hygiene compliance standards required for infant and oral-contact toys"
+    ],
+    "solutions": [
+      "Positive-pressure modular partition cleanrooms isolating printing and assembly lines",
+      "Industrial AHUs with return air risers and multi-stage pre/microvee filtration systems",
+      "Ionizing blowers and pass boxes to dissipate static charges on moulded toy components",
+      "Engineered fume and thermal exhaust hoods integrated with supply and return air grilles"
+    ],
+    "products": [
+      "air-handling-unit-ahu",
+      "air-shower",
+      "supply-return-air-diffuser",
+      "return-air-riser",
+      "volume-control-damper-v-c-d"
+    ]
   }
 ];

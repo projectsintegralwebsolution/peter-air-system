@@ -8,15 +8,15 @@ export const siteConfig = {
     "phonePrimary": "+91 8484 836 337",
     "phoneSecondary": "+91 7350 336 337",
     "whatsapp": "+91 8484 836 337",
-    "whatsappLink": "https://wa.me/918484836337",
+    "whatsappLink": "https://wa.me/918484836337?text=Hello%20Peter%20Air%20Systems%20Team%2C%0A%0AI%20am%20interested%20in%20your%20HVAC%20and%20Cleanroom%20products%20and%20would%20like%20to%20know%20more%20about%20your%20products%2C%20specifications%2C%20pricing%2C%20and%20technical%20details.%0A%0APlease%20share%20more%20information.%0A%0AThank%20you.",
     "emailSales": "sales@peterairs.com",
     "emailDirect": "sanjay@peterairs.com",
-    "address": "Unit No. - 01, 02, 03 and 06, Agarwal Industrial Estate, Golani, Vasai East, Palghar - 401208, Mumbai, Maharashtra, India.",
+    "address": "106, Dattani Prism IT Park-1, Vasai West – 401202, Mumbai, Maharashtra, India.",
     "workingHours": "Monday - Saturday: 9:00 AM - 6:30 PM (IST)",
     "city": "Mumbai",
     "state": "Maharashtra",
     "country": "India",
-    "pinCode": "401208"
+    "pinCode": "401202"
   },
   "certifications": [
     "ISO 9001:2015 Certified Quality Management System",

@@ -26,6 +26,7 @@ import { EnquiryForm } from "@/components/EnquiryForm";
 import { AhuProductDetail } from "@/components/AhuProductDetail";
 import { ProductSchema, FAQSchema, BreadcrumbSchema } from "@/components/SchemaMarkup";
 import { siteConfig } from "@/data/siteConfig";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { products } from "@/data/products";
 import { categories } from "@/data/categories";
 import { services } from "@/data/services";
@@ -34,9 +35,7 @@ import { decodeHtmlEntities } from "@/lib/textUtils";
 
 // All static slugs
 export async function generateStaticParams() {
-  const productSlugs = products
-    .filter((p) => p.slug !== "other-products-laboratory-equipment")
-    .map((p) => ({ slug: p.slug }));
+  const productSlugs = products.map((p) => ({ slug: p.slug }));
   const categorySlugs = ["air-filters", "hvac-products", "clean-room-equipment"].map((s) => ({ slug: s }));
   const staticPageSlugs = [
     "about-us-peter-air-systems",
@@ -104,7 +103,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const staticMeta: Record<string, { title: string; description: string }> = {
     "about-us-peter-air-systems": {
       title: "About Peter Air Systems: Cleanroom & HVAC Equipment Manufacturer",
-      description: "Learn about Peter Air Systems, our state-of-the-art engineering plant in Vasai East, Mumbai, and our ISO 9001:2015 cleanroom solutions.",
+      description: "Learn about Peter Air Systems, our state-of-the-art engineering plant in Vasai West, Mumbai, and our ISO 9001:2015 cleanroom solutions.",
     },
     "services": {
       title: "Cleanroom & HVAC Engineering Services | Peter Air Systems",
@@ -616,7 +615,7 @@ export default async function GenericPage({ params }: PageProps) {
       <div className="w-full bg-white">
         <PageBanner
           title="About Peter Air Systems"
-          subtitle="Engineering Excellence in Air Handling Units, Cleanroom Equipment, and Modular Solutions."
+          subtitle="Engineering Excellence in Air Handling Units, Cleanroom Equipment, and Modular Turnkey Solutions."
           breadcrumbs={[{ label: "About Us" }]}
           bgImage="/images/ahu_banner.png"
         />
@@ -631,7 +630,7 @@ export default async function GenericPage({ params }: PageProps) {
                 High-Integrity Cleanroom & HVAC Manufacturing in Mumbai
               </h2>
               <p className="text-slate-600 text-sm leading-relaxed">
-                Peter Air Systems is a specialized engineering and manufacturing enterprise operating out of Agarwal Industrial Estate, Vasai East, Palghar, Mumbai, Maharashtra. We provide comprehensive cleanroom solutions, specialized HVAC air distribution units, and sterile medical environment systems.
+                Peter Air Systems is a specialized engineering and manufacturing enterprise operating out of 106, Dattani Prism IT Park-1, Vasai West – 401202, Mumbai, Maharashtra, India. We provide comprehensive cleanroom solutions, specialized HVAC air distribution units, and sterile medical environment systems.
               </p>
               <p className="text-slate-600 text-sm leading-relaxed">
                 Our mission is to empower pharmaceutical manufacturers, life-sciences research institutions, hospitals, and semiconductor facilities with contamination-free environments that meet stringent regulatory compliance like WHO-GMP, Schedule M, and USFDA standards.
@@ -807,7 +806,7 @@ export default async function GenericPage({ params }: PageProps) {
       <div className="w-full bg-white">
         <PageBanner
           title="Contact Peter Air Systems"
-          subtitle="Get in touch with our factory and sales engineering team in Vasai East, Mumbai."
+          subtitle="Get in touch with our factory and sales engineering team in Vasai West, Mumbai."
           breadcrumbs={[{ label: "Contact Us" }]}
           bgImage="/images/ahu_banner.png"
         />
@@ -837,7 +836,7 @@ export default async function GenericPage({ params }: PageProps) {
                       {siteConfig.contact.address}
                     </p>
                     <a
-                      href="https://www.google.com/maps/search/Unit+No.+-+01,+02,+03+and+06,+Agarwal+Industrial+Estate,+Golani,+Vasai+East,+Palghar+%E2%80%93+401208,+Mumbai,+Maharashtra,+India./@19.3956624,72.8448979,13.47z"
+                      href="https://www.google.com/maps/search/Dattani+Prism+IT+Park-1,+Vasai+West,+Maharashtra+401202,+India/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-700 hover:text-brand-900 hover:underline transition-colors"
@@ -908,12 +907,12 @@ export default async function GenericPage({ params }: PageProps) {
                   Find Peter Air Systems on Google Maps
                 </h3>
                 <p className="text-slate-600 text-xs sm:text-sm mt-1 max-w-2xl leading-relaxed">
-                  Unit No. 01, 02, 03 &amp; 06, Agarwal Industrial Estate, Golani, Vasai East, Palghar – 401208, Mumbai, Maharashtra, India.
+                  106, Dattani Prism IT Park-1, Vasai West – 401202, Mumbai, Maharashtra, India.
                 </p>
               </div>
 
               <a
-                href="https://www.google.com/maps/search/Unit+No.+-+01,+02,+03+and+06,+Agarwal+Industrial+Estate,+Golani,+Vasai+East,+Palghar+%E2%80%93+401208,+Mumbai,+Maharashtra,+India./@19.3956624,72.8448979,13.47z"
+                href="https://www.google.com/maps/search/Dattani+Prism+IT+Park-1,+Vasai+West,+Maharashtra+401202,+India/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-[#063B5C] hover:bg-[#084b75] text-white text-xs sm:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-sm hover:shadow transition-all shrink-0 self-start sm:self-auto"
@@ -927,8 +926,8 @@ export default async function GenericPage({ params }: PageProps) {
             {/* Map Frame Container */}
             <div className="relative w-full rounded-2xl overflow-hidden border border-slate-200 shadow-md bg-slate-100 h-[360px] sm:h-[420px] lg:h-[480px]">
               <iframe
-                title="Google Map showing Peter Air Systems factory location at Agarwal Industrial Estate, Vasai East, Mumbai"
-                src="https://maps.google.com/maps?q=19.3956624,72.8448979&z=16&hl=en&output=embed"
+                title="Google Map showing Peter Air Systems location at Dattani Prism IT Park-1, Vasai West, Mumbai"
+                src="https://maps.google.com/maps?q=Dattani+Prism+IT+Park-1,+Vasai+West,+Maharashtra+401202&z=16&hl=en&output=embed"
                 className="w-full h-full border-0"
                 loading="lazy"
                 allowFullScreen

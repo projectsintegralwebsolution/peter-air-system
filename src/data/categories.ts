@@ -85,16 +85,5 @@ export const categories = [
       "double-glazed-insulating-glass-windows",
       "cleanroom-turnkey-solution"
     ]
-  },
-  {
-    "id": "laboratory-equipment",
-    "slug": "other-products-laboratory-equipment",
-    "name": "Laboratory & Environmental Test Chambers",
-    "shortDescription": "BOD Incubators, Stability Chambers, Bacteriological Incubators, Hot Air Ovens, and specialized precision laboratory test apparatus.",
-    "bannerImage": "/images/Bod-Incubator.jpg",
-    "featuredImage": "/images/Bod-Incubator.jpg",
-    "productSlugs": [
-      "other-products-laboratory-equipment"
-    ]
   }
 ];

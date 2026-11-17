@@ -34,10 +34,15 @@ import {
   Cross
 } from "lucide-react";
 import { siteConfig } from "@/data/siteConfig";
+import { usePathname } from "next/navigation";
+import { getWhatsAppUrl, getProductNameFromPath } from "@/lib/whatsapp";
 import { categories } from "@/data/categories";
 import { EnquiryModal } from "./EnquiryModal";
 
 export const Header: React.FC = () => {
+  const pathname = usePathname();
+  const currentProduct = getProductNameFromPath(pathname);
+  const whatsappUrl = getWhatsAppUrl(currentProduct);
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
@@ -428,15 +433,6 @@ export const Header: React.FC = () => {
                                     Reverse Laminar Flow Unit
                                   </Link>
                                 </li>
-                                <li>
-                                  <Link
-                                    href="/other-products-laboratory-equipment/"
-                                    onClick={() => setMegaMenuOpen(false)}
-                                    className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
-                                  >
-                                    Other Products / Lab
-                                  </Link>
-                                </li>
                               </ul>
                             </div>
 
@@ -641,7 +637,7 @@ export const Header: React.FC = () => {
                                     onClick={() => setMegaMenuOpen(false)}
                                     className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
                                   >
-                                    Glass Magnesium Rock Wool Handmade Panel
+                                    Glass Magnesium Rock Wool Panel
                                   </Link>
                                 </li>
                                 <li>
@@ -650,7 +646,7 @@ export const Header: React.FC = () => {
                                     onClick={() => setMegaMenuOpen(false)}
                                     className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
                                   >
-                                    Hollow Core Glass Magnesium Handmade Panel
+                                    Hollow Core Glass Magnesium Panel
                                   </Link>
                                 </li>
                                 <li>
@@ -659,7 +655,7 @@ export const Header: React.FC = () => {
                                     onClick={() => setMegaMenuOpen(false)}
                                     className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
                                   >
-                                    Magnesium Sulfate Handmade Panel
+                                    Magnesium Sulfate Panel
                                   </Link>
                                 </li>
                                 <li>
@@ -677,7 +673,7 @@ export const Header: React.FC = () => {
                                     onClick={() => setMegaMenuOpen(false)}
                                     className="block py-0.5 hover:text-brand-900 hover:translate-x-0.5 transition leading-tight"
                                   >
-                                    Machine-made / Handmade Combination Purification Panel
+                                    Machine-made Combination Purification Panel
                                   </Link>
                                 </li>
                                 <li>
@@ -1053,7 +1049,6 @@ export const Header: React.FC = () => {
                         <Link href="/dispensing-booth/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">Dispensing Booth</Link>
                         <Link href="/garment-cabinet/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">Garment Cabinet</Link>
                         <Link href="/reverse-laminar-flow-unit/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">Reverse Laminar Flow Unit</Link>
-                        <Link href="/other-products-laboratory-equipment/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">Other Products / Laboratory Equipment</Link>
                       </div>
                     </div>
 
@@ -1094,11 +1089,11 @@ export const Header: React.FC = () => {
                         <span>Cleanroom Wall & Ceiling Panels</span>
                       </div>
                       <div className="space-y-1 pl-5 text-xs">
-                        <Link href="/glass-magnesium-rock-wool-handmade-panel/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">Glass Magnesium Rock Wool Handmade Panel</Link>
-                        <Link href="/hollow-core-glass-magnesium-handmade-panel/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">Hollow Core Glass Magnesium Handmade Panel</Link>
-                        <Link href="/magnesium-sulfate-handmade-panel/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">Magnesium Sulfate Handmade Panel</Link>
+                        <Link href="/glass-magnesium-rock-wool-handmade-panel/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">Glass Magnesium Rock Wool Panel</Link>
+                        <Link href="/hollow-core-glass-magnesium-handmade-panel/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">Hollow Core Glass Magnesium Panel</Link>
+                        <Link href="/magnesium-sulfate-handmade-panel/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">Magnesium Sulfate Panel</Link>
                         <Link href="/medical-purification-panel/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">Medical Purification Panel</Link>
-                        <Link href="/combination-purification-panel/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">Machine-made / Handmade Combination Purification Panel</Link>
+                        <Link href="/combination-purification-panel/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">Machine-made Combination Purification Panel</Link>
                         <Link href="/glass-magnesium-rock-wool-corrugated-panel/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">Glass Magnesium Rock Wool Corrugated Panel – Variant 1</Link>
                         <Link href="/glass-magnesium-rock-wool-corrugated-panel-variant-2/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">Glass Magnesium Rock Wool Corrugated Panel – Variant 2</Link>
                         <Link href="/magnesium-oxysulfide-corrugated-panel/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">Magnesium Oxysulfide Corrugated Panel</Link>
@@ -1120,7 +1115,6 @@ export const Header: React.FC = () => {
                         <Link href="/ffu-manual-blind-board/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">FFU Manual Blind Board</Link>
                         <Link href="/purified-aluminium-profile-accessories/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">Purified Aluminium Profile Accessories</Link>
                         <Link href="/cleanroom-turnkey-solution/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800 font-semibold text-brand-900">Cleanroom Turnkey Solution</Link>
-                        <Link href="/other-products-laboratory-equipment/" onClick={() => setMobileMenuOpen(false)} className="block py-1 hover:text-brand-800">Laboratory Test Chambers</Link>
                       </div>
                     </div>
                   </div>

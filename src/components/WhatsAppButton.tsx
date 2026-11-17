@@ -1,14 +1,18 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
-import { siteConfig } from "@/data/siteConfig";
+import { usePathname } from "next/navigation";
+import { getWhatsAppUrl, getProductNameFromPath } from "@/lib/whatsapp";
 
 export const WhatsAppButton: React.FC = () => {
+  const pathname = usePathname();
+  const currentProduct = getProductNameFromPath(pathname);
+  const whatsappUrl = getWhatsAppUrl(currentProduct);
+
   return (
     <aside aria-label="Quick contact" className="fixed bottom-[71px] right-6 z-40 group">
       <a
-        href={siteConfig.contact.whatsappLink}
+        href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat with Peter Air Systems technical sales on WhatsApp"

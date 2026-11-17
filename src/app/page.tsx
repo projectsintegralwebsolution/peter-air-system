@@ -24,6 +24,7 @@ import {
 import { HeroSlider } from "@/components/HeroSlider";
 import { ProductCard } from "@/components/ProductCard";
 import { ProductCategorySection } from "@/components/ProductCategorySection";
+import TurnkeyCleanroomSection from "@/components/TurnkeyCleanroomSection";
 import { EnquiryForm } from "@/components/EnquiryForm";
 import { LatestApplicationsGallery } from "@/components/LatestApplicationsGallery";
 import { siteConfig } from "@/data/siteConfig";
@@ -48,17 +49,17 @@ export default async function HomePage() {
 
   const featuredProductSlugs = [
     "air-handling-unit-ahu",
+    "air-shower",
     "static-pass-box",
     "dynamic-pass-box",
-    "air-shower",
     "bio-safety-cabinets",
-    "hepa-filter",
+    "garment-cabinet",
+    "mini-pleat-hepa-filter",
     "modular-ot",
-    "mini-pleat-hepa-filter"
   ];
-  const featuredProducts = allProds.filter((p) =>
-    featuredProductSlugs.includes(p.slug)
-  );
+  const featuredProducts = featuredProductSlugs
+    .map((slug) => allProds.find((p) => p.slug === slug))
+    .filter(Boolean) as typeof allProds;
 
   // Latest 3 blog articles from database with static fallback
   let latestBlogs = blogPosts.slice(0, 3);
@@ -130,7 +131,7 @@ export default async function HomePage() {
                 />
                 <div className="absolute bottom-6 left-6 right-6 text-white p-4 bg-brand-950/90 backdrop-blur-md rounded-xl border border-brand-800/80 shadow-md">
                   <span className="text-xs font-semibold uppercase text-brand-300 tracking-wider">
-                    Manufacturing Plant • Vasai East, Mumbai
+                    Manufacturing Plant • Vasai West, Mumbai
                   </span>
                   <h4 className="text-base font-bold text-white">
                     Custom Engineered Air Handling & Contamination Control Equipment
@@ -203,11 +204,9 @@ export default async function HomePage() {
             </p>
           </div>
 
-          {/* Homepage Product Categories (Laboratory & Environmental Test Chambers removed per Master Prompt) */}
+          {/* Homepage Product Categories */}
           <ProductCategorySection
-            categories={categories.filter(
-              (c) => c.id !== "laboratory-equipment" && c.slug !== "other-products-laboratory-equipment"
-            )}
+            categories={categories}
             products={allProds}
           />
         </div>
@@ -263,7 +262,7 @@ export default async function HomePage() {
                 Precision Sheet Metal Fabrication & Certified Leak Testing
               </h2>
               <p className="text-slate-200 text-sm sm:text-base leading-relaxed">
-                Every Peter Air Systems unit is fabricated in our facility located in Vasai East, Palghar, Mumbai. We utilize high-precision CNC shearing, bending, and punching machinery to deliver exact tolerances for stainless steel (SS 304, SS 316) and thermal-break aluminium framing.
+                Every Peter Air Systems unit is fabricated in our facility located in Vasai West, Palghar, Mumbai. We utilize high-precision CNC shearing, bending, and punching machinery to deliver exact tolerances for stainless steel (SS 304, SS 316) and thermal-break aluminium framing.
               </p>
 
               <div className="space-y-4 pt-2">
@@ -300,26 +299,26 @@ export default async function HomePage() {
             </div>
 
             <div className="grid grid-cols-2 gap-4">
-              <div className="relative h-64 rounded-xl overflow-hidden shadow-lg border border-slate-700">
+              <div className="relative h-64 rounded-xl overflow-hidden shadow-lg border border-slate-700 bg-white p-3">
                 <Image
-                  src="/images/Air-Showers.jpg"
+                  src="/images/manufacturing-air-shower.jpg"
                   alt="Peter Air Systems Cleanroom Air Shower Assembly"
                   fill
-                  className="object-cover"
+                  className="object-contain p-2"
                 />
               </div>
-              <div className="relative h-64 rounded-xl overflow-hidden shadow-lg border border-slate-700 mt-6">
+              <div className="relative h-64 rounded-xl overflow-hidden shadow-lg border border-slate-700 mt-6 bg-white p-3">
                 <Image
-                  src="/images/Static-Pass-Box.jpg"
+                  src="/images/manufacturing-static-pass-box.jpg"
                   alt="Static Pass Box Cleanroom Fabrication"
                   fill
-                  className="object-cover"
+                  className="object-contain p-2"
                 />
               </div>
               <div className="relative h-64 rounded-xl overflow-hidden shadow-lg border border-slate-700 bg-white p-3 -mt-6">
                 <Image
-                  src="/images/bio-safety-cabinets.jpg"
-                  alt="Bio Safety Cabinet Assembly"
+                  src="/images/manufacturing-laminar-flow.jpg"
+                  alt="Laminar Air Flow Cabinet Assembly"
                   fill
                   className="object-contain p-2"
                 />
@@ -338,58 +337,7 @@ export default async function HomePage() {
       </section>
 
       {/* 7. CLEANROOM SOLUTIONS ECOSYSTEM */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-            <span className="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wider text-brand-700 uppercase bg-brand-50 border border-brand-200 px-3 py-1 rounded">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#D93636] shrink-0" />
-              <span>TURNKEY CLEANROOM EPC</span>
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">
-              Turnkey Cleanroom Solutions: Concept to Validation
-            </h2>
-            <div className="w-10 h-0.5 bg-[#D93636] mx-auto rounded-full" />
-            <p className="text-slate-600 text-sm sm:text-base">
-              From modular wall paneling and coving to HEPA terminal housings, interlocked doors, and complete Modular Operation Theatres (OT).
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 text-center">
-            {[
-              { step: "01", title: "Engineering Design", desc: "CFM calculations, air flow balance & 3D layout" },
-              { step: "02", title: "In-House Fabrication", desc: "Sheet metal, panels, framing & coving" },
-              { step: "03", title: "HVAC Integration", desc: "AHU, ducting, chillers & dehumidifiers" },
-              { step: "04", title: "On-Site Installation", desc: "Airtight modular assembly & doors" },
-              { step: "05", title: "Testing & Balancing", desc: "DOP/PAO aerosol leak & particle counts" },
-              { step: "06", title: "Validation Support", desc: "DQ, IQ, OQ documentation dossier" },
-            ].map((s) => (
-              <div key={s.step} className="bg-slate-50 border border-slate-200 rounded-xl p-5 hover:border-[#063B5C]/50 transition group">
-                <div className="text-brand-800 group-hover:text-[#D93636] font-bold text-2xl mb-2 transition-colors">{s.step}</div>
-                <h4 className="font-bold text-slate-900 text-sm mb-1">{s.title}</h4>
-                <p className="text-slate-500 text-[11px] leading-relaxed">{s.desc}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-12 bg-brand-50 border border-brand-200 rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="space-y-2">
-              <h3 className="text-xl font-bold text-brand-950">
-                Planning a New Cleanroom or Modular OT Project?
-              </h3>
-              <p className="text-slate-700 text-sm max-w-2xl">
-                Consult with our senior cleanroom application engineers. We evaluate your heat load, classification requirements (ISO 14644-1), and pressure cascade schematics.
-              </p>
-            </div>
-            <Link
-              href="/cleanroom-turnkey-solution/"
-              className="inline-flex items-center gap-2 bg-brand-800 hover:bg-brand-900 text-white font-semibold px-6 py-3 rounded-lg text-sm transition shadow flex-shrink-0"
-            >
-              <span>Explore Cleanroom Solutions</span>
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-        </div>
-      </section>
+      <TurnkeyCleanroomSection />
 
       {/* 8. INDUSTRIES WE SERVE */}
       <section className="py-20 bg-slate-50 border-t border-slate-200">
@@ -449,7 +397,7 @@ export default async function HomePage() {
               href="/industries/"
               className="inline-flex items-center gap-2 border border-slate-300 bg-white hover:bg-slate-100 text-slate-800 font-semibold px-6 py-3 rounded-lg text-sm transition"
             >
-              <span>View All 5 Specialized Industry Verticals</span>
+              <span>View All 9 Specialized Industry Verticals</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -473,7 +421,7 @@ export default async function HomePage() {
               </h2>
               <div className="space-y-4">
                 {[
-                  { title: "Direct Manufacturer Pricing", desc: "No middle-man markups. Direct engineering and fabrication from our Vasai East factory." },
+                  { title: "Direct Manufacturer Pricing", desc: "No middle-man markups. Direct engineering and fabrication from our Vasai West factory." },
                   { title: "Certified Filtration Media", desc: "We utilize microglass fiber HEPA filters certified under EN 1822 with individual test certificates." },
                   { title: "Heavy Gauge Stainless Steel", desc: "Pass boxes, air showers, and biosafety cabinets fabricated in SS 304 / SS 316 with hairline grain." },
                   { title: "Thermal Break Double Skin AHU", desc: "Pentapost extrusion profiles with thermal break nylon barrier preventing external sweat." },

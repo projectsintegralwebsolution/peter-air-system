@@ -63,18 +63,5 @@
     "isActive": true,
     "createdAt": "2026-10-27T07:24:44.575Z",
     "updatedAt": "2026-10-27T07:24:44.575Z"
-  },
-  {
-    "id": "clmvqd1fa7ti78k66",
-    "slug": "other-products-laboratory-equipment",
-    "name": "Laboratory & Environmental Test Chambers",
-    "shortDescription": "BOD Incubators, Stability Chambers, Bacteriological Incubators, Hot Air Ovens, and specialized precision laboratory test apparatus.",
-    "bannerImage": "/images/Bod-Incubator.jpg",
-    "featuredImage": "/images/Bod-Incubator.jpg",
-    "productSlugs": "[\"other-products-laboratory-equipment\"]",
-    "displayOrder": 6,
-    "isActive": true,
-    "createdAt": "2026-10-27T07:24:44.575Z",
-    "updatedAt": "2026-10-27T07:24:44.575Z"
   }
 ]
