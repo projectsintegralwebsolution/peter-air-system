@@ -161,16 +161,31 @@ export const Footer: React.FC = () => {
           <div className="space-y-3">
             <div>
               <h4 className="text-white font-bold text-sm uppercase tracking-wider pb-1.5">
-                Contact Factory
+                Contact Factory & Office
               </h4>
               <div className="w-6 h-0.5 bg-[#D93636] rounded-full" />
             </div>
             <div className="space-y-3 text-xs sm:text-sm text-slate-300">
+              {/* Head Office */}
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-brand-400 flex-shrink-0 mt-0.5" />
-                <span className="leading-relaxed">
-                  {siteConfig.contact.address}
-                </span>
+                <div className="leading-relaxed">
+                  <span className="font-semibold text-white block text-[11px] uppercase tracking-wider text-cyan-300">
+                    Head Office:
+                  </span>
+                  <span>{siteConfig.contact.headOffice.address}</span>
+                </div>
+              </div>
+
+              {/* Factory Address */}
+              <div className="flex items-start gap-2.5">
+                <MapPin className="w-4 h-4 text-brand-400 flex-shrink-0 mt-0.5" />
+                <div className="leading-relaxed">
+                  <span className="font-semibold text-white block text-[11px] uppercase tracking-wider text-cyan-300">
+                    Factory Address:
+                  </span>
+                  <span>{siteConfig.contact.factory.address}</span>
+                </div>
               </div>
 
               <div className="flex items-center gap-2.5">

@@ -131,7 +131,7 @@ export default async function HomePage() {
                 />
                 <div className="absolute bottom-6 left-6 right-6 text-white p-4 bg-brand-950/90 backdrop-blur-md rounded-xl border border-brand-800/80 shadow-md">
                   <span className="text-xs font-semibold uppercase text-brand-300 tracking-wider">
-                    Manufacturing Plant • Vasai West, Mumbai
+                    Head Office: Vasai West • Factory: Vasai East, Mumbai
                   </span>
                   <h4 className="text-base font-bold text-white">
                     Custom Engineered Air Handling & Contamination Control Equipment
@@ -262,7 +262,7 @@ export default async function HomePage() {
                 Precision Sheet Metal Fabrication & Certified Leak Testing
               </h2>
               <p className="text-slate-200 text-sm sm:text-base leading-relaxed">
-                Every Peter Air Systems unit is fabricated in our facility located in Vasai West, Palghar, Mumbai. We utilize high-precision CNC shearing, bending, and punching machinery to deliver exact tolerances for stainless steel (SS 304, SS 316) and thermal-break aluminium framing.
+                Every Peter Air Systems unit is fabricated in our factory located in Unit No. – 01, 02, 03 and 06, Agarwal Industrial Estate, Golani, Vasai East, Palghar – 401208, Mumbai. We utilize high-precision CNC shearing, bending, and punching machinery to deliver exact tolerances for stainless steel (SS 304, SS 316) and thermal-break aluminium framing.
               </p>
 
               <div className="space-y-4 pt-2">

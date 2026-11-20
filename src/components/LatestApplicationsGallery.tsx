@@ -10,6 +10,7 @@ const applicationImages = [
   { id: 3, src: "/images/applications/cleanroom-application-3.jpg", alt: "Peter Air Systems Application Photo 3" },
   { id: 4, src: "/images/applications/cleanroom-application-4.jpg", alt: "Peter Air Systems Application Photo 4" },
   { id: 5, src: "/images/applications/cleanroom-application-5.jpg", alt: "Peter Air Systems Application Photo 5" },
+  { id: 6, src: "/images/applications/cleanroom-application-6.jpg", alt: "Peter Air Systems Application Photo 6" },
 ];
 
 export const LatestApplicationsGallery: React.FC = () => {
@@ -75,18 +76,13 @@ export const LatestApplicationsGallery: React.FC = () => {
         </div>
 
         {/* Image-Only Gallery Grid
-            - Desktop: 3 images in row 1, 2 images in row 2 (centered)
-            - Tablet: 2 images per row
-            - Mobile: 1 image per row
+            - Desktop: 3 images per row (2 rows)
+            - Tablet: 2 images per row (3 rows)
+            - Mobile: 1 image per row (6 rows)
         */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6 sm:gap-8">
           {applicationImages.map((img, index) => {
-            const gridClasses =
-              index === 3
-                ? "lg:col-span-2 lg:col-start-2 sm:col-span-1 sm:col-start-auto"
-                : index === 4
-                ? "lg:col-span-2 sm:col-span-2 sm:max-w-md sm:mx-auto lg:max-w-none lg:mx-0 w-full"
-                : "lg:col-span-2 sm:col-span-1";
+            const gridClasses = "lg:col-span-2 sm:col-span-1";
 
             return (
               <div

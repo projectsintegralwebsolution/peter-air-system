@@ -11,7 +11,24 @@ export const siteConfig = {
     "whatsappLink": "https://wa.me/918484836337?text=Hello%20Peter%20Air%20Systems%20Team%2C%0A%0AI%20am%20interested%20in%20your%20HVAC%20and%20Cleanroom%20products%20and%20would%20like%20to%20know%20more%20about%20your%20products%2C%20specifications%2C%20pricing%2C%20and%20technical%20details.%0A%0APlease%20share%20more%20information.%0A%0AThank%20you.",
     "emailSales": "sales@peterairs.com",
     "emailDirect": "sanjay@peterairs.com",
+    "headOffice": {
+      "label": "Head Office",
+      "address": "106, Dattani Prism IT Park-1, Vasai West – 401202, Mumbai, Maharashtra, India.",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "pinCode": "401202"
+    },
+    "factory": {
+      "label": "Factory Address",
+      "address": "Unit No. – 01, 02, 03 and 06, Agarwal Industrial Estate, Golani, Vasai East, Palghar – 401208, Mumbai, Maharashtra, India.",
+      "city": "Palghar, Mumbai",
+      "state": "Maharashtra",
+      "pinCode": "401208",
+      "mapLink": "https://www.google.com/maps/search/Unit+No.+-+01,+02,+03+and+06,+Agarwal+Industrial+Estate,+Golani,+Vasai+East,+Palghar+%E2%80%93+401208,+Mumbai,+Maharashtra,+India./@19.3956624,72.8448979,13.47z",
+      "mapEmbed": "https://maps.google.com/maps?q=Agarwal+Industrial+Estate,+Golani,+Vasai+East,+Palghar+401208&z=16&hl=en&output=embed"
+    },
     "address": "106, Dattani Prism IT Park-1, Vasai West – 401202, Mumbai, Maharashtra, India.",
+    "factoryAddress": "Unit No. – 01, 02, 03 and 06, Agarwal Industrial Estate, Golani, Vasai East, Palghar – 401208, Mumbai, Maharashtra, India.",
     "workingHours": "Monday - Saturday: 9:00 AM - 6:30 PM (IST)",
     "city": "Mumbai",
     "state": "Maharashtra",

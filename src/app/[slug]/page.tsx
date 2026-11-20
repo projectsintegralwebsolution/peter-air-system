@@ -18,9 +18,13 @@ import {
   Layers,
   ChevronRight,
   Navigation,
-  ExternalLink
+  ExternalLink,
+  Building2,
+  Factory
 } from "lucide-react";
 import { PageBanner } from "@/components/PageBanner";
+import { AboutUsPage } from "@/components/AboutUsPage";
+import { ServicesPageBody } from "@/components/ServicesPageBody";
 import { ProductCard } from "@/components/ProductCard";
 import { EnquiryForm } from "@/components/EnquiryForm";
 import { AhuProductDetail } from "@/components/AhuProductDetail";
@@ -611,76 +615,7 @@ export default async function GenericPage({ params }: PageProps) {
 
   // 3. About Us Page
   if (slug === "about-us-peter-air-systems") {
-    return (
-      <div className="w-full bg-white">
-        <PageBanner
-          title="About Peter Air Systems"
-          subtitle="Engineering Excellence in Air Handling Units, Cleanroom Equipment, and Modular Turnkey Solutions."
-          breadcrumbs={[{ label: "About Us" }]}
-          bgImage="/images/ahu_banner.png"
-        />
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <span className="text-xs font-semibold text-brand-700 uppercase tracking-wider bg-brand-50 border border-brand-200 px-3 py-1 rounded inline-block">
-                COMPANY BACKGROUND
-              </span>
-              <h2 className="text-3xl font-bold text-slate-900">
-                High-Integrity Cleanroom & HVAC Manufacturing in Mumbai
-              </h2>
-              <p className="text-slate-600 text-sm leading-relaxed">
-                Peter Air Systems is a specialized engineering and manufacturing enterprise operating out of 106, Dattani Prism IT Park-1, Vasai West – 401202, Mumbai, Maharashtra, India. We provide comprehensive cleanroom solutions, specialized HVAC air distribution units, and sterile medical environment systems.
-              </p>
-              <p className="text-slate-600 text-sm leading-relaxed">
-                Our mission is to empower pharmaceutical manufacturers, life-sciences research institutions, hospitals, and semiconductor facilities with contamination-free environments that meet stringent regulatory compliance like WHO-GMP, Schedule M, and USFDA standards.
-              </p>
-
-              <div className="grid grid-cols-2 gap-4 pt-2">
-                <div className="border-l-2 border-brand-700 pl-3">
-                  <h4 className="font-bold text-slate-900 text-sm">In-House Manufacturing</h4>
-                  <p className="text-xs text-slate-500">CNC punching, shearing, folding, and cleanroom assembly in Mumbai.</p>
-                </div>
-                <div className="border-l-2 border-brand-700 pl-3">
-                  <h4 className="font-bold text-slate-900 text-sm">Quality Assurance</h4>
-                  <p className="text-xs text-slate-500">ISO 9001:2015 and CE Certified quality management procedures.</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl border border-slate-200">
-              <Image
-                src="/images/AHU.jpeg"
-                alt="Peter Air Systems Facility"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
-
-          {/* Plant & Capabilities */}
-          <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 space-y-6">
-            <h3 className="text-2xl font-bold text-slate-900">
-              Manufacturing Infrastructure & Technical Capabilities
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-slate-600">
-              <div className="bg-white p-5 rounded-xl border border-slate-200">
-                <h4 className="font-bold text-slate-900 text-base mb-2">Sheet Metal Shop</h4>
-                <p>Heavy gauge SS 304, SS 316, and Pre-coated GI fabrication with CNC press brakes ensuring airtight seams and smooth cleanroom radius edges.</p>
-              </div>
-              <div className="bg-white p-5 rounded-xl border border-slate-200">
-                <h4 className="font-bold text-slate-900 text-base mb-2">Testing & Validation Bay</h4>
-                <p>Dedicated testing bays equipped with aerosol photometers, anemometers, and differential pressure calibrators for full pre-dispatch FAT testing.</p>
-              </div>
-              <div className="bg-white p-5 rounded-xl border border-slate-200">
-                <h4 className="font-bold text-slate-900 text-base mb-2">Cleanroom Assembly</h4>
-                <p>Controlled assembly area for cleanroom furniture, biosafety cabinets, and laminar flow work stations with HEPA filter seal integrity inspection.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
+    return <AboutUsPage />;
   }
 
   // 4. Services Page
@@ -694,49 +629,7 @@ export default async function GenericPage({ params }: PageProps) {
           bgImage="/images/7-1.png"
         />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">
-          <div className="text-center max-w-3xl mx-auto space-y-3">
-            <h2 className="text-3xl font-bold text-slate-900">
-              Comprehensive Engineering & Validation Services
-            </h2>
-            <p className="text-slate-600 text-sm">
-              We support cleanroom operators from concept design through validation and lifecycle maintenance.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {services.map((s) => (
-              <div key={s.slug} className="bg-slate-50 border border-slate-200 rounded-2xl p-8 space-y-4">
-                <h3 className="text-xl font-bold text-slate-900">{s.name}</h3>
-                <p className="text-slate-600 text-sm leading-relaxed">{s.description}</p>
-                <div className="pt-2">
-                  <h4 className="text-xs font-mono font-bold text-brand-800 uppercase mb-2">Key Deliverables:</h4>
-                  <ul className="space-y-1.5 text-xs text-slate-700">
-                    {s.deliverables.map((d, i) => (
-                      <li key={i} className="flex items-center gap-2">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-brand-600" />
-                        <span>{d}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="bg-brand-900 text-white rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="space-y-2">
-              <h3 className="text-xl font-bold text-white">Request a Technical Consultation</h3>
-              <p className="text-slate-200 text-sm">Discuss your facility layout or validation audit with our engineers.</p>
-            </div>
-            <Link
-              href="/contact-peter-air-systems/"
-              className="bg-white text-brand-950 font-bold px-6 py-3 rounded-lg text-sm hover:bg-slate-100 transition shadow"
-            >
-              Contact Our Engineers
-            </Link>
-          </div>
-        </div>
+        <ServicesPageBody />
       </div>
     );
   }
@@ -806,7 +699,7 @@ export default async function GenericPage({ params }: PageProps) {
       <div className="w-full bg-white">
         <PageBanner
           title="Contact Peter Air Systems"
-          subtitle="Get in touch with our factory and sales engineering team in Vasai West, Mumbai."
+          subtitle="Get in touch with our head office and factory engineering team in Mumbai."
           breadcrumbs={[{ label: "Contact Us" }]}
           bgImage="/images/ahu_banner.png"
         />
@@ -817,7 +710,7 @@ export default async function GenericPage({ params }: PageProps) {
             <div className="lg:col-span-5 space-y-8">
               <div>
                 <span className="text-xs font-semibold text-brand-700 uppercase tracking-wider bg-brand-50 border border-brand-200 px-3 py-1 rounded inline-block mb-3">
-                  FACTORY & CORPORATE OFFICE
+                  HEAD OFFICE & FACTORY
                 </span>
                 <h2 className="text-3xl font-bold text-slate-900">
                   Connect With Our Engineering Team
@@ -828,21 +721,39 @@ export default async function GenericPage({ params }: PageProps) {
               </div>
 
               <div className="space-y-4 text-sm text-slate-700">
+                {/* Head Office Card */}
                 <div className="flex items-start gap-3 bg-slate-50 border border-slate-200 p-4 rounded-xl">
-                  <MapPin className="w-5 h-5 text-brand-700 flex-shrink-0 mt-0.5" />
+                  <Building2 className="w-5 h-5 text-brand-700 flex-shrink-0 mt-0.5" />
                   <div className="flex-1 min-w-0">
-                    <strong className="block text-slate-900 font-bold mb-1">Works & Office Address:</strong>
+                    <div className="flex items-center gap-2 mb-1">
+                      <strong className="text-slate-900 font-bold text-sm">Head Office</strong>
+                      <span className="text-[10px] font-semibold bg-brand-100 text-brand-800 px-2 py-0.5 rounded">Corporate</span>
+                    </div>
+                    <p className="text-slate-600 text-xs leading-relaxed">
+                      106, Dattani Prism IT Park-1, Vasai West – 401202, Mumbai, Maharashtra, India.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Factory Address Card */}
+                <div className="flex items-start gap-3 bg-slate-50 border border-brand-200/80 p-4 rounded-xl shadow-xs">
+                  <Factory className="w-5 h-5 text-brand-700 flex-shrink-0 mt-0.5" />
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-2 mb-1">
+                      <strong className="text-slate-900 font-bold text-sm">Factory Address</strong>
+                      <span className="text-[10px] font-semibold bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded">Manufacturing</span>
+                    </div>
                     <p className="text-slate-600 text-xs leading-relaxed mb-2.5">
-                      {siteConfig.contact.address}
+                      Unit No. – 01, 02, 03 and 06, Agarwal Industrial Estate, Golani, Vasai East, Palghar – 401208, Mumbai, Maharashtra, India.
                     </p>
                     <a
-                      href="https://www.google.com/maps/search/Dattani+Prism+IT+Park-1,+Vasai+West,+Maharashtra+401202,+India/"
+                      href="https://www.google.com/maps/search/Unit+No.+-+01,+02,+03+and+06,+Agarwal+Industrial+Estate,+Golani,+Vasai+East,+Palghar+%E2%80%93+401208,+Mumbai,+Maharashtra,+India./@19.3956624,72.8448979,13.47z"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-700 hover:text-brand-900 hover:underline transition-colors"
                     >
                       <Navigation className="w-3.5 h-3.5" />
-                      <span>Get Directions on Google Maps</span>
+                      <span>Get Directions to Factory</span>
                       <ExternalLink className="w-3 h-3 opacity-80" />
                     </a>
                   </div>
@@ -904,21 +815,21 @@ export default async function GenericPage({ params }: PageProps) {
                   FACTORY LOCATION &amp; NAVIGATION
                 </span>
                 <h3 className="text-2xl sm:text-3xl font-bold text-slate-900">
-                  Find Peter Air Systems on Google Maps
+                  Find Peter Air Systems Factory on Google Maps
                 </h3>
                 <p className="text-slate-600 text-xs sm:text-sm mt-1 max-w-2xl leading-relaxed">
-                  106, Dattani Prism IT Park-1, Vasai West – 401202, Mumbai, Maharashtra, India.
+                  Unit No. – 01, 02, 03 and 06, Agarwal Industrial Estate, Golani, Vasai East, Palghar – 401208, Mumbai, Maharashtra, India.
                 </p>
               </div>
 
               <a
-                href="https://www.google.com/maps/search/Dattani+Prism+IT+Park-1,+Vasai+West,+Maharashtra+401202,+India/"
+                href="https://www.google.com/maps/search/Unit+No.+-+01,+02,+03+and+06,+Agarwal+Industrial+Estate,+Golani,+Vasai+East,+Palghar+%E2%80%93+401208,+Mumbai,+Maharashtra,+India./@19.3956624,72.8448979,13.47z"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-[#063B5C] hover:bg-[#084b75] text-white text-xs sm:text-sm font-semibold px-5 py-2.5 rounded-xl shadow-sm hover:shadow transition-all shrink-0 self-start sm:self-auto"
               >
                 <Navigation className="w-4 h-4" />
-                <span>Get Directions</span>
+                <span>Get Directions to Factory</span>
                 <ExternalLink className="w-3.5 h-3.5 opacity-80" />
               </a>
             </div>
@@ -926,13 +837,13 @@ export default async function GenericPage({ params }: PageProps) {
             {/* Map Frame Container */}
             <div className="relative w-full rounded-2xl overflow-hidden border border-slate-200 shadow-md bg-slate-100 h-[360px] sm:h-[420px] lg:h-[480px]">
               <iframe
-                title="Google Map showing Peter Air Systems location at Dattani Prism IT Park-1, Vasai West, Mumbai"
-                src="https://maps.google.com/maps?q=Dattani+Prism+IT+Park-1,+Vasai+West,+Maharashtra+401202&z=16&hl=en&output=embed"
+                title="Google Map showing Peter Air Systems factory location at Agarwal Industrial Estate, Vasai East, Mumbai"
+                src="https://maps.google.com/maps?q=Agarwal+Industrial+Estate,+Golani,+Vasai+East,+Palghar+401208&z=16&hl=en&output=embed"
                 className="w-full h-full border-0"
                 loading="lazy"
                 allowFullScreen
                 referrerPolicy="no-referrer-when-downgrade"
-                aria-label="Google Map showing Peter Air Systems factory location"
+                aria-label="Google Map showing Peter Air Systems factory location at Agarwal Industrial Estate, Vasai East"
               />
             </div>
           </div>

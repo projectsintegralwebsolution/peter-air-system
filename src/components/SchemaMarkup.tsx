@@ -10,14 +10,26 @@ export const OrganizationSchema: React.FC = () => {
     "url": siteConfig.url,
     "logo": `${siteConfig.url}/images/PETER-AIR-LOGO.png`,
     "description": siteConfig.description,
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "106, Dattani Prism IT Park-1, Vasai West",
-      "addressLocality": "Mumbai",
-      "addressRegion": "Maharashtra",
-      "postalCode": "401202",
-      "addressCountry": "IN"
-    },
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "name": "Head Office",
+        "streetAddress": "106, Dattani Prism IT Park-1, Vasai West",
+        "addressLocality": "Mumbai",
+        "addressRegion": "Maharashtra",
+        "postalCode": "401202",
+        "addressCountry": "IN"
+      },
+      {
+        "@type": "PostalAddress",
+        "name": "Factory Address",
+        "streetAddress": "Unit No. – 01, 02, 03 and 06, Agarwal Industrial Estate, Golani, Vasai East, Palghar",
+        "addressLocality": "Mumbai",
+        "addressRegion": "Maharashtra",
+        "postalCode": "401208",
+        "addressCountry": "IN"
+      }
+    ],
     "contactPoint": [
       {
         "@type": "ContactPoint",
