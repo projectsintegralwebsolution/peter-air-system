@@ -1,14 +1,13 @@
-# syntax=docker/dockerfile:1
-
 # 1. Base image
 FROM node:20-alpine AS base
-RUN apk add --no-cache libc6-compat
+RUN apk add --no-cache libc6-compat openssl
 WORKDIR /app
 
 # 2. Dependencies installation
 FROM base AS deps
 WORKDIR /app
 COPY package.json package-lock.json ./
+COPY prisma ./prisma/
 RUN npm ci
 
 # 3. Build the Next.js application
@@ -19,6 +18,7 @@ COPY . .
 
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV NODE_ENV=production
+ENV DATABASE_URL="file:./prisma/dev.db"
 
 RUN npx prisma generate
 RUN npm run build
@@ -31,15 +31,17 @@ ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV PORT=3000
 ENV HOSTNAME="0.0.0.0"
+ENV DATABASE_URL="file:./prisma/dev.db"
 
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 
-# Copy static assets and JSON database
+# Copy static assets, prisma db, and data
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/data ./data
+COPY --from=builder --chown=nextjs:nodejs /app/prisma ./prisma
 
-# Setup proper permissions for Next.js cache and JSON file database
+# Setup proper permissions for Next.js cache and application files
 RUN mkdir -p .next
 RUN chown -R nextjs:nodejs /app
 
@@ -52,3 +54,4 @@ USER nextjs
 EXPOSE 3000
 
 CMD ["node", "server.js"]
+

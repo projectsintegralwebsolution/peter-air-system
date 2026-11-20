@@ -7,47 +7,13 @@ const nextConfig = {
     unoptimized: true, // High reliability across local and static hosting, avoids remote image domain blocks
   },
   async redirects() {
+    let customRedirects = [];
+    try {
+      customRedirects = require("./src/data/redirects.json");
+    } catch (e) {}
+
     return [
-      {
-        source: '/return-air-riser-2',
-        destination: '/return-air-riser/',
-        permanent: true,
-      },
-      {
-        source: '/return-air-riser-2/',
-        destination: '/return-air-riser/',
-        permanent: true,
-      },
-      {
-        source: '/about-us-new',
-        destination: '/about-us-peter-air-systems/',
-        permanent: true,
-      },
-      {
-        source: '/about-us-new/',
-        destination: '/about-us-peter-air-systems/',
-        permanent: true,
-      },
-      {
-        source: '/about',
-        destination: '/about-us-peter-air-systems/',
-        permanent: true,
-      },
-      {
-        source: '/about/',
-        destination: '/about-us-peter-air-systems/',
-        permanent: true,
-      },
-      {
-        source: '/contact',
-        destination: '/contact-peter-air-systems/',
-        permanent: true,
-      },
-      {
-        source: '/contact/',
-        destination: '/contact-peter-air-systems/',
-        permanent: true,
-      },
+      ...customRedirects,
       {
         source: '/products',
         destination: '/clean-room-equipment/',

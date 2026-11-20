@@ -1,0 +1,1622 @@
+[
+  {
+    "source": "/about-us-new",
+    "destination": "/about-us-peter-air-systems/",
+    "permanent": true
+  },
+  {
+    "source": "/about-us-new/",
+    "destination": "/about-us-peter-air-systems/",
+    "permanent": true
+  },
+  {
+    "source": "/about",
+    "destination": "/about-us-peter-air-systems/",
+    "permanent": true
+  },
+  {
+    "source": "/about/",
+    "destination": "/about-us-peter-air-systems/",
+    "permanent": true
+  },
+  {
+    "source": "/contact",
+    "destination": "/contact-peter-air-systems/",
+    "permanent": true
+  },
+  {
+    "source": "/contact/",
+    "destination": "/contact-peter-air-systems/",
+    "permanent": true
+  },
+  {
+    "source": "/return-air-riser-2",
+    "destination": "/return-air-riser/",
+    "permanent": true
+  },
+  {
+    "source": "/return-air-riser-2/",
+    "destination": "/return-air-riser/",
+    "permanent": true
+  },
+  {
+    "source": "/other-products-laboratory-equipment",
+    "destination": "/clean-room-equipment/",
+    "permanent": true
+  },
+  {
+    "source": "/other-products-laboratory-equipment/",
+    "destination": "/clean-room-equipment/",
+    "permanent": true
+  },
+  {
+    "source": "/how-to-calculate-ahu-capacity-for-cleanrooms-and-industrial-facilities",
+    "destination": "/air-handling-unit-ahu/",
+    "permanent": true
+  },
+  {
+    "source": "/how-to-calculate-ahu-capacity-for-cleanrooms-and-industrial-facilities/",
+    "destination": "/air-handling-unit-ahu/",
+    "permanent": true
+  },
+  {
+    "source": "/how-to-select-the-right-air-handling-unit-for-a-pharmaceutical-cleanroom",
+    "destination": "/air-handling-unit-ahu/",
+    "permanent": true
+  },
+  {
+    "source": "/how-to-select-the-right-air-handling-unit-for-a-pharmaceutical-cleanroom/",
+    "destination": "/air-handling-unit-ahu/",
+    "permanent": true
+  },
+  {
+    "source": "/how-to-choose-the-right-cleanroom-doors-for-pharmaceutical-facilities",
+    "destination": "/modular-clean-room-doors/",
+    "permanent": true
+  },
+  {
+    "source": "/how-to-choose-the-right-cleanroom-doors-for-pharmaceutical-facilities/",
+    "destination": "/modular-clean-room-doors/",
+    "permanent": true
+  },
+  {
+    "source": "/complete-guide-to-contamination-control-systems-in-cleanrooms",
+    "destination": "/clean-room-equipment/",
+    "permanent": true
+  },
+  {
+    "source": "/complete-guide-to-contamination-control-systems-in-cleanrooms/",
+    "destination": "/clean-room-equipment/",
+    "permanent": true
+  },
+  {
+    "source": "/feed",
+    "destination": "/blog/",
+    "permanent": true
+  },
+  {
+    "source": "/feed/",
+    "destination": "/blog/",
+    "permanent": true
+  },
+  {
+    "source": "/comments/feed",
+    "destination": "/blog/",
+    "permanent": true
+  },
+  {
+    "source": "/comments/feed/",
+    "destination": "/blog/",
+    "permanent": true
+  },
+  {
+    "source": "/author/admin/feed",
+    "destination": "/blog/",
+    "permanent": true
+  },
+  {
+    "source": "/author/admin/feed/",
+    "destination": "/blog/",
+    "permanent": true
+  },
+  {
+    "source": "/category/:slug*",
+    "destination": "/blog/",
+    "permanent": true
+  },
+  {
+    "source": "/tag/:slug*",
+    "destination": "/blog/",
+    "permanent": true
+  },
+  {
+    "source": "/air-filter-breathe-clean-fresh-air-with-peter-air",
+    "destination": "/blog/air-filter-breathe-clean-fresh-air-with-peter-air/",
+    "permanent": true
+  },
+  {
+    "source": "/air-filter-breathe-clean-fresh-air-with-peter-air/",
+    "destination": "/blog/air-filter-breathe-clean-fresh-air-with-peter-air/",
+    "permanent": true
+  },
+  {
+    "source": "/air-filtration-unit",
+    "destination": "/blog/air-filtration-unit/",
+    "permanent": true
+  },
+  {
+    "source": "/air-filtration-unit/",
+    "destination": "/blog/air-filtration-unit/",
+    "permanent": true
+  },
+  {
+    "source": "/air-handling-unit-ahu-for-pharmaceuticals",
+    "destination": "/blog/air-handling-unit-ahu-for-pharmaceuticals/",
+    "permanent": true
+  },
+  {
+    "source": "/air-handling-unit-ahu-for-pharmaceuticals/",
+    "destination": "/blog/air-handling-unit-ahu-for-pharmaceuticals/",
+    "permanent": true
+  },
+  {
+    "source": "/air-handling-unit-guide",
+    "destination": "/blog/air-handling-unit-guide/",
+    "permanent": true
+  },
+  {
+    "source": "/air-handling-unit-guide/",
+    "destination": "/blog/air-handling-unit-guide/",
+    "permanent": true
+  },
+  {
+    "source": "/air-handling-units-ahu",
+    "destination": "/blog/air-handling-units-ahu/",
+    "permanent": true
+  },
+  {
+    "source": "/air-handling-units-ahu/",
+    "destination": "/blog/air-handling-units-ahu/",
+    "permanent": true
+  },
+  {
+    "source": "/air-purifier-essential-for-clean-and-healthy-air",
+    "destination": "/blog/air-purifier-essential-for-clean-and-healthy-air/",
+    "permanent": true
+  },
+  {
+    "source": "/air-purifier-essential-for-clean-and-healthy-air/",
+    "destination": "/blog/air-purifier-essential-for-clean-and-healthy-air/",
+    "permanent": true
+  },
+  {
+    "source": "/air-shower-cleanroom-contamination-control",
+    "destination": "/blog/air-shower-cleanroom-contamination-control/",
+    "permanent": true
+  },
+  {
+    "source": "/air-shower-cleanroom-contamination-control/",
+    "destination": "/blog/air-shower-cleanroom-contamination-control/",
+    "permanent": true
+  },
+  {
+    "source": "/air-shower-manufacturer-in-india-complete-buying-guide-for-cleanroom-industries",
+    "destination": "/blog/air-shower-manufacturer-in-india-complete-buying-guide-for-cleanroom-industries/",
+    "permanent": true
+  },
+  {
+    "source": "/air-shower-manufacturer-in-india-complete-buying-guide-for-cleanroom-industries/",
+    "destination": "/blog/air-shower-manufacturer-in-india-complete-buying-guide-for-cleanroom-industries/",
+    "permanent": true
+  },
+  {
+    "source": "/air-showeras-key-benefits-for-cleanrooms",
+    "destination": "/blog/air-showeras-key-benefits-for-cleanrooms/",
+    "permanent": true
+  },
+  {
+    "source": "/air-showeras-key-benefits-for-cleanrooms/",
+    "destination": "/blog/air-showeras-key-benefits-for-cleanrooms/",
+    "permanent": true
+  },
+  {
+    "source": "/air-showers-essential-for-cleanroom-environments",
+    "destination": "/blog/air-showers-essential-for-cleanroom-environments/",
+    "permanent": true
+  },
+  {
+    "source": "/air-showers-essential-for-cleanroom-environments/",
+    "destination": "/blog/air-showers-essential-for-cleanroom-environments/",
+    "permanent": true
+  },
+  {
+    "source": "/air-showers-key-to-maintaining-clean-environments",
+    "destination": "/blog/air-showers-key-to-maintaining-clean-environments/",
+    "permanent": true
+  },
+  {
+    "source": "/air-showers-key-to-maintaining-clean-environments/",
+    "destination": "/blog/air-showers-key-to-maintaining-clean-environments/",
+    "permanent": true
+  },
+  {
+    "source": "/air-washer-units-by-peterair",
+    "destination": "/blog/air-washer-units-by-peterair/",
+    "permanent": true
+  },
+  {
+    "source": "/air-washer-units-by-peterair/",
+    "destination": "/blog/air-washer-units-by-peterair/",
+    "permanent": true
+  },
+  {
+    "source": "/breathe-clean-unveiling-the-power-of-air-washer-units-by-peter-air-system",
+    "destination": "/blog/breathe-clean-unveiling-the-power-of-air-washer-units-by-peter-air-system/",
+    "permanent": true
+  },
+  {
+    "source": "/breathe-clean-unveiling-the-power-of-air-washer-units-by-peter-air-system/",
+    "destination": "/blog/breathe-clean-unveiling-the-power-of-air-washer-units-by-peter-air-system/",
+    "permanent": true
+  },
+  {
+    "source": "/breathe-easier-with-our-air-filters-your-guide-to-cleaner-indoor-air",
+    "destination": "/blog/breathe-easier-with-our-air-filters-your-guide-to-cleaner-indoor-air/",
+    "permanent": true
+  },
+  {
+    "source": "/breathe-easier-with-our-air-filters-your-guide-to-cleaner-indoor-air/",
+    "destination": "/blog/breathe-easier-with-our-air-filters-your-guide-to-cleaner-indoor-air/",
+    "permanent": true
+  },
+  {
+    "source": "/ceiling-suspended-laminar-units-essential-for-clean-air-environments",
+    "destination": "/blog/ceiling-suspended-laminar-units-essential-for-clean-air-environments/",
+    "permanent": true
+  },
+  {
+    "source": "/ceiling-suspended-laminar-units-essential-for-clean-air-environments/",
+    "destination": "/blog/ceiling-suspended-laminar-units-essential-for-clean-air-environments/",
+    "permanent": true
+  },
+  {
+    "source": "/cleanroom-doors-guide",
+    "destination": "/blog/cleanroom-doors-guide/",
+    "permanent": true
+  },
+  {
+    "source": "/cleanroom-doors-guide/",
+    "destination": "/blog/cleanroom-doors-guide/",
+    "permanent": true
+  },
+  {
+    "source": "/common-cleanroom-contamination-sources-and-how-to-prevent-them",
+    "destination": "/blog/common-cleanroom-contamination-sources-and-how-to-prevent-them/",
+    "permanent": true
+  },
+  {
+    "source": "/common-cleanroom-contamination-sources-and-how-to-prevent-them/",
+    "destination": "/blog/common-cleanroom-contamination-sources-and-how-to-prevent-them/",
+    "permanent": true
+  },
+  {
+    "source": "/complete-guide-to-modular-cleanrooms-for-pharmaceutical-manufacturing",
+    "destination": "/blog/complete-guide-to-modular-cleanrooms-for-pharmaceutical-manufacturing/",
+    "permanent": true
+  },
+  {
+    "source": "/complete-guide-to-modular-cleanrooms-for-pharmaceutical-manufacturing/",
+    "destination": "/blog/complete-guide-to-modular-cleanrooms-for-pharmaceutical-manufacturing/",
+    "permanent": true
+  },
+  {
+    "source": "/comprehensive-solutions-with-advanced-air-handling-units-ahus",
+    "destination": "/blog/comprehensive-solutions-with-advanced-air-handling-units-ahus/",
+    "permanent": true
+  },
+  {
+    "source": "/comprehensive-solutions-with-advanced-air-handling-units-ahus/",
+    "destination": "/blog/comprehensive-solutions-with-advanced-air-handling-units-ahus/",
+    "permanent": true
+  },
+  {
+    "source": "/dehumidifiers-home-comfort-health",
+    "destination": "/blog/dehumidifiers-home-comfort-health/",
+    "permanent": true
+  },
+  {
+    "source": "/dehumidifiers-home-comfort-health/",
+    "destination": "/blog/dehumidifiers-home-comfort-health/",
+    "permanent": true
+  },
+  {
+    "source": "/does-a-return-air-riser-improve-hvac-airflow-management",
+    "destination": "/blog/does-a-return-air-riser-improve-hvac-airflow-management/",
+    "permanent": true
+  },
+  {
+    "source": "/does-a-return-air-riser-improve-hvac-airflow-management/",
+    "destination": "/blog/does-a-return-air-riser-improve-hvac-airflow-management/",
+    "permanent": true
+  },
+  {
+    "source": "/dynamic-pass-boxs",
+    "destination": "/blog/dynamic-pass-boxs/",
+    "permanent": true
+  },
+  {
+    "source": "/dynamic-pass-boxs/",
+    "destination": "/blog/dynamic-pass-boxs/",
+    "permanent": true
+  },
+  {
+    "source": "/elevate-clean-room-access-unveiling-peter-air-systems-modular-clean-room-door",
+    "destination": "/blog/elevate-clean-room-access-unveiling-peter-air-systems-modular-clean-room-door/",
+    "permanent": true
+  },
+  {
+    "source": "/elevate-clean-room-access-unveiling-peter-air-systems-modular-clean-room-door/",
+    "destination": "/blog/elevate-clean-room-access-unveiling-peter-air-systems-modular-clean-room-door/",
+    "permanent": true
+  },
+  {
+    "source": "/elevating-efficiency-exploring-the-world-of-laminar-work-station",
+    "destination": "/blog/elevating-efficiency-exploring-the-world-of-laminar-work-station/",
+    "permanent": true
+  },
+  {
+    "source": "/elevating-efficiency-exploring-the-world-of-laminar-work-station/",
+    "destination": "/blog/elevating-efficiency-exploring-the-world-of-laminar-work-station/",
+    "permanent": true
+  },
+  {
+    "source": "/embracing-clean-air-the-power-of-ceiling-suspended-laminar-flow-systems",
+    "destination": "/blog/embracing-clean-air-the-power-of-ceiling-suspended-laminar-flow-systems/",
+    "permanent": true
+  },
+  {
+    "source": "/embracing-clean-air-the-power-of-ceiling-suspended-laminar-flow-systems/",
+    "destination": "/blog/embracing-clean-air-the-power-of-ceiling-suspended-laminar-flow-systems/",
+    "permanent": true
+  },
+  {
+    "source": "/enhance-indoor-comfort-with-peter-airs-advanced-hvac-solutions",
+    "destination": "/blog/enhance-indoor-comfort-with-peter-airs-advanced-hvac-solutions/",
+    "permanent": true
+  },
+  {
+    "source": "/enhance-indoor-comfort-with-peter-airs-advanced-hvac-solutions/",
+    "destination": "/blog/enhance-indoor-comfort-with-peter-airs-advanced-hvac-solutions/",
+    "permanent": true
+  },
+  {
+    "source": "/enhancing-clean-room-environments-with-modular-clean-room-doors",
+    "destination": "/blog/enhancing-clean-room-environments-with-modular-clean-room-doors/",
+    "permanent": true
+  },
+  {
+    "source": "/enhancing-clean-room-environments-with-modular-clean-room-doors/",
+    "destination": "/blog/enhancing-clean-room-environments-with-modular-clean-room-doors/",
+    "permanent": true
+  },
+  {
+    "source": "/enhancing-indoor-air-quality-with-peterairs-advanced-air-washer-unit",
+    "destination": "/blog/enhancing-indoor-air-quality-with-peterairs-advanced-air-washer-unit/",
+    "permanent": true
+  },
+  {
+    "source": "/enhancing-indoor-air-quality-with-peterairs-advanced-air-washer-unit/",
+    "destination": "/blog/enhancing-indoor-air-quality-with-peterairs-advanced-air-washer-unit/",
+    "permanent": true
+  },
+  {
+    "source": "/ensure-safe-substance-handling-with-dispensing-booths-from-peter-air",
+    "destination": "/blog/ensure-safe-substance-handling-with-dispensing-booths-from-peter-air/",
+    "permanent": true
+  },
+  {
+    "source": "/ensure-safe-substance-handling-with-dispensing-booths-from-peter-air/",
+    "destination": "/blog/ensure-safe-substance-handling-with-dispensing-booths-from-peter-air/",
+    "permanent": true
+  },
+  {
+    "source": "/ensuring-safety-with-peter-airs-biological-safety-cabinets",
+    "destination": "/blog/ensuring-safety-with-peter-airs-biological-safety-cabinets/",
+    "permanent": true
+  },
+  {
+    "source": "/ensuring-safety-with-peter-airs-biological-safety-cabinets/",
+    "destination": "/blog/ensuring-safety-with-peter-airs-biological-safety-cabinets/",
+    "permanent": true
+  },
+  {
+    "source": "/essential-clean-room-equipment-for-pharmaceutical-manufacturing",
+    "destination": "/blog/essential-clean-room-equipment-for-pharmaceutical-manufacturing/",
+    "permanent": true
+  },
+  {
+    "source": "/essential-clean-room-equipment-for-pharmaceutical-manufacturing/",
+    "destination": "/blog/essential-clean-room-equipment-for-pharmaceutical-manufacturing/",
+    "permanent": true
+  },
+  {
+    "source": "/fine-filter-manufacturer-cleanroom",
+    "destination": "/blog/fine-filter-manufacturer-cleanroom/",
+    "permanent": true
+  },
+  {
+    "source": "/fine-filter-manufacturer-cleanroom/",
+    "destination": "/blog/fine-filter-manufacturer-cleanroom/",
+    "permanent": true
+  },
+  {
+    "source": "/fine-filters-essential-for-clean-and-pure-air",
+    "destination": "/blog/fine-filters-essential-for-clean-and-pure-air/",
+    "permanent": true
+  },
+  {
+    "source": "/fine-filters-essential-for-clean-and-pure-air/",
+    "destination": "/blog/fine-filters-essential-for-clean-and-pure-air/",
+    "permanent": true
+  },
+  {
+    "source": "/garment-cabinets-ensuring-cleanliness-in-critical-environments",
+    "destination": "/blog/garment-cabinets-ensuring-cleanliness-in-critical-environments/",
+    "permanent": true
+  },
+  {
+    "source": "/garment-cabinets-ensuring-cleanliness-in-critical-environments/",
+    "destination": "/blog/garment-cabinets-ensuring-cleanliness-in-critical-environments/",
+    "permanent": true
+  },
+  {
+    "source": "/garment-cabinets-peter-air-system",
+    "destination": "/blog/garment-cabinets-peter-air-system/",
+    "permanent": true
+  },
+  {
+    "source": "/garment-cabinets-peter-air-system/",
+    "destination": "/blog/garment-cabinets-peter-air-system/",
+    "permanent": true
+  },
+  {
+    "source": "/gmp-pharmaceutical-panel-puf-panel-enhancing-cleanroom-efficiency",
+    "destination": "/blog/gmp-pharmaceutical-panel-puf-panel-enhancing-cleanroom-efficiency/",
+    "permanent": true
+  },
+  {
+    "source": "/gmp-pharmaceutical-panel-puf-panel-enhancing-cleanroom-efficiency/",
+    "destination": "/blog/gmp-pharmaceutical-panel-puf-panel-enhancing-cleanroom-efficiency/",
+    "permanent": true
+  },
+  {
+    "source": "/hepa-filter-manufacturer-guide-types-applications-and-selection",
+    "destination": "/blog/hepa-filter-manufacturer-guide-types-applications-and-selection/",
+    "permanent": true
+  },
+  {
+    "source": "/hepa-filter-manufacturer-guide-types-applications-and-selection/",
+    "destination": "/blog/hepa-filter-manufacturer-guide-types-applications-and-selection/",
+    "permanent": true
+  },
+  {
+    "source": "/hepa-filter-manufacturers-how-hepa-filtration-protects-critical-environments",
+    "destination": "/blog/hepa-filter-manufacturers-how-hepa-filtration-protects-critical-environments/",
+    "permanent": true
+  },
+  {
+    "source": "/hepa-filter-manufacturers-how-hepa-filtration-protects-critical-environments/",
+    "destination": "/blog/hepa-filter-manufacturers-how-hepa-filtration-protects-critical-environments/",
+    "permanent": true
+  },
+  {
+    "source": "/hepa-filters-the-guardians-of-clean-air-by-peter-air-systems",
+    "destination": "/blog/hepa-filters-the-guardians-of-clean-air-by-peter-air-systems/",
+    "permanent": true
+  },
+  {
+    "source": "/hepa-filters-the-guardians-of-clean-air-by-peter-air-systems/",
+    "destination": "/blog/hepa-filters-the-guardians-of-clean-air-by-peter-air-systems/",
+    "permanent": true
+  },
+  {
+    "source": "/hepa-terminal-box-hepa-filter-box-advanced-air-filtration-solutions",
+    "destination": "/blog/hepa-terminal-box-hepa-filter-box-advanced-air-filtration-solutions/",
+    "permanent": true
+  },
+  {
+    "source": "/hepa-terminal-box-hepa-filter-box-advanced-air-filtration-solutions/",
+    "destination": "/blog/hepa-terminal-box-hepa-filter-box-advanced-air-filtration-solutions/",
+    "permanent": true
+  },
+  {
+    "source": "/hepa-vs-ulpa-filters-which-one-is-better-for-cleanroom-applications",
+    "destination": "/blog/hepa-vs-ulpa-filters-which-one-is-better-for-cleanroom-applications/",
+    "permanent": true
+  },
+  {
+    "source": "/hepa-vs-ulpa-filters-which-one-is-better-for-cleanroom-applications/",
+    "destination": "/blog/hepa-vs-ulpa-filters-which-one-is-better-for-cleanroom-applications/",
+    "permanent": true
+  },
+  {
+    "source": "/how-cleanroom-furniture-supports-contamination-control-and-workplace-efficiency",
+    "destination": "/blog/how-cleanroom-furniture-supports-contamination-control-and-workplace-efficiency/",
+    "permanent": true
+  },
+  {
+    "source": "/how-cleanroom-furniture-supports-contamination-control-and-workplace-efficiency/",
+    "destination": "/blog/how-cleanroom-furniture-supports-contamination-control-and-workplace-efficiency/",
+    "permanent": true
+  },
+  {
+    "source": "/how-do-air-handling-units-ahus-improve-indoor-air-quality-manufacturer-in-india-peter-air",
+    "destination": "/blog/how-do-air-handling-units-ahus-improve-indoor-air-quality-manufacturer-in-india-peter-air/",
+    "permanent": true
+  },
+  {
+    "source": "/how-do-air-handling-units-ahus-improve-indoor-air-quality-manufacturer-in-india-peter-air/",
+    "destination": "/blog/how-do-air-handling-units-ahus-improve-indoor-air-quality-manufacturer-in-india-peter-air/",
+    "permanent": true
+  },
+  {
+    "source": "/how-do-air-handling-units-improve-indoor-air-quality",
+    "destination": "/blog/how-do-air-handling-units-improve-indoor-air-quality/",
+    "permanent": true
+  },
+  {
+    "source": "/how-do-air-handling-units-improve-indoor-air-quality/",
+    "destination": "/blog/how-do-air-handling-units-improve-indoor-air-quality/",
+    "permanent": true
+  },
+  {
+    "source": "/how-do-air-showers-prevent-contamination-in-cleanroom-environments",
+    "destination": "/blog/how-do-air-showers-prevent-contamination-in-cleanroom-environments/",
+    "permanent": true
+  },
+  {
+    "source": "/how-do-air-showers-prevent-contamination-in-cleanroom-environments/",
+    "destination": "/blog/how-do-air-showers-prevent-contamination-in-cleanroom-environments/",
+    "permanent": true
+  },
+  {
+    "source": "/how-do-air-supply-and-return-diffusers-enhance-indoor-comfort",
+    "destination": "/blog/how-do-air-supply-and-return-diffusers-enhance-indoor-comfort/",
+    "permanent": true
+  },
+  {
+    "source": "/how-do-air-supply-and-return-diffusers-enhance-indoor-comfort/",
+    "destination": "/blog/how-do-air-supply-and-return-diffusers-enhance-indoor-comfort/",
+    "permanent": true
+  },
+  {
+    "source": "/how-do-air-washer-units-improve-air-quality",
+    "destination": "/blog/how-do-air-washer-units-improve-air-quality/",
+    "permanent": true
+  },
+  {
+    "source": "/how-do-air-washer-units-improve-air-quality/",
+    "destination": "/blog/how-do-air-washer-units-improve-air-quality/",
+    "permanent": true
+  },
+  {
+    "source": "/how-do-dehumidifier-units-help-control-humidity-in-hvac-systems",
+    "destination": "/blog/how-do-dehumidifier-units-help-control-humidity-in-hvac-systems/",
+    "permanent": true
+  },
+  {
+    "source": "/how-do-dehumidifier-units-help-control-humidity-in-hvac-systems/",
+    "destination": "/blog/how-do-dehumidifier-units-help-control-humidity-in-hvac-systems/",
+    "permanent": true
+  },
+  {
+    "source": "/how-do-dehumidifiers-help-prevent-mold-and-bacteria",
+    "destination": "/blog/how-do-dehumidifiers-help-prevent-mold-and-bacteria/",
+    "permanent": true
+  },
+  {
+    "source": "/how-do-dehumidifiers-help-prevent-mold-and-bacteria/",
+    "destination": "/blog/how-do-dehumidifiers-help-prevent-mold-and-bacteria/",
+    "permanent": true
+  },
+  {
+    "source": "/how-do-dehumidifiers-help-prevent-mold-and-bacteria-2",
+    "destination": "/blog/how-do-dehumidifiers-help-prevent-mold-and-bacteria-2/",
+    "permanent": true
+  },
+  {
+    "source": "/how-do-dehumidifiers-help-prevent-mold-and-bacteria-2/",
+    "destination": "/blog/how-do-dehumidifiers-help-prevent-mold-and-bacteria-2/",
+    "permanent": true
+  },
+  {
+    "source": "/how-do-pre-filters-improve-air-quality",
+    "destination": "/blog/how-do-pre-filters-improve-air-quality/",
+    "permanent": true
+  },
+  {
+    "source": "/how-do-pre-filters-improve-air-quality/",
+    "destination": "/blog/how-do-pre-filters-improve-air-quality/",
+    "permanent": true
+  },
+  {
+    "source": "/how-do-supply-and-return-air-grilles-differ",
+    "destination": "/blog/how-do-supply-and-return-air-grilles-differ/",
+    "permanent": true
+  },
+  {
+    "source": "/how-do-supply-and-return-air-grilles-differ/",
+    "destination": "/blog/how-do-supply-and-return-air-grilles-differ/",
+    "permanent": true
+  },
+  {
+    "source": "/how-do-supply-and-return-diffusers-improve-indoor-comfort",
+    "destination": "/blog/how-do-supply-and-return-diffusers-improve-indoor-comfort/",
+    "permanent": true
+  },
+  {
+    "source": "/how-do-supply-and-return-diffusers-improve-indoor-comfort/",
+    "destination": "/blog/how-do-supply-and-return-diffusers-improve-indoor-comfort/",
+    "permanent": true
+  },
+  {
+    "source": "/how-do-vcds-regulate-airflow-in-hvac-systems",
+    "destination": "/blog/how-do-vcds-regulate-airflow-in-hvac-systems/",
+    "permanent": true
+  },
+  {
+    "source": "/how-do-vcds-regulate-airflow-in-hvac-systems/",
+    "destination": "/blog/how-do-vcds-regulate-airflow-in-hvac-systems/",
+    "permanent": true
+  },
+  {
+    "source": "/how-does-a-hepa-terminal-box-improve-air-filtration",
+    "destination": "/blog/how-does-a-hepa-terminal-box-improve-air-filtration/",
+    "permanent": true
+  },
+  {
+    "source": "/how-does-a-hepa-terminal-box-improve-air-filtration/",
+    "destination": "/blog/how-does-a-hepa-terminal-box-improve-air-filtration/",
+    "permanent": true
+  },
+  {
+    "source": "/how-does-a-hepa-terminal-box-improve-air-filtration-2",
+    "destination": "/blog/how-does-a-hepa-terminal-box-improve-air-filtration-2/",
+    "permanent": true
+  },
+  {
+    "source": "/how-does-a-hepa-terminal-box-improve-air-filtration-2/",
+    "destination": "/blog/how-does-a-hepa-terminal-box-improve-air-filtration-2/",
+    "permanent": true
+  },
+  {
+    "source": "/how-does-a-return-air-riser-help-maintain-airflow-balance",
+    "destination": "/blog/how-does-a-return-air-riser-help-maintain-airflow-balance/",
+    "permanent": true
+  },
+  {
+    "source": "/how-does-a-return-air-riser-help-maintain-airflow-balance/",
+    "destination": "/blog/how-does-a-return-air-riser-help-maintain-airflow-balance/",
+    "permanent": true
+  },
+  {
+    "source": "/how-does-an-air-handling-unit-ahu-work-in-hvac-systems",
+    "destination": "/blog/how-does-an-air-handling-unit-ahu-work-in-hvac-systems/",
+    "permanent": true
+  },
+  {
+    "source": "/how-does-an-air-handling-unit-ahu-work-in-hvac-systems/",
+    "destination": "/blog/how-does-an-air-handling-unit-ahu-work-in-hvac-systems/",
+    "permanent": true
+  },
+  {
+    "source": "/how-does-an-air-shower-improve-cleanroom-contamination-control",
+    "destination": "/blog/how-does-an-air-shower-improve-cleanroom-contamination-control/",
+    "permanent": true
+  },
+  {
+    "source": "/how-does-an-air-shower-improve-cleanroom-contamination-control/",
+    "destination": "/blog/how-does-an-air-shower-improve-cleanroom-contamination-control/",
+    "permanent": true
+  },
+  {
+    "source": "/how-does-an-air-washer-unit-work-for-cooling-and-air-cleaning",
+    "destination": "/blog/how-does-an-air-washer-unit-work-for-cooling-and-air-cleaning/",
+    "permanent": true
+  },
+  {
+    "source": "/how-does-an-air-washer-unit-work-for-cooling-and-air-cleaning/",
+    "destination": "/blog/how-does-an-air-washer-unit-work-for-cooling-and-air-cleaning/",
+    "permanent": true
+  },
+  {
+    "source": "/how-does-proper-air-circulation-improve-energy-efficiency-in-buildings",
+    "destination": "/blog/how-does-proper-air-circulation-improve-energy-efficiency-in-buildings/",
+    "permanent": true
+  },
+  {
+    "source": "/how-does-proper-air-circulation-improve-energy-efficiency-in-buildings/",
+    "destination": "/blog/how-does-proper-air-circulation-improve-energy-efficiency-in-buildings/",
+    "permanent": true
+  },
+  {
+    "source": "/how-does-proper-air-circulation-improve-energy-efficiency-in-buildings-2",
+    "destination": "/blog/how-does-proper-air-circulation-improve-energy-efficiency-in-buildings-2/",
+    "permanent": true
+  },
+  {
+    "source": "/how-does-proper-air-circulation-improve-energy-efficiency-in-buildings-2/",
+    "destination": "/blog/how-does-proper-air-circulation-improve-energy-efficiency-in-buildings-2/",
+    "permanent": true
+  },
+  {
+    "source": "/how-does-regular-maintenance-improve-ahu-performance",
+    "destination": "/blog/how-does-regular-maintenance-improve-ahu-performance/",
+    "permanent": true
+  },
+  {
+    "source": "/how-does-regular-maintenance-improve-ahu-performance/",
+    "destination": "/blog/how-does-regular-maintenance-improve-ahu-performance/",
+    "permanent": true
+  },
+  {
+    "source": "/how-hvac-design-impacts-cleanroom-efficiency-and-compliance",
+    "destination": "/blog/how-hvac-design-impacts-cleanroom-efficiency-and-compliance/",
+    "permanent": true
+  },
+  {
+    "source": "/how-hvac-design-impacts-cleanroom-efficiency-and-compliance/",
+    "destination": "/blog/how-hvac-design-impacts-cleanroom-efficiency-and-compliance/",
+    "permanent": true
+  },
+  {
+    "source": "/how-modular-clean-room-epoxy-flooring-improves-hygiene-and-compliance",
+    "destination": "/blog/how-modular-clean-room-epoxy-flooring-improves-hygiene-and-compliance/",
+    "permanent": true
+  },
+  {
+    "source": "/how-modular-clean-room-epoxy-flooring-improves-hygiene-and-compliance/",
+    "destination": "/blog/how-modular-clean-room-epoxy-flooring-improves-hygiene-and-compliance/",
+    "permanent": true
+  },
+  {
+    "source": "/how-proper-airflow-management-improves-indoor-air-quality-in-industrial-facilities",
+    "destination": "/blog/how-proper-airflow-management-improves-indoor-air-quality-in-industrial-facilities/",
+    "permanent": true
+  },
+  {
+    "source": "/how-proper-airflow-management-improves-indoor-air-quality-in-industrial-facilities/",
+    "destination": "/blog/how-proper-airflow-management-improves-indoor-air-quality-in-industrial-facilities/",
+    "permanent": true
+  },
+  {
+    "source": "/how-to-choose-the-right-pharmaceutical-door-for-gmp-facilities",
+    "destination": "/blog/how-to-choose-the-right-pharmaceutical-door-for-gmp-facilities/",
+    "permanent": true
+  },
+  {
+    "source": "/how-to-choose-the-right-pharmaceutical-door-for-gmp-facilities/",
+    "destination": "/blog/how-to-choose-the-right-pharmaceutical-door-for-gmp-facilities/",
+    "permanent": true
+  },
+  {
+    "source": "/hvac-air-handler",
+    "destination": "/blog/hvac-air-handler/",
+    "permanent": true
+  },
+  {
+    "source": "/hvac-air-handler/",
+    "destination": "/blog/hvac-air-handler/",
+    "permanent": true
+  },
+  {
+    "source": "/hvac-cleanroom-innovations",
+    "destination": "/blog/hvac-cleanroom-innovations/",
+    "permanent": true
+  },
+  {
+    "source": "/hvac-cleanroom-innovations/",
+    "destination": "/blog/hvac-cleanroom-innovations/",
+    "permanent": true
+  },
+  {
+    "source": "/hvac-pre-filters",
+    "destination": "/blog/hvac-pre-filters/",
+    "permanent": true
+  },
+  {
+    "source": "/hvac-pre-filters/",
+    "destination": "/blog/hvac-pre-filters/",
+    "permanent": true
+  },
+  {
+    "source": "/hvac-product-for-optimal-indoor-air-quality",
+    "destination": "/blog/hvac-product-for-optimal-indoor-air-quality/",
+    "permanent": true
+  },
+  {
+    "source": "/hvac-product-for-optimal-indoor-air-quality/",
+    "destination": "/blog/hvac-product-for-optimal-indoor-air-quality/",
+    "permanent": true
+  },
+  {
+    "source": "/hvac-related-products-cleanroom",
+    "destination": "/blog/hvac-related-products-cleanroom/",
+    "permanent": true
+  },
+  {
+    "source": "/hvac-related-products-cleanroom/",
+    "destination": "/blog/hvac-related-products-cleanroom/",
+    "permanent": true
+  },
+  {
+    "source": "/ivf-hospital-turnkey-solutions-by-peter-air-complete-setup-for-your-ivf-facility",
+    "destination": "/blog/ivf-hospital-turnkey-solutions-by-peter-air-complete-setup-for-your-ivf-facility/",
+    "permanent": true
+  },
+  {
+    "source": "/ivf-hospital-turnkey-solutions-by-peter-air-complete-setup-for-your-ivf-facility/",
+    "destination": "/blog/ivf-hospital-turnkey-solutions-by-peter-air-complete-setup-for-your-ivf-facility/",
+    "permanent": true
+  },
+  {
+    "source": "/ivf-hospital-turnkey-solutions-comprehensive-care-by-peter-air-systems",
+    "destination": "/blog/ivf-hospital-turnkey-solutions-comprehensive-care-by-peter-air-systems/",
+    "permanent": true
+  },
+  {
+    "source": "/ivf-hospital-turnkey-solutions-comprehensive-care-by-peter-air-systems/",
+    "destination": "/blog/ivf-hospital-turnkey-solutions-comprehensive-care-by-peter-air-systems/",
+    "permanent": true
+  },
+  {
+    "source": "/laminar-flow-bench-vs-laminar-flow-hood-whats-the-difference",
+    "destination": "/blog/laminar-flow-bench-vs-laminar-flow-hood-whats-the-difference/",
+    "permanent": true
+  },
+  {
+    "source": "/laminar-flow-bench-vs-laminar-flow-hood-whats-the-difference/",
+    "destination": "/blog/laminar-flow-bench-vs-laminar-flow-hood-whats-the-difference/",
+    "permanent": true
+  },
+  {
+    "source": "/mini-pleat-hepa-filter-advanced-air-purification-for-cleaner-environments",
+    "destination": "/blog/mini-pleat-hepa-filter-advanced-air-purification-for-cleaner-environments/",
+    "permanent": true
+  },
+  {
+    "source": "/mini-pleat-hepa-filter-advanced-air-purification-for-cleaner-environments/",
+    "destination": "/blog/mini-pleat-hepa-filter-advanced-air-purification-for-cleaner-environments/",
+    "permanent": true
+  },
+  {
+    "source": "/mini-pleat-hepa-filters",
+    "destination": "/blog/mini-pleat-hepa-filters/",
+    "permanent": true
+  },
+  {
+    "source": "/mini-pleat-hepa-filters/",
+    "destination": "/blog/mini-pleat-hepa-filters/",
+    "permanent": true
+  },
+  {
+    "source": "/mixing-blend-vessel",
+    "destination": "/blog/mixing-blend-vessel/",
+    "permanent": true
+  },
+  {
+    "source": "/mixing-blend-vessel/",
+    "destination": "/blog/mixing-blend-vessel/",
+    "permanent": true
+  },
+  {
+    "source": "/modular-clean-room-doors-enhancing-cleanroom-efficiency-and-hygiene",
+    "destination": "/blog/modular-clean-room-doors-enhancing-cleanroom-efficiency-and-hygiene/",
+    "permanent": true
+  },
+  {
+    "source": "/modular-clean-room-doors-enhancing-cleanroom-efficiency-and-hygiene/",
+    "destination": "/blog/modular-clean-room-doors-enhancing-cleanroom-efficiency-and-hygiene/",
+    "permanent": true
+  },
+  {
+    "source": "/modular-clean-room-doors-essential-features-every-pharmaceutical-facility-should-consider",
+    "destination": "/blog/modular-clean-room-doors-essential-features-every-pharmaceutical-facility-should-consider/",
+    "permanent": true
+  },
+  {
+    "source": "/modular-clean-room-doors-essential-features-every-pharmaceutical-facility-should-consider/",
+    "destination": "/blog/modular-clean-room-doors-essential-features-every-pharmaceutical-facility-should-consider/",
+    "permanent": true
+  },
+  {
+    "source": "/modular-clean-room-the-future-of-controlled-environments",
+    "destination": "/blog/modular-clean-room-the-future-of-controlled-environments/",
+    "permanent": true
+  },
+  {
+    "source": "/modular-clean-room-the-future-of-controlled-environments/",
+    "destination": "/blog/modular-clean-room-the-future-of-controlled-environments/",
+    "permanent": true
+  },
+  {
+    "source": "/modular-clean-room-vs-conventional-clean-room-which-one-is-better",
+    "destination": "/blog/modular-clean-room-vs-conventional-clean-room-which-one-is-better/",
+    "permanent": true
+  },
+  {
+    "source": "/modular-clean-room-vs-conventional-clean-room-which-one-is-better/",
+    "destination": "/blog/modular-clean-room-vs-conventional-clean-room-which-one-is-better/",
+    "permanent": true
+  },
+  {
+    "source": "/modular-cleanroom-door-manufacturer",
+    "destination": "/blog/modular-cleanroom-door-manufacturer/",
+    "permanent": true
+  },
+  {
+    "source": "/modular-cleanroom-door-manufacturer/",
+    "destination": "/blog/modular-cleanroom-door-manufacturer/",
+    "permanent": true
+  },
+  {
+    "source": "/modular-cleanroom-doors-pressure",
+    "destination": "/blog/modular-cleanroom-doors-pressure/",
+    "permanent": true
+  },
+  {
+    "source": "/modular-cleanroom-doors-pressure/",
+    "destination": "/blog/modular-cleanroom-doors-pressure/",
+    "permanent": true
+  },
+  {
+    "source": "/modular-cleanroom-epoxy-flooring",
+    "destination": "/blog/modular-cleanroom-epoxy-flooring/",
+    "permanent": true
+  },
+  {
+    "source": "/modular-cleanroom-epoxy-flooring/",
+    "destination": "/blog/modular-cleanroom-epoxy-flooring/",
+    "permanent": true
+  },
+  {
+    "source": "/modular-cleanroom-flexible-efficient-cleanroom-solutions",
+    "destination": "/blog/modular-cleanroom-flexible-efficient-cleanroom-solutions/",
+    "permanent": true
+  },
+  {
+    "source": "/modular-cleanroom-flexible-efficient-cleanroom-solutions/",
+    "destination": "/blog/modular-cleanroom-flexible-efficient-cleanroom-solutions/",
+    "permanent": true
+  },
+  {
+    "source": "/modular-cleanrooms-efficient-solutions",
+    "destination": "/blog/modular-cleanrooms-efficient-solutions/",
+    "permanent": true
+  },
+  {
+    "source": "/modular-cleanrooms-efficient-solutions/",
+    "destination": "/blog/modular-cleanrooms-efficient-solutions/",
+    "permanent": true
+  },
+  {
+    "source": "/modular-doors-flexible-customizable",
+    "destination": "/blog/modular-doors-flexible-customizable/",
+    "permanent": true
+  },
+  {
+    "source": "/modular-doors-flexible-customizable/",
+    "destination": "/blog/modular-doors-flexible-customizable/",
+    "permanent": true
+  },
+  {
+    "source": "/modular-operating-theaters-elevating-sterility-in-healthcare-environments",
+    "destination": "/blog/modular-operating-theaters-elevating-sterility-in-healthcare-environments/",
+    "permanent": true
+  },
+  {
+    "source": "/modular-operating-theaters-elevating-sterility-in-healthcare-environments/",
+    "destination": "/blog/modular-operating-theaters-elevating-sterility-in-healthcare-environments/",
+    "permanent": true
+  },
+  {
+    "source": "/modular-operating-theaters-peter-air-system",
+    "destination": "/blog/modular-operating-theaters-peter-air-system/",
+    "permanent": true
+  },
+  {
+    "source": "/modular-operating-theaters-peter-air-system/",
+    "destination": "/blog/modular-operating-theaters-peter-air-system/",
+    "permanent": true
+  },
+  {
+    "source": "/modular-ot-design-guide-everything-you-need-to-know-before-installation",
+    "destination": "/blog/modular-ot-design-guide-everything-you-need-to-know-before-installation/",
+    "permanent": true
+  },
+  {
+    "source": "/modular-ot-design-guide-everything-you-need-to-know-before-installation/",
+    "destination": "/blog/modular-ot-design-guide-everything-you-need-to-know-before-installation/",
+    "permanent": true
+  },
+  {
+    "source": "/modular-ot-guide",
+    "destination": "/blog/modular-ot-guide/",
+    "permanent": true
+  },
+  {
+    "source": "/modular-ot-guide/",
+    "destination": "/blog/modular-ot-guide/",
+    "permanent": true
+  },
+  {
+    "source": "/optimizing-indoor-air-quality-a-deep-dive-into-air-handling-units",
+    "destination": "/blog/optimizing-indoor-air-quality-a-deep-dive-into-air-handling-units/",
+    "permanent": true
+  },
+  {
+    "source": "/optimizing-indoor-air-quality-a-deep-dive-into-air-handling-units/",
+    "destination": "/blog/optimizing-indoor-air-quality-a-deep-dive-into-air-handling-units/",
+    "permanent": true
+  },
+  {
+    "source": "/peterairs-air-diffusers",
+    "destination": "/blog/peterairs-air-diffusers/",
+    "permanent": true
+  },
+  {
+    "source": "/peterairs-air-diffusers/",
+    "destination": "/blog/peterairs-air-diffusers/",
+    "permanent": true
+  },
+  {
+    "source": "/peterairs-air-showers",
+    "destination": "/blog/peterairs-air-showers/",
+    "permanent": true
+  },
+  {
+    "source": "/peterairs-air-showers/",
+    "destination": "/blog/peterairs-air-showers/",
+    "permanent": true
+  },
+  {
+    "source": "/pharma-mixing-vessel-guide",
+    "destination": "/blog/pharma-mixing-vessel-guide/",
+    "permanent": true
+  },
+  {
+    "source": "/pharma-mixing-vessel-guide/",
+    "destination": "/blog/pharma-mixing-vessel-guide/",
+    "permanent": true
+  },
+  {
+    "source": "/pharmaceutical-door-cleanroom",
+    "destination": "/blog/pharmaceutical-door-cleanroom/",
+    "permanent": true
+  },
+  {
+    "source": "/pharmaceutical-door-cleanroom/",
+    "destination": "/blog/pharmaceutical-door-cleanroom/",
+    "permanent": true
+  },
+  {
+    "source": "/pharmaceutical-doors-ensuring-cleanroom-safety-and-efficiency",
+    "destination": "/blog/pharmaceutical-doors-ensuring-cleanroom-safety-and-efficiency/",
+    "permanent": true
+  },
+  {
+    "source": "/pharmaceutical-doors-ensuring-cleanroom-safety-and-efficiency/",
+    "destination": "/blog/pharmaceutical-doors-ensuring-cleanroom-safety-and-efficiency/",
+    "permanent": true
+  },
+  {
+    "source": "/pharmaceutical-modular-cleanroom-doors",
+    "destination": "/blog/pharmaceutical-modular-cleanroom-doors/",
+    "permanent": true
+  },
+  {
+    "source": "/pharmaceutical-modular-cleanroom-doors/",
+    "destination": "/blog/pharmaceutical-modular-cleanroom-doors/",
+    "permanent": true
+  },
+  {
+    "source": "/pharmaceuticals-cleanroom-modular-doors",
+    "destination": "/blog/pharmaceuticals-cleanroom-modular-doors/",
+    "permanent": true
+  },
+  {
+    "source": "/pharmaceuticals-cleanroom-modular-doors/",
+    "destination": "/blog/pharmaceuticals-cleanroom-modular-doors/",
+    "permanent": true
+  },
+  {
+    "source": "/puf-insulated-panel-cleanroom",
+    "destination": "/blog/puf-insulated-panel-cleanroom/",
+    "permanent": true
+  },
+  {
+    "source": "/puf-insulated-panel-cleanroom/",
+    "destination": "/blog/puf-insulated-panel-cleanroom/",
+    "permanent": true
+  },
+  {
+    "source": "/puf-insulated-panels-the-backbone-of-modern-modular-clean-rooms",
+    "destination": "/blog/puf-insulated-panels-the-backbone-of-modern-modular-clean-rooms/",
+    "permanent": true
+  },
+  {
+    "source": "/puf-insulated-panels-the-backbone-of-modern-modular-clean-rooms/",
+    "destination": "/blog/puf-insulated-panels-the-backbone-of-modern-modular-clean-rooms/",
+    "permanent": true
+  },
+  {
+    "source": "/reverse-laminar-flow-systems-how-they-protect-operators-and-products-in-powder-handling-areas",
+    "destination": "/blog/reverse-laminar-flow-systems-how-they-protect-operators-and-products-in-powder-handling-areas/",
+    "permanent": true
+  },
+  {
+    "source": "/reverse-laminar-flow-systems-how-they-protect-operators-and-products-in-powder-handling-areas/",
+    "destination": "/blog/reverse-laminar-flow-systems-how-they-protect-operators-and-products-in-powder-handling-areas/",
+    "permanent": true
+  },
+  {
+    "source": "/reverse-laminar-flow-unit-a-key-solution-for-clean-safe-work-environments",
+    "destination": "/blog/reverse-laminar-flow-unit-a-key-solution-for-clean-safe-work-environments/",
+    "permanent": true
+  },
+  {
+    "source": "/reverse-laminar-flow-unit-a-key-solution-for-clean-safe-work-environments/",
+    "destination": "/blog/reverse-laminar-flow-unit-a-key-solution-for-clean-safe-work-environments/",
+    "permanent": true
+  },
+  {
+    "source": "/static-pass-box-vs-dynamic-pass-box-which-one-is-right-for-your-cleanroom",
+    "destination": "/blog/static-pass-box-vs-dynamic-pass-box-which-one-is-right-for-your-cleanroom/",
+    "permanent": true
+  },
+  {
+    "source": "/static-pass-box-vs-dynamic-pass-box-which-one-is-right-for-your-cleanroom/",
+    "destination": "/blog/static-pass-box-vs-dynamic-pass-box-which-one-is-right-for-your-cleanroom/",
+    "permanent": true
+  },
+  {
+    "source": "/static-pass-boxes-by-peterair",
+    "destination": "/blog/static-pass-boxes-by-peterair/",
+    "permanent": true
+  },
+  {
+    "source": "/static-pass-boxes-by-peterair/",
+    "destination": "/blog/static-pass-boxes-by-peterair/",
+    "permanent": true
+  },
+  {
+    "source": "/static-pass-boxes-your-solution-for-contamination-free-cleanroom-transfers",
+    "destination": "/blog/static-pass-boxes-your-solution-for-contamination-free-cleanroom-transfers/",
+    "permanent": true
+  },
+  {
+    "source": "/static-pass-boxes-your-solution-for-contamination-free-cleanroom-transfers/",
+    "destination": "/blog/static-pass-boxes-your-solution-for-contamination-free-cleanroom-transfers/",
+    "permanent": true
+  },
+  {
+    "source": "/the-importance-of-laminar-work-stations-for-clean-workspaces",
+    "destination": "/blog/the-importance-of-laminar-work-stations-for-clean-workspaces/",
+    "permanent": true
+  },
+  {
+    "source": "/the-importance-of-laminar-work-stations-for-clean-workspaces/",
+    "destination": "/blog/the-importance-of-laminar-work-stations-for-clean-workspaces/",
+    "permanent": true
+  },
+  {
+    "source": "/the-role-of-dehumidifiers-in-maintaining-cleanroom-environmental-control",
+    "destination": "/blog/the-role-of-dehumidifiers-in-maintaining-cleanroom-environmental-control/",
+    "permanent": true
+  },
+  {
+    "source": "/the-role-of-dehumidifiers-in-maintaining-cleanroom-environmental-control/",
+    "destination": "/blog/the-role-of-dehumidifiers-in-maintaining-cleanroom-environmental-control/",
+    "permanent": true
+  },
+  {
+    "source": "/top-7-industries-that-require-modular-cleanroom-solutions",
+    "destination": "/blog/top-7-industries-that-require-modular-cleanroom-solutions/",
+    "permanent": true
+  },
+  {
+    "source": "/top-7-industries-that-require-modular-cleanroom-solutions/",
+    "destination": "/blog/top-7-industries-that-require-modular-cleanroom-solutions/",
+    "permanent": true
+  },
+  {
+    "source": "/top-hvac-products-for-clean-efficient-air-manufacturer-in-india-peter-air",
+    "destination": "/blog/top-hvac-products-for-clean-efficient-air-manufacturer-in-india-peter-air/",
+    "permanent": true
+  },
+  {
+    "source": "/top-hvac-products-for-clean-efficient-air-manufacturer-in-india-peter-air/",
+    "destination": "/blog/top-hvac-products-for-clean-efficient-air-manufacturer-in-india-peter-air/",
+    "permanent": true
+  },
+  {
+    "source": "/top-hvac-products-required-for-high-performance-cleanroom-environments",
+    "destination": "/blog/top-hvac-products-required-for-high-performance-cleanroom-environments/",
+    "permanent": true
+  },
+  {
+    "source": "/top-hvac-products-required-for-high-performance-cleanroom-environments/",
+    "destination": "/blog/top-hvac-products-required-for-high-performance-cleanroom-environments/",
+    "permanent": true
+  },
+  {
+    "source": "/transform-your-industrial-operations-with-units-industrial-dehumidifiers",
+    "destination": "/blog/transform-your-industrial-operations-with-units-industrial-dehumidifiers/",
+    "permanent": true
+  },
+  {
+    "source": "/transform-your-industrial-operations-with-units-industrial-dehumidifiers/",
+    "destination": "/blog/transform-your-industrial-operations-with-units-industrial-dehumidifiers/",
+    "permanent": true
+  },
+  {
+    "source": "/types-of-chemical-reactors-used-in-pharmaceutical-manufacturing",
+    "destination": "/blog/types-of-chemical-reactors-used-in-pharmaceutical-manufacturing/",
+    "permanent": true
+  },
+  {
+    "source": "/types-of-chemical-reactors-used-in-pharmaceutical-manufacturing/",
+    "destination": "/blog/types-of-chemical-reactors-used-in-pharmaceutical-manufacturing/",
+    "permanent": true
+  },
+  {
+    "source": "/unlocking-comfort-and-efficiency-the-marvels-of-air-handling-units-by-peterair",
+    "destination": "/blog/unlocking-comfort-and-efficiency-the-marvels-of-air-handling-units-by-peterair/",
+    "permanent": true
+  },
+  {
+    "source": "/unlocking-comfort-and-efficiency-the-marvels-of-air-handling-units-by-peterair/",
+    "destination": "/blog/unlocking-comfort-and-efficiency-the-marvels-of-air-handling-units-by-peterair/",
+    "permanent": true
+  },
+  {
+    "source": "/unveiling-the-innovation-reverse-laminar-flow-unit",
+    "destination": "/blog/unveiling-the-innovation-reverse-laminar-flow-unit/",
+    "permanent": true
+  },
+  {
+    "source": "/unveiling-the-innovation-reverse-laminar-flow-unit/",
+    "destination": "/blog/unveiling-the-innovation-reverse-laminar-flow-unit/",
+    "permanent": true
+  },
+  {
+    "source": "/unveiling-the-power-of-hepa-terminal-boxe-transforming-air-quality-in-controlled-environments",
+    "destination": "/blog/unveiling-the-power-of-hepa-terminal-boxe-transforming-air-quality-in-controlled-environments/",
+    "permanent": true
+  },
+  {
+    "source": "/unveiling-the-power-of-hepa-terminal-boxe-transforming-air-quality-in-controlled-environments/",
+    "destination": "/blog/unveiling-the-power-of-hepa-terminal-boxe-transforming-air-quality-in-controlled-environments/",
+    "permanent": true
+  },
+  {
+    "source": "/what-are-air-grilles-in-hvac-systems",
+    "destination": "/blog/what-are-air-grilles-in-hvac-systems/",
+    "permanent": true
+  },
+  {
+    "source": "/what-are-air-grilles-in-hvac-systems/",
+    "destination": "/blog/what-are-air-grilles-in-hvac-systems/",
+    "permanent": true
+  },
+  {
+    "source": "/what-are-air-grilles-in-hvac-systems-2",
+    "destination": "/blog/what-are-air-grilles-in-hvac-systems-2/",
+    "permanent": true
+  },
+  {
+    "source": "/what-are-air-grilles-in-hvac-systems-2/",
+    "destination": "/blog/what-are-air-grilles-in-hvac-systems-2/",
+    "permanent": true
+  },
+  {
+    "source": "/what-are-laminar-airflow-systems-and-why-are-they-essential-for-cleanrooms",
+    "destination": "/blog/what-are-laminar-airflow-systems-and-why-are-they-essential-for-cleanrooms/",
+    "permanent": true
+  },
+  {
+    "source": "/what-are-laminar-airflow-systems-and-why-are-they-essential-for-cleanrooms/",
+    "destination": "/blog/what-are-laminar-airflow-systems-and-why-are-they-essential-for-cleanrooms/",
+    "permanent": true
+  },
+  {
+    "source": "/what-are-the-benefits-of-using-air-balancing-dampers-in-hvac-setups",
+    "destination": "/blog/what-are-the-benefits-of-using-air-balancing-dampers-in-hvac-setups/",
+    "permanent": true
+  },
+  {
+    "source": "/what-are-the-benefits-of-using-air-balancing-dampers-in-hvac-setups/",
+    "destination": "/blog/what-are-the-benefits-of-using-air-balancing-dampers-in-hvac-setups/",
+    "permanent": true
+  },
+  {
+    "source": "/what-does-a-static-pass-box-help-in-safe-material-transfer",
+    "destination": "/blog/what-does-a-static-pass-box-help-in-safe-material-transfer/",
+    "permanent": true
+  },
+  {
+    "source": "/what-does-a-static-pass-box-help-in-safe-material-transfer/",
+    "destination": "/blog/what-does-a-static-pass-box-help-in-safe-material-transfer/",
+    "permanent": true
+  },
+  {
+    "source": "/what-factors-should-be-considered-when-selecting-an-hvac-system",
+    "destination": "/blog/what-factors-should-be-considered-when-selecting-an-hvac-system/",
+    "permanent": true
+  },
+  {
+    "source": "/what-factors-should-be-considered-when-selecting-an-hvac-system/",
+    "destination": "/blog/what-factors-should-be-considered-when-selecting-an-hvac-system/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-a-chemical-reactor",
+    "destination": "/blog/what-is-a-chemical-reactor/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-a-chemical-reactor/",
+    "destination": "/blog/what-is-a-chemical-reactor/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-a-dehumidifier-unit-in-hvac",
+    "destination": "/blog/what-is-a-dehumidifier-unit-in-hvac/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-a-dehumidifier-unit-in-hvac/",
+    "destination": "/blog/what-is-a-dehumidifier-unit-in-hvac/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-a-hepa-terminal-box-used-for",
+    "destination": "/blog/what-is-a-hepa-terminal-box-used-for/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-a-hepa-terminal-box-used-for/",
+    "destination": "/blog/what-is-a-hepa-terminal-box-used-for/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-a-hepa-terminal-box-used-for-2",
+    "destination": "/blog/what-is-a-hepa-terminal-box-used-for-2/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-a-hepa-terminal-box-used-for-2/",
+    "destination": "/blog/what-is-a-hepa-terminal-box-used-for-2/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-a-modular-clean-room-how-does-it-benefit-pharma-industries",
+    "destination": "/blog/what-is-a-modular-clean-room-how-does-it-benefit-pharma-industries/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-a-modular-clean-room-how-does-it-benefit-pharma-industries/",
+    "destination": "/blog/what-is-a-modular-clean-room-how-does-it-benefit-pharma-industries/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-a-turnkey-cleanroom-solution-complete-guide-for-industries",
+    "destination": "/blog/what-is-a-turnkey-cleanroom-solution-complete-guide-for-industries/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-a-turnkey-cleanroom-solution-complete-guide-for-industries/",
+    "destination": "/blog/what-is-a-turnkey-cleanroom-solution-complete-guide-for-industries/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-a-volume-control-damper-in-hvac",
+    "destination": "/blog/what-is-a-volume-control-damper-in-hvac/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-a-volume-control-damper-in-hvac/",
+    "destination": "/blog/what-is-a-volume-control-damper-in-hvac/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-a-volume-control-damper-in-hvac-2",
+    "destination": "/blog/what-is-a-volume-control-damper-in-hvac-2/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-a-volume-control-damper-in-hvac-2/",
+    "destination": "/blog/what-is-a-volume-control-damper-in-hvac-2/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-an-air-handling-unit-ahu-a-simple-explanation",
+    "destination": "/blog/what-is-an-air-handling-unit-ahu-a-simple-explanation/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-an-air-handling-unit-ahu-a-simple-explanation/",
+    "destination": "/blog/what-is-an-air-handling-unit-ahu-a-simple-explanation/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-an-air-shower-and-how-does-it-work",
+    "destination": "/blog/what-is-an-air-shower-and-how-does-it-work/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-an-air-shower-and-how-does-it-work/",
+    "destination": "/blog/what-is-an-air-shower-and-how-does-it-work/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-an-air-shower-and-how-does-it-work-2",
+    "destination": "/blog/what-is-an-air-shower-and-how-does-it-work-2/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-an-air-shower-and-how-does-it-work-2/",
+    "destination": "/blog/what-is-an-air-shower-and-how-does-it-work-2/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-an-air-shower-used-for",
+    "destination": "/blog/what-is-an-air-shower-used-for/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-an-air-shower-used-for/",
+    "destination": "/blog/what-is-an-air-shower-used-for/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-an-air-washer-unit-and-how-does-it-function",
+    "destination": "/blog/what-is-an-air-washer-unit-and-how-does-it-function/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-an-air-washer-unit-and-how-does-it-function/",
+    "destination": "/blog/what-is-an-air-washer-unit-and-how-does-it-function/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-an-air-washer-unit-used-for",
+    "destination": "/blog/what-is-an-air-washer-unit-used-for/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-an-air-washer-unit-used-for/",
+    "destination": "/blog/what-is-an-air-washer-unit-used-for/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-the-function-of-a-return-air-riser",
+    "destination": "/blog/what-is-the-function-of-a-return-air-riser/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-the-function-of-a-return-air-riser/",
+    "destination": "/blog/what-is-the-function-of-a-return-air-riser/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-the-function-of-a-return-air-riser-2",
+    "destination": "/blog/what-is-the-function-of-a-return-air-riser-2/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-the-function-of-a-return-air-riser-2/",
+    "destination": "/blog/what-is-the-function-of-a-return-air-riser-2/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-the-purpose-of-air-diffusers-in-hvac-systems",
+    "destination": "/blog/what-is-the-purpose-of-air-diffusers-in-hvac-systems/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-the-purpose-of-air-diffusers-in-hvac-systems/",
+    "destination": "/blog/what-is-the-purpose-of-air-diffusers-in-hvac-systems/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-the-purpose-of-air-diffusers-in-hvac-systems-2",
+    "destination": "/blog/what-is-the-purpose-of-air-diffusers-in-hvac-systems-2/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-the-purpose-of-air-diffusers-in-hvac-systems-2/",
+    "destination": "/blog/what-is-the-purpose-of-air-diffusers-in-hvac-systems-2/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-the-purpose-of-an-air-handling-unit-ahu-in-hvac-systems",
+    "destination": "/blog/what-is-the-purpose-of-an-air-handling-unit-ahu-in-hvac-systems/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-the-purpose-of-an-air-handling-unit-ahu-in-hvac-systems/",
+    "destination": "/blog/what-is-the-purpose-of-an-air-handling-unit-ahu-in-hvac-systems/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-the-purpose-of-an-air-handling-unit-in-hvac-systems",
+    "destination": "/blog/what-is-the-purpose-of-an-air-handling-unit-in-hvac-systems/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-the-purpose-of-an-air-handling-unit-in-hvac-systems/",
+    "destination": "/blog/what-is-the-purpose-of-an-air-handling-unit-in-hvac-systems/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-the-role-of-hepa-terminal-boxes-in-air-filtration",
+    "destination": "/blog/what-is-the-role-of-hepa-terminal-boxes-in-air-filtration/",
+    "permanent": true
+  },
+  {
+    "source": "/what-is-the-role-of-hepa-terminal-boxes-in-air-filtration/",
+    "destination": "/blog/what-is-the-role-of-hepa-terminal-boxes-in-air-filtration/",
+    "permanent": true
+  },
+  {
+    "source": "/why-are-air-purifiers-important-for-industrial-and-commercial-spaces",
+    "destination": "/blog/why-are-air-purifiers-important-for-industrial-and-commercial-spaces/",
+    "permanent": true
+  },
+  {
+    "source": "/why-are-air-purifiers-important-for-industrial-and-commercial-spaces/",
+    "destination": "/blog/why-are-air-purifiers-important-for-industrial-and-commercial-spaces/",
+    "permanent": true
+  },
+  {
+    "source": "/why-are-air-showers-important-in-cleanroom-environments",
+    "destination": "/blog/why-are-air-showers-important-in-cleanroom-environments/",
+    "permanent": true
+  },
+  {
+    "source": "/why-are-air-showers-important-in-cleanroom-environments/",
+    "destination": "/blog/why-are-air-showers-important-in-cleanroom-environments/",
+    "permanent": true
+  },
+  {
+    "source": "/why-cleanroom-air-filtration-is-critical-for-pharmaceutical-manufacturing",
+    "destination": "/blog/why-cleanroom-air-filtration-is-critical-for-pharmaceutical-manufacturing/",
+    "permanent": true
+  },
+  {
+    "source": "/why-cleanroom-air-filtration-is-critical-for-pharmaceutical-manufacturing/",
+    "destination": "/blog/why-cleanroom-air-filtration-is-critical-for-pharmaceutical-manufacturing/",
+    "permanent": true
+  },
+  {
+    "source": "/why-modular-ot-solutions-are-becoming-the-new-standard-for-modern-hospitals",
+    "destination": "/blog/why-modular-ot-solutions-are-becoming-the-new-standard-for-modern-hospitals/",
+    "permanent": true
+  },
+  {
+    "source": "/why-modular-ot-solutions-are-becoming-the-new-standard-for-modern-hospitals/",
+    "destination": "/blog/why-modular-ot-solutions-are-becoming-the-new-standard-for-modern-hospitals/",
+    "permanent": true
+  },
+  {
+    "source": "/:slug*/feed",
+    "destination": "/:slug*/",
+    "permanent": true
+  },
+  {
+    "source": "/:slug*/feed/",
+    "destination": "/:slug*/",
+    "permanent": true
+  }
+]
