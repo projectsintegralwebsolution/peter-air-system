@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { getAuthenticatedAdmin } from "@/lib/auth";
 import { initDatabase } from "@/lib/db";
+import { resolveBlogImageUrl } from "@/lib/imageUtils";
 
 // Helper to sanitize slug
 function slugify(text: string): string {
@@ -75,9 +76,14 @@ export async function GET(request: Request) {
 
     const totalPages = isAll ? 1 : Math.max(1, Math.ceil(total / limit));
 
+    const formattedPosts = posts.map((p) => ({
+      ...p,
+      featuredImage: resolveBlogImageUrl(p.featuredImage),
+    }));
+
     return NextResponse.json({
       success: true,
-      posts,
+      posts: formattedPosts,
       total,
       page: isAll ? 1 : page,
       limit: isAll ? total : limit,

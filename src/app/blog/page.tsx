@@ -7,6 +7,7 @@ import { PageBanner } from "@/components/PageBanner";
 import { blogPosts } from "@/data/blogs";
 import { decodeHtmlEntities } from "@/lib/textUtils";
 import { getPublishedBlogs } from "@/lib/db";
+import { resolveBlogImageUrl } from "@/lib/imageUtils";
 
 export const metadata: Metadata = {
   title: "Cleanroom & HVAC Engineering Blog | Peter Air Systems",
@@ -210,7 +211,7 @@ export default async function BlogListingPage({ searchParams }: BlogListingPageP
             <div className="bg-gradient-to-br from-brand-950 to-brand-900 rounded-3xl overflow-hidden shadow-xl border border-brand-800 grid grid-cols-1 lg:grid-cols-12 text-white group">
               <div className="relative h-64 sm:h-80 lg:h-auto lg:col-span-7 bg-slate-900 overflow-hidden">
                 <Image
-                  src={featuredPost.featuredImage}
+                  src={resolveBlogImageUrl(featuredPost.featuredImage)}
                   alt={featuredPost.title}
                   fill
                   priority
@@ -279,7 +280,7 @@ export default async function BlogListingPage({ searchParams }: BlogListingPageP
                   {/* Thumbnail */}
                   <div className="relative aspect-[16/10] w-full bg-slate-100 overflow-hidden">
                     <Image
-                      src={post.featuredImage}
+                      src={resolveBlogImageUrl(post.featuredImage)}
                       alt={post.title}
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px"

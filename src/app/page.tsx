@@ -33,6 +33,7 @@ import { products } from "@/data/products";
 import { industries } from "@/data/industries";
 import { blogPosts } from "@/data/blogs";
 import { getLatestPublishedBlogs, getHeroSlides, getAllProducts } from "@/lib/db";
+import { resolveBlogImageUrl } from "@/lib/imageUtils";
 
 export default async function HomePage() {
   // Hero slides from database with static fallback
@@ -507,7 +508,7 @@ export default async function HomePage() {
               >
                 <div className="relative h-48 w-full bg-slate-100">
                   <Image
-                    src={b.featuredImage}
+                    src={resolveBlogImageUrl(b.featuredImage)}
                     alt={b.title}
                     fill
                     className="object-cover"

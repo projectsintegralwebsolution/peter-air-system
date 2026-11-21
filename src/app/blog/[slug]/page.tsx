@@ -24,6 +24,7 @@ import { decodeHtmlEntities } from "@/lib/textUtils";
 import { products } from "@/data/products";
 import { BlogConsultationCard } from "@/components/BlogConsultationCard";
 import { getBlogPostBySlug, getAllBlogSlugs } from "@/lib/db";
+import { resolveBlogImageUrl } from "@/lib/imageUtils";
 
 // Pre-render blog posts
 export async function generateStaticParams() {
@@ -265,7 +266,7 @@ export default async function BlogPostDetail({ params, searchParams }: BlogPostP
             {/* Featured Hero Image: Proportionate 16:9 full-width display */}
             <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden shadow-md border border-slate-200 bg-slate-100">
               <Image
-                src={post.featuredImage}
+                src={resolveBlogImageUrl(post.featuredImage)}
                 alt={post.title}
                 fill
                 priority

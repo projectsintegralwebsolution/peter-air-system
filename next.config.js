@@ -13,12 +13,24 @@ const nextConfig = {
         destination: '/uploads/:file*',
       },
       {
+        source: '/blog/:path*/wp-content/uploads/:file*',
+        destination: '/wp-content/uploads/:file*',
+      },
+      {
         source: '/admin/uploads/:file*',
         destination: '/uploads/:file*',
       },
       {
+        source: '/admin/wp-content/uploads/:file*',
+        destination: '/wp-content/uploads/:file*',
+      },
+      {
         source: '/industries/:path*/uploads/:file*',
         destination: '/uploads/:file*',
+      },
+      {
+        source: '/wp-content/uploads/:file*',
+        destination: '/wp-content/uploads/:file*',
       },
     ];
   },

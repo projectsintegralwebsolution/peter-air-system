@@ -51,6 +51,7 @@ import {
   X,
 } from "lucide-react";
 import { RichTextEditor } from "@/components/RichTextEditor";
+import { resolveBlogImageUrl } from "@/lib/imageUtils";
 
 type TabType =
   | "dashboard"
@@ -2994,7 +2995,7 @@ export default function AdminCMSPage() {
                                 <div className="w-10 h-10 rounded-lg overflow-hidden bg-slate-100 border border-slate-200 shrink-0 flex items-center justify-center relative">
                                   {b.featuredImage ? (
                                     <img
-                                      src={b.featuredImage}
+                                      src={resolveBlogImageUrl(b.featuredImage)}
                                       alt={b.imageAlt || b.title}
                                       className="w-full h-full object-cover"
                                       onError={(e) => {
@@ -3488,7 +3489,7 @@ export default function AdminCMSPage() {
                     <div className="aspect-video w-full rounded-xl bg-slate-100 border border-slate-200 overflow-hidden relative flex items-center justify-center group shadow-inner">
                       {blogForm.featuredImage ? (
                         <img
-                          src={blogForm.featuredImage}
+                          src={resolveBlogImageUrl(blogForm.featuredImage)}
                           alt={blogForm.imageAlt || blogForm.title || "Featured preview"}
                           className="w-full h-full object-cover transition duration-300 group-hover:scale-105"
                           onError={(e) => {

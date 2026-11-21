@@ -6,6 +6,7 @@ import { categories as baseCategories } from "@/data/categories";
 import { industries as baseIndustries } from "@/data/industries";
 import { services as baseServices } from "@/data/services";
 import { siteConfig } from "@/data/siteConfig";
+import { resolveBlogImageUrl, resolveContentImages } from "@/lib/imageUtils";
 import fs from "fs";
 import path from "path";
 
@@ -932,7 +933,7 @@ export async function getPublishedBlogs(options: GetBlogsOptions = {}) {
     title: p.title,
     slug: p.slug,
     excerpt: p.excerpt,
-    featuredImage: p.featuredImage,
+    featuredImage: resolveBlogImageUrl(p.featuredImage),
     imageAlt: p.imageAlt || p.title,
     categories: [p.category],
     date: p.publishedAt ? p.publishedAt.toISOString() : p.createdAt.toISOString(),
@@ -974,8 +975,8 @@ export async function getBlogPostBySlug(slug: string, allowDraft = false) {
       title: post.title,
       slug: post.slug,
       excerpt: post.excerpt,
-      content: post.content,
-      featuredImage: post.featuredImage,
+      content: resolveContentImages(post.content),
+      featuredImage: resolveBlogImageUrl(post.featuredImage),
       imageAlt: post.imageAlt || post.title,
       categories: [post.category],
       date: post.publishedAt ? post.publishedAt.toISOString() : post.createdAt.toISOString(),
@@ -983,7 +984,7 @@ export async function getBlogPostBySlug(slug: string, allowDraft = false) {
       seoTitle: post.seoTitle || `${post.title} | Peter Air Systems`,
       metaDescription: post.metaDescription || post.excerpt,
       canonicalUrl: post.canonicalUrl || `https://peterairs.com/blog/${post.slug}/`,
-      ogImage: post.ogImage || post.featuredImage,
+      ogImage: resolveBlogImageUrl(post.ogImage || post.featuredImage),
       isDraft: post.isDraft,
     };
   }
@@ -1027,7 +1028,7 @@ export async function getLatestPublishedBlogs(limit = 3) {
     title: p.title,
     slug: p.slug,
     excerpt: p.excerpt,
-    featuredImage: p.featuredImage,
+    featuredImage: resolveBlogImageUrl(p.featuredImage),
     categories: [p.category],
     date: p.publishedAt ? p.publishedAt.toISOString() : p.createdAt.toISOString(),
   }));
