@@ -41,13 +41,14 @@ COPY --from=builder /app/public ./public
 COPY --from=builder /app/data ./data
 COPY --from=builder --chown=nextjs:nodejs /app/prisma ./prisma
 
-# Setup proper permissions for Next.js cache and application files
-RUN mkdir -p .next
+# Setup proper permissions for Next.js cache, database, and uploads
+RUN mkdir -p .next public/uploads
 RUN chown -R nextjs:nodejs /app
 
 # Copy standalone build output
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+RUN mkdir -p /app/public/uploads && chown -R nextjs:nodejs /app/public /app/prisma
 
 USER nextjs
 

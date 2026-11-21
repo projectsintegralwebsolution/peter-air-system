@@ -84,20 +84,77 @@ export async function POST(request: Request) {
     const bytes = await file.arrayBuffer();
     const buffer = Buffer.from(bytes);
 
-    // Sanitize filename and create unique timestamped name
-    const ext = path.extname(file.name).toLowerCase() || ".jpg";
+    // Map MIME types to canonical file extension
+    const mimeToExt: Record<string, string> = {
+      "image/jpeg": ".jpg",
+      "image/png": ".png",
+      "image/webp": ".webp",
+      "image/avif": ".avif",
+      "image/gif": ".gif",
+      "image/svg+xml": ".svg",
+    };
+
+    let ext = path.extname(file.name).toLowerCase();
+    if (!ext || ext === ".") {
+      ext = mimeToExt[file.type] || ".jpg";
+    }
+
     const baseName = path
       .basename(file.name, ext)
       .toLowerCase()
       .replace(/[^a-z0-9_-]/g, "-")
-      .slice(0, 50);
+      .slice(0, 50) || "upload";
 
     const uniqueFilename = `${baseName}-${Date.now()}${ext}`;
-    const filePath = path.join(UPLOADS_DIR, uniqueFilename);
 
-    fs.writeFileSync(filePath, buffer);
+    // 1. Determine persistent project root directory
+    let rootUploadsDir = path.join(process.cwd(), "public", "uploads");
+    if (process.cwd().includes(".next")) {
+      const projectRoot = process.cwd().split(".next")[0];
+      rootUploadsDir = path.join(projectRoot, "public", "uploads");
+    }
+    if (!fs.existsSync(rootUploadsDir)) {
+      fs.mkdirSync(rootUploadsDir, { recursive: true });
+    }
+    fs.writeFileSync(path.join(rootUploadsDir, uniqueFilename), buffer);
+
+    // 2. Mirror to current process public/uploads if different
+    const currentUploadsDir = path.join(process.cwd(), "public", "uploads");
+    if (currentUploadsDir !== rootUploadsDir) {
+      if (!fs.existsSync(currentUploadsDir)) {
+        fs.mkdirSync(currentUploadsDir, { recursive: true });
+      }
+      fs.writeFileSync(path.join(currentUploadsDir, uniqueFilename), buffer);
+    }
+
+    // 3. Mirror to standalone uploads directory if it exists
+    const standaloneUploadsDir = path.join(process.cwd(), ".next", "standalone", "public", "uploads");
+    if (standaloneUploadsDir !== rootUploadsDir && fs.existsSync(path.dirname(standaloneUploadsDir))) {
+      if (!fs.existsSync(standaloneUploadsDir)) {
+        fs.mkdirSync(standaloneUploadsDir, { recursive: true });
+      }
+      try {
+        fs.writeFileSync(path.join(standaloneUploadsDir, uniqueFilename), buffer);
+      } catch (e) {
+        console.warn("[Media Upload] Standalone mirror write skipped:", e);
+      }
+    }
+
+    // 4. Mirror to Linux container persistent mount /app/public/uploads if it exists
+    if (fs.existsSync("/app/public/uploads") && rootUploadsDir !== "/app/public/uploads") {
+      try {
+        fs.writeFileSync(path.join("/app/public/uploads", uniqueFilename), buffer);
+      } catch (e) {
+        console.warn("[Media Upload] /app/public/uploads mirror skipped:", e);
+      }
+    }
 
     const publicUrl = `/uploads/${uniqueFilename}`;
+
+    // Clean human-readable altText derived from filename if not provided or generic
+    const cleanAltText = altText && altText !== "About qc inspection"
+      ? altText.trim()
+      : baseName.replace(/[-_]/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
 
     // Record in database
     const mediaAsset = await prisma.mediaAsset.create({
@@ -106,7 +163,7 @@ export async function POST(request: Request) {
         url: publicUrl,
         mimeType: file.type,
         size: file.size,
-        altText: altText || baseName.replace(/-/g, " "),
+        altText: cleanAltText,
       },
     });
 
@@ -148,11 +205,21 @@ export async function DELETE(request: Request) {
       return NextResponse.json({ success: false, error: "Asset not found" }, { status: 404 });
     }
 
-    // Try deleting physical file
+    // Try deleting physical file from all persistent locations
     try {
-      const diskPath = path.join(process.cwd(), "public", asset.url);
-      if (fs.existsSync(diskPath)) {
-        fs.unlinkSync(diskPath);
+      const filename = path.basename(asset.url);
+      const possibleDirs = [
+        path.join(process.cwd(), "public", "uploads"),
+        path.join(process.cwd(), ".next", "standalone", "public", "uploads"),
+      ];
+      if (process.cwd().includes(".next")) {
+        possibleDirs.push(path.join(process.cwd().split(".next")[0], "public", "uploads"));
+      }
+      for (const d of possibleDirs) {
+        const p = path.join(d, filename);
+        if (fs.existsSync(p)) {
+          fs.unlinkSync(p);
+        }
       }
     } catch (e) {
       console.warn("[Media Disk Delete]", e);

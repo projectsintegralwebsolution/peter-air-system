@@ -6,6 +6,22 @@ const nextConfig = {
   images: {
     unoptimized: true, // High reliability across local and static hosting, avoids remote image domain blocks
   },
+  async rewrites() {
+    return [
+      {
+        source: '/blog/:path*/uploads/:file*',
+        destination: '/uploads/:file*',
+      },
+      {
+        source: '/admin/uploads/:file*',
+        destination: '/uploads/:file*',
+      },
+      {
+        source: '/industries/:path*/uploads/:file*',
+        destination: '/uploads/:file*',
+      },
+    ];
+  },
   async redirects() {
     let customRedirects = [];
     try {

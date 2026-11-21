@@ -128,21 +128,25 @@ export default function AdminCMSPage() {
   // Product Categories State
   // ----------------------------------------------------
   const [prodCategories, setProdCategories] = useState<any[]>([]);
-  const [newProdCatName, setNewProdCatName] = useState("");
-  const [newProdCatSlug, setNewProdCatSlug] = useState("");
-  const [newProdCatDesc, setNewProdCatDesc] = useState("");
+  const [editingCategory, setEditingCategory] = useState<any | null>(null);
+  const [categorySaving, setCategorySaving] = useState(false);
+  const [categorySearch, setCategorySearch] = useState("");
 
   // ----------------------------------------------------
   // Industries State
   // ----------------------------------------------------
   const [industriesList, setIndustriesList] = useState<any[]>([]);
   const [editingIndustry, setEditingIndustry] = useState<any | null>(null);
+  const [industrySaving, setIndustrySaving] = useState(false);
+  const [industrySearch, setIndustrySearch] = useState("");
 
   // ----------------------------------------------------
   // Services State
   // ----------------------------------------------------
   const [servicesList, setServicesList] = useState<any[]>([]);
   const [editingService, setEditingService] = useState<any | null>(null);
+  const [serviceSaving, setServiceSaving] = useState(false);
+  const [serviceSearch, setServiceSearch] = useState("");
 
   // ----------------------------------------------------
   // Blogs State
@@ -569,6 +573,147 @@ export default function AdminCMSPage() {
     }
   };
 
+  // Category Handlers
+  const handleSaveCategory = async (catData: any) => {
+    if (!catData.name || !catData.slug) {
+      showToast("Name and slug are required", "error");
+      return;
+    }
+    setCategorySaving(true);
+    try {
+      const isEdit = !!catData.id;
+      const url = isEdit ? `/api/admin/product-categories/${catData.id}/` : "/api/admin/product-categories/";
+      const method = isEdit ? "PUT" : "POST";
+      const res = await fetch(url, {
+        method,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(catData),
+      });
+      const data = await res.json();
+      if (data.success) {
+        showToast(isEdit ? "Category updated successfully!" : "Category created successfully!");
+        setEditingCategory(null);
+        loadProductCategories();
+      } else {
+        showToast(data.error || "Failed to save category", "error");
+      }
+    } catch (e: any) {
+      showToast(e.message || "Failed to save category", "error");
+    } finally {
+      setCategorySaving(false);
+    }
+  };
+
+  const handleDeleteCategory = async (id: string, name: string) => {
+    if (!window.confirm(`Are you sure you want to delete category "${name}"?`)) return;
+    try {
+      const res = await fetch(`/api/admin/product-categories/${id}/`, { method: "DELETE" });
+      const data = await res.json();
+      if (data.success) {
+        showToast("Category deleted successfully!");
+        loadProductCategories();
+      } else {
+        showToast(data.error || "Failed to delete category", "error");
+      }
+    } catch (e: any) {
+      showToast(e.message || "Failed to delete category", "error");
+    }
+  };
+
+  // Industry Handlers
+  const handleSaveIndustry = async (indData: any) => {
+    if (!indData.name || !indData.slug) {
+      showToast("Name and slug are required", "error");
+      return;
+    }
+    setIndustrySaving(true);
+    try {
+      const isEdit = !!indData.id;
+      const url = isEdit ? `/api/admin/industries/${indData.id}/` : "/api/admin/industries/";
+      const method = isEdit ? "PUT" : "POST";
+      const res = await fetch(url, {
+        method,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(indData),
+      });
+      const data = await res.json();
+      if (data.success) {
+        showToast(isEdit ? "Industry updated successfully!" : "Industry created successfully!");
+        setEditingIndustry(null);
+        loadIndustries();
+      } else {
+        showToast(data.error || "Failed to save industry", "error");
+      }
+    } catch (e: any) {
+      showToast(e.message || "Failed to save industry", "error");
+    } finally {
+      setIndustrySaving(false);
+    }
+  };
+
+  const handleDeleteIndustry = async (id: string, name: string) => {
+    if (!window.confirm(`Are you sure you want to delete industry "${name}"?`)) return;
+    try {
+      const res = await fetch(`/api/admin/industries/${id}/`, { method: "DELETE" });
+      const data = await res.json();
+      if (data.success) {
+        showToast("Industry deleted successfully!");
+        loadIndustries();
+      } else {
+        showToast(data.error || "Failed to delete industry", "error");
+      }
+    } catch (e: any) {
+      showToast(e.message || "Failed to delete industry", "error");
+    }
+  };
+
+  // Service Handlers
+  const handleSaveService = async (srvData: any) => {
+    if (!srvData.name || !srvData.slug) {
+      showToast("Name and slug are required", "error");
+      return;
+    }
+    setServiceSaving(true);
+    try {
+      const isEdit = !!srvData.id;
+      const url = isEdit ? `/api/admin/services/${srvData.id}/` : "/api/admin/services/";
+      const method = isEdit ? "PUT" : "POST";
+      const res = await fetch(url, {
+        method,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(srvData),
+      });
+      const data = await res.json();
+      if (data.success) {
+        showToast(isEdit ? "Service updated successfully!" : "Service created successfully!");
+        setEditingService(null);
+        loadServices();
+      } else {
+        showToast(data.error || "Failed to save service", "error");
+      }
+    } catch (e: any) {
+      showToast(e.message || "Failed to save service", "error");
+    } finally {
+      setServiceSaving(false);
+    }
+  };
+
+  const handleDeleteService = async (id: string, name: string) => {
+    if (!window.confirm(`Are you sure you want to delete service "${name}"?`)) return;
+    try {
+      const res = await fetch(`/api/admin/services/${id}/`, { method: "DELETE" });
+      const data = await res.json();
+      if (data.success) {
+        showToast("Service deleted successfully!");
+        loadServices();
+      } else {
+        showToast(data.error || "Failed to delete service", "error");
+      }
+    } catch (e: any) {
+      showToast(e.message || "Failed to delete service", "error");
+    }
+  };
+
   // Enquiry Status Update
   const handleUpdateEnquiryStatus = async (id: string, newStatus: string, notes?: string) => {
     try {
@@ -722,9 +867,10 @@ export default function AdminCMSPage() {
     const file = e.target.files?.[0];
     if (!file) return;
     setUploadingFile(true);
+    const derivedAlt = file.name.replace(/\.[^/.]+$/, "").replace(/[-_]/g, " ");
     const formData = new FormData();
     formData.append("file", file);
-    formData.append("altText", blogForm.imageAlt || blogForm.title || file.name.replace(/\.[^/.]+$/, ""));
+    formData.append("altText", derivedAlt);
 
     try {
       const res = await fetch("/api/admin/media/", {
@@ -738,7 +884,7 @@ export default function AdminCMSPage() {
           ...prev,
           featuredImage: data.asset.url,
           ogImage: prev.ogImage || data.asset.url,
-          imageAlt: prev.imageAlt || data.asset.altText || prev.title,
+          imageAlt: prev.imageAlt?.trim() ? prev.imageAlt : derivedAlt,
         }));
         loadMedia();
       } else {
@@ -1711,6 +1857,858 @@ export default function AdminCMSPage() {
             </div>
           )}
 
+          {/* 4A. PRODUCT CATEGORIES */}
+          {activeTab === "product-categories" && (
+            <div className="space-y-6">
+              <div className="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div className="flex items-center gap-3 w-full sm:w-auto">
+                  <div className="relative w-full sm:w-72">
+                    <Search className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
+                    <input
+                      type="text"
+                      placeholder="Search categories..."
+                      value={categorySearch}
+                      onChange={(e) => setCategorySearch(e.target.value)}
+                      className="w-full pl-9 pr-3 py-2 text-xs rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-[#063B5C]"
+                    />
+                  </div>
+                  <span className="text-xs text-slate-500 font-medium whitespace-nowrap">
+                    Total: {prodCategories.length} categories
+                  </span>
+                </div>
+
+                <button
+                  onClick={() =>
+                    setEditingCategory({
+                      name: "",
+                      slug: "",
+                      shortDescription: "",
+                      bannerImage: "/images/ahu_banner.png",
+                      featuredImage: "/images/AHU.jpeg",
+                      displayOrder: prodCategories.length + 1,
+                      isActive: true,
+                    })
+                  }
+                  className="w-full sm:w-auto px-4 py-2 bg-[#063B5C] hover:bg-[#084973] text-white text-xs font-semibold rounded-xl shadow-sm transition flex items-center justify-center gap-1.5"
+                >
+                  <Plus className="w-4 h-4" /> Add New Category
+                </button>
+              </div>
+
+              {/* Category Edit / Add Form */}
+              {editingCategory && (
+                <div className="bg-white p-6 rounded-2xl border-2 border-[#063B5C] shadow-lg space-y-4">
+                  <div className="flex items-center justify-between border-b border-slate-100 pb-3">
+                    <div className="flex items-center gap-2">
+                      <FolderTree className="w-4 h-4 text-[#063B5C]" />
+                      <h3 className="text-sm font-bold text-slate-900">
+                        {editingCategory.id ? "Edit Product Category" : "New Product Category"}
+                      </h3>
+                    </div>
+                    <button
+                      onClick={() => setEditingCategory(null)}
+                      className="text-xs text-slate-400 hover:text-slate-600 p-1"
+                    >
+                      <X className="w-4 h-4" />
+                    </button>
+                  </div>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+                    <div>
+                      <label className="block font-semibold text-slate-700 mb-1">
+                        Category Name <span className="text-red-500">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        value={editingCategory.name || ""}
+                        onChange={(e) => {
+                          const name = e.target.value;
+                          const updates: any = { name };
+                          if (!editingCategory.id && (!editingCategory.slug || editingCategory.slug === editingCategory.name?.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""))) {
+                            updates.slug = name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+                          }
+                          setEditingCategory({ ...editingCategory, ...updates });
+                        }}
+                        placeholder="e.g. Cleanroom Equipment"
+                        className="w-full px-3 py-2 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#063B5C]"
+                      />
+                    </div>
+
+                    <div>
+                      <label className="block font-semibold text-slate-700 mb-1">
+                        URL Slug <span className="text-red-500">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        value={editingCategory.slug || ""}
+                        onChange={(e) => setEditingCategory({ ...editingCategory, slug: e.target.value.toLowerCase().replace(/[^a-z0-9-]/g, "") })}
+                        placeholder="e.g. clean-room-equipment"
+                        className="w-full px-3 py-2 rounded-xl border border-slate-300 font-mono focus:outline-none focus:ring-2 focus:ring-[#063B5C]"
+                      />
+                    </div>
+
+                    <div className="sm:col-span-2">
+                      <label className="block font-semibold text-slate-700 mb-1">Short Description</label>
+                      <textarea
+                        rows={2}
+                        value={editingCategory.shortDescription || ""}
+                        onChange={(e) => setEditingCategory({ ...editingCategory, shortDescription: e.target.value })}
+                        placeholder="Brief summary of this product category..."
+                        className="w-full px-3 py-2 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#063B5C]"
+                      />
+                    </div>
+
+                    <div>
+                      <label className="block font-semibold text-slate-700 mb-1">Featured Image URL</label>
+                      <input
+                        type="text"
+                        value={editingCategory.featuredImage || ""}
+                        onChange={(e) => setEditingCategory({ ...editingCategory, featuredImage: e.target.value })}
+                        placeholder="/images/AHU.jpeg"
+                        className="w-full px-3 py-2 rounded-xl border border-slate-300 font-mono text-xs focus:outline-none focus:ring-2 focus:ring-[#063B5C]"
+                      />
+                    </div>
+
+                    <div>
+                      <label className="block font-semibold text-slate-700 mb-1">Banner Image URL</label>
+                      <input
+                        type="text"
+                        value={editingCategory.bannerImage || ""}
+                        onChange={(e) => setEditingCategory({ ...editingCategory, bannerImage: e.target.value })}
+                        placeholder="/images/ahu_banner.png"
+                        className="w-full px-3 py-2 rounded-xl border border-slate-300 font-mono text-xs focus:outline-none focus:ring-2 focus:ring-[#063B5C]"
+                      />
+                    </div>
+
+                    <div>
+                      <label className="block font-semibold text-slate-700 mb-1">Display Order</label>
+                      <input
+                        type="number"
+                        value={editingCategory.displayOrder ?? 0}
+                        onChange={(e) => setEditingCategory({ ...editingCategory, displayOrder: parseInt(e.target.value, 10) || 0 })}
+                        className="w-full px-3 py-2 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#063B5C]"
+                      />
+                    </div>
+
+                    <div className="flex items-center gap-2 pt-6">
+                      <label className="relative inline-flex items-center cursor-pointer">
+                        <input
+                          type="checkbox"
+                          checked={editingCategory.isActive ?? true}
+                          onChange={(e) => setEditingCategory({ ...editingCategory, isActive: e.target.checked })}
+                          className="sr-only peer"
+                        />
+                        <div className="w-9 h-5 bg-slate-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#063B5C]"></div>
+                        <span className="ml-2 text-xs font-semibold text-slate-700">Active Category</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div className="flex justify-end gap-2 pt-3 border-t border-slate-100">
+                    <button
+                      type="button"
+                      onClick={() => setEditingCategory(null)}
+                      className="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-xl transition"
+                    >
+                      Cancel
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => handleSaveCategory(editingCategory)}
+                      disabled={categorySaving}
+                      className="px-4 py-2 bg-[#063B5C] hover:bg-[#084973] text-white text-xs font-semibold rounded-xl shadow-sm transition flex items-center gap-1.5"
+                    >
+                      <Save className="w-3.5 h-3.5" />
+                      {categorySaving ? "Saving..." : "Save Category"}
+                    </button>
+                  </div>
+                </div>
+              )}
+
+              {/* Categories Table */}
+              <div className="bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden">
+                <div className="overflow-x-auto">
+                  <table className="w-full text-left text-xs">
+                    <thead className="bg-slate-50/80 border-b border-slate-100 text-slate-500 uppercase font-semibold">
+                      <tr>
+                        <th className="py-3 px-4 w-12 text-center">#</th>
+                        <th className="py-3 px-4">Category Name</th>
+                        <th className="py-3 px-4">Slug</th>
+                        <th className="py-3 px-4">Description</th>
+                        <th className="py-3 px-4 text-center">Status</th>
+                        <th className="py-3 px-4 text-right">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-slate-100 text-slate-700">
+                      {prodCategories
+                        .filter((c) => {
+                          if (!categorySearch) return true;
+                          const q = categorySearch.toLowerCase();
+                          return c.name?.toLowerCase().includes(q) || c.slug?.toLowerCase().includes(q) || c.shortDescription?.toLowerCase().includes(q);
+                        })
+                        .map((cat, idx) => (
+                          <tr key={cat.id || idx} className="hover:bg-slate-50/80 transition">
+                            <td className="py-3 px-4 text-center text-slate-400 font-mono">
+                              {cat.displayOrder ?? idx + 1}
+                            </td>
+                            <td className="py-3 px-4">
+                              <div className="flex items-center gap-3">
+                                <div className="w-10 h-10 rounded-lg bg-slate-100 border border-slate-200 overflow-hidden shrink-0 flex items-center justify-center">
+                                  {cat.featuredImage ? (
+                                    <img
+                                      src={cat.featuredImage}
+                                      alt={cat.name}
+                                      className="w-full h-full object-cover"
+                                      onError={(e) => {
+                                        (e.target as HTMLElement).style.display = "none";
+                                      }}
+                                    />
+                                  ) : (
+                                    <FolderTree className="w-4 h-4 text-slate-400" />
+                                  )}
+                                </div>
+                                <div>
+                                  <div className="font-bold text-slate-900">{cat.name}</div>
+                                  <div className="text-[11px] text-slate-400 font-mono mt-0.5">ID: {cat.id?.slice(0, 10)}...</div>
+                                </div>
+                              </div>
+                            </td>
+                            <td className="py-3 px-4">
+                              <span className="font-mono text-cyan-800 bg-cyan-50 px-2 py-0.5 rounded border border-cyan-200 text-[11px]">
+                                /{cat.slug}/
+                              </span>
+                            </td>
+                            <td className="py-3 px-4 max-w-xs text-slate-500 truncate">
+                              {cat.shortDescription || "—"}
+                            </td>
+                            <td className="py-3 px-4 text-center">
+                              {cat.isActive !== false ? (
+                                <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
+                                  Active
+                                </span>
+                              ) : (
+                                <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold bg-slate-100 text-slate-600 border border-slate-200">
+                                  Inactive
+                                </span>
+                              )}
+                            </td>
+                            <td className="py-3 px-4 text-right">
+                              <div className="flex items-center justify-end gap-1.5">
+                                <Link
+                                  href={`/${cat.slug}/`}
+                                  target="_blank"
+                                  title="View on site"
+                                  className="p-1.5 text-slate-400 hover:text-cyan-700 hover:bg-slate-100 rounded-lg transition"
+                                >
+                                  <ExternalLink className="w-3.5 h-3.5" />
+                                </Link>
+                                <button
+                                  onClick={() => setEditingCategory({ ...cat })}
+                                  title="Edit category"
+                                  className="p-1.5 text-slate-400 hover:text-slate-700 hover:bg-slate-100 rounded-lg transition"
+                                >
+                                  <Edit3 className="w-3.5 h-3.5" />
+                                </button>
+                                <button
+                                  onClick={() => handleDeleteCategory(cat.id, cat.name)}
+                                  title="Delete category"
+                                  className="p-1.5 text-slate-400 hover:text-red-600 hover:bg-red-50 rounded-lg transition"
+                                >
+                                  <Trash2 className="w-3.5 h-3.5" />
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                        ))}
+                      {prodCategories.length === 0 && (
+                        <tr>
+                          <td colSpan={6} className="py-8 text-center text-slate-400">
+                            No product categories found.
+                          </td>
+                        </tr>
+                      )}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* 4B. INDUSTRIES WE SERVE */}
+          {activeTab === "industries" && (
+            <div className="space-y-6">
+              <div className="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div className="flex items-center gap-3 w-full sm:w-auto">
+                  <div className="relative w-full sm:w-72">
+                    <Search className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
+                    <input
+                      type="text"
+                      placeholder="Search industries..."
+                      value={industrySearch}
+                      onChange={(e) => setIndustrySearch(e.target.value)}
+                      className="w-full pl-9 pr-3 py-2 text-xs rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-[#063B5C]"
+                    />
+                  </div>
+                  <span className="text-xs text-slate-500 font-medium whitespace-nowrap">
+                    Total: {industriesList.length} industries
+                  </span>
+                </div>
+
+                <button
+                  onClick={() =>
+                    setEditingIndustry({
+                      name: "",
+                      slug: "",
+                      tagline: "",
+                      image: "/images/Pharmaceuticals.jpg",
+                      description: "",
+                      displayOrder: industriesList.length + 1,
+                      isActive: true,
+                    })
+                  }
+                  className="w-full sm:w-auto px-4 py-2 bg-[#063B5C] hover:bg-[#084973] text-white text-xs font-semibold rounded-xl shadow-sm transition flex items-center justify-center gap-1.5"
+                >
+                  <Plus className="w-4 h-4" /> Add New Industry
+                </button>
+              </div>
+
+              {/* Industry Edit / Add Form */}
+              {editingIndustry && (
+                <div className="bg-white p-6 rounded-2xl border-2 border-[#063B5C] shadow-lg space-y-4">
+                  <div className="flex items-center justify-between border-b border-slate-100 pb-3">
+                    <div className="flex items-center gap-2">
+                      <Factory className="w-4 h-4 text-[#063B5C]" />
+                      <h3 className="text-sm font-bold text-slate-900">
+                        {editingIndustry.id ? "Edit Industry" : "New Industry"}
+                      </h3>
+                    </div>
+                    <button
+                      onClick={() => setEditingIndustry(null)}
+                      className="text-xs text-slate-400 hover:text-slate-600 p-1"
+                    >
+                      <X className="w-4 h-4" />
+                    </button>
+                  </div>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+                    <div>
+                      <label className="block font-semibold text-slate-700 mb-1">
+                        Industry Name <span className="text-red-500">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        value={editingIndustry.name || ""}
+                        onChange={(e) => {
+                          const name = e.target.value;
+                          const updates: any = { name };
+                          if (!editingIndustry.id && (!editingIndustry.slug || editingIndustry.slug === editingIndustry.name?.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""))) {
+                            updates.slug = name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+                          }
+                          setEditingIndustry({ ...editingIndustry, ...updates });
+                        }}
+                        placeholder="e.g. Pharmaceuticals & APIs"
+                        className="w-full px-3 py-2 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#063B5C]"
+                      />
+                    </div>
+
+                    <div>
+                      <label className="block font-semibold text-slate-700 mb-1">
+                        URL Slug <span className="text-red-500">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        value={editingIndustry.slug || ""}
+                        onChange={(e) => setEditingIndustry({ ...editingIndustry, slug: e.target.value.toLowerCase().replace(/[^a-z0-9-]/g, "") })}
+                        placeholder="e.g. pharmaceuticals"
+                        className="w-full px-3 py-2 rounded-xl border border-slate-300 font-mono focus:outline-none focus:ring-2 focus:ring-[#063B5C]"
+                      />
+                    </div>
+
+                    <div className="sm:col-span-2">
+                      <label className="block font-semibold text-slate-700 mb-1">Tagline</label>
+                      <input
+                        type="text"
+                        value={editingIndustry.tagline || ""}
+                        onChange={(e) => setEditingIndustry({ ...editingIndustry, tagline: e.target.value })}
+                        placeholder="e.g. GMP & USFDA Compliant HVAC & Cleanroom Solutions"
+                        className="w-full px-3 py-2 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#063B5C]"
+                      />
+                    </div>
+
+                    <div className="sm:col-span-2">
+                      <label className="block font-semibold text-slate-700 mb-1">Description</label>
+                      <textarea
+                        rows={3}
+                        value={editingIndustry.description || ""}
+                        onChange={(e) => setEditingIndustry({ ...editingIndustry, description: e.target.value })}
+                        placeholder="Detailed industry overview and compliance requirements..."
+                        className="w-full px-3 py-2 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#063B5C]"
+                      />
+                    </div>
+
+                    <div>
+                      <label className="block font-semibold text-slate-700 mb-1">Banner / Cover Image URL</label>
+                      <input
+                        type="text"
+                        value={editingIndustry.image || ""}
+                        onChange={(e) => setEditingIndustry({ ...editingIndustry, image: e.target.value })}
+                        placeholder="/images/Pharmaceuticals.jpg"
+                        className="w-full px-3 py-2 rounded-xl border border-slate-300 font-mono text-xs focus:outline-none focus:ring-2 focus:ring-[#063B5C]"
+                      />
+                    </div>
+
+                    <div>
+                      <label className="block font-semibold text-slate-700 mb-1">Display Order</label>
+                      <input
+                        type="number"
+                        value={editingIndustry.displayOrder ?? 0}
+                        onChange={(e) => setEditingIndustry({ ...editingIndustry, displayOrder: parseInt(e.target.value, 10) || 0 })}
+                        className="w-full px-3 py-2 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#063B5C]"
+                      />
+                    </div>
+
+                    <div className="flex items-center gap-2 pt-2">
+                      <label className="relative inline-flex items-center cursor-pointer">
+                        <input
+                          type="checkbox"
+                          checked={editingIndustry.isActive ?? true}
+                          onChange={(e) => setEditingIndustry({ ...editingIndustry, isActive: e.target.checked })}
+                          className="sr-only peer"
+                        />
+                        <div className="w-9 h-5 bg-slate-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#063B5C]"></div>
+                        <span className="ml-2 text-xs font-semibold text-slate-700">Active Industry</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div className="flex justify-end gap-2 pt-3 border-t border-slate-100">
+                    <button
+                      type="button"
+                      onClick={() => setEditingIndustry(null)}
+                      className="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-xl transition"
+                    >
+                      Cancel
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => handleSaveIndustry(editingIndustry)}
+                      disabled={industrySaving}
+                      className="px-4 py-2 bg-[#063B5C] hover:bg-[#084973] text-white text-xs font-semibold rounded-xl shadow-sm transition flex items-center gap-1.5"
+                    >
+                      <Save className="w-3.5 h-3.5" />
+                      {industrySaving ? "Saving..." : "Save Industry"}
+                    </button>
+                  </div>
+                </div>
+              )}
+
+              {/* Industries Table */}
+              <div className="bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden">
+                <div className="overflow-x-auto">
+                  <table className="w-full text-left text-xs">
+                    <thead className="bg-slate-50/80 border-b border-slate-100 text-slate-500 uppercase font-semibold">
+                      <tr>
+                        <th className="py-3 px-4 w-12 text-center">#</th>
+                        <th className="py-3 px-4">Industry Sector</th>
+                        <th className="py-3 px-4">Slug</th>
+                        <th className="py-3 px-4">Tagline</th>
+                        <th className="py-3 px-4 text-center">Status</th>
+                        <th className="py-3 px-4 text-right">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-slate-100 text-slate-700">
+                      {industriesList
+                        .filter((ind) => {
+                          if (!industrySearch) return true;
+                          const q = industrySearch.toLowerCase();
+                          return ind.name?.toLowerCase().includes(q) || ind.slug?.toLowerCase().includes(q) || ind.tagline?.toLowerCase().includes(q);
+                        })
+                        .map((ind, idx) => (
+                          <tr key={ind.id || idx} className="hover:bg-slate-50/80 transition">
+                            <td className="py-3 px-4 text-center text-slate-400 font-mono">
+                              {ind.displayOrder ?? idx + 1}
+                            </td>
+                            <td className="py-3 px-4">
+                              <div className="flex items-center gap-3">
+                                <div className="w-10 h-10 rounded-lg bg-slate-100 border border-slate-200 overflow-hidden shrink-0 flex items-center justify-center">
+                                  {ind.image ? (
+                                    <img
+                                      src={ind.image}
+                                      alt={ind.name}
+                                      className="w-full h-full object-cover"
+                                      onError={(e) => {
+                                        (e.target as HTMLElement).style.display = "none";
+                                      }}
+                                    />
+                                  ) : (
+                                    <Factory className="w-4 h-4 text-slate-400" />
+                                  )}
+                                </div>
+                                <div>
+                                  <div className="font-bold text-slate-900">{ind.name}</div>
+                                  <div className="text-[11px] text-slate-400 font-mono mt-0.5">ID: {ind.id?.slice(0, 10)}...</div>
+                                </div>
+                              </div>
+                            </td>
+                            <td className="py-3 px-4">
+                              <span className="font-mono text-cyan-800 bg-cyan-50 px-2 py-0.5 rounded border border-cyan-200 text-[11px]">
+                                /industries/{ind.slug}/
+                              </span>
+                            </td>
+                            <td className="py-3 px-4 max-w-xs text-slate-500 truncate">
+                              {ind.tagline || "—"}
+                            </td>
+                            <td className="py-3 px-4 text-center">
+                              {ind.isActive !== false ? (
+                                <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
+                                  Active
+                                </span>
+                              ) : (
+                                <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold bg-slate-100 text-slate-600 border border-slate-200">
+                                  Inactive
+                                </span>
+                              )}
+                            </td>
+                            <td className="py-3 px-4 text-right">
+                              <div className="flex items-center justify-end gap-1.5">
+                                <Link
+                                  href={`/industries/${ind.slug}/`}
+                                  target="_blank"
+                                  title="View on site"
+                                  className="p-1.5 text-slate-400 hover:text-cyan-700 hover:bg-slate-100 rounded-lg transition"
+                                >
+                                  <ExternalLink className="w-3.5 h-3.5" />
+                                </Link>
+                                <button
+                                  onClick={() => setEditingIndustry({ ...ind })}
+                                  title="Edit industry"
+                                  className="p-1.5 text-slate-400 hover:text-slate-700 hover:bg-slate-100 rounded-lg transition"
+                                >
+                                  <Edit3 className="w-3.5 h-3.5" />
+                                </button>
+                                <button
+                                  onClick={() => handleDeleteIndustry(ind.id, ind.name)}
+                                  title="Delete industry"
+                                  className="p-1.5 text-slate-400 hover:text-red-600 hover:bg-red-50 rounded-lg transition"
+                                >
+                                  <Trash2 className="w-3.5 h-3.5" />
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                        ))}
+                      {industriesList.length === 0 && (
+                        <tr>
+                          <td colSpan={6} className="py-8 text-center text-slate-400">
+                            No industries found.
+                          </td>
+                        </tr>
+                      )}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* 4C. SERVICES & SOLUTIONS */}
+          {activeTab === "services" && (
+            <div className="space-y-6">
+              <div className="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div className="flex items-center gap-3 w-full sm:w-auto">
+                  <div className="relative w-full sm:w-72">
+                    <Search className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
+                    <input
+                      type="text"
+                      placeholder="Search services..."
+                      value={serviceSearch}
+                      onChange={(e) => setServiceSearch(e.target.value)}
+                      className="w-full pl-9 pr-3 py-2 text-xs rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-[#063B5C]"
+                    />
+                  </div>
+                  <span className="text-xs text-slate-500 font-medium whitespace-nowrap">
+                    Total: {servicesList.length} services
+                  </span>
+                </div>
+
+                <button
+                  onClick={() =>
+                    setEditingService({
+                      name: "",
+                      slug: "",
+                      description: "",
+                      icon: "ShieldCheck",
+                      deliverables: "[]",
+                      displayOrder: servicesList.length + 1,
+                      isActive: true,
+                    })
+                  }
+                  className="w-full sm:w-auto px-4 py-2 bg-[#063B5C] hover:bg-[#084973] text-white text-xs font-semibold rounded-xl shadow-sm transition flex items-center justify-center gap-1.5"
+                >
+                  <Plus className="w-4 h-4" /> Add New Service
+                </button>
+              </div>
+
+              {/* Service Edit / Add Form */}
+              {editingService && (
+                <div className="bg-white p-6 rounded-2xl border-2 border-[#063B5C] shadow-lg space-y-4">
+                  <div className="flex items-center justify-between border-b border-slate-100 pb-3">
+                    <div className="flex items-center gap-2">
+                      <Briefcase className="w-4 h-4 text-[#063B5C]" />
+                      <h3 className="text-sm font-bold text-slate-900">
+                        {editingService.id ? "Edit Service & Solution" : "New Service & Solution"}
+                      </h3>
+                    </div>
+                    <button
+                      onClick={() => setEditingService(null)}
+                      className="text-xs text-slate-400 hover:text-slate-600 p-1"
+                    >
+                      <X className="w-4 h-4" />
+                    </button>
+                  </div>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+                    <div>
+                      <label className="block font-semibold text-slate-700 mb-1">
+                        Service Name <span className="text-red-500">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        value={editingService.name || ""}
+                        onChange={(e) => {
+                          const name = e.target.value;
+                          const updates: any = { name };
+                          if (!editingService.id && (!editingService.slug || editingService.slug === editingService.name?.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""))) {
+                            updates.slug = name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+                          }
+                          setEditingService({ ...editingService, ...updates });
+                        }}
+                        placeholder="e.g. Turnkey Cleanroom EPC Execution"
+                        className="w-full px-3 py-2 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#063B5C]"
+                      />
+                    </div>
+
+                    <div>
+                      <label className="block font-semibold text-slate-700 mb-1">
+                        URL Slug <span className="text-red-500">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        value={editingService.slug || ""}
+                        onChange={(e) => setEditingService({ ...editingService, slug: e.target.value.toLowerCase().replace(/[^a-z0-9-]/g, "") })}
+                        placeholder="e.g. cleanroom-turnkey-execution"
+                        className="w-full px-3 py-2 rounded-xl border border-slate-300 font-mono focus:outline-none focus:ring-2 focus:ring-[#063B5C]"
+                      />
+                    </div>
+
+                    <div>
+                      <label className="block font-semibold text-slate-700 mb-1">Lucide Icon Name</label>
+                      <input
+                        type="text"
+                        value={editingService.icon || ""}
+                        onChange={(e) => setEditingService({ ...editingService, icon: e.target.value })}
+                        placeholder="ShieldCheck, Settings, Layers, FileCheck..."
+                        className="w-full px-3 py-2 rounded-xl border border-slate-300 font-mono text-xs focus:outline-none focus:ring-2 focus:ring-[#063B5C]"
+                      />
+                    </div>
+
+                    <div>
+                      <label className="block font-semibold text-slate-700 mb-1">Display Order</label>
+                      <input
+                        type="number"
+                        value={editingService.displayOrder ?? 0}
+                        onChange={(e) => setEditingService({ ...editingService, displayOrder: parseInt(e.target.value, 10) || 0 })}
+                        className="w-full px-3 py-2 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#063B5C]"
+                      />
+                    </div>
+
+                    <div className="sm:col-span-2">
+                      <label className="block font-semibold text-slate-700 mb-1">Description</label>
+                      <textarea
+                        rows={2}
+                        value={editingService.description || ""}
+                        onChange={(e) => setEditingService({ ...editingService, description: e.target.value })}
+                        placeholder="Comprehensive description of this turnkey solution..."
+                        className="w-full px-3 py-2 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#063B5C]"
+                      />
+                    </div>
+
+                    <div className="sm:col-span-2">
+                      <label className="block font-semibold text-slate-700 mb-1">
+                        Deliverables (One per line)
+                      </label>
+                      <textarea
+                        rows={3}
+                        value={
+                          typeof editingService.deliverables === "string"
+                            ? (() => {
+                                try {
+                                  const arr = JSON.parse(editingService.deliverables);
+                                  return Array.isArray(arr) ? arr.join("\n") : editingService.deliverables;
+                                } catch {
+                                  return editingService.deliverables;
+                                }
+                              })()
+                            : Array.isArray(editingService.deliverables)
+                            ? editingService.deliverables.join("\n")
+                            : ""
+                        }
+                        onChange={(e) => {
+                          const lines = e.target.value.split("\n").filter((l: string) => l.trim() !== "");
+                          setEditingService({ ...editingService, deliverables: lines });
+                        }}
+                        placeholder="Cleanroom concept layout & heat load calculation&#10;Modular wall, ceiling, and coving installation"
+                        className="w-full px-3 py-2 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#063B5C]"
+                      />
+                    </div>
+
+                    <div className="flex items-center gap-2 pt-2">
+                      <label className="relative inline-flex items-center cursor-pointer">
+                        <input
+                          type="checkbox"
+                          checked={editingService.isActive ?? true}
+                          onChange={(e) => setEditingService({ ...editingService, isActive: e.target.checked })}
+                          className="sr-only peer"
+                        />
+                        <div className="w-9 h-5 bg-slate-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#063B5C]"></div>
+                        <span className="ml-2 text-xs font-semibold text-slate-700">Active Service</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div className="flex justify-end gap-2 pt-3 border-t border-slate-100">
+                    <button
+                      type="button"
+                      onClick={() => setEditingService(null)}
+                      className="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-xl transition"
+                    >
+                      Cancel
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => handleSaveService(editingService)}
+                      disabled={serviceSaving}
+                      className="px-4 py-2 bg-[#063B5C] hover:bg-[#084973] text-white text-xs font-semibold rounded-xl shadow-sm transition flex items-center gap-1.5"
+                    >
+                      <Save className="w-3.5 h-3.5" />
+                      {serviceSaving ? "Saving..." : "Save Service"}
+                    </button>
+                  </div>
+                </div>
+              )}
+
+              {/* Services Table */}
+              <div className="bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden">
+                <div className="overflow-x-auto">
+                  <table className="w-full text-left text-xs">
+                    <thead className="bg-slate-50/80 border-b border-slate-100 text-slate-500 uppercase font-semibold">
+                      <tr>
+                        <th className="py-3 px-4 w-12 text-center">#</th>
+                        <th className="py-3 px-4">Service & Solution</th>
+                        <th className="py-3 px-4">Slug</th>
+                        <th className="py-3 px-4">Deliverables</th>
+                        <th className="py-3 px-4 text-center">Status</th>
+                        <th className="py-3 px-4 text-right">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-slate-100 text-slate-700">
+                      {servicesList
+                        .filter((srv) => {
+                          if (!serviceSearch) return true;
+                          const q = serviceSearch.toLowerCase();
+                          return srv.name?.toLowerCase().includes(q) || srv.slug?.toLowerCase().includes(q) || srv.description?.toLowerCase().includes(q);
+                        })
+                        .map((srv, idx) => {
+                          let deliverableCount = 0;
+                          try {
+                            const d = typeof srv.deliverables === "string" ? JSON.parse(srv.deliverables) : srv.deliverables;
+                            if (Array.isArray(d)) deliverableCount = d.length;
+                          } catch {}
+
+                          return (
+                            <tr key={srv.id || idx} className="hover:bg-slate-50/80 transition">
+                              <td className="py-3 px-4 text-center text-slate-400 font-mono">
+                                {srv.displayOrder ?? idx + 1}
+                              </td>
+                              <td className="py-3 px-4">
+                                <div className="flex items-center gap-3">
+                                  <div className="w-10 h-10 rounded-lg bg-slate-100 border border-slate-200 overflow-hidden shrink-0 flex items-center justify-center font-bold text-[#063B5C]">
+                                    <Shield className="w-4 h-4 text-[#063B5C]" />
+                                  </div>
+                                  <div>
+                                    <div className="font-bold text-slate-900">{srv.name}</div>
+                                    <div className="text-[11px] text-slate-400 font-mono mt-0.5">Icon: {srv.icon || "ShieldCheck"}</div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td className="py-3 px-4">
+                                <span className="font-mono text-cyan-800 bg-cyan-50 px-2 py-0.5 rounded border border-cyan-200 text-[11px]">
+                                  /{srv.slug}/
+                                </span>
+                              </td>
+                              <td className="py-3 px-4 text-slate-500">
+                                {deliverableCount > 0 ? (
+                                  <span className="font-medium text-slate-700 bg-slate-100 px-2 py-0.5 rounded text-[11px]">
+                                    {deliverableCount} deliverables
+                                  </span>
+                                ) : (
+                                  "—"
+                                )}
+                              </td>
+                              <td className="py-3 px-4 text-center">
+                                {srv.isActive !== false ? (
+                                  <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
+                                    Active
+                                  </span>
+                                ) : (
+                                  <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold bg-slate-100 text-slate-600 border border-slate-200">
+                                    Inactive
+                                  </span>
+                                )}
+                              </td>
+                              <td className="py-3 px-4 text-right">
+                                <div className="flex items-center justify-end gap-1.5">
+                                  <Link
+                                    href={`/${srv.slug}/`}
+                                    target="_blank"
+                                    title="View on site"
+                                    className="p-1.5 text-slate-400 hover:text-cyan-700 hover:bg-slate-100 rounded-lg transition"
+                                  >
+                                    <ExternalLink className="w-3.5 h-3.5" />
+                                  </Link>
+                                  <button
+                                    onClick={() => setEditingService({ ...srv })}
+                                    title="Edit service"
+                                    className="p-1.5 text-slate-400 hover:text-slate-700 hover:bg-slate-100 rounded-lg transition"
+                                  >
+                                    <Edit3 className="w-3.5 h-3.5" />
+                                  </button>
+                                  <button
+                                    onClick={() => handleDeleteService(srv.id, srv.name)}
+                                    title="Delete service"
+                                    className="p-1.5 text-slate-400 hover:text-red-600 hover:bg-red-50 rounded-lg transition"
+                                  >
+                                    <Trash2 className="w-3.5 h-3.5" />
+                                  </button>
+                                </div>
+                              </td>
+                            </tr>
+                          );
+                        })}
+                      {servicesList.length === 0 && (
+                        <tr>
+                          <td colSpan={6} className="py-8 text-center text-slate-400">
+                            No services found.
+                          </td>
+                        </tr>
+                      )}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          )}
+
           {/* 5. CUSTOMER ENQUIRIES */}
           {activeTab === "enquiries" && (
             <div className="space-y-4">
@@ -2546,7 +3544,13 @@ export default function AdminCMSPage() {
                         type="text"
                         placeholder="/images/clean-healthcare.jpg or https://..."
                         value={blogForm.featuredImage || ""}
-                        onChange={(e) => setBlogForm({ ...blogForm, featuredImage: e.target.value })}
+                        onChange={(e) => {
+                          let val = e.target.value.trim();
+                          if (val && !val.startsWith("http://") && !val.startsWith("https://") && !val.startsWith("/")) {
+                            val = `/${val}`;
+                          }
+                          setBlogForm({ ...blogForm, featuredImage: val });
+                        }}
                         className="w-full px-3 py-1.5 text-xs font-mono rounded-lg border border-slate-300 focus:outline-none focus:border-[#063B5C]"
                       />
                     </div>
@@ -2744,8 +3748,21 @@ export default function AdminCMSPage() {
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                 {mediaList.map((m) => (
                   <div key={m.id} className="bg-white rounded-xl border border-slate-200/80 overflow-hidden shadow-sm">
-                    <div className="h-32 bg-slate-100 flex items-center justify-center overflow-hidden">
-                      <img src={m.url} alt={m.filename} className="h-full w-full object-cover" />
+                    <div className="h-32 bg-slate-100 flex items-center justify-center overflow-hidden relative">
+                      <img
+                        src={m.url}
+                        alt={m.altText || m.filename}
+                        className="h-full w-full object-cover"
+                        onError={(e) => {
+                          e.currentTarget.style.display = "none";
+                          const fallback = e.currentTarget.parentElement?.querySelector(".media-broken-fallback") as HTMLElement;
+                          if (fallback) fallback.classList.remove("hidden");
+                        }}
+                      />
+                      <div className="media-broken-fallback hidden w-full h-full flex flex-col items-center justify-center p-3 text-center bg-slate-100 text-slate-400">
+                        <ImageIcon className="w-8 h-8 mb-1 text-slate-300" />
+                        <span className="text-[10px] font-mono text-slate-400 truncate max-w-[120px]">{m.filename}</span>
+                      </div>
                     </div>
                     <div className="p-3 text-xs">
                       <div className="font-semibold text-slate-800 truncate">{m.filename}</div>
@@ -3118,7 +4135,15 @@ export default function AdminCMSPage() {
                             alt={m.altText || m.filename}
                             className="w-full h-full object-cover group-hover:scale-105 transition"
                             loading="lazy"
+                            onError={(e) => {
+                              e.currentTarget.style.display = "none";
+                              const fallback = e.currentTarget.parentElement?.querySelector(".picker-fallback-icon") as HTMLElement;
+                              if (fallback) fallback.classList.remove("hidden");
+                            }}
                           />
+                          <div className="picker-fallback-icon hidden w-full h-full flex items-center justify-center bg-slate-100 text-slate-300">
+                            <ImageIcon className="w-6 h-6" />
+                          </div>
                           {blogForm.featuredImage === m.url && (
                             <div className="absolute top-1 right-1 bg-[#063B5C] text-white p-0.5 rounded-full shadow-xs">
                               <Check className="w-3.5 h-3.5" />
