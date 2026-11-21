@@ -22,11 +22,15 @@ export async function GET(request: Request) {
     await initDatabase();
 
     const { searchParams } = new URL(request.url);
-    const query = searchParams.get("query") || "";
+    const query = (searchParams.get("query") || "").trim();
     const category = searchParams.get("category") || "";
     const status = searchParams.get("status") || "all"; // all, published, draft
-    const page = parseInt(searchParams.get("page") || "1", 10);
-    const limit = parseInt(searchParams.get("limit") || "10", 10);
+    const rawLimit = (searchParams.get("limit") || "10").trim();
+    const isAll = rawLimit.toLowerCase() === "all" || rawLimit === "-1";
+    const page = Math.max(1, parseInt(searchParams.get("page") || "1", 10) || 1);
+    const limit = isAll ? 10000 : Math.max(1, parseInt(rawLimit, 10) || 10);
+    const skip = isAll ? 0 : (page - 1) * limit;
+    const take = isAll ? undefined : limit;
 
     const whereClause: any = {};
 
@@ -49,23 +53,35 @@ export async function GET(request: Request) {
       ];
     }
 
+    const sort = (searchParams.get("sort") || "newest").toLowerCase();
+    let orderBy: any = { updatedAt: "desc" };
+    if (sort === "oldest") {
+      orderBy = { createdAt: "asc" };
+    } else if (sort === "views") {
+      orderBy = { views: "desc" };
+    } else if (sort === "newest") {
+      orderBy = { updatedAt: "desc" };
+    }
+
     const [total, posts] = await Promise.all([
       prisma.blog.count({ where: whereClause }),
       prisma.blog.findMany({
         where: whereClause,
-        orderBy: { updatedAt: "desc" },
-        skip: (page - 1) * limit,
-        take: limit,
+        orderBy,
+        skip,
+        take,
       }),
     ]);
+
+    const totalPages = isAll ? 1 : Math.max(1, Math.ceil(total / limit));
 
     return NextResponse.json({
       success: true,
       posts,
       total,
-      page,
-      limit,
-      totalPages: Math.ceil(total / limit) || 1,
+      page: isAll ? 1 : page,
+      limit: isAll ? total : limit,
+      totalPages,
     });
   } catch (error: any) {
     console.error("[Admin Blogs GET Error]", error);

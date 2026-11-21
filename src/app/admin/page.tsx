@@ -48,7 +48,9 @@ import {
   Briefcase,
   Factory,
   HelpCircle,
+  X,
 } from "lucide-react";
+import { RichTextEditor } from "@/components/RichTextEditor";
 
 type TabType =
   | "dashboard"
@@ -149,11 +151,18 @@ export default function AdminCMSPage() {
   const [blogsLoading, setBlogsLoading] = useState(false);
   const [blogFilterStatus, setBlogFilterStatus] = useState<"all" | "published" | "draft">("all");
   const [blogFilterCategory, setBlogFilterCategory] = useState("All");
+  const [blogSort, setBlogSort] = useState<"newest" | "oldest" | "views">("newest");
   const [blogSearchQuery, setBlogSearchQuery] = useState("");
   const [blogPage, setBlogPage] = useState(1);
+  const [blogTotal, setBlogTotal] = useState(0);
   const [blogTotalPages, setBlogTotalPages] = useState(1);
+  const [blogLimit, setBlogLimit] = useState<string>("10");
+  const [duplicatingId, setDuplicatingId] = useState<string | null>(null);
   const [editingPostId, setEditingPostId] = useState<string | null>(null);
   const [editorOriginalSlug, setEditorOriginalSlug] = useState("");
+  const [showMediaPickerModal, setShowMediaPickerModal] = useState(false);
+  const [mediaPickerSearch, setMediaPickerSearch] = useState("");
+  const blogFeaturedImageUploadRef = useRef<HTMLInputElement>(null);
   const [blogForm, setBlogForm] = useState<any>({
     title: "",
     slug: "",
@@ -365,16 +374,18 @@ export default function AdminCMSPage() {
     setBlogsLoading(true);
     try {
       const params = new URLSearchParams();
-      if (blogSearchQuery) params.set("query", blogSearchQuery);
+      if (blogSearchQuery.trim()) params.set("query", blogSearchQuery.trim());
       if (blogFilterCategory !== "All") params.set("category", blogFilterCategory);
       if (blogFilterStatus !== "all") params.set("status", blogFilterStatus);
+      params.set("sort", blogSort);
       params.set("page", blogPage.toString());
-      params.set("limit", "10");
+      params.set("limit", blogLimit);
 
       const res = await fetch(`/api/admin/blogs/?${params.toString()}`);
       const data = await res.json();
       if (data.success) {
         setBlogs(data.posts || []);
+        setBlogTotal(data.total || 0);
         setBlogTotalPages(data.totalPages || 1);
       }
     } catch (e) {
@@ -459,7 +470,16 @@ export default function AdminCMSPage() {
     if (activeTab === "media") loadMedia();
     if (activeTab === "content") loadContent();
     if (activeTab === "redirects") loadRedirects();
-  }, [activeTab, currentUser, blogPage, productPage, enquiryPage, blogFilterStatus, enquiryStatusFilter]);
+  }, [activeTab, currentUser, blogPage, blogLimit, blogFilterStatus, blogFilterCategory, blogSort, productPage, enquiryPage, enquiryStatusFilter]);
+
+  // Debounced search for blog articles
+  useEffect(() => {
+    if (!currentUser || activeTab !== "blogs") return;
+    const timer = setTimeout(() => {
+      loadBlogs();
+    }, 250);
+    return () => clearTimeout(timer);
+  }, [blogSearchQuery]);
 
   // Product Save
   const handleSaveProduct = async () => {
@@ -637,6 +657,140 @@ export default function AdminCMSPage() {
     setCopiedMediaUrl(url);
     showToast("URL copied to clipboard!");
     setTimeout(() => setCopiedMediaUrl(null), 2500);
+  };
+
+  // Duplicate Blog Post
+  const handleDuplicateBlog = async (blogToDuplicate: any) => {
+    if (duplicatingId) return;
+    setDuplicatingId(blogToDuplicate.id);
+    try {
+      const res = await fetch("/api/admin/blogs/", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          title: `${blogToDuplicate.title} (Copy)`,
+          slug: `${blogToDuplicate.slug}-copy`,
+          excerpt: blogToDuplicate.excerpt,
+          content: blogToDuplicate.content,
+          featuredImage: blogToDuplicate.featuredImage,
+          imageAlt: blogToDuplicate.imageAlt,
+          author: blogToDuplicate.author,
+          category: blogToDuplicate.category,
+          tags: blogToDuplicate.tags,
+          isDraft: true,
+          seoTitle: blogToDuplicate.seoTitle ? `${blogToDuplicate.seoTitle} (Copy)` : "",
+          metaDescription: blogToDuplicate.metaDescription,
+          canonicalUrl: blogToDuplicate.canonicalUrl,
+          ogImage: blogToDuplicate.ogImage,
+        }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        showToast("Article duplicated as draft successfully!");
+        loadBlogs();
+      } else {
+        showToast(data.error || "Failed to duplicate article", "error");
+      }
+    } catch {
+      showToast("Error duplicating article", "error");
+    } finally {
+      setDuplicatingId(null);
+    }
+  };
+
+  // Delete Blog Post
+  const handleDeleteBlog = async (id: string, title: string) => {
+    if (!window.confirm(`Are you sure you want to delete "${title}"?\n\nThis action cannot be undone.`)) {
+      return;
+    }
+    try {
+      const res = await fetch(`/api/admin/blogs/${id}/`, { method: "DELETE" });
+      const data = await res.json();
+      if (data.success) {
+        showToast("Article deleted successfully!");
+        loadBlogs();
+      } else {
+        showToast(data.error || "Failed to delete article", "error");
+      }
+    } catch {
+      showToast("Error deleting article", "error");
+    }
+  };
+
+  // Upload Featured Image for Blog Editor
+  const handleBlogImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    setUploadingFile(true);
+    const formData = new FormData();
+    formData.append("file", file);
+    formData.append("altText", blogForm.imageAlt || blogForm.title || file.name.replace(/\.[^/.]+$/, ""));
+
+    try {
+      const res = await fetch("/api/admin/media/", {
+        method: "POST",
+        body: formData,
+      });
+      const data = await res.json();
+      if (data.success && data.asset?.url) {
+        showToast("Featured image uploaded successfully!");
+        setBlogForm((prev: any) => ({
+          ...prev,
+          featuredImage: data.asset.url,
+          ogImage: prev.ogImage || data.asset.url,
+          imageAlt: prev.imageAlt || data.asset.altText || prev.title,
+        }));
+        loadMedia();
+      } else {
+        showToast(data.error || "Upload failed", "error");
+      }
+    } catch {
+      showToast("Error uploading image", "error");
+    } finally {
+      setUploadingFile(false);
+      if (blogFeaturedImageUploadRef.current) blogFeaturedImageUploadRef.current.value = "";
+    }
+  };
+
+  // Save / Publish Blog Article
+  const handleSaveBlog = async (targetDraftStatus?: boolean) => {
+    if (!blogForm.title || !blogForm.title.trim()) {
+      showToast("Article title is required", "error");
+      return;
+    }
+    setEditorSaving(true);
+    try {
+      const isDraftVal = targetDraftStatus !== undefined ? targetDraftStatus : Boolean(blogForm.isDraft);
+      const payload = {
+        ...blogForm,
+        title: blogForm.title.trim(),
+        slug: blogForm.slug ? blogForm.slug.trim() : undefined,
+        isDraft: isDraftVal,
+        seoTitle: blogForm.seoTitle?.trim() || `${blogForm.title.trim()} | Peter Air Systems`,
+        metaDescription: blogForm.metaDescription?.trim() || (blogForm.excerpt || blogForm.title || "").trim().slice(0, 160),
+        canonicalUrl: blogForm.canonicalUrl?.trim() || (blogForm.slug ? `https://peterairs.com/blog/${blogForm.slug.trim()}/` : undefined),
+      };
+
+      const url = editingPostId ? `/api/admin/blogs/${editingPostId}/` : "/api/admin/blogs/";
+      const method = editingPostId ? "PUT" : "POST";
+      const res = await fetch(url, {
+        method,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const data = await res.json();
+      if (data.success) {
+        showToast(isDraftVal ? "Article saved as draft!" : "Article published/updated successfully!");
+        setActiveTab("blogs");
+        loadBlogs();
+      } else {
+        showToast(data.error || "Failed to save article", "error");
+      }
+    } catch {
+      showToast("Error saving article", "error");
+    } finally {
+      setEditorSaving(false);
+    }
   };
 
   // ----------------------------------------------------
@@ -1459,11 +1613,11 @@ export default function AdminCMSPage() {
                     <label className="block text-xs font-bold text-slate-700 mb-1">
                       Technical Description / Content
                     </label>
-                    <textarea
-                      rows={12}
+                    <RichTextEditor
                       value={prodForm.fullContent}
-                      onChange={(e) => setProdForm({ ...prodForm, fullContent: e.target.value })}
-                      className="w-full p-3 text-xs font-mono rounded-xl border border-slate-300"
+                      onChange={(fullContent) => setProdForm({ ...prodForm, fullContent })}
+                      placeholder="Write technical description and content..."
+                      minHeight="340px"
                     />
                   </div>
                 </div>
@@ -1723,26 +1877,61 @@ export default function AdminCMSPage() {
           {activeTab === "blogs" && (
             <div className="space-y-4">
               <div className="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
-                <div className="flex items-center gap-3 w-full sm:w-auto">
+                <div className="flex flex-wrap items-center gap-3 w-full sm:w-auto">
                   <div className="relative w-full sm:w-64">
                     <Search className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
                     <input
                       type="text"
                       placeholder="Search articles..."
                       value={blogSearchQuery}
-                      onChange={(e) => setBlogSearchQuery(e.target.value)}
+                      onChange={(e) => {
+                        setBlogSearchQuery(e.target.value);
+                        setBlogPage(1);
+                      }}
                       className="w-full pl-9 pr-3 py-2 text-xs rounded-xl border border-slate-200 focus:outline-none"
                     />
                   </div>
                   <select
                     value={blogFilterStatus}
-                    onChange={(e: any) => setBlogFilterStatus(e.target.value)}
+                    onChange={(e: any) => {
+                      setBlogFilterStatus(e.target.value);
+                      setBlogPage(1);
+                    }}
                     className="text-xs px-3 py-2 rounded-xl border border-slate-200 bg-white"
                   >
                     <option value="all">All Status</option>
                     <option value="published">Published</option>
                     <option value="draft">Drafts</option>
                   </select>
+                  <select
+                    value={blogSort}
+                    onChange={(e: any) => {
+                      setBlogSort(e.target.value);
+                      setBlogPage(1);
+                    }}
+                    className="text-xs px-3 py-2 rounded-xl border border-slate-200 bg-white"
+                  >
+                    <option value="newest">Sort: Newest</option>
+                    <option value="oldest">Sort: Oldest</option>
+                    <option value="views">Sort: Most Viewed</option>
+                  </select>
+                  <select
+                    aria-label="Filter records per page"
+                    value={blogLimit}
+                    onChange={(e) => {
+                      setBlogLimit(e.target.value);
+                      setBlogPage(1);
+                    }}
+                    className="text-xs px-3 py-2 rounded-xl border border-slate-200 bg-white"
+                  >
+                    <option value="10">10 / page</option>
+                    <option value="25">25 / page</option>
+                    <option value="50">50 / page</option>
+                    <option value="all">All ({blogTotal})</option>
+                  </select>
+                  <span className="px-3 py-1.5 rounded-xl border border-slate-200 bg-slate-50 text-slate-700 text-xs font-semibold whitespace-nowrap">
+                    Total: {blogTotal} Articles
+                  </span>
                 </div>
 
                 <button
@@ -1767,7 +1956,7 @@ export default function AdminCMSPage() {
                     });
                     setActiveTab("blog-editor");
                   }}
-                  className="px-4 py-2 bg-[#063B5C] hover:bg-[#084973] text-white text-xs font-semibold rounded-xl shadow-sm transition flex items-center gap-1.5"
+                  className="px-4 py-2 bg-[#063B5C] hover:bg-[#084973] text-white text-xs font-semibold rounded-xl shadow-sm transition flex items-center gap-1.5 shrink-0"
                 >
                   <Plus className="w-4 h-4" /> Create Article
                 </button>
@@ -1793,42 +1982,103 @@ export default function AdminCMSPage() {
                             Loading articles...
                           </td>
                         </tr>
+                      ) : blogs.length === 0 ? (
+                        <tr>
+                          <td colSpan={5} className="py-12 text-center text-slate-400">
+                            No articles found matching the selected filter or search.
+                          </td>
+                        </tr>
                       ) : (
                         blogs.map((b) => (
-                          <tr key={b.id} className="hover:bg-slate-50/60">
-                            <td className="py-3.5 px-4 font-semibold text-slate-900 max-w-sm truncate">{b.title}</td>
-                            <td className="py-3.5 px-4 text-slate-600">{b.category}</td>
-                            <td className="py-3.5 px-4">
+                          <tr key={b.id} className="hover:bg-slate-50/60 transition group">
+                            <td className="py-3 px-4">
+                              <div className="flex items-center gap-3">
+                                <div className="w-10 h-10 rounded-lg overflow-hidden bg-slate-100 border border-slate-200 shrink-0 flex items-center justify-center relative">
+                                  {b.featuredImage ? (
+                                    <img
+                                      src={b.featuredImage}
+                                      alt={b.imageAlt || b.title}
+                                      className="w-full h-full object-cover"
+                                      onError={(e) => {
+                                        e.currentTarget.style.display = "none";
+                                        const fallback = e.currentTarget.parentElement?.querySelector(".fallback-icon") as HTMLElement;
+                                        if (fallback) fallback.classList.remove("hidden");
+                                      }}
+                                    />
+                                  ) : null}
+                                  <div className={`w-full h-full flex items-center justify-center bg-slate-100 text-slate-400 fallback-icon ${b.featuredImage ? "hidden" : ""}`}>
+                                    <FileText className="w-4 h-4" />
+                                  </div>
+                                </div>
+                                <div className="min-w-0 max-w-md">
+                                  <div className="font-semibold text-slate-900 truncate" title={b.title}>
+                                    {b.title}
+                                  </div>
+                                  <div className="text-[11px] text-slate-400 font-mono truncate">
+                                    /blog/{b.slug}/
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                            <td className="py-3.5 px-4 text-slate-600 whitespace-nowrap">
+                              <span className="px-2 py-0.5 rounded-md bg-slate-100 text-slate-700 text-[11px] font-medium">
+                                {b.category || "Uncategorized"}
+                              </span>
+                            </td>
+                            <td className="py-3.5 px-4 whitespace-nowrap">
                               {b.isDraft ? (
-                                <span className="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-amber-50 text-amber-700">
+                                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-amber-50 text-amber-700 border border-amber-200/70">
+                                  <span className="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
                                   Draft
                                 </span>
                               ) : (
-                                <span className="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-50 text-emerald-700">
+                                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200/70">
+                                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
                                   Live
                                 </span>
                               )}
                             </td>
-                            <td className="py-3.5 px-4 text-slate-500">{b.views || 0}</td>
-                            <td className="py-3.5 px-4 text-right space-x-2">
-                              <Link
-                                href={`/blog/${b.slug}/${b.isDraft ? "?preview=true" : ""}`}
-                                target="_blank"
-                                className="inline-flex p-1.5 text-slate-400 hover:text-slate-700 rounded-lg"
-                              >
-                                <Eye className="w-3.5 h-3.5" />
-                              </Link>
-                              <button
-                                onClick={() => {
-                                  setEditingPostId(b.id);
-                                  setEditorOriginalSlug(b.slug);
-                                  setBlogForm({ ...b });
-                                  setActiveTab("blog-editor");
-                                }}
-                                className="inline-flex p-1.5 text-[#063B5C] hover:bg-cyan-50 rounded-lg"
-                              >
-                                <Edit3 className="w-3.5 h-3.5" />
-                              </button>
+                            <td className="py-3.5 px-4 text-slate-500 font-mono whitespace-nowrap">
+                              {b.views || 0}
+                            </td>
+                            <td className="py-3.5 px-4 text-right whitespace-nowrap">
+                              <div className="inline-flex items-center gap-1">
+                                <Link
+                                  href={`/blog/${b.slug}/${b.isDraft ? "?preview=true" : ""}`}
+                                  target="_blank"
+                                  title="View Article"
+                                  className="p-1.5 text-slate-400 hover:text-slate-700 hover:bg-slate-100 rounded-lg transition"
+                                >
+                                  <Eye className="w-3.5 h-3.5" />
+                                </Link>
+                                <button
+                                  onClick={() => {
+                                    setEditingPostId(b.id);
+                                    setEditorOriginalSlug(b.slug);
+                                    setBlogForm({ ...b });
+                                    setActiveTab("blog-editor");
+                                  }}
+                                  title="Edit Article"
+                                  className="p-1.5 text-[#063B5C] hover:bg-cyan-50 rounded-lg transition"
+                                >
+                                  <Edit3 className="w-3.5 h-3.5" />
+                                </button>
+                                <button
+                                  onClick={() => handleDuplicateBlog(b)}
+                                  disabled={duplicatingId === b.id}
+                                  title="Duplicate Article (Creates Draft Copy)"
+                                  className="p-1.5 text-slate-500 hover:text-[#063B5C] hover:bg-slate-100 rounded-lg transition disabled:opacity-40"
+                                >
+                                  <Copy className="w-3.5 h-3.5" />
+                                </button>
+                                <button
+                                  onClick={() => handleDeleteBlog(b.id, b.title)}
+                                  title="Delete Article"
+                                  className="p-1.5 text-slate-400 hover:text-red-600 hover:bg-red-50 rounded-lg transition"
+                                >
+                                  <Trash2 className="w-3.5 h-3.5" />
+                                </button>
+                              </div>
                             </td>
                           </tr>
                         ))
@@ -1836,103 +2086,632 @@ export default function AdminCMSPage() {
                     </tbody>
                   </table>
                 </div>
+
+                {/* Pagination & Footer Controls */}
+                <div className="px-5 py-4 bg-slate-50/80 border-t border-slate-200 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-600">
+                  <div className="flex flex-wrap items-center gap-3">
+                    <span>
+                      {blogsLoading ? (
+                        "Loading records..."
+                      ) : blogTotal === 0 ? (
+                        "No articles found"
+                      ) : blogLimit === "all" ? (
+                        <>Showing all <strong className="font-semibold text-slate-900">{blogTotal}</strong> articles</>
+                      ) : (
+                        <>
+                          Showing{" "}
+                          <strong className="font-semibold text-slate-900">
+                            {(blogPage - 1) * parseInt(blogLimit) + 1}
+                          </strong>{" "}
+                          to{" "}
+                          <strong className="font-semibold text-slate-900">
+                            {Math.min(blogPage * parseInt(blogLimit), blogTotal)}
+                          </strong>{" "}
+                          of <strong className="font-semibold text-slate-900">{blogTotal}</strong> articles
+                        </>
+                      )}
+                    </span>
+                    <span className="text-slate-300">|</span>
+                    <div className="flex items-center gap-1.5">
+                      <span>Per page:</span>
+                      <select
+                        aria-label="Records per page"
+                        value={blogLimit}
+                        onChange={(e) => {
+                          setBlogLimit(e.target.value);
+                          setBlogPage(1);
+                        }}
+                        className="px-2 py-1 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700"
+                      >
+                        <option value="10">10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="all">All</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  {blogLimit !== "all" && blogTotalPages > 1 && (
+                    <div className="flex items-center gap-1.5">
+                      <button
+                        type="button"
+                        disabled={blogPage <= 1 || blogsLoading}
+                        onClick={() => setBlogPage((p) => Math.max(1, p - 1))}
+                        className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg border border-slate-200 bg-white font-medium text-slate-700 hover:bg-slate-100 disabled:opacity-40 disabled:cursor-not-allowed transition"
+                      >
+                        <ChevronLeft className="w-3.5 h-3.5" />
+                        <span>Previous</span>
+                      </button>
+
+                      <div className="flex items-center gap-1">
+                        {Array.from({ length: blogTotalPages }, (_, i) => i + 1)
+                          .filter((p) => {
+                            if (blogTotalPages <= 7) return true;
+                            if (p === 1 || p === blogTotalPages) return true;
+                            if (Math.abs(p - blogPage) <= 1) return true;
+                            return false;
+                          })
+                          .reduce((acc: (number | string)[], p, idx, arr) => {
+                            if (idx > 0 && typeof arr[idx - 1] === "number" && (p as number) - (arr[idx - 1] as number) > 1) {
+                              acc.push(`dots-${p}`);
+                            }
+                            acc.push(p);
+                            return acc;
+                          }, [])
+                          .map((item) => {
+                            if (typeof item === "string") {
+                              return (
+                                <span key={item} className="px-1 text-slate-400">
+                                  ...
+                                </span>
+                              );
+                            }
+                            const p = item as number;
+                            return (
+                              <button
+                                key={p}
+                                type="button"
+                                onClick={() => setBlogPage(p)}
+                                className={`min-w-[30px] h-7 px-2 rounded-lg font-semibold text-xs transition ${
+                                  blogPage === p
+                                    ? "bg-[#063B5C] text-white shadow-xs"
+                                    : "bg-white border border-slate-200 text-slate-700 hover:bg-slate-100"
+                                }`}
+                              >
+                                {p}
+                              </button>
+                            );
+                          })}
+                      </div>
+
+                      <button
+                        type="button"
+                        disabled={blogPage >= blogTotalPages || blogsLoading}
+                        onClick={() => setBlogPage((p) => Math.min(blogTotalPages, p + 1))}
+                        className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg border border-slate-200 bg-white font-medium text-slate-700 hover:bg-slate-100 disabled:opacity-40 disabled:cursor-not-allowed transition"
+                      >
+                        <span>Next</span>
+                        <ChevronRight className="w-3.5 h-3.5" />
+                      </button>
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
           )}
 
-          {/* 7. BLOG EDITOR */}
+          {/* 7. BLOG EDITOR (70:30 TWO-COLUMN LAYOUT) */}
           {activeTab === "blog-editor" && (
-            <div className="bg-white rounded-2xl border border-slate-200/80 shadow-sm p-6 space-y-6">
-              <div className="flex items-center justify-between pb-4 border-b border-slate-100">
-                <h2 className="text-lg font-bold text-slate-900">
-                  {editingPostId ? "Edit Technical Article" : "Compose Article"}
-                </h2>
-                <div className="flex items-center gap-2">
-                  <button onClick={() => setActiveTab("blogs")} className="px-3.5 py-1.5 text-xs text-slate-600">
+            <div className="space-y-6">
+              {/* Header Bar */}
+              <div className="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                <div className="flex items-center gap-3">
+                  <button
+                    onClick={() => setActiveTab("blogs")}
+                    className="p-2 text-slate-400 hover:text-slate-700 hover:bg-slate-100 rounded-xl transition"
+                    title="Back to Blog Articles"
+                  >
+                    <ChevronLeft className="w-5 h-5" />
+                  </button>
+                  <div>
+                    <h2 className="text-base font-bold text-slate-900 flex items-center gap-2">
+                      <span>{editingPostId ? "Edit Technical Article" : "Create Technical Article"}</span>
+                      {blogForm.isDraft ? (
+                        <span className="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-amber-50 text-amber-700 border border-amber-200">
+                          Draft
+                        </span>
+                      ) : (
+                        <span className="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
+                          Live / Published
+                        </span>
+                      )}
+                    </h2>
+                    <p className="text-xs text-slate-500 mt-0.5">
+                      {editingPostId
+                        ? `Editing "${blogForm.title || "Untitled"}" — updates content and SEO metadata.`
+                        : "Author a comprehensive technical guide or engineering specification article."}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Top Action Buttons */}
+                <div className="flex items-center gap-2 w-full sm:w-auto justify-end flex-wrap">
+                  <button
+                    type="button"
+                    onClick={() => setActiveTab("blogs")}
+                    className="px-3.5 py-2 text-xs font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-xl transition"
+                  >
                     Cancel
                   </button>
-                  <button
-                    onClick={async () => {
-                      setEditorSaving(true);
-                      try {
-                        const url = editingPostId ? `/api/admin/blogs/${editingPostId}/` : "/api/admin/blogs/";
-                        const method = editingPostId ? "PUT" : "POST";
-                        const res = await fetch(url, {
-                          method,
-                          headers: { "Content-Type": "application/json" },
-                          body: JSON.stringify(blogForm),
-                        });
-                        const data = await res.json();
-                        if (data.success) {
-                          showToast("Article saved successfully!");
-                          setActiveTab("blogs");
-                          loadBlogs();
-                        } else {
-                          showToast(data.error || "Failed to save", "error");
-                        }
-                      } catch {
-                        showToast("Error saving article", "error");
-                      } finally {
-                        setEditorSaving(false);
-                      }
-                    }}
-                    disabled={editorSaving}
-                    className="px-4 py-2 bg-[#063B5C] text-white text-xs font-semibold rounded-xl"
+
+                  <a
+                    href={`/blog/${blogForm.slug || "preview"}/${blogForm.isDraft ? "?preview=true" : ""}`}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="px-3.5 py-2 text-xs font-semibold text-slate-700 bg-white border border-slate-200 hover:bg-slate-50 rounded-xl transition inline-flex items-center gap-1.5"
                   >
-                    {editorSaving ? "Saving..." : "Save Article"}
+                    <Eye className="w-3.5 h-3.5" />
+                    <span>Preview Article</span>
+                  </a>
+
+                  <button
+                    type="button"
+                    disabled={editorSaving}
+                    onClick={() => handleSaveBlog(true)}
+                    className="px-3.5 py-2 text-xs font-semibold text-amber-700 bg-amber-50 border border-amber-200 hover:bg-amber-100 rounded-xl transition inline-flex items-center gap-1.5 disabled:opacity-50"
+                  >
+                    <Clock className="w-3.5 h-3.5" />
+                    <span>Save Draft</span>
+                  </button>
+
+                  <button
+                    type="button"
+                    disabled={editorSaving}
+                    onClick={() => handleSaveBlog(false)}
+                    className="px-4 py-2 text-xs font-semibold text-white bg-[#063B5C] hover:bg-[#084973] rounded-xl shadow-sm transition inline-flex items-center gap-1.5 disabled:opacity-50"
+                  >
+                    <Save className="w-3.5 h-3.5" />
+                    <span>{editorSaving ? "Saving..." : editingPostId ? "Update Article" : "Publish Article"}</span>
                   </button>
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="md:col-span-2 space-y-4">
-                  <div>
-                    <label className="block text-xs font-bold text-slate-700 mb-1">Article Title</label>
-                    <input
-                      type="text"
-                      value={blogForm.title}
-                      onChange={(e) => setBlogForm({ ...blogForm, title: e.target.value })}
-                      className="w-full px-4 py-2 text-sm font-semibold rounded-xl border border-slate-300"
-                    />
+              {/* 70:30 Two-Column Grid */}
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+                {/* LEFT 70% COLUMN: Main Content Area */}
+                <div className="lg:col-span-8 space-y-6">
+                  {/* Title & Slug Card */}
+                  <div className="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200/80 shadow-sm space-y-4">
+                    <div>
+                      <label className="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1.5">
+                        Article Title <span className="text-red-500">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        placeholder="e.g. Cleanroom HVAC Systems: Complete Design & Validation Guide"
+                        value={blogForm.title || ""}
+                        onChange={(e) => {
+                          const newTitle = e.target.value;
+                          setBlogForm((prev: any) => ({
+                            ...prev,
+                            title: newTitle,
+                            slug: !editingPostId && (!prev.slug || prev.slug === "")
+                              ? newTitle.toLowerCase().trim().replace(/\s+/g, "-").replace(/[^\w\-]+/g, "")
+                              : prev.slug,
+                          }));
+                        }}
+                        className="w-full px-4 py-2.5 text-base font-semibold text-slate-900 rounded-xl border border-slate-300 focus:outline-none focus:border-[#063B5C] focus:ring-2 focus:ring-[#063B5C]/10 transition"
+                      />
+                    </div>
+
+                    <div>
+                      <label className="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1.5">
+                        URL Slug <span className="text-red-500">*</span>
+                      </label>
+                      <div className="flex rounded-xl border border-slate-300 overflow-hidden focus-within:border-[#063B5C] focus-within:ring-2 focus-within:ring-[#063B5C]/10 transition">
+                        <span className="bg-slate-50 px-3.5 py-2 text-xs font-mono text-slate-500 border-r border-slate-200 flex items-center select-none">
+                          https://peterairs.com/blog/
+                        </span>
+                        <input
+                          type="text"
+                          placeholder="cleanroom-hvac-systems"
+                          value={blogForm.slug || ""}
+                          onChange={(e) => setBlogForm({ ...blogForm, slug: e.target.value })}
+                          className="w-full px-3 py-2 text-xs font-mono text-slate-800 focus:outline-none"
+                        />
+                        <span className="bg-slate-50 px-2.5 py-2 text-xs font-mono text-slate-500 border-l border-slate-200 flex items-center select-none">
+                          /
+                        </span>
+                      </div>
+                      <p className="text-[11px] text-slate-400 mt-1">
+                        Permalinks are canonical and indexed by search engines. Maintain consistent hyphens.
+                      </p>
+                    </div>
+
+                    <div>
+                      <div className="flex justify-between items-center mb-1.5">
+                        <label className="block text-xs font-bold text-slate-700 uppercase tracking-wide">
+                          Article Excerpt / Abstract
+                        </label>
+                        <span className="text-[11px] font-mono text-slate-400">
+                          {blogForm.excerpt?.length || 0} characters
+                        </span>
+                      </div>
+                      <textarea
+                        rows={3}
+                        placeholder="A concise summary of the article for blog archive cards, search engine previews, and social cards..."
+                        value={blogForm.excerpt || ""}
+                        onChange={(e) => setBlogForm({ ...blogForm, excerpt: e.target.value })}
+                        className="w-full px-3.5 py-2 text-xs text-slate-800 rounded-xl border border-slate-300 focus:outline-none focus:border-[#063B5C] focus:ring-2 focus:ring-[#063B5C]/10 resize-y leading-relaxed transition"
+                      />
+                    </div>
                   </div>
-                  <div>
-                    <label className="block text-xs font-bold text-slate-700 mb-1">URL Slug</label>
-                    <input
-                      type="text"
-                      value={blogForm.slug}
-                      onChange={(e) => setBlogForm({ ...blogForm, slug: e.target.value })}
-                      className="w-full px-3 py-2 text-xs font-mono rounded-xl border border-slate-300"
+
+                  {/* Main Rich Content Editor Card */}
+                  <div className="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200/80 shadow-sm space-y-3">
+                    <div className="flex items-center justify-between">
+                      <label className="block text-xs font-bold text-slate-700 uppercase tracking-wide">
+                        Article Content Body <span className="text-red-500">*</span>
+                      </label>
+                      <span className="text-[11px] text-slate-400">
+                        Supports Visual WYSIWYG &amp; HTML Source modes
+                      </span>
+                    </div>
+
+                    <RichTextEditor
+                      value={blogForm.content || ""}
+                      onChange={(content) => setBlogForm({ ...blogForm, content })}
+                      placeholder="Write your comprehensive technical article here. Use headings (H1, H2, H3), bullet points, bold/italic, tables, links, and embedded images..."
+                      minHeight="520px"
                     />
-                  </div>
-                  <div>
-                    <label className="block text-xs font-bold text-slate-700 mb-1">Content Body</label>
-                    <textarea
-                      rows={14}
-                      value={blogForm.content}
-                      onChange={(e) => setBlogForm({ ...blogForm, content: e.target.value })}
-                      className="w-full p-4 text-xs font-mono rounded-xl border border-slate-300"
-                    />
+
+                    <p className="text-[11px] text-slate-400 leading-normal">
+                      💡 Tip: Use the Visual mode to format with headings and lists effortlessly. Switch to HTML Source mode anytime to inspect or paste raw embed code without losing content or structure.
+                    </p>
                   </div>
                 </div>
 
-                <div className="space-y-4 bg-slate-50 p-4 rounded-xl border border-slate-200">
-                  <div>
-                    <label className="block text-xs font-bold text-slate-700 mb-1">Featured Image URL</label>
-                    <input
-                      type="text"
-                      value={blogForm.featuredImage}
-                      onChange={(e) => setBlogForm({ ...blogForm, featuredImage: e.target.value })}
-                      className="w-full px-3 py-1.5 text-xs rounded-lg border border-slate-300 bg-white"
-                    />
+                {/* RIGHT 30% SIDEBAR */}
+                <div className="lg:col-span-4 space-y-6">
+                  {/* 1. Publishing Controls Card */}
+                  <div className="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm space-y-4">
+                    <div className="flex items-center justify-between pb-3 border-b border-slate-100">
+                      <h3 className="text-xs font-bold text-slate-800 uppercase tracking-wide">
+                        Publishing Status
+                      </h3>
+                      {blogForm.isDraft ? (
+                        <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-amber-50 text-amber-700 border border-amber-200">
+                          <span className="w-1.5 h-1.5 rounded-full bg-amber-500"></span> Draft
+                        </span>
+                      ) : (
+                        <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
+                          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Live
+                        </span>
+                      )}
+                    </div>
+
+                    <div className="space-y-2 text-xs">
+                      <div className="flex items-center justify-between py-1 text-slate-600">
+                        <span>Visibility:</span>
+                        <strong className="text-slate-900">{blogForm.isDraft ? "Hidden (Draft)" : "Public (Live)"}</strong>
+                      </div>
+                      <div className="flex items-center justify-between py-1 text-slate-600">
+                        <span>Views count:</span>
+                        <span className="font-mono text-slate-900 font-semibold">{blogForm.views || 0}</span>
+                      </div>
+                      {blogForm.createdAt && (
+                        <div className="flex items-center justify-between py-1 text-slate-600">
+                          <span>Created on:</span>
+                          <span className="text-slate-700">{new Date(blogForm.createdAt).toLocaleDateString()}</span>
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Radio-style status selection */}
+                    <div className="pt-2 border-t border-slate-100 space-y-2">
+                      <label
+                        className={`flex items-center justify-between p-2.5 rounded-xl border cursor-pointer transition ${
+                          !blogForm.isDraft
+                            ? "border-emerald-300 bg-emerald-50/50 text-emerald-950 font-semibold"
+                            : "border-slate-200 hover:bg-slate-50 text-slate-700"
+                        }`}
+                      >
+                        <div className="flex items-center gap-2">
+                          <input
+                            type="radio"
+                            name="article_status"
+                            checked={!blogForm.isDraft}
+                            onChange={() => setBlogForm({ ...blogForm, isDraft: false })}
+                            className="text-[#063B5C]"
+                          />
+                          <span className="text-xs">Published (Live)</span>
+                        </div>
+                        <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/80 border border-emerald-200 text-emerald-700">
+                          Visible
+                        </span>
+                      </label>
+
+                      <label
+                        className={`flex items-center justify-between p-2.5 rounded-xl border cursor-pointer transition ${
+                          blogForm.isDraft
+                            ? "border-amber-300 bg-amber-50/50 text-amber-950 font-semibold"
+                            : "border-slate-200 hover:bg-slate-50 text-slate-700"
+                        }`}
+                      >
+                        <div className="flex items-center gap-2">
+                          <input
+                            type="radio"
+                            name="article_status"
+                            checked={blogForm.isDraft}
+                            onChange={() => setBlogForm({ ...blogForm, isDraft: true })}
+                            className="text-[#063B5C]"
+                          />
+                          <span className="text-xs">Draft</span>
+                        </div>
+                        <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/80 border border-amber-200 text-amber-700">
+                          Hidden
+                        </span>
+                      </label>
+                    </div>
+
+                    <div className="pt-2 border-t border-slate-100 flex flex-col gap-2">
+                      <button
+                        type="button"
+                        disabled={editorSaving}
+                        onClick={() => handleSaveBlog(blogForm.isDraft)}
+                        className="w-full py-2.5 bg-[#063B5C] hover:bg-[#084973] text-white text-xs font-semibold rounded-xl shadow-sm transition flex items-center justify-center gap-1.5 disabled:opacity-50"
+                      >
+                        <Save className="w-4 h-4" />
+                        <span>{editorSaving ? "Saving Article..." : editingPostId ? "Update Article" : "Publish Article"}</span>
+                      </button>
+
+                      <button
+                        type="button"
+                        disabled={editorSaving}
+                        onClick={() => handleSaveBlog(true)}
+                        className="w-full py-2 bg-slate-50 hover:bg-slate-100 text-slate-700 border border-slate-200 text-xs font-semibold rounded-xl transition flex items-center justify-center gap-1.5 disabled:opacity-50"
+                      >
+                        <Clock className="w-3.5 h-3.5 text-amber-600" />
+                        <span>Save as Draft</span>
+                      </button>
+                    </div>
                   </div>
-                  <div>
-                    <label className="block text-xs font-bold text-slate-700 mb-1">SEO Title</label>
-                    <input
-                      type="text"
-                      value={blogForm.seoTitle}
-                      onChange={(e) => setBlogForm({ ...blogForm, seoTitle: e.target.value })}
-                      className="w-full px-3 py-1.5 text-xs rounded-lg border border-slate-300 bg-white"
-                    />
+
+                  {/* 2. Featured Image Card */}
+                  <div className="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm space-y-4">
+                    <div className="flex items-center justify-between pb-3 border-b border-slate-100">
+                      <h3 className="text-xs font-bold text-slate-800 uppercase tracking-wide">
+                        Featured Image
+                      </h3>
+                      <span className="text-[10px] text-slate-400">Card &amp; Header</span>
+                    </div>
+
+                    {/* Image Preview Box */}
+                    <div className="aspect-video w-full rounded-xl bg-slate-100 border border-slate-200 overflow-hidden relative flex items-center justify-center group shadow-inner">
+                      {blogForm.featuredImage ? (
+                        <img
+                          src={blogForm.featuredImage}
+                          alt={blogForm.imageAlt || blogForm.title || "Featured preview"}
+                          className="w-full h-full object-cover transition duration-300 group-hover:scale-105"
+                          onError={(e) => {
+                            e.currentTarget.src = "/images/AHU.jpeg";
+                          }}
+                        />
+                      ) : (
+                        <div className="flex flex-col items-center justify-center text-slate-400 p-4 text-center">
+                          <ImageIcon className="w-8 h-8 mb-1.5 text-slate-300" />
+                          <span className="text-xs font-medium">No featured image selected</span>
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Image Action Buttons */}
+                    <div className="grid grid-cols-2 gap-2">
+                      <input
+                        ref={blogFeaturedImageUploadRef}
+                        type="file"
+                        accept="image/*"
+                        onChange={handleBlogImageUpload}
+                        className="hidden"
+                      />
+                      <button
+                        type="button"
+                        disabled={uploadingFile}
+                        onClick={() => blogFeaturedImageUploadRef.current?.click()}
+                        className="px-3 py-2 bg-white border border-slate-300 hover:border-slate-400 text-slate-700 text-xs font-semibold rounded-xl transition flex items-center justify-center gap-1.5 shadow-xs disabled:opacity-50"
+                      >
+                        <UploadCloud className="w-3.5 h-3.5 text-[#063B5C]" />
+                        <span>{uploadingFile ? "Uploading..." : "Upload Image"}</span>
+                      </button>
+
+                      <button
+                        type="button"
+                        onClick={() => {
+                          if (mediaList.length === 0) loadMedia();
+                          setShowMediaPickerModal(true);
+                        }}
+                        className="px-3 py-2 bg-slate-50 hover:bg-slate-100 border border-slate-300 text-slate-700 text-xs font-semibold rounded-xl transition flex items-center justify-center gap-1.5 shadow-xs"
+                      >
+                        <Layers className="w-3.5 h-3.5 text-[#063B5C]" />
+                        <span>Media Library</span>
+                      </button>
+                    </div>
+
+                    {/* Manual Image URL */}
+                    <div>
+                      <label className="block text-[11px] font-bold text-slate-600 uppercase mb-1">
+                        Image URL / File Path
+                      </label>
+                      <input
+                        type="text"
+                        placeholder="/images/clean-healthcare.jpg or https://..."
+                        value={blogForm.featuredImage || ""}
+                        onChange={(e) => setBlogForm({ ...blogForm, featuredImage: e.target.value })}
+                        className="w-full px-3 py-1.5 text-xs font-mono rounded-lg border border-slate-300 focus:outline-none focus:border-[#063B5C]"
+                      />
+                    </div>
+
+                    {/* Image Alt Text */}
+                    <div>
+                      <label className="block text-[11px] font-bold text-slate-600 uppercase mb-1">
+                        Image Alt Text (SEO &amp; Accessibility)
+                      </label>
+                      <input
+                        type="text"
+                        placeholder="e.g. Pharmaceutical Cleanroom Door with Hermetic Seal"
+                        value={blogForm.imageAlt || ""}
+                        onChange={(e) => setBlogForm({ ...blogForm, imageAlt: e.target.value })}
+                        className="w-full px-3 py-1.5 text-xs rounded-lg border border-slate-300 focus:outline-none focus:border-[#063B5C]"
+                      />
+                      <p className="text-[10px] text-slate-400 mt-1">
+                        Descriptive alternative text for search engines and screen readers.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* 3. Category & Taxonomy Card */}
+                  <div className="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm space-y-4">
+                    <div className="pb-3 border-b border-slate-100">
+                      <h3 className="text-xs font-bold text-slate-800 uppercase tracking-wide">
+                        Category &amp; Taxonomy
+                      </h3>
+                    </div>
+
+                    <div>
+                      <label className="block text-xs font-bold text-slate-700 mb-1">
+                        Category
+                      </label>
+                      <select
+                        value={blogForm.category || "Cleanroom Components"}
+                        onChange={(e) => setBlogForm({ ...blogForm, category: e.target.value })}
+                        className="w-full px-3 py-2 text-xs rounded-xl border border-slate-300 bg-white focus:outline-none focus:border-[#063B5C]"
+                      >
+                        <option value="Cleanroom Components">Cleanroom Components</option>
+                        <option value="Cleanroom Furniture">Cleanroom Furniture</option>
+                        <option value="Contamination Control">Contamination Control</option>
+                        <option value="HVAC Systems">HVAC Systems</option>
+                        <option value="Industry Solutions">Industry Solutions</option>
+                        <option value="Blog">General Blog</option>
+                        <option value="Uncategorized">Uncategorized</option>
+                      </select>
+                    </div>
+
+                    <div>
+                      <label className="block text-xs font-bold text-slate-700 mb-1">
+                        Author Byline
+                      </label>
+                      <input
+                        type="text"
+                        value={blogForm.author || "Peter Air Systems Engineering Team"}
+                        onChange={(e) => setBlogForm({ ...blogForm, author: e.target.value })}
+                        className="w-full px-3 py-1.5 text-xs rounded-lg border border-slate-300 focus:outline-none focus:border-[#063B5C]"
+                      />
+                    </div>
+
+                    <div>
+                      <label className="block text-xs font-bold text-slate-700 mb-1">
+                        Tags (comma separated)
+                      </label>
+                      <input
+                        type="text"
+                        placeholder="Cleanroom, HVAC, GMP, Air Quality"
+                        value={blogForm.tags || ""}
+                        onChange={(e) => setBlogForm({ ...blogForm, tags: e.target.value })}
+                        className="w-full px-3 py-1.5 text-xs rounded-lg border border-slate-300 focus:outline-none focus:border-[#063B5C]"
+                      />
+                    </div>
+                  </div>
+
+                  {/* 4. SEO & Social Metadata Card */}
+                  <div className="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm space-y-4">
+                    <div className="pb-3 border-b border-slate-100 flex items-center justify-between">
+                      <h3 className="text-xs font-bold text-slate-800 uppercase tracking-wide">
+                        Search Engine Optimization (SEO)
+                      </h3>
+                      <span className="text-[10px] text-emerald-600 font-semibold bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
+                        Google Ready
+                      </span>
+                    </div>
+
+                    {/* SEO Title */}
+                    <div>
+                      <div className="flex justify-between items-center mb-1">
+                        <label className="text-xs font-bold text-slate-700">SEO Title</label>
+                        <span className={`text-[10px] font-mono ${(blogForm.seoTitle?.length || 0) > 60 ? "text-amber-600 font-semibold" : "text-slate-400"}`}>
+                          {blogForm.seoTitle?.length || 0} / 60 chars
+                        </span>
+                      </div>
+                      <input
+                        type="text"
+                        placeholder="Title for Google search results..."
+                        value={blogForm.seoTitle || ""}
+                        onChange={(e) => setBlogForm({ ...blogForm, seoTitle: e.target.value })}
+                        className="w-full px-3 py-1.5 text-xs rounded-lg border border-slate-300 focus:outline-none focus:border-[#063B5C]"
+                      />
+                    </div>
+
+                    {/* Meta Description */}
+                    <div>
+                      <div className="flex justify-between items-center mb-1">
+                        <label className="text-xs font-bold text-slate-700">Meta Description</label>
+                        <span className={`text-[10px] font-mono ${(blogForm.metaDescription?.length || 0) > 160 ? "text-amber-600 font-semibold" : "text-slate-400"}`}>
+                          {blogForm.metaDescription?.length || 0} / 160 chars
+                        </span>
+                      </div>
+                      <textarea
+                        rows={3}
+                        placeholder="Meta description displayed in search snippets..."
+                        value={blogForm.metaDescription || ""}
+                        onChange={(e) => setBlogForm({ ...blogForm, metaDescription: e.target.value })}
+                        className="w-full px-3 py-1.5 text-xs rounded-lg border border-slate-300 focus:outline-none focus:border-[#063B5C] resize-y"
+                      />
+                    </div>
+
+                    {/* Canonical URL */}
+                    <div>
+                      <label className="block text-xs font-bold text-slate-700 mb-1">Canonical URL</label>
+                      <input
+                        type="text"
+                        placeholder={`https://peterairs.com/blog/${blogForm.slug || 'article-slug'}/`}
+                        value={blogForm.canonicalUrl || ""}
+                        onChange={(e) => setBlogForm({ ...blogForm, canonicalUrl: e.target.value })}
+                        className="w-full px-3 py-1.5 text-xs font-mono rounded-lg border border-slate-300 focus:outline-none focus:border-[#063B5C]"
+                      />
+                    </div>
+
+                    {/* Open Graph Image */}
+                    <div>
+                      <label className="block text-xs font-bold text-slate-700 mb-1">Open Graph Image (Social Share)</label>
+                      <input
+                        type="text"
+                        placeholder="/images/AHU.jpeg"
+                        value={blogForm.ogImage || ""}
+                        onChange={(e) => setBlogForm({ ...blogForm, ogImage: e.target.value })}
+                        className="w-full px-3 py-1.5 text-xs font-mono rounded-lg border border-slate-300 focus:outline-none focus:border-[#063B5C]"
+                      />
+                    </div>
+
+                    {/* Google Search Result Preview Card */}
+                    <div className="pt-3 border-t border-slate-100 space-y-2">
+                      <span className="text-[11px] font-bold text-slate-600 uppercase tracking-wide block">
+                        Search Result Preview
+                      </span>
+                      <div className="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-1 select-none">
+                        <div className="flex items-center gap-1.5 text-[11px] text-slate-600 truncate">
+                          <span className="w-4 h-4 rounded-full bg-[#063B5C] text-white flex items-center justify-center text-[9px] font-bold">
+                            P
+                          </span>
+                          <span className="font-semibold text-slate-800">Peter Air Systems</span>
+                          <span className="text-slate-400">› blog › {blogForm.slug || "article-url"}</span>
+                        </div>
+                        <div className="text-sm font-semibold text-[#1a0dab] hover:underline cursor-pointer truncate">
+                          {blogForm.seoTitle || blogForm.title || "Article Title Preview | Peter Air Systems"}
+                        </div>
+                        <div className="text-xs text-slate-600 line-clamp-2 leading-relaxed">
+                          {blogForm.metaDescription || blogForm.excerpt || "Comprehensive engineering guide and cleanroom equipment analysis by Peter Air Systems India..."}
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -2253,6 +3032,121 @@ export default function AdminCMSPage() {
           )}
         </main>
       </div>
+
+      {/* Media Picker Modal for Blog Featured Image */}
+      {showMediaPickerModal && (
+        <div className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4">
+          <div className="bg-white rounded-2xl shadow-2xl border border-slate-200 w-full max-w-4xl max-h-[85vh] flex flex-col overflow-hidden animate-in fade-in zoom-in-95 duration-150">
+            {/* Modal Header */}
+            <div className="p-4 sm:p-5 border-b border-slate-200 flex items-center justify-between">
+              <div>
+                <h3 className="text-base font-bold text-slate-900">Select Image from Media Library</h3>
+                <p className="text-xs text-slate-500 mt-0.5">Click any image to set it as the article's featured image.</p>
+              </div>
+              <button
+                type="button"
+                onClick={() => setShowMediaPickerModal(false)}
+                className="p-1.5 text-slate-400 hover:text-slate-700 hover:bg-slate-100 rounded-lg transition"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            {/* Modal Search & Upload toolbar */}
+            <div className="p-4 bg-slate-50 border-b border-slate-200 flex items-center justify-between gap-3 flex-wrap">
+              <div className="relative flex-1 min-w-[200px] max-w-sm">
+                <Search className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
+                <input
+                  type="text"
+                  placeholder="Filter media assets..."
+                  value={mediaPickerSearch}
+                  onChange={(e) => setMediaPickerSearch(e.target.value)}
+                  className="w-full pl-9 pr-3 py-1.5 text-xs rounded-xl border border-slate-200 bg-white focus:outline-none"
+                />
+              </div>
+
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={() => blogFeaturedImageUploadRef.current?.click()}
+                  className="px-3 py-1.5 bg-[#063B5C] hover:bg-[#084973] text-white text-xs font-semibold rounded-xl shadow-sm transition inline-flex items-center gap-1.5"
+                >
+                  <UploadCloud className="w-3.5 h-3.5" />
+                  <span>Upload New</span>
+                </button>
+              </div>
+            </div>
+
+            {/* Modal Image Grid */}
+            <div className="p-5 overflow-y-auto flex-1 max-h-[55vh]">
+              {mediaList.length === 0 ? (
+                <div className="py-16 text-center text-slate-400">
+                  <ImageIcon className="w-10 h-10 mx-auto mb-2 text-slate-300" />
+                  <p className="text-xs">No media assets found in library.</p>
+                </div>
+              ) : (
+                <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-3">
+                  {mediaList
+                    .filter((m) =>
+                      mediaPickerSearch
+                        ? m.filename.toLowerCase().includes(mediaPickerSearch.toLowerCase()) ||
+                          (m.altText && m.altText.toLowerCase().includes(mediaPickerSearch.toLowerCase()))
+                        : true
+                    )
+                    .map((m) => (
+                      <div
+                        key={m.id}
+                        onClick={() => {
+                          setBlogForm((prev: any) => ({
+                            ...prev,
+                            featuredImage: m.url,
+                            ogImage: prev.ogImage || m.url,
+                            imageAlt: prev.imageAlt || m.altText || m.filename.replace(/\.[^/.]+$/, ""),
+                          }));
+                          setShowMediaPickerModal(false);
+                          showToast("Featured image selected!");
+                        }}
+                        className={`group cursor-pointer rounded-xl border overflow-hidden transition relative hover:shadow-md ${
+                          blogForm.featuredImage === m.url
+                            ? "border-[#063B5C] ring-2 ring-[#063B5C]/20"
+                            : "border-slate-200 hover:border-[#063B5C]"
+                        }`}
+                      >
+                        <div className="aspect-square bg-slate-100 flex items-center justify-center overflow-hidden relative">
+                          <img
+                            src={m.url}
+                            alt={m.altText || m.filename}
+                            className="w-full h-full object-cover group-hover:scale-105 transition"
+                            loading="lazy"
+                          />
+                          {blogForm.featuredImage === m.url && (
+                            <div className="absolute top-1 right-1 bg-[#063B5C] text-white p-0.5 rounded-full shadow-xs">
+                              <Check className="w-3.5 h-3.5" />
+                            </div>
+                          )}
+                        </div>
+                        <div className="p-1.5 bg-white text-[11px] font-medium text-slate-700 truncate">
+                          {m.altText || m.filename}
+                        </div>
+                      </div>
+                    ))}
+                </div>
+              )}
+            </div>
+
+            {/* Modal Footer */}
+            <div className="p-3 bg-slate-50 border-t border-slate-200 flex justify-end">
+              <button
+                type="button"
+                onClick={() => setShowMediaPickerModal(false)}
+                className="px-4 py-1.5 text-xs font-semibold text-slate-700 bg-white border border-slate-200 hover:bg-slate-100 rounded-xl transition"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
