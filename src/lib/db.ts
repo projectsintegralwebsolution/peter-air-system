@@ -540,13 +540,15 @@ export async function getProductBySlug(slug: string) {
     const base = baseProducts.find((p) => p.slug === clean) || ({} as any);
 
     if (prod) {
-      // Increment view count asynchronously
-      prisma.product
-        .update({
-          where: { id: prod.id },
-          data: { views: { increment: 1 } },
-        })
-        .catch(() => {});
+      // Increment view count asynchronously during live runtime
+      if (process.env.NEXT_PHASE !== "phase-production-build") {
+        prisma.product
+          .update({
+            where: { id: prod.id },
+            data: { views: { increment: 1 } },
+          })
+          .catch(() => {});
+      }
 
       return {
         ...base,
@@ -963,12 +965,14 @@ export async function getBlogPostBySlug(slug: string, allowDraft = false) {
       return null;
     }
 
-    prisma.blog
-      .update({
-        where: { id: post.id },
-        data: { views: { increment: 1 } },
-      })
-      .catch(() => {});
+    if (process.env.NEXT_PHASE !== "phase-production-build") {
+      prisma.blog
+        .update({
+          where: { id: post.id },
+          data: { views: { increment: 1 } },
+        })
+        .catch(() => {});
+    }
 
     return {
       id: post.id,

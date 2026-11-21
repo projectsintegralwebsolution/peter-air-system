@@ -1,6 +1,6 @@
 [
   {
-    "id": "clmvqd1fa7l5g3eh7",
+    "id": "cmvhq2kd60004b1gzord9jt6q",
     "slug": "air-handling-unit-ahu",
     "name": "Air Handling & HVAC Systems",
     "shortDescription": "Heavy-duty custom Air Handling Units (AHU), Air Washer Units, and Dehumidification Systems designed for precision temperature, humidity, and airflow control in critical manufacturing environments.",
@@ -9,11 +9,11 @@
     "productSlugs": "[\"air-handling-unit-ahu\",\"air-washer-unit\",\"dehumidifier-unit\"]",
     "displayOrder": 1,
     "isActive": true,
-    "createdAt": "2026-10-27T07:24:44.575Z",
-    "updatedAt": "2026-10-27T07:24:44.575Z"
+    "createdAt": "2026-10-21T06:19:37.242Z",
+    "updatedAt": "2026-10-21T06:19:37.242Z"
   },
   {
-    "id": "clmvqd1fa78pkfm58",
+    "id": "cmvhq2kdb0005b1gzkvmcu1lc",
     "slug": "clean-room-equipment",
     "name": "Cleanroom Equipment",
     "shortDescription": "Precision SS 304/316 engineered cleanroom containment and transfer equipment including Air Showers, Pass Boxes, Bio Safety Cabinets, Dispensing Booths, and Laminar Flow Stations.",
@@ -22,11 +22,11 @@
     "productSlugs": "[\"air-shower\",\"static-pass-box\",\"dynamic-pass-box\",\"bio-safety-cabinets\",\"laminar-work-stations\",\"dispensing-booth\",\"garment-cabinet\",\"reverse-laminar-flow-unit\",\"ceiling-suspended-laminar\"]",
     "displayOrder": 2,
     "isActive": true,
-    "createdAt": "2026-10-27T07:24:44.575Z",
-    "updatedAt": "2026-10-27T07:24:44.575Z"
+    "createdAt": "2026-10-21T06:19:37.247Z",
+    "updatedAt": "2026-10-21T06:19:37.247Z"
   },
   {
-    "id": "clmvqd1fa7ld2aeqg",
+    "id": "cmvhq2kdf0006b1gz50o64b31",
     "slug": "air-filters",
     "name": "Air Filtration Systems",
     "shortDescription": "High-efficiency particulate filtration solutions from G4 Pre Filters and F7/F9 Fine Microvee Filters to H13/H14 HEPA and Ultra-Low Penetration Mini Pleat HEPA filters.",
@@ -35,11 +35,11 @@
     "productSlugs": "[\"enhance-air-quality-with-pre-filters\",\"fine-filter\",\"hepa-filter\",\"mini-pleat-hepa-filter\"]",
     "displayOrder": 3,
     "isActive": true,
-    "createdAt": "2026-10-27T07:24:44.575Z",
-    "updatedAt": "2026-10-27T07:24:44.575Z"
+    "createdAt": "2026-10-21T06:19:37.251Z",
+    "updatedAt": "2026-10-21T06:19:37.251Z"
   },
   {
-    "id": "clmvqd1fa7kcf8ulp",
+    "id": "cmvhq2kdk0007b1gz0agnr427",
     "slug": "hvac-products",
     "name": "HVAC Terminal Products & Air Distribution",
     "shortDescription": "Engineered airflow control components including HEPA Terminal Housings, Supply & Return Grilles, Aerodynamic Diffusers, Return Air Risers, and Volume Control Dampers.",
@@ -48,20 +48,20 @@
     "productSlugs": "[\"hepa-terminal-box\",\"supply-return-air-grille\",\"supply-return-air-diffuser\",\"volume-control-damper-v-c-d\",\"return-air-riser\"]",
     "displayOrder": 4,
     "isActive": true,
-    "createdAt": "2026-10-27T07:24:44.575Z",
-    "updatedAt": "2026-10-27T07:24:44.575Z"
+    "createdAt": "2026-10-21T06:19:37.256Z",
+    "updatedAt": "2026-10-21T06:19:37.256Z"
   },
   {
-    "id": "clmvqd1fa7srkxapu",
+    "id": "cmvhq2kdo0008b1gzmvtmcmpf",
     "slug": "cleanroom-turnkey-solution",
     "name": "Cleanroom Solutions & Turnkey Systems",
     "shortDescription": "Full turnkey cleanroom design, modular wall & ceiling panels, airtight GMP modular doors, and state-of-the-art Modular Operation Theatres (OT) with laminar air ceiling.",
     "bannerImage": "/images/OT.jpg",
     "featuredImage": "/images/MODULAR-CLEAN-ROOM-VALIDATION-MAINTENANCE.jpg",
-    "productSlugs": "[\"modular-cleanroom-solution\",\"modular-ot\",\"modular-clean-room-doors\",\"cleanroom-turnkey-solution\"]",
+    "productSlugs": "[\"modular-cleanroom-solution\",\"modular-ot\",\"modular-clean-room-doors\",\"glass-magnesium-rock-wool-handmade-panel\",\"hollow-core-glass-magnesium-handmade-panel\",\"magnesium-sulfate-handmade-panel\",\"medical-purification-panel\",\"combination-purification-panel\",\"ffu-manual-blind-board\",\"glass-magnesium-rock-wool-corrugated-panel\",\"glass-magnesium-rock-wool-corrugated-panel-variant-2\",\"magnesium-oxysulfide-corrugated-panel\",\"rock-wool-enterprise-mouth-panel\",\"purified-aluminium-profile-accessories\",\"double-glazed-insulating-glass-windows\",\"cleanroom-turnkey-solution\"]",
     "displayOrder": 5,
     "isActive": true,
-    "createdAt": "2026-10-27T07:24:44.575Z",
-    "updatedAt": "2026-10-27T07:24:44.575Z"
+    "createdAt": "2026-10-21T06:19:37.260Z",
+    "updatedAt": "2026-11-03T08:30:59.046Z"
   }
 ]

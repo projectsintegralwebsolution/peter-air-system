@@ -1,74 +1,58 @@
 [
   {
-    "id": "clmvqd1fmpj61snik",
-    "key": "company.name",
-    "section": "company",
-    "label": "Company Legal Name",
-    "value": "Peter Air Systems",
-    "updatedAt": "2026-10-27T07:24:45.025Z"
+    "id": "cmvhozl64004eilpdz9599f69",
+    "key": "home.hero.title",
+    "section": "homepage",
+    "label": "Hero Slider Main Title",
+    "value": "Custom Engineered Air Handling Units & Modular Cleanrooms",
+    "updatedAt": "2026-10-21T12:46:07.699Z"
   },
   {
-    "id": "clmvqd1fmpcsfn479",
-    "key": "company.tagline",
-    "section": "company",
-    "label": "Brand Tagline",
-    "value": "Leading Manufacturers of HVAC & Cleanroom Equipment",
-    "updatedAt": "2026-10-27T07:24:45.025Z"
+    "id": "cmvhozl68004filpdml93ezqe",
+    "key": "home.hero.subtitle",
+    "section": "homepage",
+    "label": "Hero Supporting Subtitle",
+    "value": "Engineered for zero-leakage, high-integrity pharmaceutical and healthcare facilities across India.",
+    "updatedAt": "2026-10-21T12:46:07.703Z"
   },
   {
-    "id": "clmvqd1fmpbs6ny07",
+    "id": "cmvhozl6d004gilpddfd9tdaq",
+    "key": "home.about.heading",
+    "section": "homepage",
+    "label": "About Section Heading",
+    "value": "Engineered Air. Precision Cleanrooms. Manufacturing Excellence.",
+    "updatedAt": "2026-10-21T12:46:07.707Z"
+  },
+  {
+    "id": "cmvhozl6h004hilpdpzkv3x9v",
+    "key": "home.about.paragraph1",
+    "section": "homepage",
+    "label": "About Section Paragraph 1",
+    "value": "Peter Air Systems is a specialized manufacturer and turnkey solutions provider headquartered in Mumbai, Maharashtra. We design, engineer, and fabricate high-integrity Air Handling Units (AHUs), modular cleanrooms, surgical suites (Modular OT), cleanroom pass-through equipment, and precision air filters.",
+    "updatedAt": "2026-10-21T12:46:07.710Z"
+  },
+  {
+    "id": "cmvhozl6p004iilpdzsgz2bm3",
     "key": "contact.phone.primary",
     "section": "contact",
-    "label": "Primary Sales Helpline",
-    "value": "+91 97148 77717",
-    "updatedAt": "2026-10-27T07:24:45.025Z"
+    "label": "Primary Phone Number",
+    "value": "+91 8484 836 337",
+    "updatedAt": "2026-10-21T12:46:07.715Z"
   },
   {
-    "id": "clmvqd1fmpntuxokl",
+    "id": "cmvhozl6x004jilpd53hsmbq8",
     "key": "contact.phone.secondary",
     "section": "contact",
-    "label": "Technical Support",
-    "value": "+91 94273 00811",
-    "updatedAt": "2026-10-27T07:24:45.025Z"
+    "label": "Secondary Phone Number",
+    "value": "+91 7350 336 337",
+    "updatedAt": "2026-10-21T12:46:07.719Z"
   },
   {
-    "id": "clmvqd1fmpel5i5j1",
-    "key": "contact.whatsapp",
-    "section": "contact",
-    "label": "WhatsApp Direct",
-    "value": "+91 97148 77717",
-    "updatedAt": "2026-10-27T07:24:45.025Z"
-  },
-  {
-    "id": "clmvqd1fmps31a2ej",
+    "id": "cmvhozl74004kilpdf0z8fs7b",
     "key": "contact.email.sales",
     "section": "contact",
-    "label": "Sales & Inquiries Email",
+    "label": "Sales Desk Email",
     "value": "sales@peterairs.com",
-    "updatedAt": "2026-10-27T07:24:45.025Z"
-  },
-  {
-    "id": "clmvqd1fmp9u6vwst",
-    "key": "contact.email.direct",
-    "section": "contact",
-    "label": "Direct Engineering Email",
-    "value": "peterairsystem@gmail.com",
-    "updatedAt": "2026-10-27T07:24:45.025Z"
-  },
-  {
-    "id": "clmvqd1fmpgf10ik8",
-    "key": "contact.address",
-    "section": "contact",
-    "label": "Factory & Works Address",
-    "value": "Plot No. 58, 59, 60, Shyamal Industrial Park, B/h. Shivam Hotel, Bakrol-Bujrang, Ta. Daskroi, Dist. Ahmedabad - 382433, Gujarat, India",
-    "updatedAt": "2026-10-27T07:24:45.025Z"
-  },
-  {
-    "id": "clmvqd1fmppmpg938",
-    "key": "contact.workingHours",
-    "section": "contact",
-    "label": "Working Hours",
-    "value": "Monday to Saturday: 9:00 AM - 7:00 PM IST",
-    "updatedAt": "2026-10-27T07:24:45.025Z"
+    "updatedAt": "2026-10-21T12:46:07.723Z"
   }
 ]

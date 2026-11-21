@@ -1,5 +1,35 @@
 [
   {
+    "name": "JSON DB Verification User",
+    "companyName": "JSON Test Labs",
+    "email": "jsondb@peterairs.com",
+    "phone": "+91 99999 88888",
+    "productOrService": "Modular OT Systems",
+    "requirement": "Verify pure JSON persistence layer",
+    "quantity": "5 Units",
+    "city": "Mumbai",
+    "message": "Testing automated creation in pure JSON storage",
+    "status": "new",
+    "id": "clmwqcd0lbl7d1i7o",
+    "createdAt": "2026-11-21T11:45:28.127Z",
+    "updatedAt": "2026-11-21T11:45:28.127Z"
+  },
+  {
+    "name": "JSON DB Verification User",
+    "companyName": "JSON Test Labs",
+    "email": "jsondb@peterairs.com",
+    "phone": "+91 99999 88888",
+    "productOrService": "Modular OT Systems",
+    "requirement": "Verify pure JSON persistence layer",
+    "quantity": "5 Units",
+    "city": "Mumbai",
+    "message": "Testing automated creation in pure JSON storage",
+    "status": "new",
+    "id": "clmwqbkscx3lxoqxw",
+    "createdAt": "2026-11-21T11:23:31.089Z",
+    "updatedAt": "2026-11-21T11:23:31.089Z"
+  },
+  {
     "id": "cmvhq9dne0000w49d0n8m4hoy",
     "createdAt": "2026-10-21T06:24:55.130Z",
     "updatedAt": "2026-10-21T06:24:55.130Z",

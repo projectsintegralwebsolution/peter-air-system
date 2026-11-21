@@ -48,7 +48,7 @@ RUN chown -R nextjs:nodejs /app
 # Copy standalone build output
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
-RUN mkdir -p /app/public/uploads && chown -R nextjs:nodejs /app/public /app/prisma && chmod -R 775 /app/prisma /app/public/uploads
+RUN mkdir -p /app/public/uploads /app/data/json-db && chown -R nextjs:nodejs /app/public /app/data /app/prisma && chmod -R 775 /app/data /app/public/uploads /app/prisma
 
 USER nextjs
 

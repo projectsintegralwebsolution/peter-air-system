@@ -1,6 +1,6 @@
 [
   {
-    "id": "clmvqd1ffwc21wv4x",
+    "id": "cmvhq2kko0010b1gzogx35qj9",
     "slug": "pharmaceuticals",
     "name": "Pharmaceuticals & APIs",
     "tagline": "GMP & USFDA Compliant HVAC & Cleanroom Solutions",
@@ -11,11 +11,11 @@
     "products": "[\"air-handling-unit-ahu\",\"dynamic-pass-box\",\"dispensing-booth\",\"air-shower\",\"modular-clean-room-doors\"]",
     "displayOrder": 1,
     "isActive": true,
-    "createdAt": "2026-10-27T07:24:44.780Z",
-    "updatedAt": "2026-10-27T07:24:44.780Z"
+    "createdAt": "2026-10-21T06:19:37.512Z",
+    "updatedAt": "2026-10-21T06:19:37.512Z"
   },
   {
-    "id": "clmvqd1ffwkfuo9y1",
+    "id": "cmvhq2kkt0011b1gzqnxfnb8d",
     "slug": "biotechnology",
     "name": "Biotechnology & Life Sciences",
     "tagline": "Aseptic Containment & High-Integrity Air Handling",
@@ -26,11 +26,11 @@
     "products": "[\"bio-safety-cabinets\",\"laminar-work-stations\",\"hepa-filter\",\"ceiling-suspended-laminar\"]",
     "displayOrder": 2,
     "isActive": true,
-    "createdAt": "2026-10-27T07:24:44.780Z",
-    "updatedAt": "2026-10-27T07:24:44.780Z"
+    "createdAt": "2026-10-21T06:19:37.517Z",
+    "updatedAt": "2026-10-21T06:19:37.517Z"
   },
   {
-    "id": "clmvqd1ffw04wqbuk",
+    "id": "cmvhq2kkz0012b1gzpnoqzk9p",
     "slug": "healthcare-hospitals",
     "name": "Healthcare & Modular Operating Theatres",
     "tagline": "Infection Control & Ultra-Clean Surgical Environments",
@@ -41,11 +41,11 @@
     "products": "[\"modular-ot\",\"return-air-riser\",\"modular-clean-room-doors\",\"air-handling-unit-ahu\"]",
     "displayOrder": 3,
     "isActive": true,
-    "createdAt": "2026-10-27T07:24:44.780Z",
-    "updatedAt": "2026-10-27T07:24:44.780Z"
+    "createdAt": "2026-10-21T06:19:37.523Z",
+    "updatedAt": "2026-10-21T06:19:37.523Z"
   },
   {
-    "id": "clmvqd1ffw4yb8zf7",
+    "id": "cmvhq2kl40013b1gzu7a91tqr",
     "slug": "chemicals-specialty",
     "name": "Chemicals & Specialty Processing",
     "tagline": "Corrosion-Resistant Ventilation & Hazardous Fume Control",
@@ -56,11 +56,11 @@
     "products": "[\"air-washer-unit\",\"volume-control-damper-v-c-d\",\"supply-return-air-grille\"]",
     "displayOrder": 4,
     "isActive": true,
-    "createdAt": "2026-10-27T07:24:44.780Z",
-    "updatedAt": "2026-10-27T07:24:44.780Z"
+    "createdAt": "2026-10-21T06:19:37.528Z",
+    "updatedAt": "2026-10-21T06:19:37.528Z"
   },
   {
-    "id": "clmvqd1ffw6jh40eo",
+    "id": "cmvhq2kl80014b1gz4gn3c96y",
     "slug": "electronics-semiconductor",
     "name": "Electronics & Semiconductor",
     "tagline": "Sub-Micron Particulate Control & ESD-Safe Enclosures",
@@ -71,11 +71,11 @@
     "products": "[\"air-shower\",\"mini-pleat-hepa-filter\",\"modular-cleanroom-solution\",\"dehumidifier-unit\"]",
     "displayOrder": 5,
     "isActive": true,
-    "createdAt": "2026-10-27T07:24:44.780Z",
-    "updatedAt": "2026-10-27T07:24:44.780Z"
+    "createdAt": "2026-10-21T06:19:37.533Z",
+    "updatedAt": "2026-10-21T06:19:37.533Z"
   },
   {
-    "id": "clm_ind_food_beverage_packaging",
+    "id": "cmwj6l8520000jahq763hgycx",
     "slug": "food-beverage-packaging",
     "name": "Food and Beverage Packaging",
     "tagline": "Hygienic Contamination Control & Positive Pressure HVAC",
@@ -84,13 +84,13 @@
     "challenges": "[\"Microbial, bacterial, and fungal spore contamination near open filling lines\",\"High humidity and surface condensation caused by steam cleaning and bottling\",\"Caustic chemical washdown procedures degrading standard HVAC construction\",\"Strict compliance mandates with FSSAI, FDA, and global food safety audits\"]",
     "solutions": "[\"Custom double-skin thermal-break AHUs with antimicrobial PUF insulation and deep dehumidification\",\"SS 304 washdown terminal HEPA filtration units with food-grade gel seals\",\"High-velocity air showers and dynamic interlocking pass boxes for safe material transfer\",\"Hermetic airtight cleanroom doors preventing cross-contamination between raw and sterile zones\"]",
     "products": "[\"air-handling-unit-ahu\",\"dynamic-pass-box\",\"air-shower\",\"hepa-filter\",\"modular-clean-room-doors\"]",
-    "displayOrder": 6,
+    "displayOrder": 7,
     "isActive": true,
-    "createdAt": "2026-11-16T11:29:30.160Z",
-    "updatedAt": "2026-11-16T11:29:30.162Z"
+    "createdAt": "2026-11-16T11:29:30.228Z",
+    "updatedAt": "2026-11-16T11:29:30.228Z"
   },
   {
-    "id": "clm_ind_aerospace_defence",
+    "id": "cmwj6l85t0001jahq5foi1tmc",
     "slug": "aerospace-defence",
     "name": "Aerospace and Defence",
     "tagline": "Ultra-Low Particulate & High-Bay Precision HVAC Solutions",
@@ -99,13 +99,13 @@
     "challenges": "[\"High-bay vertical clearances required for aircraft components and payload integration\",\"Electrostatic discharge (ESD) risks threatening sensitive missile and satellite avionics\",\"Strict thermal stability (±0.5°C) to prevent expansion distortion during laser alignment\",\"Critical molecular outgassing and Foreign Object Debris (FOD) mitigation\"]",
     "solutions": "[\"Heavy-duty modular cleanroom panel envelopes with non-conductive ESD-safe finishes\",\"High-capacity industrial AHUs with micro-processor VAV airflow control and VFD blowers\",\"High-velocity de-ionizing air showers designed for large component and technician access\",\"Ultra-low vibration laminar flow hoods and ceiling-suspended laminar airflow modules\"]",
     "products": "[\"air-handling-unit-ahu\",\"air-shower\",\"laminar-work-stations\",\"hepa-terminal-box\",\"modular-cleanroom-solution\"]",
-    "displayOrder": 7,
+    "displayOrder": 9,
     "isActive": true,
-    "createdAt": "2026-11-16T11:29:30.162Z",
-    "updatedAt": "2026-11-16T11:29:30.162Z"
+    "createdAt": "2026-11-16T11:29:30.258Z",
+    "updatedAt": "2026-11-16T11:29:30.258Z"
   },
   {
-    "id": "clm_ind_optical_lens_manufacturing",
+    "id": "cmwj6l8600002jahqnvv3qkrh",
     "slug": "optical-lens-manufacturing",
     "name": "Optical and Lens Manufacturing",
     "tagline": "Sub-Micron Particulate Control & High-Purity Coating Enclosures",
@@ -114,13 +114,13 @@
     "challenges": "[\"Sub-micron airborne dust causing surface pinholes during thin-film vacuum deposition\",\"Electrostatic attraction of ambient debris to polished glass and polymer lens surfaces\",\"Temperature micro-fluctuations causing curvature distortion during laser interferometry\",\"Chemical vapor and VOC accumulation from optical polishing solvents and adhesives\"]",
     "solutions": "[\"Vertical laminar flow clean benches equipped with 99.999% efficiency H14/U15 filtration\",\"Precision AHUs maintaining ultra-tight temperature (±0.2°C) and relative humidity stability\",\"Static and dynamic pass boxes with UV sterilization for contamination-free lens transfer\",\"Flush-mounted cleanroom ceilings with aerodynamic teardrop LED lighting and sealed grid profiles\"]",
     "products": "[\"laminar-work-stations\",\"mini-pleat-hepa-filter\",\"hepa-terminal-box\",\"static-pass-box\",\"ceiling-suspended-laminar\"]",
-    "displayOrder": 8,
+    "displayOrder": 11,
     "isActive": true,
-    "createdAt": "2026-11-16T11:29:30.162Z",
-    "updatedAt": "2026-11-16T11:29:30.162Z"
+    "createdAt": "2026-11-16T11:29:30.264Z",
+    "updatedAt": "2026-11-16T11:29:30.264Z"
   },
   {
-    "id": "clm_ind_plastic_toys_manufacturing",
+    "id": "cmwj6l8670003jahq4j2t45da",
     "slug": "plastic-toys-manufacturing",
     "name": "Plastic Toys Manufacturing",
     "tagline": "Dust-Free Injection Moulding & Clean Assembly Ventilation",
@@ -129,9 +129,9 @@
     "challenges": "[\"Severe electrostatic charging attracting airborne dust to newly ejected plastic parts\",\"Heat dissipation, plasticizer vapors, and fumes generated by high-tonnage moulding presses\",\"Surface contamination during automated pad printing, ultrasonic welding, and packaging\",\"Stringent hygiene compliance standards required for infant and oral-contact toys\"]",
     "solutions": "[\"Positive-pressure modular partition cleanrooms isolating printing and assembly lines\",\"Industrial AHUs with return air risers and multi-stage pre/microvee filtration systems\",\"Ionizing blowers and pass boxes to dissipate static charges on moulded toy components\",\"Engineered fume and thermal exhaust hoods integrated with supply and return air grilles\"]",
     "products": "[\"air-handling-unit-ahu\",\"air-shower\",\"supply-return-air-diffuser\",\"return-air-riser\",\"volume-control-damper-v-c-d\"]",
-    "displayOrder": 9,
+    "displayOrder": 13,
     "isActive": true,
-    "createdAt": "2026-11-16T11:29:30.162Z",
-    "updatedAt": "2026-11-16T11:29:30.162Z"
+    "createdAt": "2026-11-16T11:29:30.271Z",
+    "updatedAt": "2026-11-16T11:29:30.271Z"
   }
 ]

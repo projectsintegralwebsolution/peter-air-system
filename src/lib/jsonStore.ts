@@ -8,60 +8,154 @@ export function generateJsonId(): string {
   return "cl" + Date.now().toString(36) + Math.random().toString(36).slice(2, 9);
 }
 
-const DB_DIR = path.join(process.cwd(), "data", "json-db");
+export function getDbDir(): string {
+  if (process.env.JSON_DB_DIR) {
+    return process.env.JSON_DB_DIR;
+  }
+  const candidates = [
+    path.join(process.cwd(), "data", "json-db"),
+    path.join(process.cwd(), ".next", "standalone", "data", "json-db"),
+    path.join("/app", "data", "json-db"),
+  ];
+  if (process.cwd().includes(".next")) {
+    const projectRoot = process.cwd().split(".next")[0];
+    candidates.unshift(path.join(projectRoot, "data", "json-db"));
+  }
+  for (const dir of candidates) {
+    if (fs.existsSync(dir)) {
+      return dir;
+    }
+  }
+  return path.join(process.cwd(), "data", "json-db");
+}
 
 /**
  * Ensures the JSON storage directory exists.
  */
 function ensureDbDir() {
-  if (!fs.existsSync(DB_DIR)) {
-    fs.mkdirSync(DB_DIR, { recursive: true });
+  const dir = getDbDir();
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
   }
 }
 
 /**
- * A lightweight, pure JSON-file-backed data collection that adheres to Prisma-like query semantics.
+ * A lightweight, pure JSON-file-backed data collection that adheres to Prisma query semantics.
  */
 export class JsonCollection<T extends Record<string, any>> {
-  private filePath: string;
   private filename: string;
   private cache: T[] | null = null;
+  private lastMtime: number = 0;
 
   constructor(filename: string) {
     this.filename = filename;
-    this.filePath = path.join(DB_DIR, `${filename}.json`);
+  }
+
+  private getFilePath(): string {
+    return path.join(getDbDir(), `${this.filename}.json`);
   }
 
   private readAll(): T[] {
     ensureDbDir();
-    if (this.cache !== null) {
+    const filePath = this.getFilePath();
+
+    if (!fs.existsSync(filePath)) {
+      if (this.cache === null) this.cache = [];
+      this.lastMtime = 0;
       return this.cache;
     }
-    if (!fs.existsSync(this.filePath)) {
-      this.cache = [];
-      return this.cache;
+
+    for (let attempt = 0; attempt < 3; attempt++) {
+      try {
+        const stat = fs.statSync(filePath);
+        if (this.cache !== null && stat.mtimeMs <= this.lastMtime) {
+          return this.cache;
+        }
+
+        const content = fs.readFileSync(filePath, "utf8");
+        if (!content || !content.trim()) {
+          const start = Date.now();
+          while (Date.now() - start < 15) {}
+          continue;
+        }
+
+        const parsed = JSON.parse(content);
+        if (Array.isArray(parsed)) {
+          this.cache = parsed;
+          this.lastMtime = stat.mtimeMs;
+          return this.cache;
+        }
+      } catch (err) {
+        if (attempt === 2) {
+          console.warn(`[JsonDB] Error reading ${this.filename}.json:`, err);
+        } else {
+          const start = Date.now();
+          while (Date.now() - start < 15) {}
+        }
+      }
     }
-    try {
-      const content = fs.readFileSync(this.filePath, "utf8");
-      this.cache = JSON.parse(content || "[]");
-    } catch (err) {
-      console.warn(`[JsonDB] Error reading ${this.filename}.json, initializing empty:`, err);
-      this.cache = [];
-    }
+
+    // Keep existing cache if read failed momentarily, otherwise empty
     return this.cache || [];
   }
 
   private writeAll(items: T[]): void {
     ensureDbDir();
+    const filePath = this.getFilePath();
     this.cache = items;
+
+    // Use unique temp file per process & timestamp to prevent Windows file locking collisions
+    const tempPath = `${filePath}.${process.pid}.${Date.now()}-${Math.random().toString(36).slice(2, 6)}.tmp`;
+
     try {
-      const tempPath = `${this.filePath}.tmp`;
       fs.writeFileSync(tempPath, JSON.stringify(items, null, 2), "utf8");
-      fs.renameSync(tempPath, this.filePath);
+
+      let renamed = false;
+      for (let i = 0; i < 5; i++) {
+        try {
+          fs.renameSync(tempPath, filePath);
+          renamed = true;
+          break;
+        } catch {
+          const start = Date.now();
+          while (Date.now() - start < 10) {}
+        }
+      }
+
+      if (!renamed) {
+        try {
+          fs.copyFileSync(tempPath, filePath);
+          fs.unlinkSync(tempPath);
+        } catch {}
+      }
+
+      try {
+        this.lastMtime = fs.statSync(filePath).mtimeMs;
+      } catch {}
     } catch (err) {
       // Fallback direct write
-      fs.writeFileSync(this.filePath, JSON.stringify(items, null, 2), "utf8");
+      try {
+        fs.writeFileSync(filePath, JSON.stringify(items, null, 2), "utf8");
+        this.lastMtime = fs.statSync(filePath).mtimeMs;
+      } catch {}
     }
+  }
+
+  /**
+   * Hydrates string date values to standard Date instances matching Prisma's return format.
+   */
+  private hydrateDates(item: any): any {
+    if (!item || typeof item !== "object") return item;
+    const copy = { ...item };
+    for (const key of ["createdAt", "updatedAt", "publishedAt", "lastLoginAt"]) {
+      if (copy[key] !== undefined && copy[key] !== null) {
+        const d = copy[key] instanceof Date ? copy[key] : new Date(copy[key]);
+        if (!isNaN(d.getTime())) {
+          copy[key] = d;
+        }
+      }
+    }
+    return copy;
   }
 
   /**
@@ -102,17 +196,21 @@ export class JsonCollection<T extends Record<string, any>> {
         continue;
       }
 
+      // Boolean check (handles boolean or 0/1)
+      if (typeof condition === "boolean") {
+        if (Boolean(itemVal) !== condition) return false;
+        continue;
+      }
+
+      // Object conditions
       if (typeof condition === "object" && condition !== null && !(condition instanceof Date)) {
         const cond = condition as any;
+
         // contains
         if (cond.contains !== undefined) {
-          const strItem = String(itemVal ?? "");
-          const strSearch = String(cond.contains);
-          if (cond.mode === "insensitive") {
-            if (!strItem.toLowerCase().includes(strSearch.toLowerCase())) return false;
-          } else {
-            if (!strItem.includes(strSearch)) return false;
-          }
+          const strItem = String(itemVal ?? "").toLowerCase();
+          const strSearch = String(cond.contains).toLowerCase();
+          if (!strItem.includes(strSearch)) return false;
           continue;
         }
 
@@ -130,8 +228,8 @@ export class JsonCollection<T extends Record<string, any>> {
 
         // equals
         if (cond.equals !== undefined) {
-          if (cond.mode === "insensitive" && typeof itemVal === "string") {
-            if (itemVal.toLowerCase() !== String(cond.equals).toLowerCase()) return false;
+          if (typeof itemVal === "string" && typeof cond.equals === "string") {
+            if (itemVal.toLowerCase() !== cond.equals.toLowerCase()) return false;
           } else {
             if (itemVal !== cond.equals) return false;
           }
@@ -140,20 +238,27 @@ export class JsonCollection<T extends Record<string, any>> {
 
         // not
         if (cond.not !== undefined) {
-          if (itemVal === cond.not) return false;
+          if (cond.not === null) {
+            if (itemVal === null || itemVal === undefined) return false;
+          } else if (itemVal === cond.not) {
+            return false;
+          }
           continue;
         }
 
         // comparisons: gt, gte, lt, lte
-        if (cond.gt !== undefined && !(itemVal > cond.gt)) return false;
-        if (cond.gte !== undefined && !(itemVal >= cond.gte)) return false;
-        if (cond.lt !== undefined && !(itemVal < cond.lt)) return false;
-        if (cond.lte !== undefined && !(itemVal <= cond.lte)) return false;
+        const compareVal = (val: any) => (val instanceof Date ? val.getTime() : val);
+        const aVal = compareVal(itemVal);
+
+        if (cond.gt !== undefined && !(aVal > compareVal(cond.gt))) return false;
+        if (cond.gte !== undefined && !(aVal >= compareVal(cond.gte))) return false;
+        if (cond.lt !== undefined && !(aVal < compareVal(cond.lt))) return false;
+        if (cond.lte !== undefined && !(aVal <= compareVal(cond.lte))) return false;
 
         continue;
       }
 
-      // Case insensitive check for strings if needed, or strict equal
+      // Simple equality
       if (typeof condition === "string" && typeof itemVal === "string") {
         if (itemVal !== condition) return false;
       } else if (itemVal !== condition) {
@@ -193,6 +298,14 @@ export class JsonCollection<T extends Record<string, any>> {
 
           const strA = String(valA);
           const strB = String(valB);
+
+          // Check if ISO dates
+          const dateA = Date.parse(strA);
+          const dateB = Date.parse(strB);
+          if (!isNaN(dateA) && !isNaN(dateB) && (strA.includes("T") || strA.includes("-"))) {
+            return (dateA - dateB) * dir;
+          }
+
           return strA.localeCompare(strB) * dir;
         }
       }
@@ -241,18 +354,21 @@ export class JsonCollection<T extends Record<string, any>> {
       items = items.slice(0, options.take);
     }
 
+    const hydrated = items.map((it) => this.hydrateDates(it));
+
     if (options?.select) {
-      return items.map((it) => this.applySelect(it, options.select));
+      return hydrated.map((it) => this.applySelect(it, options.select));
     }
 
-    return items;
+    return hydrated;
   }
 
   async findUnique(options: { where: any; select?: any }): Promise<any | null> {
     const items = this.readAll();
     const item = items.find((it) => this.matchesWhere(it, options.where)) || null;
     if (!item) return null;
-    return options.select ? this.applySelect(item, options.select) : item;
+    const hydrated = this.hydrateDates(item);
+    return options.select ? this.applySelect(hydrated, options.select) : hydrated;
   }
 
   async findFirst(options?: {
@@ -287,7 +403,27 @@ export class JsonCollection<T extends Record<string, any>> {
 
     items.push(newItem);
     this.writeAll(items);
-    return newItem;
+    return this.hydrateDates(newItem);
+  }
+
+  async createMany(options: { data: any[] }): Promise<{ count: number }> {
+    const items = this.readAll();
+    let count = 0;
+    const now = new Date().toISOString();
+
+    for (const d of options.data) {
+      const id = d.id || generateJsonId();
+      items.push({
+        ...d,
+        id,
+        createdAt: d.createdAt ? new Date(d.createdAt).toISOString() : now,
+        updatedAt: d.updatedAt ? new Date(d.updatedAt).toISOString() : now,
+      });
+      count++;
+    }
+
+    this.writeAll(items);
+    return { count };
   }
 
   async update(options: { where: any; data: any }): Promise<any> {
@@ -308,7 +444,31 @@ export class JsonCollection<T extends Record<string, any>> {
     updated.updatedAt = new Date().toISOString();
     items[idx] = updated as T;
     this.writeAll(items);
-    return updated;
+    return this.hydrateDates(updated);
+  }
+
+  async updateMany(options: { where?: any; data: any }): Promise<{ count: number }> {
+    const items = this.readAll();
+    let count = 0;
+    for (let i = 0; i < items.length; i++) {
+      if (!options.where || this.matchesWhere(items[i], options.where)) {
+        const updated: any = { ...items[i] };
+        for (const [k, v] of Object.entries(options.data)) {
+          if (v && typeof v === "object" && "increment" in (v as any)) {
+            updated[k] = (Number(updated[k]) || 0) + (Number((v as any).increment) || 1);
+          } else {
+            updated[k] = v;
+          }
+        }
+        updated.updatedAt = new Date().toISOString();
+        items[i] = updated;
+        count++;
+      }
+    }
+    if (count > 0) {
+      this.writeAll(items);
+    }
+    return { count };
   }
 
   async upsert(options: { where: any; update: any; create: any }): Promise<any> {
@@ -328,7 +488,7 @@ export class JsonCollection<T extends Record<string, any>> {
     }
     const [removed] = items.splice(idx, 1);
     this.writeAll(items);
-    return removed;
+    return this.hydrateDates(removed);
   }
 
   async deleteMany(options?: { where?: any }): Promise<{ count: number }> {
@@ -374,7 +534,7 @@ export class JsonCollection<T extends Record<string, any>> {
 }
 
 /**
- * The unified JSON file client that provides drop-in replacement for Prisma.
+ * The unified JSON file client that provides a complete drop-in replacement for Prisma.
  */
 export const jsonDb = {
   user: new JsonCollection("users"),

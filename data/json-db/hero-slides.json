@@ -1,25 +1,25 @@
 [
   {
-    "id": "clmvqd1fg399hd35d",
+    "id": "cmvhq2kcg0000b1gz6uf2dukm",
     "slideNumber": "01",
     "badge": "CUSTOM HVAC & AIR HANDLING SYSTEMS",
     "heading": "Precision-Engineered Air Handling Units & HVAC Systems",
     "highlightWord": "Air Handling Units",
-    "supportingText": "Custom double-skin thermal-break Air Handling Units (AHU), Air Washers, and Industrial Dehumidifiers engineered for pharmaceutical GMP, healthcare, and critical industrial environments.",
+    "supportingText": "Custom double-skin thermal-break Air Handling Units (AHU) and Air Washers, engineered for pharmaceutical GMP, healthcare, and critical industrial environments.",
     "primaryBtnText": "Explore AHU Systems",
     "primaryBtnLink": "/air-handling-unit-ahu/",
     "secondaryBtnText": "Request Technical Quote",
     "secondaryBtnAction": "modal",
     "secondaryBtnLink": "",
     "image": "/images/hero-banner-1.png",
-    "technicalSpecs": "[\"Thermal Break Profiles\",\"PUF Insulated 40 kg/m³\",\"Eurovent / ISO Standards\",\"Direct Drive / VFD Ready\"]",
+    "technicalSpecs": "[\"Thermal Break Profiles\",\"PUF Insulated 40 kg/m³\",\"Eurovent / ISO Standards\",\"Direct Drive / VFD Ready\",\"EC (Electronically Commutated) Fan\"]",
     "order": 1,
     "isActive": true,
-    "createdAt": "2026-10-27T07:24:44.787Z",
-    "updatedAt": "2026-10-27T07:24:44.787Z"
+    "createdAt": "2026-10-21T06:19:37.216Z",
+    "updatedAt": "2026-11-13T04:21:25.279Z"
   },
   {
-    "id": "clmvqd1fg302pec9x",
+    "id": "cmvhq2kcq0001b1gzbevynfgh",
     "slideNumber": "02",
     "badge": "SS 304 / SS 316 CONTAMINATION CONTROL",
     "heading": "Advanced Cleanroom Equipment & Laminar Workstations",
@@ -31,14 +31,14 @@
     "secondaryBtnAction": "link",
     "secondaryBtnLink": "/contact-peter-air-systems/",
     "image": "/images/hero-banner-2.png",
-    "technicalSpecs": "[\"SS 304 / SS 316 Construction\",\"99.997% HEPA Filtration\",\"Electromagnetic Interlocks\",\"UV Sterilization Cycle\"]",
+    "technicalSpecs": "[\"SS 304 / SS 316 Construction\",\"99.997% HEPA Filtration\",\"Electromagnetic Interlocks\",\"UV Sterilization Cycle\",\"EC (Electronically Commutated) Fan\"]",
     "order": 2,
     "isActive": true,
-    "createdAt": "2026-10-27T07:24:44.787Z",
-    "updatedAt": "2026-10-27T07:24:44.787Z"
+    "createdAt": "2026-10-21T06:19:37.226Z",
+    "updatedAt": "2026-11-13T04:21:25.296Z"
   },
   {
-    "id": "clmvqd1fg3hhjno88",
+    "id": "cmvhq2kcu0002b1gzkf5lqduc",
     "slideNumber": "03",
     "badge": "PRECISION AIR DISTRIBUTION & FILTRATION",
     "heading": "Certified Air Filtration & Distribution Networks",
@@ -50,14 +50,14 @@
     "secondaryBtnAction": "modal",
     "secondaryBtnLink": "",
     "image": "/images/hero-banner-3.png",
-    "technicalSpecs": "[\"H13 & H14 Certified HEPA\",\"Aerodynamic Airfoil Dampers\",\"Airtight Flanged Joints\",\"Low Noise & Low Pressure Drop\"]",
+    "technicalSpecs": "[\"H13 & H14 Certified HEPA\",\"Aerodynamic Aerofoil Dampers\",\"Airtight Flanged Joints\",\"Low Noise & Low Pressure Drop\"]",
     "order": 3,
     "isActive": true,
-    "createdAt": "2026-10-27T07:24:44.787Z",
-    "updatedAt": "2026-10-27T07:24:44.787Z"
+    "createdAt": "2026-10-21T06:19:37.231Z",
+    "updatedAt": "2026-11-13T04:21:25.302Z"
   },
   {
-    "id": "clmvqd1fg3k64hl5d",
+    "id": "cmvhq2kcz0003b1gzt1bbumqs",
     "slideNumber": "04",
     "badge": "TURNKEY CLEANROOM EPC & STERILIZATION",
     "heading": "Turnkey Cleanroom Solutions & Contamination Control",
@@ -72,7 +72,7 @@
     "technicalSpecs": "[\"ISO Class 1 to Class 8\",\"Flush Modular Paneling\",\"Airtight Hermetic Doors\",\"Complete DQ/IQ/OQ Dossier\"]",
     "order": 4,
     "isActive": true,
-    "createdAt": "2026-10-27T07:24:44.787Z",
-    "updatedAt": "2026-10-27T07:24:44.787Z"
+    "createdAt": "2026-10-21T06:19:37.236Z",
+    "updatedAt": "2026-10-21T12:46:07.693Z"
   }
 ]

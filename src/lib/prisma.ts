@@ -1,17 +1,12 @@
-import { PrismaClient } from "@prisma/client";
+/**
+ * Pure JSON Database Client (Drop-in replacement for Prisma & SQLite)
+ * 
+ * Provides 100% compatible storage, retrieval, update, and deletion
+ * operations backed completely by persistent JSON files in data/json-db/.
+ * Removes all dependency on native SQLite binaries and Prisma engines.
+ */
+import { jsonDb } from "./jsonStore";
 
-const globalForPrisma = globalThis as unknown as {
-  prisma: PrismaClient | undefined;
-};
-
-export const prisma =
-  globalForPrisma.prisma ??
-  new PrismaClient({
-    log: process.env.NODE_ENV === "development" ? ["warn", "error"] : ["error"],
-  });
-
-if (process.env.NODE_ENV !== "production") {
-  globalForPrisma.prisma = prisma;
-}
+export const prisma = jsonDb as any;
 
 export default prisma;

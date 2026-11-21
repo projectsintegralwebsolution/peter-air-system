@@ -3,6 +3,8 @@ import { prisma } from "@/lib/prisma";
 import { getAuthenticatedAdmin } from "@/lib/auth";
 import { initDatabase } from "@/lib/db";
 
+export const dynamic = "force-dynamic";
+
 // GET /api/admin/content - List all editable content blocks
 export async function GET() {
   try {
