@@ -126,7 +126,7 @@ export default async function HomePage() {
               <div className="relative h-[420px] sm:h-[480px] w-full rounded-2xl overflow-hidden border border-slate-200 bg-white">
                 <Image
                   src="/images/AHU.jpeg"
-                  alt="Peter Air Systems Air Handling Unit Manufacturing"
+                  alt="Peter Air Systems Air Handling Unit Manufacturing" title="Peter Air Systems Air Handling Unit Manufacturing"
                   fill
                   className="object-cover"
                 />
@@ -303,7 +303,7 @@ export default async function HomePage() {
               <div className="relative h-64 rounded-xl overflow-hidden shadow-lg border border-slate-700 bg-white p-3">
                 <Image
                   src="/images/manufacturing-air-shower.jpg"
-                  alt="Peter Air Systems Cleanroom Air Shower Assembly"
+                  alt="Peter Air Systems Cleanroom Air Shower Assembly" title="Peter Air Systems Cleanroom Air Shower Assembly"
                   fill
                   className="object-contain p-2"
                 />
@@ -311,7 +311,7 @@ export default async function HomePage() {
               <div className="relative h-64 rounded-xl overflow-hidden shadow-lg border border-slate-700 mt-6 bg-white p-3">
                 <Image
                   src="/images/manufacturing-static-pass-box.jpg"
-                  alt="Static Pass Box Cleanroom Fabrication"
+                  alt="Static Pass Box Cleanroom Fabrication" title="Static Pass Box Cleanroom Fabrication"
                   fill
                   className="object-contain p-2"
                 />
@@ -319,7 +319,7 @@ export default async function HomePage() {
               <div className="relative h-64 rounded-xl overflow-hidden shadow-lg border border-slate-700 bg-white p-3 -mt-6">
                 <Image
                   src="/images/manufacturing-laminar-flow.jpg"
-                  alt="Laminar Air Flow Cabinet Assembly"
+                  alt="Laminar Air Flow Cabinet Assembly" title="Laminar Air Flow Cabinet Assembly"
                   fill
                   className="object-contain p-2"
                 />
@@ -327,7 +327,7 @@ export default async function HomePage() {
               <div className="relative h-64 rounded-xl overflow-hidden shadow-lg border border-slate-700">
                 <Image
                   src="/images/MODULAR-CLEAN-ROOM-PANELS.jpg"
-                  alt="Modular Cleanroom Panels Assembly"
+                  alt="Modular Cleanroom Panels Assembly" title="Modular Cleanroom Panels Assembly"
                   fill
                   className="object-cover"
                 />
@@ -366,7 +366,7 @@ export default async function HomePage() {
                 <div className="relative h-48 w-full bg-slate-100">
                   <Image
                     src={ind.image}
-                    alt={ind.name}
+                    alt={ind.name} title={ind.name}
                     fill
                     className="object-cover"
                   />
@@ -509,7 +509,7 @@ export default async function HomePage() {
                 <div className="relative h-48 w-full bg-slate-100">
                   <Image
                     src={resolveBlogImageUrl(b.featuredImage)}
-                    alt={b.title}
+                    alt={b.title} title={b.title}
                     fill
                     className="object-cover"
                   />

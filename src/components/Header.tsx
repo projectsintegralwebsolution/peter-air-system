@@ -159,7 +159,7 @@ export const Header: React.FC = () => {
             <div className="relative flex-shrink-0 flex items-center justify-center">
               <Image
                 src="/images/PETER-AIR-LOGO.png"
-                alt="Peter Air Systems - Precision HVAC & Cleanroom Solutions"
+                alt="Peter Air Systems - Precision HVAC & Cleanroom Solutions" title="Peter Air Systems - Precision HVAC & Cleanroom Solutions"
                 width={622}
                 height={885}
                 priority
@@ -229,7 +229,7 @@ export const Header: React.FC = () => {
                           <div className="absolute inset-0 opacity-15 pointer-events-none mix-blend-overlay">
                             <Image
                               src="/images/ahu_banner.png"
-                              alt="HVAC Banner"
+                              alt="HVAC Banner" title="HVAC Banner"
                               fill
                               className="object-cover object-right"
                             />
@@ -334,7 +334,7 @@ export const Header: React.FC = () => {
                             <div className="mt-auto relative h-20 rounded-lg overflow-hidden border border-slate-200/80 bg-slate-100 shadow-2xs group shrink-0">
                               <Image
                                 src="/images/Air-handling-unit-.jpg"
-                                alt="Air Handling Unit"
+                                alt="Air Handling Unit" title="Air Handling Unit"
                                 fill
                                 className="object-cover group-hover:scale-105 transition-transform duration-300"
                               />
@@ -517,7 +517,7 @@ export const Header: React.FC = () => {
                             <div className="mt-auto relative h-20 rounded-lg overflow-hidden border border-slate-200/80 bg-slate-100 shadow-2xs group shrink-0">
                               <Image
                                 src="/images/pre-filter.jpg"
-                                alt="Air Filters"
+                                alt="Air Filters" title="Air Filters"
                                 fill
                                 className="object-cover group-hover:scale-105 transition-transform duration-300"
                               />
@@ -604,7 +604,7 @@ export const Header: React.FC = () => {
                             <div className="mt-auto relative h-20 rounded-lg overflow-hidden border border-slate-200/80 bg-slate-100 shadow-2xs group shrink-0">
                               <Image
                                 src="/images/supply-return-air-diffuser.jpg"
-                                alt="HVAC Distribution"
+                                alt="HVAC Distribution" title="HVAC Distribution"
                                 fill
                                 className="object-cover group-hover:scale-105 transition-transform duration-300"
                               />
@@ -823,7 +823,7 @@ export const Header: React.FC = () => {
                             <div className="mt-auto relative h-20 rounded-lg overflow-hidden border border-slate-200/80 bg-slate-100 shadow-2xs group shrink-0">
                               <Image
                                 src="/images/Cleanroom-door1.jpg"
-                                alt="Cleanroom Solutions"
+                                alt="Cleanroom Solutions" title="Cleanroom Solutions"
                                 fill
                                 className="object-cover group-hover:scale-105 transition-transform duration-300"
                               />
@@ -971,7 +971,7 @@ export const Header: React.FC = () => {
               >
                 <Image
                   src="/images/PETER-AIR-LOGO.png"
-                  alt="Peter Air Systems Logo"
+                  alt="Peter Air Systems Logo" title="Peter Air Systems Logo"
                   width={622}
                   height={885}
                   className="h-12 w-auto object-contain"

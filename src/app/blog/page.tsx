@@ -212,7 +212,7 @@ export default async function BlogListingPage({ searchParams }: BlogListingPageP
               <div className="relative h-64 sm:h-80 lg:h-auto lg:col-span-7 bg-slate-900 overflow-hidden">
                 <Image
                   src={resolveBlogImageUrl(featuredPost.featuredImage)}
-                  alt={featuredPost.title}
+                  alt={featuredPost.title} title={featuredPost.title}
                   fill
                   priority
                   sizes="(max-width: 1024px) 100vw, 750px"
@@ -281,7 +281,7 @@ export default async function BlogListingPage({ searchParams }: BlogListingPageP
                   <div className="relative aspect-[16/10] w-full bg-slate-100 overflow-hidden">
                     <Image
                       src={resolveBlogImageUrl(post.featuredImage)}
-                      alt={post.title}
+                      alt={post.title} title={post.title}
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px"
                       className="object-cover group-hover:scale-104 transition-transform duration-400"

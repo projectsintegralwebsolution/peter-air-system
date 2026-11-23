@@ -96,7 +96,7 @@ export default function TurnkeyCleanroomSection() {
             <div className="relative w-full h-56 sm:h-64 lg:h-72 rounded-2xl overflow-hidden shadow-md border border-[#E2EBF0] group bg-[#F5F7FA]">
               <Image
                 src="/images/cleanroom-epc-hero.jpg"
-                alt="Peter Air Systems Cleanroom Corridor and Modular Cleanroom Facilities"
+                alt="Peter Air Systems Cleanroom Corridor and Modular Cleanroom Facilities" title="Peter Air Systems Cleanroom Corridor and Modular Cleanroom Facilities"
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"

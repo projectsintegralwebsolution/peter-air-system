@@ -101,7 +101,7 @@ export const LatestApplicationsGallery: React.FC = () => {
               >
                 <Image
                   src={img.src}
-                  alt={img.alt}
+                  alt={img.alt} title={img.alt}
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
@@ -164,7 +164,7 @@ export const LatestApplicationsGallery: React.FC = () => {
             <div className="relative w-full h-full max-h-[75vh] flex items-center justify-center">
               <Image
                 src={applicationImages[activeLightboxIndex].src}
-                alt={applicationImages[activeLightboxIndex].alt}
+                alt={applicationImages[activeLightboxIndex].alt} title={applicationImages[activeLightboxIndex].alt}
                 fill
                 priority
                 className="object-contain"
@@ -200,7 +200,7 @@ export const LatestApplicationsGallery: React.FC = () => {
               >
                 <Image
                   src={img.src}
-                  alt={img.alt}
+                  alt={img.alt} title={img.alt}
                   fill
                   className="object-cover"
                   sizes="64px"

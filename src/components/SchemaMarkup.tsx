@@ -77,18 +77,101 @@ export const WebSiteSchema: React.FC = () => {
   );
 };
 
+export const ManufacturingServiceSchema: React.FC<{
+  name: string;
+  description: string;
+  image: string;
+  serviceType: string;
+  category?: string;
+  url: string;
+  areaServed?: string[];
+  offerings?: string[];
+}> = ({ name, description, image, serviceType, category, url, areaServed, offerings }) => {
+  const imageUrl = image.startsWith("http") ? image : `${siteConfig.url}${image}`;
+  const schema: Record<string, any> = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": name,
+    "serviceType": serviceType,
+    "category": category || "Air Handling & HVAC Systems",
+    "description": description,
+    "image": imageUrl,
+    "url": url,
+    "brand": {
+      "@type": "Brand",
+      "name": siteConfig.name
+    },
+    "provider": {
+      "@type": "Organization",
+      "name": siteConfig.name,
+      "url": siteConfig.url,
+      "logo": `${siteConfig.url}/images/PETER-AIR-LOGO.png`,
+      "telephone": siteConfig.contact.phonePrimary,
+      "email": siteConfig.contact.emailSales
+    },
+    "areaServed": (areaServed && areaServed.length > 0 ? areaServed : ["India"]).map((country) => ({
+      "@type": "Country",
+      "name": country
+    })),
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": url
+    }
+  };
+
+  if (offerings && offerings.length > 0) {
+    schema.hasOfferCatalog = {
+      "@type": "OfferCatalog",
+      "name": `${name} Configurations`,
+      "itemListElement": offerings.map((item) => ({
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": item
+        }
+      }))
+    };
+  }
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+};
+
 export const ProductSchema: React.FC<{
   name: string;
   description: string;
   image: string;
   category?: string;
   url: string;
-}> = ({ name, description, image, category, url }) => {
-  const schema = {
+  sku?: string;
+  lowPrice?: string;
+  highPrice?: string;
+  priceCurrency?: string;
+  areaServed?: string[];
+  additionalProperties?: { name: string; value: string }[];
+}> = ({
+  name,
+  description,
+  image,
+  category,
+  url,
+  sku,
+  lowPrice,
+  highPrice,
+  priceCurrency = "INR",
+  areaServed,
+  additionalProperties,
+}) => {
+  const imageUrl = image.startsWith("http") ? image : `${siteConfig.url}${image}`;
+  const schema: Record<string, any> = {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": name,
-    "image": image.startsWith("http") ? image : `${siteConfig.url}${image}`,
+    "image": [imageUrl],
     "description": description,
     "category": category || "Cleanroom Equipment & HVAC Systems",
     "brand": {
@@ -97,10 +180,49 @@ export const ProductSchema: React.FC<{
     },
     "manufacturer": {
       "@type": "Organization",
-      "name": "Peter Air Systems"
+      "name": "Peter Air Systems",
+      "url": siteConfig.url
     },
     "url": url
   };
+
+  if (lowPrice) {
+    schema.offers = {
+      "@type": highPrice ? "AggregateOffer" : "Offer",
+      "url": url,
+      "priceCurrency": priceCurrency,
+      ...(highPrice
+        ? { "lowPrice": lowPrice, "highPrice": highPrice }
+        : { "price": lowPrice }),
+      "availability": "https://schema.org/InStock",
+      "itemCondition": "https://schema.org/NewCondition",
+      "seller": {
+        "@type": "Organization",
+        "name": "Peter Air Systems"
+      },
+      ...(areaServed && areaServed.length > 0
+        ? {
+            "areaServed": areaServed.map((country) => ({
+              "@type": "Country",
+              "name": country
+            }))
+          }
+        : {})
+    };
+  }
+
+  if (sku) {
+    schema.sku = sku;
+    schema.mpn = sku;
+  }
+
+  if (additionalProperties && additionalProperties.length > 0) {
+    schema.additionalProperty = additionalProperties.map((prop) => ({
+      "@type": "PropertyValue",
+      "name": prop.name,
+      "value": prop.value
+    }));
+  }
 
   return (
     <script

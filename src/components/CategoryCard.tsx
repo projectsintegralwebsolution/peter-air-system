@@ -36,7 +36,7 @@ export const CategoryCard: React.FC<CategoryCardProps> = ({
       <div className="relative h-60 sm:h-64 w-full bg-white border-b border-slate-100 overflow-hidden flex items-center justify-center p-6">
         <Image
           src={featuredImage}
-          alt={name}
+          alt={name} title={name}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-contain p-2 group-hover:scale-105 transition-transform duration-500"

@@ -28,7 +28,7 @@ import { ServicesPageBody } from "@/components/ServicesPageBody";
 import { ProductCard } from "@/components/ProductCard";
 import { EnquiryForm } from "@/components/EnquiryForm";
 import { AhuProductDetail } from "@/components/AhuProductDetail";
-import { ProductSchema, FAQSchema, BreadcrumbSchema } from "@/components/SchemaMarkup";
+import { ProductSchema, ManufacturingServiceSchema, FAQSchema, BreadcrumbSchema } from "@/components/SchemaMarkup";
 import { siteConfig } from "@/data/siteConfig";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { products } from "@/data/products";
@@ -71,17 +71,47 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!product) product = products.find((p) => p.slug === slug);
 
   if (product) {
+    const isAhu = slug === "air-handling-unit-ahu";
+    const metaTitle = isAhu
+      ? "Air Handling Units Manufacturer in India & Vietnam (AHU)"
+      : product.seoTitle || `${product.title} | Peter Air Systems`;
+    const metaDesc = isAhu
+      ? "ISO & CE certified Air Handling Units manufacturer in India supplying custom cleanroom, pharma & industrial AHUs across India and Vietnam. Get a quote."
+      : product.metaDescription || product.overview;
+    const canonicalUrl = product.canonical || `https://peterairs.com/${slug}/`;
+    const imageUrl = product.image?.startsWith("http")
+      ? product.image
+      : `${siteConfig.url}${product.image || "/images/AHU.jpeg"}`;
+
     return {
-      title: product.seoTitle || `${product.title} | Peter Air Systems`,
-      description: product.metaDescription || product.overview,
+      title: isAhu ? { absolute: metaTitle } : metaTitle,
+      description: metaDesc,
       alternates: {
-        canonical: product.canonical || `https://peterairs.com/${slug}/`,
+        canonical: canonicalUrl,
       },
       openGraph: {
-        title: product.seoTitle || product.title,
-        description: product.metaDescription || product.overview,
-        url: product.canonical || `https://peterairs.com/${slug}/`,
-        images: [{ url: product.image }],
+        title: metaTitle,
+        description: metaDesc,
+        url: canonicalUrl,
+        siteName: siteConfig.name,
+        type: "website",
+        locale: "en_IN",
+        images: [
+          {
+            url: imageUrl,
+            width: 1200,
+            height: 630,
+            alt: isAhu
+              ? "Air Handling Units (AHU) manufactured by Peter Air Systems in India for India and Vietnam"
+              : product.title,
+          },
+        ],
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: metaTitle,
+        description: metaDesc,
+        images: [imageUrl],
       },
     };
   }
@@ -170,31 +200,84 @@ export default async function GenericPage({ params }: PageProps) {
       .filter((p) => p.slug !== product.slug && (p.categorySlug === product.categorySlug || p.categoryName === product.categoryName))
       .slice(0, 4);
 
+    const isAhu = product.slug === "air-handling-unit-ahu";
+    const canonicalUrl = product.canonical || `${siteConfig.url}/${product.slug}/`;
+    const schemaDescription = isAhu
+      ? "ISO & CE certified Air Handling Units manufacturer in India supplying custom cleanroom, pharma & industrial AHUs across India and Vietnam. Get a quote."
+      : product.metaDescription || product.overview;
+    const schemaFaqs = isAhu
+      ? [
+          {
+            question: "How do I select the right Air Handling Unit (AHU) capacity for a cleanroom or factory?",
+            answer:
+              "Start with room volume, required air changes per hour (ACH), heat load, and the pressure drop across your ducting and filters. Standard comfort HVAC usually needs 4 to 8 ACH, while pharmaceutical and electronics cleanrooms often require 15 to 60 ACH with higher static pressure for HEPA terminal filters. Share your floor plan and process heat load with our engineers, and we will size the exact airflow (CMH or CFM), coil rows, and fan motor for your plant.",
+          },
+          {
+            question: "Why choose Peter Air Systems as your Air Handling Units manufacturer in India?",
+            answer:
+              "We build every AHU in-house at our Vasai East, Mumbai plant rather than outsourcing casing fabrication. Each unit uses thermal-break extruded aluminum pentapost frames, 40 kg/m³ PUF double-skin panels, SS 304 sloped drain pans, and factory-tested coils and filter banks. Because we manufacture cleanroom equipment alongside AHUs, our units are built to pass WHO-GMP, Schedule M, ISO 14644, and CE inspections without site modifications.",
+          },
+          {
+            question: "Do you supply and export Air Handling Units from India to Vietnam?",
+            answer:
+              "Yes. We regularly supply custom Air Handling Units to pharmaceutical, electronics, hospital, and food processing projects across India as well as Vietnam, including Ho Chi Minh City, Hanoi, Bac Ninh, and Binh Duong. Units for Vietnam are built for 380V/50Hz power and tropical coastal humidity, shipped in export-grade seaworthy crates (assembled or modular knocked-down), and delivered with full FAT reports, wiring diagrams, and DQ/IQ/OQ documentation.",
+          },
+          {
+            question: "Why do cleanroom AHUs need thermal-break frames and direct-drive plug fans?",
+            answer:
+              "In humid regions like Mumbai, Chennai, Ho Chi Minh City, and Hanoi, standard aluminum frames conduct cold air from inside the casing to the outer skin, causing condensation and rust. Thermal-break polyamide profiles stop that heat transfer completely. Pairing them with direct-drive backward-curved plug fans removes V-belts that shed rubber dust, keeping downstream fine and HEPA filters cleaner for longer.",
+          },
+        ]
+      : product.faqs;
+
     return (
       <div className="w-full bg-white">
-        <ProductSchema
-          name={product.title}
-          description={product.metaDescription}
-          image={product.image}
-          category={product.categoryName}
-          url={product.canonical}
-        />
-        {product.faqs && product.faqs.length > 0 && <FAQSchema faqs={product.faqs} />}
+        {isAhu ? (
+          <ManufacturingServiceSchema
+            name="Air Handling Units (AHU) Manufacturing"
+            serviceType="Custom Air Handling Units & Cleanroom HVAC Manufacturing"
+            description={schemaDescription}
+            image={product.image}
+            category={product.categoryName}
+            url={canonicalUrl}
+            areaServed={["India", "Vietnam"]}
+            offerings={[
+              "Double-Skin Thermal-Break Air Handling Units (500 to 200,000 CMH)",
+              "Pharmaceutical cGMP & ISO 14644 Cleanroom AHUs",
+              "Low-Humidity Silica Gel Desiccant Rotor AHUs (1%–35% RH)",
+              "Hospital Modular Operation Theatre (OT) Hygienic AHUs",
+              "Direct-Drive Plug Fan & Belt-Driven Centrifugal Blower AHUs",
+            ]}
+          />
+        ) : (
+          <ProductSchema
+            name={product.title}
+            description={schemaDescription}
+            image={product.image}
+            category={product.categoryName}
+            url={canonicalUrl}
+          />
+        )}
+        {schemaFaqs && schemaFaqs.length > 0 && <FAQSchema faqs={schemaFaqs} />}
         <BreadcrumbSchema
           items={[
-            { name: "Home", url: siteConfig.url },
+            { name: "Home", url: `${siteConfig.url}/` },
             { name: product.categoryName, url: `${siteConfig.url}/${product.categorySlug}/` },
-            { name: product.title, url: product.canonical },
+            { name: isAhu ? "Air Handling Units (AHU)" : product.title, url: canonicalUrl },
           ]}
         />
 
         {/* 1. Page Banner */}
         <PageBanner
-          title={product.h1 || product.title}
-          subtitle={`Engineered by Peter Air Systems • ${product.categoryName}`}
+          title={isAhu ? "Air Handling Units (AHU)" : product.h1 || product.title}
+          subtitle={
+            isAhu
+              ? "ISO & CE Certified Air Handling Units Manufacturer in India — Supplying India & Vietnam"
+              : `Engineered by Peter Air Systems • ${product.categoryName}`
+          }
           breadcrumbs={[
             { label: product.categoryName, href: `/${product.categorySlug}/` },
-            { label: product.title },
+            { label: isAhu ? "Air Handling Units (AHU)" : product.title },
           ]}
           bgImage={product.bannerImage || "/images/ahu_banner.png"}
         />
@@ -214,6 +297,21 @@ export default async function GenericPage({ params }: PageProps) {
                       <Image
                         src={product.image}
                         alt={
+                          product.slug === "hepa-terminal-box"
+                            ? "HEPA Terminal Box for Cleanroom HVAC Systems"
+                            : product.slug === "supply-return-air-diffuser"
+                            ? "Supply Return Air Diffuser for HVAC Ventilation Systems"
+                            : product.slug === "return-air-riser"
+                            ? "Return Air Riser for HVAC Ventilation Systems"
+                            : product.slug === "bio-safety-cabinets"
+                            ? "Bio Safety Cabinet for Laboratory and Cleanroom Applications"
+                            : product.slug === "enhance-air-quality-with-pre-filters"
+                            ? "HVAC Pre Filters for Primary Air Filtration Systems"
+                            : product.slug === "modular-clean-room-doors"
+                            ? "Modular Clean Room Doors for Pharmaceutical and Cleanroom Facilities"
+                            : product.title
+                        }
+                        title={
                           product.slug === "hepa-terminal-box"
                             ? "HEPA Terminal Box for Cleanroom HVAC Systems"
                             : product.slug === "supply-return-air-diffuser"
@@ -444,6 +542,7 @@ export default async function GenericPage({ params }: PageProps) {
                               <Image
                                 src={item.src}
                                 alt={item.title || product.title}
+                                title={item.title || product.title}
                                 fill
                                 className="object-contain p-2 transition-transform duration-300 group-hover:scale-105"
                               />

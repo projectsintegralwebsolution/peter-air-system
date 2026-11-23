@@ -102,7 +102,7 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
               <div className="bg-white p-1 rounded-lg shrink-0 flex items-center justify-center shadow-xs">
                 <Image
                   src="/images/PETER-AIR-LOGO.png"
-                  alt="Peter Air Systems Logo"
+                  alt="Peter Air Systems Logo" title="Peter Air Systems Logo"
                   width={622}
                   height={885}
                   className="h-8 w-auto object-contain"
@@ -197,7 +197,7 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
           <div className="relative mt-6 rounded-xl overflow-hidden border border-cyan-500/20 shadow-md h-32 lg:h-36 w-full shrink-0">
             <Image
               src="/images/Air-handling-unit-.jpg"
-              alt="Air Handling Unit & Cleanroom Equipment"
+              alt="Air Handling Unit & Cleanroom Equipment" title="Air Handling Unit & Cleanroom Equipment"
               fill
               className="object-cover"
             />

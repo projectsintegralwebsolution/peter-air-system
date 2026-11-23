@@ -54,7 +54,7 @@ export default async function IndustriesIndexPage() {
               <div className="relative h-56 w-full bg-slate-100 overflow-hidden">
                 <Image
                   src={ind.image}
-                  alt={ind.name}
+                  alt={ind.name} title={ind.name}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />

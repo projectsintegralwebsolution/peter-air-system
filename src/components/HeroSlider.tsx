@@ -130,7 +130,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ initialSlides }) => {
             <div className="absolute inset-0">
               <Image
                 src={slide.image}
-                alt={slide.heading}
+                alt={slide.heading} title={slide.heading}
                 fill
                 priority={index === 0}
                 className="object-cover object-right"
