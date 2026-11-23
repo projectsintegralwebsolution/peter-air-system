@@ -69,7 +69,8 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
         <div className="md:col-span-5 relative h-64 sm:h-72 w-full bg-white rounded-2xl border border-slate-200 p-4 flex items-center justify-center overflow-hidden group">
           <Image
             src={product.image || "/images/AHU.jpeg"}
-            alt="Peter Air Systems Air Handling Unit (AHU) Manufacturing in Mumbai"
+            alt="Double-Skin Thermal-Break Air Handling Unit (AHU) manufactured by Peter Air Systems in India"
+            title="Peter Air Systems Air Handling Unit (AHU) Manufacturer in India"
             fill
             priority
             className="object-contain p-2 group-hover:scale-105 transition-transform duration-500"
@@ -79,7 +80,7 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
             <span>ISO 9001:2015 & CE CERTIFIED</span>
           </span>
           <span className="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm text-slate-700 border border-slate-200 text-[10.5px] font-semibold px-2 py-0.5 rounded shadow-sm">
-            Vasai Plant, Mumbai
+            India & Vietnam Supply
           </span>
         </div>
 
@@ -88,10 +89,10 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
             <span>HEAVY-DUTY INDUSTRIAL HVAC & CLEANROOM AHU</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
-            Precision-Engineered Air Handling Units (AHU)
+            Custom Air Handling Units (AHU) Built for India & Vietnam
           </h2>
           <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
-            As a leading <strong>Air Handling Unit manufacturer in India</strong> with our Head Office in Vasai West and factory in Vasai East, Mumbai, Peter Air Systems designs, fabricates, and validates custom <strong>Double-Skin Thermal-Break Air Handling Units (AHU)</strong>. Our units deliver precision control over temperature, humidity, particulate cleanliness, and static air pressure for demanding pharmaceutical facilities, healthcare surgical suites, electronics cleanrooms, and commercial complexes.
+            As an established <strong>Air Handling Units manufacturer in India</strong> with our head office in Vasai West and manufacturing plant in Vasai East, Mumbai, Peter Air Systems builds custom <strong>Double-Skin Thermal-Break Air Handling Units (AHUs)</strong> for industrial and cleanroom projects. We supply and export directly to pharmaceutical plants, hospital operating theatres, electronics cleanrooms, and food facilities across <strong>India</strong> and <strong>Vietnam</strong> (including Ho Chi Minh City, Hanoi, Bac Ninh, and Binh Duong). Each unit is sized around your exact airflow, static pressure, and humid tropical climate load so temperature, RH, and particle counts stay within spec year-round.
           </p>
 
           <div className="pt-2 flex flex-wrap gap-2">
@@ -180,7 +181,8 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
           <div className="md:col-span-6 relative h-64 sm:h-72 w-full rounded-2xl overflow-hidden border border-slate-200 bg-slate-100">
             <Image
               src="/images/ahu/ahu-internal-component-layout.jpg"
-              alt="Peter Air Systems AHU Internal Component Layout showing Filters, Cooling Coil, Manometer, and Blower"
+              alt="Air Handling Unit internal component layout showing G4/F8 filters, cooling coil, manometer ports, and blower section"
+              title="AHU Internal Component Layout & Inspection Access"
               fill
               className="object-cover"
             />
@@ -225,7 +227,7 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
             Frame Profiles, Double-Skin Panels & Thermal-Break Insulation
           </h3>
           <p className="text-slate-600 text-xs sm:text-sm mt-1">
-            Built to eliminate thermal bridging, prevent exterior condensation, and ensure absolute structural rigidity during continuous 24/7 operation.
+            Built to stop thermal bridging and exterior sweating in humid Indian and Vietnamese plantrooms, with rigid casing strength for continuous 24/7 duty.
           </p>
         </div>
 
@@ -236,7 +238,8 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
               <div className="relative h-44 w-full rounded-xl overflow-hidden border border-slate-200 bg-white mb-4">
                 <Image
                   src="/images/ahu/ahu-thermal-break-frame.jpg"
-                  alt="Extruded Aluminum Pentapost Frame with Thermal Break Insulation Bridge"
+                  alt="Extruded Aluminum Pentapost AHU Frame with Polyamide Thermal Break Profile"
+                  title="Thermal-Break Extruded Aluminum AHU Frame Profile"
                   fill
                   className="object-contain p-2"
                 />
@@ -248,7 +251,7 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
                 <h4 className="font-bold text-slate-900 text-sm">Thermal-Break Aluminum Profile</h4>
               </div>
               <p className="text-slate-600 text-xs leading-relaxed">
-                Extruded hollow aluminum pentapost framework incorporating polyamide composite thermal-break insulation bridges. This physically decouples the inner cold air path from ambient room temperature, eliminating sweating and condensation in humid industrial climates.
+                Extruded hollow aluminum pentapost framework incorporating polyamide composite thermal-break insulation bridges. This separates the cold internal air stream from warm ambient air, preventing casing condensation in coastal Indian and Vietnamese climates.
               </p>
             </div>
             <div className="mt-4 pt-3 border-t border-slate-200/80 text-[11px] font-semibold text-slate-700 flex items-center justify-between">
@@ -263,7 +266,8 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
               <div className="relative h-44 w-full rounded-xl overflow-hidden border border-slate-200 bg-white mb-4">
                 <Image
                   src="/images/ahu/ahu-double-skin-pu-panel.jpg"
-                  alt="Double-Skin Polyurethane Foam (PUF) Insulated Panel Section"
+                  alt="Double-Skin Polyurethane Foam (PUF) Insulated AHU Panel Section"
+                  title="Double-Skin PUF Insulated AHU Casing Panel"
                   fill
                   className="object-contain p-2"
                 />
@@ -275,7 +279,7 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
                 <h4 className="font-bold text-slate-900 text-sm">Double-Skin PUF Panels</h4>
               </div>
               <p className="text-slate-600 text-xs leading-relaxed">
-                Sandwich panels available in 25mm, 45mm, and 50mm thickness injected with high-density (40 kg/m³) CFC/HFC-free Polyurethane Foam. The removable panel mechanism allows access even in compact plantrooms while maintaining zero-leakage acoustic and thermal sealing.
+                Sandwich panels available in 25mm, 45mm, and 50mm thickness injected with high-density (40 kg/m³) CFC/HFC-free Polyurethane Foam. Removable panel locks simplify servicing inside tight plantrooms while keeping air leakage and noise low.
               </p>
             </div>
             <div className="mt-4 pt-3 border-t border-slate-200/80 text-[11px] font-semibold text-slate-700 flex items-center justify-between">
@@ -290,7 +294,8 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
               <div className="relative h-44 w-full rounded-xl overflow-hidden border border-slate-200 bg-white mb-4">
                 <Image
                   src="/images/ahu/ahu-galvanized-base-frame.jpg"
-                  alt="Heavy-Duty Hot-Dip Galvanized Steel Base Frame with Rigging Lifting Holes"
+                  alt="Heavy-Duty Hot-Dip Galvanized Steel AHU Base Frame with Rigging Lifting Holes"
+                  title="Galvanized Steel Base Frame for Air Handling Units"
                   fill
                   className="object-contain p-2"
                 />
@@ -346,7 +351,8 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
               <div className="relative h-36 rounded-lg overflow-hidden border border-slate-100 bg-slate-50">
                 <Image
                   src="/images/ahu/ahu-direct-drive-plug-fan.jpg"
-                  alt="Direct Drive Fan for Cleanroom Air Handling Units"
+                  alt="Direct Drive Plug Fan for Cleanroom Air Handling Units"
+                  title="Direct-Drive Plug Fan for Cleanroom AHU"
                   fill
                   className="object-contain p-2"
                 />
@@ -354,7 +360,8 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
               <div className="relative h-36 rounded-lg overflow-hidden border border-slate-100 bg-slate-50">
                 <Image
                   src="/images/ahu/ahu-plug-fan-assembly.jpg"
-                  alt="Unhoused Backward Curved Plug Fan Impeller Assembly"
+                  alt="Unhoused Backward Curved Plug Fan Impeller Assembly for AHU"
+                  title="Backward-Curved Plug Fan Impeller Assembly"
                   fill
                   className="object-contain p-2"
                 />
@@ -403,7 +410,8 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
               <div className="relative h-36 rounded-lg overflow-hidden border border-slate-100 bg-slate-50">
                 <Image
                   src="/images/ahu/ahu-belt-driven-centrifugal-fan.jpg"
-                  alt="Centrifugal Fan with Belt Drive on Galvanized Skid Frame"
+                  alt="Belt-Driven Centrifugal Blower Fan on Galvanized AHU Skid Frame"
+                  title="Belt-Driven Centrifugal Blower Fan for AHU"
                   fill
                   className="object-contain p-2"
                 />
@@ -411,7 +419,8 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
               <div className="relative h-36 rounded-lg overflow-hidden border border-slate-100 bg-slate-50">
                 <Image
                   src="/images/ahu/ahu-high-durability-blower-motor.jpg"
-                  alt="Three Phase Heavy-Duty Blower Motor with Anti-Vibration Mounts"
+                  alt="Three Phase Heavy-Duty AHU Blower Motor with Anti-Vibration Mounts"
+                  title="Three-Phase Heavy-Duty AHU Blower Motor"
                   fill
                   className="object-contain p-2"
                 />
@@ -465,7 +474,8 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
               <div className="relative h-36 rounded-lg overflow-hidden border border-slate-100 bg-slate-50">
                 <Image
                   src="/images/ahu/ahu-cooling-coil-copper-aluminum.jpg"
-                  alt="High Heat Transfer Cooling Coil with Copper Tubes and Hydrophilic Aluminum Fins"
+                  alt="High Heat Transfer AHU Cooling Coil with Copper Tubes and Hydrophilic Aluminum Fins"
+                  title="AHU Copper Tube Cooling Coil with Hydrophilic Fins"
                   fill
                   className="object-contain p-2"
                 />
@@ -473,7 +483,8 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
               <div className="relative h-36 rounded-lg overflow-hidden border border-slate-100 bg-slate-50">
                 <Image
                   src="/images/ahu/ahu-coil-manifold-frame.jpg"
-                  alt="Seamless Copper Tube Manifold with Galvanized and Stainless Steel Frame"
+                  alt="Seamless Copper Tube AHU Coil Manifold with Galvanized and Stainless Steel Frame"
+                  title="AHU Copper Tube Coil Manifold Frame"
                   fill
                   className="object-contain p-2"
                 />
@@ -485,7 +496,7 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
                 Seamless Copper Tubes & Hydrophilic Fins
               </h4>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Available in Direct Expansion (DX) or Chilled Water (CHW) configurations. Seamless copper tubes are mechanically expanded into sine-wave corrugated aluminum fins with blue hydrophilic coating, maximizing dehumidification condensation drainage and resisting corrosion.
+                Available in Direct Expansion (DX) or Chilled Water (CHW) configurations. Seamless copper tubes are mechanically expanded into sine-wave corrugated aluminum fins with blue hydrophilic coating, improving condensate drainage and corrosion resistance in coastal India and Vietnam.
               </p>
             </div>
 
@@ -500,7 +511,7 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
               </div>
               <div className="flex items-center gap-2">
                 <Check className="w-3.5 h-3.5 text-brand-700 shrink-0" />
-                <span><strong>Outdoor Compatibility:</strong> Works seamlessly with Daikin, Trane, LG, Voltas condensers</span>
+                <span><strong>Outdoor Compatibility:</strong> Compatible with Daikin, Trane, Carrier, LG, and Voltas condensers</span>
               </div>
             </div>
           </div>
@@ -510,7 +521,8 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
             <div className="relative h-36 w-full rounded-lg overflow-hidden border border-slate-100 bg-slate-50">
               <Image
                 src="/images/ahu/ahu-multi-stage-air-filters.jpg"
-                alt="Airtight Filter Bank with Pre-Filters and Fine Pocket Bag Filters"
+                alt="Airtight AHU Filter Bank with G4 Pre-Filters and F8/F9 Fine Pocket Bag Filters"
+                title="Multi-Stage AHU Air Filter Bank"
                 fill
                 className="object-contain p-2"
               />
@@ -563,7 +575,8 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
             <div className="relative h-44 w-full rounded-xl overflow-hidden border border-slate-200 bg-white">
               <Image
                 src="/images/ahu/ahu-desiccant-dehumidification-rotor.jpg"
-                alt="Honeycomb Desiccant Rotor Wheel for Low-Humidity Cleanroom AHU"
+                alt="Honeycomb Silica Gel Desiccant Rotor Wheel for Low-Humidity Cleanroom AHU"
+                title="Desiccant Dehumidification Rotor Wheel for Low-Humidity AHU"
                 fill
                 className="object-contain p-2"
               />
@@ -592,7 +605,8 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
               <div className="relative h-44 rounded-xl overflow-hidden border border-slate-200 bg-white">
                 <Image
                   src="/images/ahu/ahu-control-panel-automation.jpg"
-                  alt="Industrial AHU Control Panel with Color Touchscreen HMI Interface"
+                  alt="Industrial AHU Control Panel with Color Touchscreen HMI and PLC Automation"
+                  title="AHU PLC & Touchscreen HMI Control Panel"
                   fill
                   className="object-contain p-2"
                 />
@@ -601,6 +615,7 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
                 <Image
                   src="/images/ahu/ahu-hvac-control-panel-bank.jpg"
                   alt="Cleanroom HVAC Control Panel Bank with VFD Starters and Electrical Protection"
+                  title="Cleanroom AHU Control Panel Bank with VFD Starters"
                   fill
                   className="object-cover"
                 />
@@ -611,7 +626,7 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
               HVAC & AHU Smart Control Panels
             </h4>
             <p className="text-xs text-slate-600 leading-relaxed">
-              Complete electrical power and automation integration. Built with programmable logic controllers (PLC), high-resolution color HMI touchscreens, and precision Variable Frequency Drives (VFD).
+              Complete electrical power and automation panels built with PLCs, color HMI touchscreens, and Variable Frequency Drives (VFD), wired for both Indian (415V/50Hz) and Vietnamese (380V/50Hz) grid standards.
             </p>
 
             <div className="space-y-1.5 text-xs text-slate-700 bg-white p-3 rounded-lg border border-slate-200">
@@ -817,7 +832,7 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
             Applications Across Demanding Production Environments
           </h3>
           <p className="text-slate-600 text-xs sm:text-sm mt-1">
-            Engineered to maintain strict regulatory compliance across pharmaceutical cGMP, hospital NABH, food packaging, and semiconductor microfabrication.
+            Built for pharmaceutical WHO-GMP/EU-GMP plants, hospital surgical suites, food processing lines, and electronics factories operating across India and Vietnam.
           </p>
         </div>
 
@@ -828,6 +843,7 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
               <Image
                 src="/images/ahu/cleanroom-electronics-hvac.jpg"
                 alt="Electronics Cleanroom AHU Ventilation for Microchip and Component Manufacturing"
+                title="Electronics & Semiconductor Cleanroom Air Handling Unit"
                 fill
                 className="object-cover group-hover:scale-105 transition duration-500"
               />
@@ -835,7 +851,7 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
             <div className="p-4 space-y-2">
               <h4 className="font-bold text-slate-900 text-sm">Electronics & Semiconductor</h4>
               <p className="text-xs text-slate-600 leading-relaxed">
-                ISO Class 4 – 7 cleanrooms requiring laminar air patterns, zero electrostatic charge, and precision temperature/humidity control for microchip assembly.
+                ISO Class 4 – 7 cleanrooms for PCB, semiconductor, and sensor assembly across India and Vietnam industrial parks (Bac Ninh, Hai Phong, Bengaluru, Pune) requiring tight temperature and RH stability.
               </p>
             </div>
           </div>
@@ -846,6 +862,7 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
               <Image
                 src="/images/ahu/cleanroom-pharmaceutical-hvac.jpg"
                 alt="Pharmaceutical and Cosmetic Cleanroom AHU System with cGMP and Grade A/B Classification"
+                title="Pharmaceutical cGMP Cleanroom Air Handling Unit"
                 fill
                 className="object-cover group-hover:scale-105 transition duration-500"
               />
@@ -853,7 +870,7 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
             <div className="p-4 space-y-2">
               <h4 className="font-bold text-slate-900 text-sm">Pharmaceutical & Biotechnology</h4>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Sterile formulation, sterile vial filling, tablet compression, and active pharmaceutical ingredient (API) handling under strict cGMP and Schedule M guidelines.
+                Sterile formulation, injectable filling, tablet compression, and API handling compliant with WHO-GMP, EU-GMP, and Schedule M standards for pharma hubs in India and Vietnam.
               </p>
             </div>
           </div>
@@ -864,6 +881,7 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
               <Image
                 src="/images/ahu/cleanroom-hospital-operation-theatre.jpg"
                 alt="Hospital Operating Theatre (OT) AHU Ventilation for Surgical Suites and ICU"
+                title="Hospital Modular Operation Theatre Air Handling Unit"
                 fill
                 className="object-cover group-hover:scale-105 transition duration-500"
               />
@@ -871,7 +889,7 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
             <div className="p-4 space-y-2">
               <h4 className="font-bold text-slate-900 text-sm">Hospital Surgical Suites (Modular OT)</h4>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Ceiling laminar flow ceilings for cardiac, orthopedic, and transplant operation theatres. Prevents surgical site contamination with 100% sterile air distribution.
+                Hygienic laminar airflow AHUs for cardiac, orthopedic, and transplant operation theatres, maintaining positive room pressure and HEPA-filtered sterile air distribution.
               </p>
             </div>
           </div>
@@ -882,6 +900,7 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
               <Image
                 src="/images/ahu/cleanroom-food-processing-hvac.jpg"
                 alt="Food Processing and Dairy Cleanroom AHU Ventilation"
+                title="Food & Dairy Processing Hygienic Air Handling Unit"
                 fill
                 className="object-cover group-hover:scale-105 transition duration-500"
               />
@@ -889,7 +908,7 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
             <div className="p-4 space-y-2">
               <h4 className="font-bold text-slate-900 text-sm">Food, Dairy & Beverage Processing</h4>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Ultra-clean hygienic air handling preventing mold, spore, and bacterial contamination in confectionery, dairy culture rooms, and aseptic packaging lines.
+                Hygienic stainless-steel air handling that keeps airborne mold, spores, and bacteria out of dairy culture rooms, confectionery lines, and aseptic packaging zones.
               </p>
             </div>
           </div>
@@ -900,6 +919,7 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
               <Image
                 src="/images/ahu/cleanroom-soft-gel-capsule.jpg"
                 alt="Soft Gelatin Capsule Manufacturing Room with Low Humidity AHU"
+                title="Low-Humidity AHU for Soft Gelatin Capsule Drying Rooms"
                 fill
                 className="object-cover group-hover:scale-105 transition duration-500"
               />
@@ -917,7 +937,8 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
             <div className="relative h-44 w-full bg-slate-200">
               <Image
                 src="/images/ahu/cleanroom-effervescent-tablet.jpg"
-                alt="Effervescent Tablet Manufacturing Cleanroom with Deep Dehumidification"
+                alt="Effervescent Tablet Manufacturing Cleanroom with Deep Dehumidification AHU"
+                title="Desiccant AHU for Effervescent & Dry Powder Suites"
                 fill
                 className="object-cover group-hover:scale-105 transition duration-500"
               />
@@ -968,90 +989,50 @@ export const AhuProductDetail: React.FC<AhuProductDetailProps> = ({ product }) =
         </div>
       </div>
 
-      {/* 10. EXPANDED TECHNICAL FAQS FOR AHU BUYERS & CONSULTANTS */}
+      {/* 10. TECHNICAL FAQS FOR AHU BUYERS & CONSULTANTS (4 FAQs synced with FAQPage Schema) */}
       <div className="space-y-4 pt-4">
         <h3 className="text-xl font-bold text-slate-900 border-b border-slate-200 pb-2 flex items-center gap-2">
           <HelpCircle className="w-5 h-5 text-brand-700" />
-          <span>Frequently Asked Technical Questions (FAQs)</span>
+          <span>Frequently Asked Questions (FAQs)</span>
         </h3>
         <div className="space-y-3">
-          {/* FAQ 1 (Original) */}
+          {/* FAQ 1 */}
           <div className="border border-slate-200 rounded-xl p-5 bg-slate-50">
             <h4 className="font-bold text-slate-900 text-sm mb-2">
-              What is an Air Handling Unit (AHU) and how does it work?
+              How do I select the right Air Handling Unit (AHU) capacity for a cleanroom or factory?
             </h4>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              An Air Handling Unit (AHU) is a centralized HVAC system component that conditions, filters, and circulates air. It typically houses an intake/mixing chamber, multi-stage air filters (G4, F8, HEPA), cooling and heating coils, and a high-efficiency blower to regulate temperature, humidity, and cleanliness before ducting air into cleanrooms or workspaces.
+              Start with room volume, required air changes per hour (ACH), heat load, and the pressure drop across your ducting and filters. Standard comfort HVAC usually needs 4 to 8 ACH, while pharmaceutical and electronics cleanrooms often require 15 to 60 ACH with higher static pressure for HEPA terminal filters. Share your floor plan and process heat load with our engineers, and we will size the exact airflow (CMH or CFM), coil rows, and fan motor for your plant.
             </p>
           </div>
 
-          {/* FAQ 2 (Original) */}
+          {/* FAQ 2 */}
           <div className="border border-slate-200 rounded-xl p-5 bg-slate-50">
             <h4 className="font-bold text-slate-900 text-sm mb-2">
-              Where are Air Handling Units commonly used?
+              Why choose Peter Air Systems as your Air Handling Units manufacturer in India?
             </h4>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              AHUs are widely utilized in pharmaceutical formulation plants, biotechnology laboratories, cleanrooms, hospital modular operating theatres (OT), food and dairy processing facilities, semiconductor production, and commercial complexes where controlled air volume, filtration, and hygiene are mandatory.
+              We build every AHU in-house at our Vasai East, Mumbai plant rather than outsourcing casing fabrication. Each unit uses thermal-break extruded aluminum pentapost frames, 40 kg/m³ PUF double-skin panels, SS 304 sloped drain pans, and factory-tested coils and filter banks. Because we manufacture cleanroom equipment alongside AHUs, our units are built to pass WHO-GMP, Schedule M, ISO 14644, and CE inspections without site modifications.
             </p>
           </div>
 
-          {/* FAQ 3 (Original) */}
+          {/* FAQ 3 */}
           <div className="border border-slate-200 rounded-xl p-5 bg-slate-50">
             <h4 className="font-bold text-slate-900 text-sm mb-2">
-              Why is Peter Air Systems a trusted AHU manufacturer in India?
+              Do you supply and export Air Handling Units from India to Vietnam?
             </h4>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Peter Air Systems manufactures high-performance, energy-efficient, and custom-engineered AHUs from our factory at Agarwal Industrial Estate, Vasai East, Mumbai. Built with certified thermal-break aluminum profiles, high-density 40 kg/m³ PUF panels, and zero-bypass filter clamping, our units meet strict cGMP, ISO 9001:2015, and CE compliance standards.
+              Yes. We regularly supply custom Air Handling Units to pharmaceutical, electronics, hospital, and food processing projects across India as well as Vietnam, including Ho Chi Minh City, Hanoi, Bac Ninh, and Binh Duong. Units for Vietnam are built for 380V/50Hz power and tropical coastal humidity, shipped in export-grade seaworthy crates (assembled or modular knocked-down), and delivered with full FAT reports, wiring diagrams, and DQ/IQ/OQ documentation.
             </p>
           </div>
 
-          {/* FAQ 4 (Original) */}
+          {/* FAQ 4 */}
           <div className="border border-slate-200 rounded-xl p-5 bg-slate-50">
             <h4 className="font-bold text-slate-900 text-sm mb-2">
-              What are the main internal components of a Peter Air Systems AHU?
+              Why do cleanroom AHUs need thermal-break frames and direct-drive plug fans?
             </h4>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              A standard Peter Air Systems AHU includes: (1) Air mixing & damper chamber, (2) Washable G4 pre-filter, (3) Microvee F7/F8/F9 fine pocket filter, (4) Chilled Water (CHW) or Direct Expansion (DX) cooling coil with SS drain tray, (5) Moisture droplet eliminator, (6) Electric reheat coil or hot water coil, (7) Direct-drive plug fan or belt-driven centrifugal aerofoil blower, and (8) Optional terminal HEPA filter section.
-            </p>
-          </div>
-
-          {/* FAQ 5 (Enhanced from PDF Reference: Direct Drive vs Belt Drive) */}
-          <div className="border border-slate-200 rounded-xl p-5 bg-slate-50">
-            <h4 className="font-bold text-slate-900 text-sm mb-2">
-              What is the advantage of a direct-drive plug fan over a belt-driven blower for cleanrooms?
-            </h4>
-            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              In cleanroom and pharmaceutical applications, traditional V-belts continuously shed rubber micro-dust particles during operation, which can foul downstream fine filters and contaminate sterile zones. Direct-drive plug fans couple the motor directly to the impeller, eliminating belts, pulleys, and belt dust entirely while reducing ongoing maintenance and improving mechanical efficiency.
-            </p>
-          </div>
-
-          {/* FAQ 6 (Enhanced from PDF Reference: Thermal Break) */}
-          <div className="border border-slate-200 rounded-xl p-5 bg-slate-50">
-            <h4 className="font-bold text-slate-900 text-sm mb-2">
-              Why is a thermal-break frame profile essential in humid climates?
-            </h4>
-            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Without a thermal break, metal aluminum profiles conduct cold temperatures from inside the unit to the outer surface. In warm and humid environments (such as Mumbai and coastal India), this temperature difference causes condensation and sweating on the AHU exterior. Our thermal-break profiles incorporate polyamide composite insulating bridges, completely preventing condensation and energy loss.
-            </p>
-          </div>
-
-          {/* FAQ 7 (Enhanced from PDF Reference: Low Humidity) */}
-          <div className="border border-slate-200 rounded-xl p-5 bg-slate-50">
-            <h4 className="font-bold text-slate-900 text-sm mb-2">
-              How does Peter Air Systems achieve low humidity down to 10%–35% RH?
-            </h4>
-            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Standard cooling coils can only dehumidify down to approximately 50%–55% RH before freezing occurs on the coil fins. For applications requiring 10%–35% RH (such as soft gelatin capsules and effervescent tablet compression) or &lt;5% RH (lithium-ion battery manufacturing), Peter Air Systems integrates a honeycomb silica gel desiccant rotor with reactivation heating, providing deep moisture absorption.
-            </p>
-          </div>
-
-          {/* FAQ 8 (Custom Engineering) */}
-          <div className="border border-slate-200 rounded-xl p-5 bg-slate-50">
-            <h4 className="font-bold text-slate-900 text-sm mb-2">
-              Can Peter Air Systems customize AHU dimensions to fit restricted ceiling spaces or plantrooms?
-            </h4>
-            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Yes. All Peter Air Systems AHUs are custom-engineered in modular knocked-down or fully factory-assembled sections. If your site has narrow stairwells, limited freight elevator capacities, or constrained plantroom footprints, we can engineer custom aspect ratios (e.g. low-profile horizontal, vertical, or two-tier stacked configurations) and assemble the unit on site.
+              In humid regions like Mumbai, Chennai, Ho Chi Minh City, and Hanoi, standard aluminum frames conduct cold air from inside the casing to the outer skin, causing condensation and rust. Thermal-break polyamide profiles stop that heat transfer completely. Pairing them with direct-drive backward-curved plug fans removes V-belts that shed rubber dust, keeping downstream fine and HEPA filters cleaner for longer.
             </p>
           </div>
         </div>

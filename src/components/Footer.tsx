@@ -24,7 +24,7 @@ export const Footer: React.FC = () => {
               <div className="bg-white p-2.5 sm:p-3 rounded-2xl shadow-lg border border-white/20 flex items-center justify-center flex-shrink-0 group-hover:shadow-cyan-500/10 transition-shadow">
                 <Image
                   src="/images/PETER-AIR-LOGO.png"
-                  alt="Peter Air Systems - Precision Engineering Logo"
+                  alt="Peter Air Systems - Precision Engineering Logo" title="Peter Air Systems - Precision Engineering Logo"
                   width={622}
                   height={885}
                   className="h-14 sm:h-16 w-auto object-contain transition-transform duration-200 group-hover:scale-105"

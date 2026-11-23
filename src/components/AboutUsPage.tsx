@@ -157,7 +157,7 @@ export const AboutUsPage: React.FC = () => {
               <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-lg border border-[#DCE7F0] bg-slate-100">
                 <Image
                   src="/images/about-who-we-are-engineers.jpg"
-                  alt="Peter Air Systems engineers working on HVAC equipment and air handling systems"
+                  alt="Peter Air Systems engineers working on HVAC equipment and air handling systems" title="Peter Air Systems engineers working on HVAC equipment and air handling systems"
                   fill
                   priority
                   className="object-cover object-center scale-[1.02] hover:scale-[1.04] transition-transform duration-500"
@@ -460,7 +460,7 @@ export const AboutUsPage: React.FC = () => {
               <div className="relative w-full aspect-[16/10] bg-[#F7F7F7] flex items-center justify-center p-3">
                 <Image
                   src="/images/Air-handling-unit-.jpg"
-                  alt="Air Handling Units (AHUs) by Peter Air Systems"
+                  alt="Air Handling Units (AHUs) by Peter Air Systems" title="Air Handling Units (AHUs) by Peter Air Systems"
                   fill
                   className="object-contain object-center hover:scale-[1.02] transition-transform duration-500"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -485,7 +485,7 @@ export const AboutUsPage: React.FC = () => {
               <div className="relative w-full aspect-[16/10] bg-[#F7F7F7]">
                 <Image
                   src="/images/Cleanroom-door1.jpg"
-                  alt="Modular Cleanroom Doors by Peter Air Systems"
+                  alt="Modular Cleanroom Doors by Peter Air Systems" title="Modular Cleanroom Doors by Peter Air Systems"
                   fill
                   className="object-cover object-center hover:scale-[1.02] transition-transform duration-500"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -510,7 +510,7 @@ export const AboutUsPage: React.FC = () => {
               <div className="relative w-full aspect-[16/10] bg-[#F7F7F7]">
                 <Image
                   src="/images/MODULAR-CLEAN-ROOM-PANELS.jpg"
-                  alt="Cleanroom Wall and Ceiling Panels by Peter Air Systems"
+                  alt="Cleanroom Wall and Ceiling Panels by Peter Air Systems" title="Cleanroom Wall and Ceiling Panels by Peter Air Systems"
                   fill
                   className="object-cover object-center hover:scale-[1.02] transition-transform duration-500"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -535,7 +535,7 @@ export const AboutUsPage: React.FC = () => {
               <div className="relative w-full aspect-[16/10] bg-[#F7F7F7]">
                 <Image
                   src="/images/modular-ot-new.jpg"
-                  alt="Modular Operation Theatre Solutions by Peter Air Systems"
+                  alt="Modular Operation Theatre Solutions by Peter Air Systems" title="Modular Operation Theatre Solutions by Peter Air Systems"
                   fill
                   className="object-cover object-center hover:scale-[1.02] transition-transform duration-500"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -560,7 +560,7 @@ export const AboutUsPage: React.FC = () => {
               <div className="relative w-full aspect-[16/10] bg-[#F7F7F7]">
                 <Image
                   src="/images/hvac-systems-ducting.jpg"
-                  alt="Industrial HVAC Systems and Ducting by Peter Air Systems"
+                  alt="Industrial HVAC Systems and Ducting by Peter Air Systems" title="Industrial HVAC Systems and Ducting by Peter Air Systems"
                   fill
                   className="object-cover object-center hover:scale-[1.02] transition-transform duration-500"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -585,7 +585,7 @@ export const AboutUsPage: React.FC = () => {
               <div className="relative w-full aspect-[16/10] bg-[#F7F7F7] flex items-center justify-center p-3">
                 <Image
                   src="/images/Hepa-Filter.jpg"
-                  alt="Air Filters and Filtration Systems by Peter Air Systems"
+                  alt="Air Filters and Filtration Systems by Peter Air Systems" title="Air Filters and Filtration Systems by Peter Air Systems"
                   fill
                   className="object-contain object-center hover:scale-[1.02] transition-transform duration-500"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -665,7 +665,7 @@ export const AboutUsPage: React.FC = () => {
               <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl border border-white/15 bg-slate-900">
                 <Image
                   src="/images/about-project-technician.jpg"
-                  alt="Peter Air Systems engineer inspecting an HVAC control panel at an industrial facility."
+                  alt="Peter Air Systems engineer inspecting an HVAC control panel at an industrial facility." title="Peter Air Systems engineer inspecting an HVAC control panel at an industrial facility."
                   fill
                   priority
                   className="object-cover object-center hover:scale-[1.02] transition-transform duration-500"

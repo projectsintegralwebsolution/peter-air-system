@@ -295,7 +295,7 @@ export const ServicesPageBody: React.FC = () => {
                   <div className="relative h-52 sm:h-56 w-full overflow-hidden bg-slate-100">
                     <Image
                       src={service.image}
-                      alt={service.title}
+                      alt={service.title} title={service.title}
                       fill
                       className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -429,7 +429,7 @@ export const ServicesPageBody: React.FC = () => {
               <div className="lg:col-span-5 relative min-h-[360px] lg:min-h-full overflow-hidden bg-slate-900 border-t lg:border-t-0 lg:border-l border-white/10">
                 <Image
                   src="/images/service-testing-validation-balometer.jpg"
-                  alt="Peter Air Systems Cleanroom Testing and Validation Technician"
+                  alt="Peter Air Systems Cleanroom Testing and Validation Technician" title="Peter Air Systems Cleanroom Testing and Validation Technician"
                   fill
                   className="object-cover object-center"
                   sizes="(max-width: 1024px) 100vw, 40vw"
@@ -596,7 +596,7 @@ export const ServicesPageBody: React.FC = () => {
             <div className="absolute inset-0 opacity-15 mix-blend-overlay pointer-events-none">
               <Image
                 src="/images/cleanroom-epc-hero.jpg"
-                alt="Peter Air Systems Engineering Background"
+                alt="Peter Air Systems Engineering Background" title="Peter Air Systems Engineering Background"
                 fill
                 className="object-cover object-center"
               />

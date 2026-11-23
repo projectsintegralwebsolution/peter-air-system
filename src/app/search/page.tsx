@@ -199,7 +199,7 @@ function SearchContent() {
                   className="bg-white border border-slate-200 rounded-xl p-4 flex gap-4 hover:shadow-lg transition group"
                 >
                   <div className="relative h-20 w-20 bg-white border border-slate-100 rounded-lg overflow-hidden flex-shrink-0">
-                    <Image src={p.image} alt={p.title} fill className="object-contain p-1" />
+                    <Image src={p.image} alt={p.title} title={p.title} fill className="object-contain p-1" />
                   </div>
                   <div className="flex-grow min-w-0 flex flex-col justify-between">
                     <div>

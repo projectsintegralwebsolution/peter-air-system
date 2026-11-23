@@ -2058,7 +2058,7 @@ export default function AdminCMSPage() {
                                   {cat.featuredImage ? (
                                     <img
                                       src={cat.featuredImage}
-                                      alt={cat.name}
+                                      alt={cat.name} title={cat.name}
                                       className="w-full h-full object-cover"
                                       onError={(e) => {
                                         (e.target as HTMLElement).style.display = "none";
@@ -2335,7 +2335,7 @@ export default function AdminCMSPage() {
                                   {ind.image ? (
                                     <img
                                       src={ind.image}
-                                      alt={ind.name}
+                                      alt={ind.name} title={ind.name}
                                       className="w-full h-full object-cover"
                                       onError={(e) => {
                                         (e.target as HTMLElement).style.display = "none";
@@ -2996,7 +2996,7 @@ export default function AdminCMSPage() {
                                   {b.featuredImage ? (
                                     <img
                                       src={resolveBlogImageUrl(b.featuredImage)}
-                                      alt={b.imageAlt || b.title}
+                                      alt={b.imageAlt || b.title} title={b.imageAlt || b.title}
                                       className="w-full h-full object-cover"
                                       onError={(e) => {
                                         e.currentTarget.style.display = "none";
@@ -3490,7 +3490,7 @@ export default function AdminCMSPage() {
                       {blogForm.featuredImage ? (
                         <img
                           src={resolveBlogImageUrl(blogForm.featuredImage)}
-                          alt={blogForm.imageAlt || blogForm.title || "Featured preview"}
+                          alt={blogForm.imageAlt || blogForm.title || "Featured preview"} title={blogForm.imageAlt || blogForm.title || "Featured preview"}
                           className="w-full h-full object-cover transition duration-300 group-hover:scale-105"
                           onError={(e) => {
                             e.currentTarget.src = "/images/AHU.jpeg";
@@ -3752,7 +3752,7 @@ export default function AdminCMSPage() {
                     <div className="h-32 bg-slate-100 flex items-center justify-center overflow-hidden relative">
                       <img
                         src={m.url}
-                        alt={m.altText || m.filename}
+                        alt={m.altText || m.filename} title={m.altText || m.filename}
                         className="h-full w-full object-cover"
                         onError={(e) => {
                           e.currentTarget.style.display = "none";
@@ -4133,7 +4133,7 @@ export default function AdminCMSPage() {
                         <div className="aspect-square bg-slate-100 flex items-center justify-center overflow-hidden relative">
                           <img
                             src={m.url}
-                            alt={m.altText || m.filename}
+                            alt={m.altText || m.filename} title={m.altText || m.filename}
                             className="w-full h-full object-cover group-hover:scale-105 transition"
                             loading="lazy"
                             onError={(e) => {

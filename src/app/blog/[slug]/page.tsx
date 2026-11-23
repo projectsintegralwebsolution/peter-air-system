@@ -267,7 +267,7 @@ export default async function BlogPostDetail({ params, searchParams }: BlogPostP
             <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden shadow-md border border-slate-200 bg-slate-100">
               <Image
                 src={resolveBlogImageUrl(post.featuredImage)}
-                alt={post.title}
+                alt={post.title} title={post.title}
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 880px"
@@ -416,7 +416,7 @@ export default async function BlogPostDetail({ params, searchParams }: BlogPostP
                     className="flex items-center gap-3 p-2.5 rounded-xl border border-slate-100 hover:border-brand-200 hover:bg-brand-50/40 transition-colors"
                   >
                     <div className="relative h-13 w-13 rounded-lg bg-slate-50 border border-slate-100 flex-shrink-0 overflow-hidden">
-                      <Image src={p.image} alt={p.title} fill sizes="52px" className="object-contain p-1" />
+                      <Image src={p.image} alt={p.title} title={p.title} fill sizes="52px" className="object-contain p-1" />
                     </div>
                     <div className="flex-grow min-w-0">
                       <h4 className="text-xs font-bold text-slate-900 truncate hover:text-brand-800">

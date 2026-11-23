@@ -92,7 +92,7 @@ export default async function IndustryDetailPage({ params }: IndustryPageProps) 
           <div className="relative h-80 rounded-2xl overflow-hidden shadow-xl border border-slate-200">
             <Image
               src={ind.image}
-              alt={ind.name}
+              alt={ind.name} title={ind.name}
               fill
               priority
               className="object-cover"
