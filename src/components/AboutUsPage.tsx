@@ -194,7 +194,7 @@ export const AboutUsPage: React.FC = () => {
                   Established in 2018, Peter Air Systems is an engineering-driven company specializing in HVAC systems, cleanroom infrastructure, modular operation theatres and air filtration solutions.
                 </p>
                 <p>
-                  Founded by <strong className="text-[#102A43] font-semibold">Mr. Sanjay Kumar Patra</strong>, a Mechanical and Electrical Engineering professional, the company combines technical expertise, engineering knowledge and practical project experience to deliver dependable solutions for modern industrial and healthcare environments.
+                  Founded by a Mechanical and Electrical Engineering professional, the company combines technical expertise, engineering knowledge and practical project experience to deliver dependable solutions for modern industrial and healthcare environments.
                 </p>
                 <p>
                   With <strong className="text-[#1D82B2] font-semibold">100+ successfully completed projects</strong>, Peter Air Systems has established its capabilities in engineering, manufacturing, supply, installation and turnkey project execution.
@@ -205,14 +205,10 @@ export const AboutUsPage: React.FC = () => {
               </div>
 
               {/* Visual Information Grid */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3.5 pt-2">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-2">
                 <div className="p-3.5 rounded-xl bg-[#F3F8FC] border border-[#DCE7F0]">
                   <div className="text-[11px] uppercase tracking-wider text-slate-500 font-medium">Established</div>
                   <div className="text-base sm:text-lg font-bold text-[#102A43] mt-0.5">2018</div>
-                </div>
-                <div className="p-3.5 rounded-xl bg-[#F3F8FC] border border-[#DCE7F0]">
-                  <div className="text-[11px] uppercase tracking-wider text-slate-500 font-medium">Founder</div>
-                  <div className="text-xs sm:text-sm font-bold text-[#102A43] mt-0.5 leading-snug">Mr. Sanjay Kumar Patra</div>
                 </div>
                 <div className="p-3.5 rounded-xl bg-[#F3F8FC] border border-[#DCE7F0]">
                   <div className="text-[11px] uppercase tracking-wider text-slate-500 font-medium">Experience</div>
